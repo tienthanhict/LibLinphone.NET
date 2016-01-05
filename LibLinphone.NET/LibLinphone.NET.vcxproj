@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BackgroundModeLogger.cpp" />
+    <ClCompile Include="Globals.cpp" />
+    <ClCompile Include="LinphoneAddress.cpp" />
+    <ClCompile Include="LinphoneAuthInfo.cpp" />
+    <ClCompile Include="LinphoneCall.cpp" />
+    <ClCompile Include="LinphoneCallLog.cpp" />
+    <ClCompile Include="LinphoneCallParams.cpp" />
+    <ClCompile Include="LinphoneCallStats.cpp" />
+    <ClCompile Include="LinphoneChatMessage.cpp" />
+    <ClCompile Include="LinphoneChatRoom.cpp" />
+    <ClCompile Include="LinphoneCore.cpp" />
+    <ClCompile Include="LinphoneCoreFactory.cpp" />
+    <ClCompile Include="LinphoneProxyConfig.cpp" />
+    <ClCompile Include="LpConfig.cpp" />
+    <ClCompile Include="PayloadType.cpp" />
+    <ClCompile Include="Transports.cpp" />
+    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="VideoPolicy.cpp" />
+    <ClCompile Include="VideoSize.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ApiLock.h" />
+    <ClInclude Include="BackgroundModeLogger.h" />
+    <ClInclude Include="Globals.h" />
+    <ClInclude Include="LinphoneAddress.h" />
+    <ClInclude Include="LinphoneAuthInfo.h" />
+    <ClInclude Include="LinphoneCall.h" />
+    <ClInclude Include="LinphoneCallLog.h" />
+    <ClInclude Include="LinphoneCallParams.h" />
+    <ClInclude Include="LinphoneCallStats.h" />
+    <ClInclude Include="LinphoneChatMessage.h" />
+    <ClInclude Include="LinphoneChatMessageListener.h" />
+    <ClInclude Include="LinphoneChatRoom.h" />
+    <ClInclude Include="LinphoneCore.h" />
+    <ClInclude Include="LinphoneCoreFactory.h" />
+    <ClInclude Include="LinphoneCoreListener.h" />
+    <ClInclude Include="DataTypes.h" />
+    <ClInclude Include="LinphoneProxyConfig.h" />
+    <ClInclude Include="LpConfig.h" />
+    <ClInclude Include="PayloadType.h" />
+    <ClInclude Include="Transports.h" />
+    <ClInclude Include="Utils.h" />
+    <ClInclude Include="VideoPolicy.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B9ACF180-91ED-4683-A4D3-44165A92613A}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>LibLinphoneCLI</RootNamespace>
+    <ProjectName>LibLinphone.NET</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>Safe</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CLRSupport>Safe</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)linphone-sdk-3.9.0-win32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsManaged>true</CompileAsManaged>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ortp.lib;mediastreamer_base.lib;mediastreamer_voip.lib;linphone.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)linphone-sdk-3.9.0-win32\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>COPY "$(SolutionDir)linphone-sdk-3.9.0-win32\bin\*.*" "$(SolutionDir)$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)linphone-sdk-3.9.0-win32\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsManaged>true</CompileAsManaged>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ortp.lib;mediastreamer_base.lib;mediastreamer_voip.lib;linphone.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)linphone-sdk-3.9.0-win32\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>COPY "$(SolutionDir)linphone-sdk-3.9.0-win32\bin\*.*" "$(SolutionDir)$(Configuration)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
