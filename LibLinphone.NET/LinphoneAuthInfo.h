@@ -29,7 +29,7 @@ namespace Linphone
 		/// Sometimes, a userid is required by the proxy, and realm can be useful to discriminate different SIP domains.
 		/// This object is instanciated using LinphoneCoreFactory::CreateAuthInfo.
 		/// Once created and filled, a LinphoneAuthInfo must be added to the LinphoneCore in order to become known and used automatically when needed.
-		/// The LinphoneCore object can take the initiative to request authentication information when needed in the application through the LinphoneCoreListener::AuthInfoRequested listener.
+		/// The LinphoneCore object can take the initiative to request authentication information when needed in the application through the ILinphoneCoreListener::AuthInfoRequested listener.
 		/// The application can respond to this information request later using LinphoneCore::AddAuthInfo.
 		/// This will unblock all pending authentication transactions and retry them with authentication headers.
 		/// </summary>

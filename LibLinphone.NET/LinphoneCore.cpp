@@ -21,7 +21,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #include "LinphoneCallLog.h"
 #include "LinphoneCallParams.h"
 #include "LinphoneProxyConfig.h"
-#include "LinphoneCoreListener.h"
+#include "ILinphoneCoreListener.h"
 #include "LinphoneChatRoom.h"
 #include "LpConfig.h"
 #include "PayloadType.h"
@@ -264,13 +264,29 @@ Linphone::Core::LinphoneCall^ Linphone::Core::LinphoneCore::InviteAddressWithPar
 void Linphone::Core::LinphoneCore::TerminateCall(Linphone::Core::LinphoneCall^ call) 
 {
 	API_LOCK;
-	linphone_core_terminate_call(this->lc, call->GetCallPtr());
+	if (call == nullptr) return;
+	__try
+	{
+		linphone_core_terminate_call(this->lc, call->GetCallPtr());
+	}
+	__except (EXCEPTION_EXECUTE_HANDLER)
+	{
+		System::Console::WriteLine("Some Unmanage exception");
+	}
 }
 
 void Linphone::Core::LinphoneCore::DeclineCall(Linphone::Core::LinphoneCall^ call, Linphone::Core::Reason reason)
 {
-	API_LOCK;
-	linphone_core_decline_call(this->lc, call->GetCallPtr(), (LinphoneReason)reason);
+	API_LOCK;	
+	if (call == nullptr) return;
+	__try
+	{
+		linphone_core_decline_call(this->lc, call->GetCallPtr(), (LinphoneReason)reason);
+	}
+	__except (EXCEPTION_EXECUTE_HANDLER)
+	{
+		System::Console::WriteLine("Some Unmanage exception");
+	}
 }
 
 Linphone::Core::LinphoneCall^ Linphone::Core::LinphoneCore::CurrentCall::get() 
@@ -300,7 +316,24 @@ Boolean Linphone::Core::LinphoneCore::IncomingInvitePending::get()
 void Linphone::Core::LinphoneCore::AcceptCall(Linphone::Core::LinphoneCall^ call) 
 {
 	API_LOCK;
-	linphone_core_accept_call(this->lc, call->GetCallPtr());
+	if (call == nullptr) return;
+	__try
+	{
+		linphone_core_accept_call(this->lc, call->GetCallPtr());
+	}
+	__except (EXCEPTION_EXECUTE_HANDLER)
+	{
+		System::Console::WriteLine("Some Unmanage exception");
+	}
+}
+
+int Linphone::Core::LinphoneCore::TransferCall(Linphone::Core::LinphoneCall^ call, String^ referTo)
+{
+	API_LOCK;
+	const char *refer_To = Linphone::Core::Utils::pstoccs(referTo);
+	int rusult = linphone_core_transfer_call(this->lc, call->GetCallPtr(), refer_To);
+	delete(refer_To);
+	return rusult;
 }
 
 void Linphone::Core::LinphoneCore::AcceptCallWithParams(Linphone::Core::LinphoneCall^ call, Linphone::Core::LinphoneCallParams^ params) 
@@ -312,7 +345,15 @@ void Linphone::Core::LinphoneCore::AcceptCallWithParams(Linphone::Core::Linphone
 void Linphone::Core::LinphoneCore::AcceptCallUpdate(Linphone::Core::LinphoneCall^ call, Linphone::Core::LinphoneCallParams^ params) 
 {
 	API_LOCK;
-    linphone_core_accept_call_update(this->lc, call->GetCallPtr(), params->GetCallParamsPtr());
+	if (call == nullptr) return;
+	__try
+	{
+		linphone_core_accept_call_update(this->lc, call->GetCallPtr(), params->GetCallParamsPtr());
+	}
+	__except (EXCEPTION_EXECUTE_HANDLER)
+	{
+		System::Console::WriteLine("Some Unmanage exception");
+	}
 }
 
 void Linphone::Core::LinphoneCore::DeferCallUpdate(Linphone::Core::LinphoneCall^ call) 
@@ -1127,6 +1168,12 @@ void Linphone::Core::LinphoneCore::SetPreferredVideoSizeByName(String^ sizeName)
 	linphone_core_set_preferred_video_size_by_name(this->lc, Utils::pstoccs(sizeName));
 }
 
+void Linphone::Core::LinphoneCore::ReloadVideoDevices()
+{
+	API_LOCK;
+	linphone_core_reload_video_devices(this->lc);
+}
+
 IList<Object^>^ Linphone::Core::LinphoneCore::VideoDevices::get()
 {
 	API_LOCK;
@@ -1156,6 +1203,51 @@ void Linphone::Core::LinphoneCore::VideoDevice::set(String^ device)
 	API_LOCK;
 	const char *ccname = Utils::pstoccs(device);
 	linphone_core_set_video_device(this->lc, ccname);
+	delete ccname;
+}
+
+void Linphone::Core::LinphoneCore::ReloadSoundDevices()
+{
+	API_LOCK;
+	linphone_core_reload_sound_devices(this->lc);
+}
+
+Boolean Linphone::Core::LinphoneCore::SoundDeviceCanCapture(System::String^ soundDeviceId)
+{
+	API_LOCK;
+	const char *ccname = Utils::pstoccs(soundDeviceId);
+	return (linphone_core_sound_device_can_capture(this->lc, ccname) == TRUE);
+}
+
+IList<Object^>^ Linphone::Core::LinphoneCore::SoundDevices::get()
+{
+	API_LOCK;
+	List<Object^>^ devices = gcnew Collections::Generic::List<Object^>();
+	const char **lvds = linphone_core_get_sound_devices(this->lc);
+	while (*lvds != NULL) {
+		String^ device = Utils::cctops(*lvds);
+		devices->Add(device);
+		lvds++;
+	}
+	return devices;
+}
+
+String^ Linphone::Core::LinphoneCore::SoundCaptureDevice::get()
+{
+	API_LOCK;
+	String^ device = nullptr;
+	const char *ccname = linphone_core_get_capture_device(this->lc);
+	if (ccname != NULL) {
+		device = Utils::cctops(ccname);
+	}
+	return device;
+}
+
+void Linphone::Core::LinphoneCore::SoundCaptureDevice::set(String^ soundDeviceId)
+{
+	API_LOCK;
+	const char *ccname = Utils::pstoccs(soundDeviceId);
+	linphone_core_set_capture_device(this->lc, ccname);
 	delete ccname;
 }
 
@@ -1205,12 +1297,26 @@ void Linphone::Core::LinphoneCore::VideoDisplayEnabled::set(Boolean enable)
 	linphone_core_enable_video_display(this->lc, enable);
 }
 
-int Linphone::Core::LinphoneCore::NativeVideoWindowId::get()
+ulong Linphone::Core::LinphoneCore::NativeVideoWindowId::get()
 {
 	API_LOCK;
-    // TODO: Should implement
-    return 0;
-	//return Globals::Instance->VideoRenderer->GetNativeWindowId();
+    return (ulong)linphone_core_get_native_video_window_id(this->lc);
+}
+
+void Linphone::Core::LinphoneCore::NativeVideoWindowId::set(ulong windowId)
+{
+    linphone_core_set_native_video_window_id(this->lc, (void*)windowId);
+}
+
+ulong Linphone::Core::LinphoneCore::NativePreviewVideoWindowId::get()
+{
+	API_LOCK;
+	return (ulong)linphone_core_get_native_preview_window_id(this->lc);
+}
+
+void Linphone::Core::LinphoneCore::NativePreviewVideoWindowId::set(ulong windowId)
+{
+	linphone_core_set_native_preview_window_id(this->lc, (void*)windowId);
 }
 
 int Linphone::Core::LinphoneCore::CameraSensorRotation::get()
@@ -1229,6 +1335,25 @@ void Linphone::Core::LinphoneCore::SelfViewEnabled::set(Boolean enable)
 {
 	API_LOCK;
 	linphone_core_enable_self_view(this->lc, enable);
+}
+
+Boolean Linphone::Core::LinphoneCore::VideoPreviewEnabled::get()
+{
+	API_LOCK;
+	return (linphone_core_video_preview_enabled(this->lc) == TRUE);
+}
+
+void Linphone::Core::LinphoneCore::VideoPreviewEnabled::set(Boolean enable)
+{
+	API_LOCK;
+	__try
+	{
+		linphone_core_enable_video_preview(this->lc, enable);
+	}
+	__except (EXCEPTION_EXECUTE_HANDLER)
+	{
+		System::Console::WriteLine("Some Unmanage exception");
+	}
 }
 
 Linphone::Core::LinphoneChatRoom^ Linphone::Core::LinphoneCore::GetChatRoom(Linphone::Core::LinphoneAddress^ address)
@@ -1314,12 +1439,12 @@ IList<Object^>^ Linphone::Core::LinphoneCore::ChatRooms::get()
 	return rooms;
 }
 
-Linphone::Core::LinphoneCoreListener^ Linphone::Core::LinphoneCore::CoreListener::get()
+Linphone::Core::ILinphoneCoreListener^ Linphone::Core::LinphoneCore::CoreListener::get()
 {
 	return this->listener;
 }
 
-void Linphone::Core::LinphoneCore::CoreListener::set(LinphoneCoreListener^ listener)
+void Linphone::Core::LinphoneCore::CoreListener::set(ILinphoneCoreListener^ listener)
 {
 	API_LOCK;
 	this->listener = listener;
@@ -1380,7 +1505,7 @@ void call_state_changed(::LinphoneCore *lc, ::LinphoneCall *call, ::LinphoneCall
 	//	platformCall->NotifyCallActive();
 	//}
 	
-	Linphone::Core::LinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
+	Linphone::Core::ILinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
 	if (listener != nullptr) {
 		listener->CallState(lCall, state, Linphone::Core::Utils::cctops(msg));
 	}
@@ -1388,7 +1513,7 @@ void call_state_changed(::LinphoneCore *lc, ::LinphoneCall *call, ::LinphoneCall
 
 void registration_state_changed(::LinphoneCore *lc, ::LinphoneProxyConfig *cfg, ::LinphoneRegistrationState cstate, const char *msg)
 {
-	Linphone::Core::LinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
+	Linphone::Core::ILinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
 	if (listener != nullptr) {
 		Linphone::Core::RegistrationState state = (Linphone::Core::RegistrationState) cstate;
 		Linphone::Core::RefToPtrProxy<Linphone::Core::LinphoneProxyConfig^> *proxy = reinterpret_cast< Linphone::Core::RefToPtrProxy<Linphone::Core::LinphoneProxyConfig^> *>(linphone_proxy_config_get_user_data(cfg));
@@ -1399,7 +1524,7 @@ void registration_state_changed(::LinphoneCore *lc, ::LinphoneProxyConfig *cfg, 
 
 void global_state_changed(::LinphoneCore *lc, ::LinphoneGlobalState gstate, const char *msg)
 {
-	Linphone::Core::LinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
+	Linphone::Core::ILinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
 	if (listener != nullptr) {
 		Linphone::Core::GlobalState state = (Linphone::Core::GlobalState) gstate;
 		listener->GlobalState(state, Linphone::Core::Utils::cctops(msg));
@@ -1408,7 +1533,7 @@ void global_state_changed(::LinphoneCore *lc, ::LinphoneGlobalState gstate, cons
 
 void auth_info_requested(LinphoneCore *lc, const char *realm, const char *username, const char *domain) 
 {
-	Linphone::Core::LinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
+	Linphone::Core::ILinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
 	if (listener != nullptr) {
 		listener->AuthInfoRequested(Linphone::Core::Utils::cctops(realm), Linphone::Core::Utils::cctops(username), Linphone::Core::Utils::cctops(domain));
 	}
@@ -1422,7 +1547,7 @@ void dtmf_received(LinphoneCore *lc, LinphoneCall *call, int dtmf)
 		lCall = (Linphone::Core::LinphoneCall^)Linphone::Core::Utils::CreateLinphoneCall(call);
 	}
 	if (lCall != nullptr) {
-		Linphone::Core::LinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
+		Linphone::Core::ILinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
 		if (listener != nullptr) {
 			char cdtmf = (char)dtmf;
 			char16 wdtmf;
@@ -1440,7 +1565,7 @@ void call_encryption_changed(LinphoneCore *lc, LinphoneCall *call, bool_t on, co
 		lCall = (Linphone::Core::LinphoneCall^)Linphone::Core::Utils::CreateLinphoneCall(call);
 	}
 	if (lCall != nullptr) {
-		Linphone::Core::LinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
+		Linphone::Core::ILinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
 		if (listener != nullptr) {
 			listener->CallEncryptionChanged(lCall, (on == TRUE), Linphone::Core::Utils::cctops(authentication_token));
 		}
@@ -1456,7 +1581,7 @@ void call_stats_updated(LinphoneCore *lc, LinphoneCall *call, const LinphoneCall
 	}
 	Linphone::Core::LinphoneCallStats^ lStats = (Linphone::Core::LinphoneCallStats^)Linphone::Core::Utils::CreateLinphoneCallStats((void *)stats);
 	if ((lCall != nullptr) && (lStats != nullptr)) {
-		Linphone::Core::LinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
+		Linphone::Core::ILinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
 		if (listener != nullptr) {
 			listener->CallStatsUpdated(lCall, lStats);
 		}
@@ -1465,7 +1590,7 @@ void call_stats_updated(LinphoneCore *lc, LinphoneCall *call, const LinphoneCall
 
 void message_received(LinphoneCore *lc, LinphoneChatRoom* chat_room, LinphoneChatMessage* message) 
 {
-	Linphone::Core::LinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
+	Linphone::Core::ILinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
 	if (listener != nullptr)
 	{
 		Linphone::Core::RefToPtrProxy<Linphone::Core::LinphoneChatMessage^> *proxy = reinterpret_cast< Linphone::Core::RefToPtrProxy<Linphone::Core::LinphoneChatMessage^> *>(linphone_chat_message_get_user_data(message));
@@ -1480,7 +1605,7 @@ void message_received(LinphoneCore *lc, LinphoneChatRoom* chat_room, LinphoneCha
 
 void composing_received(LinphoneCore *lc, LinphoneChatRoom *room) 
 {
-	Linphone::Core::LinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
+	Linphone::Core::ILinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
 	if (listener != nullptr)
 	{
 		Linphone::Core::RefToPtrProxy<Linphone::Core::LinphoneChatRoom^> *proxy = reinterpret_cast< Linphone::Core::RefToPtrProxy<Linphone::Core::LinphoneChatRoom^> *>(linphone_chat_room_get_user_data(room));
@@ -1494,7 +1619,7 @@ void composing_received(LinphoneCore *lc, LinphoneChatRoom *room)
 
 void file_transfer_progress_indication(LinphoneCore *lc, LinphoneChatMessage *message, const LinphoneContent *content, size_t offset, size_t total)
 {
-	Linphone::Core::LinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
+	Linphone::Core::ILinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
 	if (listener != nullptr)
 	{
 		Linphone::Core::RefToPtrProxy<Linphone::Core::LinphoneChatMessage^> *proxy = reinterpret_cast< Linphone::Core::RefToPtrProxy<Linphone::Core::LinphoneChatMessage^> *>(linphone_chat_message_get_user_data(message));
@@ -1508,7 +1633,7 @@ void file_transfer_progress_indication(LinphoneCore *lc, LinphoneChatMessage *me
 
 void log_collection_upload_progress_indication(LinphoneCore *lc, size_t offset, size_t total)
 {
-	Linphone::Core::LinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
+	Linphone::Core::ILinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
 	if (listener != nullptr)
 	{
 		listener->LogUploadProgressIndication((int)offset, (int)total);
@@ -1517,21 +1642,21 @@ void log_collection_upload_progress_indication(LinphoneCore *lc, size_t offset, 
 
 void log_collection_upload_state_changed(LinphoneCore *lc, ::LinphoneCoreLogCollectionUploadState state, const char *info)
 {
-	Linphone::Core::LinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
+	Linphone::Core::ILinphoneCoreListener^ listener = Linphone::Core::Globals::Instance->LinphoneCore->CoreListener;
 	if (listener != nullptr)
 	{
 		listener->LogUploadStatusChanged((Linphone::Core::LinphoneCoreLogCollectionUploadState)state, info ? Linphone::Core::Utils::cctops(info) : nullptr);
 	}
 }
 
-Linphone::Core::LinphoneCore::LinphoneCore(LinphoneCoreListener^ coreListener) :
+Linphone::Core::LinphoneCore::LinphoneCore(ILinphoneCoreListener^ coreListener) :
 	lc(nullptr),
 	listener(coreListener),
     config(nullptr)
 {
 }
 
-Linphone::Core::LinphoneCore::LinphoneCore(LinphoneCoreListener^ coreListener, LpConfig^ config) :
+Linphone::Core::LinphoneCore::LinphoneCore(ILinphoneCoreListener^ coreListener, LpConfig^ config) :
 	lc(nullptr),
 	listener(coreListener),
 	config(config),
@@ -1565,9 +1690,9 @@ void Linphone::Core::LinphoneCore::IterateEnabled::set(Boolean value)
     // TODO: Must review carefully, important
     if (isIterateEnabled && !value && IterateWorkItem)
     {
-        stopIterate = true;
-        IterateWorkEvent->Set();        
-        IterateWorkItem->Join(10000);
+        //stopIterate = true;
+        IterateWorkEvent->Set();
+        //IterateWorkItem->Join(10000);
         if (IterateWorkItem->IsAlive)
         {
             IterateWorkItem->Abort();
@@ -1576,23 +1701,42 @@ void Linphone::Core::LinphoneCore::IterateEnabled::set(Boolean value)
     }
     else if (!isIterateEnabled && value) 
     {
-        stopIterate = false;
+        //stopIterate = false;
+        IterateWorkEvent->Reset();
         ThreadStart^ threadStart = gcnew ThreadStart(this, &LinphoneCore::IterateThreadProc);
         IterateWorkItem = gcnew Thread(threadStart);
         IterateWorkItem->Priority = ThreadPriority::BelowNormal;
         IterateWorkItem->Start();
     }
 	isIterateEnabled = value;
+
+    API_UNLOCK;
 }
 
 void Linphone::Core::LinphoneCore::IterateThreadProc()
 {
-    while (!stopIterate)
+    //while (!stopIterate)
+    while (true)
     {
-        API_LOCK;
-        linphone_core_iterate(this->lc);
-        API_UNLOCK;
-        this->IterateWorkEvent->WaitOne(100);
+        // Stop iterating
+        if (this->IterateWorkEvent->WaitOne(100))
+        {
+            break;
+        }
+
+        try
+        {
+            API_LOCK;
+            linphone_core_iterate(this->lc);
+        }
+        catch (Exception^ ex)
+        {
+            Console::WriteLine(ex->ToString());
+        }
+        finally
+        {
+            API_UNLOCK;
+        }
     }
 }
 
@@ -1642,4 +1786,35 @@ Linphone::Core::LinphoneCore::~LinphoneCore()
 	API_LOCK;
 	RefToPtrProxy<LinphoneCore^> *proxy = reinterpret_cast< RefToPtrProxy<LinphoneCore^> *>(linphone_core_get_user_data(this->lc));
 	delete proxy;
+}
+
+int Linphone::Core::LinphoneCore::SoundPlayback::get()
+{
+	API_LOCK;
+	return linphone_core_get_play_level(this->lc);
+}
+
+void Linphone::Core::LinphoneCore::SoundPlayback::set(int level)
+{
+	API_LOCK;
+	linphone_core_set_play_level(this->lc, level);
+}
+
+String^ Linphone::Core::LinphoneCore::SoundPlaybackDevice::get()
+{
+	API_LOCK;
+	String^ device = nullptr;
+	const char *ccname = linphone_core_get_playback_device(this->lc);
+	if (ccname != NULL) {
+		device = Utils::cctops(ccname);
+	}
+	return device;
+}
+
+void Linphone::Core::LinphoneCore::SoundPlaybackDevice::set(String^ soundDeviceId)
+{
+	API_LOCK;
+	const char *ccname = Utils::pstoccs(soundDeviceId);
+	linphone_core_set_playback_device(this->lc, ccname);
+	delete ccname;
 }

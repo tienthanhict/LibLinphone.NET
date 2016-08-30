@@ -17,7 +17,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #include "LinphoneAuthInfo.h"
 #include "LinphoneCoreFactory.h"
 #include "LinphoneCore.h"
-#include "LinphoneCoreListener.h"
+#include "ILinphoneCoreListener.h"
 #include "LinphoneAddress.h"
 #include "LpConfig.h"
 #include "Transports.h"
@@ -30,12 +30,12 @@ using namespace Linphone::Core;
 #define MAX_TRACE_SIZE		2048
 #define MAX_SUITE_NAME_SIZE	128
 
-void LinphoneCoreFactory::CreateLinphoneCore(Linphone::Core::LinphoneCoreListener^ listener)
+void LinphoneCoreFactory::CreateLinphoneCore(Linphone::Core::ILinphoneCoreListener^ listener)
 {
 	CreateLinphoneCore(listener, nullptr);
 }
 
-void LinphoneCoreFactory::CreateLinphoneCore(Linphone::Core::LinphoneCoreListener^ listener, Linphone::Core::LpConfig^ config)
+void LinphoneCoreFactory::CreateLinphoneCore(Linphone::Core::ILinphoneCoreListener^ listener, Linphone::Core::LpConfig^ config)
 {
 	if (this->linphoneCore == nullptr) {
 		API_LOCK;

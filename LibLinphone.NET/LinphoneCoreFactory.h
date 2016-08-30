@@ -17,7 +17,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 #pragma once
 
 #include "ApiLock.h"
-#include "LinphoneCoreListener.h"
+#include "ILinphoneCoreListener.h"
 
 namespace Linphone
 {
@@ -68,8 +68,8 @@ namespace Linphone
 			/// To access the created LinphoneCore use the LinphoneCoreFactory::LinphoneCore property.
 			/// </summary>
 			/// <param name="listener">The listener class that will handle the callbacks from the native linphone core</param>
-			/// <seealso cref="CreateLinphoneCore(LinphoneCoreListener^, LpConfig^)"/>
-			void CreateLinphoneCore(LinphoneCoreListener^ listener);
+			/// <seealso cref="CreateLinphoneCore(ILinphoneCoreListener^, LpConfig^)"/>
+			void CreateLinphoneCore(ILinphoneCoreListener^ listener);
 
 			/// <summary>
 			/// Creates a LinphoneCore instance given an existing LpConfig.
@@ -77,8 +77,8 @@ namespace Linphone
 			/// </summary>
 			/// <param name="listener">The listener class that will handle the callbacks from the native linphone core</param>
 			/// <param name="config">The LpConfig to use for the configuration of the created LinphoneCore</param>
-			/// <seealso cref="CreateLinphoneCore(LinphoneCoreListener^)"/>
-			void CreateLinphoneCore(LinphoneCoreListener^ listener, LpConfig^ config);
+			/// <seealso cref="CreateLinphoneCore(ILinphoneCoreListener^)"/>
+			void CreateLinphoneCore(ILinphoneCoreListener^ listener, LpConfig^ config);
 
 			/// <summary>
 			/// Creates a LpConfig.

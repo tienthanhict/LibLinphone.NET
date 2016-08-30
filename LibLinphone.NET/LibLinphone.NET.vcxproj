@@ -46,7 +46,7 @@
     <ClInclude Include="LinphoneChatRoom.h" />
     <ClInclude Include="LinphoneCore.h" />
     <ClInclude Include="LinphoneCoreFactory.h" />
-    <ClInclude Include="LinphoneCoreListener.h" />
+    <ClInclude Include="ILinphoneCoreListener.h" />
     <ClInclude Include="DataTypes.h" />
     <ClInclude Include="LinphoneProxyConfig.h" />
     <ClInclude Include="LpConfig.h" />

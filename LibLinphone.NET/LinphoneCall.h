@@ -31,7 +31,7 @@ namespace Linphone
 
 		/// <summary>
 		/// Object representing a call.
-		/// Calls are create using LinphoneCore::Invite or passed to the application by the listener LinphoneCoreListener::CallState.
+		/// Calls are create using LinphoneCore::Invite or passed to the application by the listener ILinphoneCoreListener::CallState.
 		/// </summary>
 		public ref class LinphoneCall sealed
 		{

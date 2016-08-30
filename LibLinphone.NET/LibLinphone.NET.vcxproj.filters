@@ -107,9 +107,6 @@
     <ClInclude Include="LinphoneCore.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="LinphoneCoreListener.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="DataTypes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -138,6 +135,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="LinphoneChatMessage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ILinphoneCoreListener.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

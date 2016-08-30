@@ -26,7 +26,7 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 #include "DataTypes.h"
 #include "Enums.h"
-#include "LinphoneCoreListener.h"
+#include "ILinphoneCoreListener.h"
 #include "Utils.h"
 
 #pragma warning(pop)
@@ -58,8 +58,8 @@ namespace Linphone
         public ref class LinphoneCore sealed
         {
         public:
-            LinphoneCore(LinphoneCoreListener^ coreListener);
-            LinphoneCore(LinphoneCoreListener^ coreListener, LpConfig^ config);
+            LinphoneCore(ILinphoneCoreListener^ coreListener);
+            LinphoneCore(ILinphoneCoreListener^ coreListener, LpConfig^ config);
             void Init();
 
             /// <summary>
@@ -249,16 +249,25 @@ namespace Linphone
 
             /// <summary>
             /// Accepts an incoming call.
-            /// Basically the app is notified of incoming calls within the LinphoneCoreListener::CallState listener method.
+            /// Basically the app is notified of incoming calls within the ILinphoneCoreListener::CallState listener method.
             /// The application can later respond positively to the call using this method.
             /// </summary>
             /// <param name="call">The incoming call to accept</param>
             /// <seealso cref="AcceptCallWithParams(LinphoneCall^, LinphoneCallParams^)"/>
             void AcceptCall(LinphoneCall^ call);
 
+			/// <summary>
+			/// Performs a simple call transfer to the specified destination.
+			/// </summary>
+			/// <param name="call">The incoming call to accept</param>
+			/// <seealso cref="AcceptCallWithParams(LinphoneCall^, LinphoneCallParams^)"/>
+			/// <param name="referTo">number call center</param>
+
+			int TransferCall(LinphoneCall^ call, System::String^ referTo);
+
             /// <summary>
             /// Accepts an incoming call.
-            /// Basically the app is notified of incoming calls within the LinphoneCoreListener::CallState listener method.
+            /// Basically the app is notified of incoming calls within the ILinphoneCoreListener::CallState listener method.
             /// The application can later respond positively to the call using this method.
             /// </summary>
             /// <param name="call">The incoming call to accept</param>
@@ -433,7 +442,7 @@ namespace Linphone
 
             /// <summary>
             /// Starts an echo calibration of the sound devices, in order to find adequate settings for the echo canceller automatically.
-            /// Status is notified to LinphoneCoreListener::EcCalibrationStatus.
+            /// Status is notified to ILinphoneCoreListener::EcCalibrationStatus.
             /// </summary>
             void StartEchoCalibration();
 
@@ -901,13 +910,18 @@ namespace Linphone
             /// <param name="sizeName">The name of the preferred video size (eg. "vga")</param>
             void SetPreferredVideoSizeByName(System::String^ sizeName);
 
-            /// <summary>
-            /// Gets the list of video devices.
-            /// </summary>
-            property System::Collections::Generic::IList<System::Object^>^ VideoDevices
-            {
-                System::Collections::Generic::IList<System::Object^>^ get();
-            }
+			/// <summary>
+			/// Reload the list of video devices.
+			/// </summary>
+			void ReloadVideoDevices();
+
+			/// <summary>
+			/// Gets the list of video devices.
+			/// </summary>
+			property System::Collections::Generic::IList<System::Object^>^ VideoDevices
+			{
+				System::Collections::Generic::IList<System::Object^>^ get();
+			}
 
             /// <summary>
             /// Sets the active video device.
@@ -917,6 +931,33 @@ namespace Linphone
                 System::String^ get();
                 void set(System::String^ value);
             }
+
+			/// <summary>
+			/// Reload the list of sound devices.
+			/// </summary>
+			void ReloadSoundDevices();
+
+			/// <summary>
+			/// Returns true if the specified sound device can capture sound.
+			/// </summary>
+			bool SoundDeviceCanCapture(System::String^ soundDeviceId);
+
+			/// <summary>
+			/// Gets the list of sound devices.
+			/// </summary>
+			property System::Collections::Generic::IList<System::Object^>^ SoundDevices
+			{
+				System::Collections::Generic::IList<System::Object^>^ get();
+			}
+
+			/// <summary>
+			/// Sets the active sound capture device.
+			/// </summary>
+			property System::String^ SoundCaptureDevice
+			{
+				System::String^ get();
+				void set(System::String^ value);
+			}
 
             /// <summary>
             /// Gets the currently supported video codecs, as PayloadType elements.
@@ -969,10 +1010,20 @@ namespace Linphone
             /// <summary>
             /// Gets the native video window id.
             /// </summary>
-            property int NativeVideoWindowId
+            property ulong NativeVideoWindowId
             {
-                int get();
+                ulong get();
+                void set(ulong windowId);
             }
+
+			/// <summary>
+			/// Gets the preview native video window id.
+			/// </summary>
+			property ulong NativePreviewVideoWindowId
+			{
+				ulong get();
+				void set(ulong windowId);
+			}
 
             /// <summary>
             /// Gets the camera sensor rotation in degrees.
@@ -991,6 +1042,16 @@ namespace Linphone
                 System::Boolean get();
                 void set(System::Boolean value);
             }
+
+			/// <summary>
+			/// Controls video preview enablement.
+			/// Video preview refers to the action of displaying the local webcam image to the user while not in call.
+			/// </summary>
+			property System::Boolean VideoPreviewEnabled
+			{
+				System::Boolean get();
+				void set(System::Boolean value);
+			}
 
             /// <summary>
             /// Get a chat room whose peer is the supplied address. If it does not exist yet, it will be created.
@@ -1052,12 +1113,12 @@ namespace Linphone
             }
 
             /// <summary>
-            /// The LinphoneCoreListener that handles the events coming from the core.
+            /// The ILinphoneCoreListener that handles the events coming from the core.
             /// </summary>
-            property LinphoneCoreListener^ CoreListener
+            property ILinphoneCoreListener^ CoreListener
             {
-                LinphoneCoreListener^ get();
-                void set(LinphoneCoreListener^ listener);
+                ILinphoneCoreListener^ get();
+                void set(ILinphoneCoreListener^ listener);
             }
 
             /// <summary>
@@ -1069,13 +1130,32 @@ namespace Linphone
                 System::Boolean get();
                 void set(System::Boolean value);
             }
+			/// <summary>
+			/// Get playback sound level in 0-100 scale.
+			/// </summary>
+			property int SoundPlayback
+			{
+				int get();
+				void set(int value);
+			}
+
+			/// <summary>
+			/// Sets the sound device used for playback.
+			/// </summary>
+			property System::String^ SoundPlaybackDevice
+			{
+				System::String^ get();
+				void set(System::String^ value);
+			}
+
+
 
         private:
             ~LinphoneCore();
             void IterateThreadProc();
 
             ::LinphoneCore *lc;
-            LinphoneCoreListener^ listener;
+            ILinphoneCoreListener^ listener;
             LpConfig^ config;
             //Windows::Foundation::IAsyncAction^ IterateWorkItem;
             System::Threading::Thread^ IterateWorkItem;

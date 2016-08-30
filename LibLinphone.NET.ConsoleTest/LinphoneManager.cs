@@ -6,7 +6,7 @@ namespace TestLibLinphoneCLIConsole
     /// <summary>
     /// Utility class to handle most of the LinphoneCore (and more globally the C++/CX API) methods calls.
     /// </summary>
-    public sealed class LinphoneManager : LinphoneCoreListener
+    public sealed class LinphoneManager : ILinphoneCoreListener
     {
         private LinphoneCore _lc;
         public LinphoneCore Lc
