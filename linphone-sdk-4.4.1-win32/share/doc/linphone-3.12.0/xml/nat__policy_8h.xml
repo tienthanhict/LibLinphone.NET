@@ -1,0 +1,652 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="nat__policy_8h" kind="file" language="C++">
+    <compoundname>nat_policy.h</compoundname>
+    <includes refid="types_8h" local="yes">linphone/types.h</includes>
+    <includedby refid="core_8h" local="yes">core.h</includedby>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__network__parameters_1ga4f877f808caf75adac463427a1a6c312" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+        <definition>LinphoneNatPolicy* linphone_nat_policy_ref</definition>
+        <argsstring>(LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_ref</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>Acquire a reference to the LinphoneNatPolicy object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The same LinphoneNatPolicy object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/nat_policy.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gabf7362fd3e64afeffbed5cd53dfcff2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_nat_policy_unref</definition>
+        <argsstring>(LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_unref</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>Release reference to the LinphoneNatPolicy object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/nat_policy.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga355d75439936c0593eb60291842e33e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_nat_policy_get_user_data</definition>
+        <argsstring>(const LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_get_user_data</name>
+        <param>
+          <type>const <ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve the user pointer associated with the LinphoneNatPolicy object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user pointer associated with the LinphoneNatPolicy object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/nat_policy.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga4940b60d3305c7d53ec735f4cafeabdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_nat_policy_set_user_data</definition>
+        <argsstring>(LinphoneNatPolicy *policy, void *ud)</argsstring>
+        <name>linphone_nat_policy_set_user_data</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ud</declname>
+        </param>
+        <briefdescription>
+<para>Assign a user pointer to the LinphoneNatPolicy object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user pointer to associate with the LinphoneNatPolicy object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/nat_policy.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gac40f1b98718d0a72cf90b02b452fadfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_nat_policy_clear</definition>
+        <argsstring>(LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_clear</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>Clear a NAT policy (deactivate all protocols and unset the STUN server). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/nat_policy.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga2a2c779218d2555f837a63923e84b65d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_nat_policy_stun_enabled</definition>
+        <argsstring>(const LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_stun_enabled</name>
+        <param>
+          <type>const <ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>Tell whether STUN is enabled. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean value telling whether STUN is enabled. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/nat_policy.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gadf753e7d4431aff4a15e49697f754680" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_nat_policy_enable_stun</definition>
+        <argsstring>(LinphoneNatPolicy *policy, bool_t enable)</argsstring>
+        <name>linphone_nat_policy_enable_stun</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Enable STUN. </para>        </briefdescription>
+        <detaileddescription>
+<para>If TURN is also enabled, TURN will be used instead of STUN. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean value telling whether to enable STUN. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/nat_policy.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gae185febb33b7a05f3776d7e92846d68e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_nat_policy_turn_enabled</definition>
+        <argsstring>(const LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_turn_enabled</name>
+        <param>
+          <type>const <ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>Tell whether TURN is enabled. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean value telling whether TURN is enabled. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/nat_policy.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga67b781e1a4604c846da9a3ebdb797717" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_nat_policy_enable_turn</definition>
+        <argsstring>(LinphoneNatPolicy *policy, bool_t enable)</argsstring>
+        <name>linphone_nat_policy_enable_turn</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Enable TURN. </para>        </briefdescription>
+        <detaileddescription>
+<para>If STUN is also enabled, it is ignored and TURN is used. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean value telling whether to enable TURN. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/nat_policy.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga783dc3f822cd8823ddb05094e819bb4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_nat_policy_ice_enabled</definition>
+        <argsstring>(const LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_ice_enabled</name>
+        <param>
+          <type>const <ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>Tell whether ICE is enabled. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean value telling whether ICE is enabled. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/nat_policy.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gab0fb9909a3dc1560b02775214628b7bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_nat_policy_enable_ice</definition>
+        <argsstring>(LinphoneNatPolicy *policy, bool_t enable)</argsstring>
+        <name>linphone_nat_policy_enable_ice</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Enable ICE. </para>        </briefdescription>
+        <detaileddescription>
+<para>ICE can be enabled without STUN/TURN, in which case only the local candidates will be used. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean value telling whether to enable ICE. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/nat_policy.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga3cb99a680f4171c7f12c27991e771000" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_nat_policy_upnp_enabled</definition>
+        <argsstring>(const LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_upnp_enabled</name>
+        <param>
+          <type>const <ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>Tell whether uPnP is enabled. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean value telling whether uPnP is enabled. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/nat_policy.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gae9ca6c24dba0bfb06a8644178001c1ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_nat_policy_enable_upnp</definition>
+        <argsstring>(LinphoneNatPolicy *policy, bool_t enable)</argsstring>
+        <name>linphone_nat_policy_enable_upnp</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Enable uPnP. </para>        </briefdescription>
+        <detaileddescription>
+<para>This has the effect to disable every other policies (ICE, STUN and TURN). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Boolean value telling whether to enable uPnP. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/nat_policy.h" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gacdd6a4abeecd65031ea28b7045e058d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_nat_policy_get_stun_server</definition>
+        <argsstring>(const LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_get_stun_server</name>
+        <param>
+          <type>const <ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>Get the STUN/TURN server to use with this NAT policy. </para>        </briefdescription>
+        <detaileddescription>
+<para>Used when STUN or TURN are enabled. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The STUN server used by this NAT policy. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/nat_policy.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gac57585caf3becd44fdb45e9e8db3daa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_nat_policy_set_stun_server</definition>
+        <argsstring>(LinphoneNatPolicy *policy, const char *stun_server)</argsstring>
+        <name>linphone_nat_policy_set_stun_server</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>stun_server</declname>
+        </param>
+        <briefdescription>
+<para>Set the STUN/TURN server to use with this NAT policy. </para>        </briefdescription>
+        <detaileddescription>
+<para>Used when STUN or TURN are enabled. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">stun_server</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The STUN server to use with this NAT policy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/nat_policy.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga572a445380e80fe61908283a55e84816" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_nat_policy_get_stun_server_username</definition>
+        <argsstring>(const LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_get_stun_server_username</name>
+        <param>
+          <type>const <ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>Get the username used to authenticate with the STUN/TURN server. </para>        </briefdescription>
+        <detaileddescription>
+<para>The authentication will search for a LinphoneAuthInfo with this username. If it is not set the username of the currently used LinphoneProxyConfig is used to search for a LinphoneAuthInfo. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The username used to authenticate with the STUN/TURN server. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/nat_policy.h" line="153" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gab85d067f6684818953acc0b547c8508d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_nat_policy_set_stun_server_username</definition>
+        <argsstring>(LinphoneNatPolicy *policy, const char *username)</argsstring>
+        <name>linphone_nat_policy_set_stun_server_username</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <briefdescription>
+<para>Set the username used to authenticate with the STUN/TURN server. </para>        </briefdescription>
+        <detaileddescription>
+<para>The authentication will search for a LinphoneAuthInfo with this username. If it is not set the username of the currently used LinphoneProxyConfig is used to search for a LinphoneAuthInfo. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The username used to authenticate with the STUN/TURN server. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/nat_policy.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1ga7a6a1fb8862b2220c6bd61a188806da9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_nat_policy_resolve_stun_server</definition>
+        <argsstring>(LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_resolve_stun_server</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>Start a STUN server DNS resolution. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/nat_policy.h" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__network__parameters_1gadebd36c433c11a2bc4bf8a49d2b97f5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const struct addrinfo *</type>
+        <definition>const struct addrinfo* linphone_nat_policy_get_stun_server_addrinfo</definition>
+        <argsstring>(LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_nat_policy_get_stun_server_addrinfo</name>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>Get the addrinfo representation of the STUN server address. </para>        </briefdescription>
+        <detaileddescription>
+<para>WARNING: This function may block for up to 1 second. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>addrinfo representation of the STUN server address. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/nat_policy.h" line="176" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">nat_policy.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2010-2016<sp/>Belledonne<sp/>Communications<sp/>SARL</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_NAT_POLICY_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_NAT_POLICY_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphone/types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*<sp/><ref refid="group__network__parameters_1ga4f877f808caf75adac463427a1a6c312" kindref="member">linphone_nat_policy_ref</ref>(<ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*policy);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__network__parameters_1gabf7362fd3e64afeffbed5cd53dfcff2f" kindref="member">linphone_nat_policy_unref</ref>(<ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*policy);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group__network__parameters_1ga355d75439936c0593eb60291842e33e5" kindref="member">linphone_nat_policy_get_user_data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*policy);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__network__parameters_1ga4940b60d3305c7d53ec735f4cafeabdc" kindref="member">linphone_nat_policy_set_user_data</ref>(<ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*policy,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ud);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__network__parameters_1gac40f1b98718d0a72cf90b02b452fadfd" kindref="member">linphone_nat_policy_clear</ref>(<ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*policy);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__network__parameters_1ga2a2c779218d2555f837a63923e84b65d" kindref="member">linphone_nat_policy_stun_enabled</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*policy);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__network__parameters_1gadf753e7d4431aff4a15e49697f754680" kindref="member">linphone_nat_policy_enable_stun</ref>(<ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*policy,<sp/>bool_t<sp/>enable);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__network__parameters_1gae185febb33b7a05f3776d7e92846d68e" kindref="member">linphone_nat_policy_turn_enabled</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*policy);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__network__parameters_1ga67b781e1a4604c846da9a3ebdb797717" kindref="member">linphone_nat_policy_enable_turn</ref>(<ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*policy,<sp/>bool_t<sp/>enable);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__network__parameters_1ga783dc3f822cd8823ddb05094e819bb4d" kindref="member">linphone_nat_policy_ice_enabled</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*policy);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__network__parameters_1gab0fb9909a3dc1560b02775214628b7bd" kindref="member">linphone_nat_policy_enable_ice</ref>(<ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*policy,<sp/>bool_t<sp/>enable);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__network__parameters_1ga3cb99a680f4171c7f12c27991e771000" kindref="member">linphone_nat_policy_upnp_enabled</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*policy);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__network__parameters_1gae9ca6c24dba0bfb06a8644178001c1ef" kindref="member">linphone_nat_policy_enable_upnp</ref>(<ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*policy,<sp/>bool_t<sp/>enable);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__network__parameters_1gacdd6a4abeecd65031ea28b7045e058d2" kindref="member">linphone_nat_policy_get_stun_server</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*policy);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__network__parameters_1gac57585caf3becd44fdb45e9e8db3daa6" kindref="member">linphone_nat_policy_set_stun_server</ref>(<ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*policy,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*stun_server);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__network__parameters_1ga572a445380e80fe61908283a55e84816" kindref="member">linphone_nat_policy_get_stun_server_username</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*policy);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__network__parameters_1gab85d067f6684818953acc0b547c8508d" kindref="member">linphone_nat_policy_set_stun_server_username</ref>(<ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*policy,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*username);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__network__parameters_1ga7a6a1fb8862b2220c6bd61a188806da9" kindref="member">linphone_nat_policy_resolve_stun_server</ref>(<ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*policy);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">addrinfo<sp/>*<sp/><ref refid="group__network__parameters_1gadebd36c433c11a2bc4bf8a49d2b97f5f" kindref="member">linphone_nat_policy_get_stun_server_addrinfo</ref>(<ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*policy);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LINPHONE_NAT_POLICY_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/nat_policy.h"/>
+  </compounddef>
+</doxygen>

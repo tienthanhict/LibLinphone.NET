@@ -34,7 +34,7 @@ namespace Linphone
 		public ref class LinphoneProxyConfig sealed
 		{
 		public:
-            LinphoneProxyConfig();
+            LinphoneProxyConfig(LinphoneCore^ lc);
             LinphoneProxyConfig(::LinphoneProxyConfig* proxy_config);
 
 			/// <summary>

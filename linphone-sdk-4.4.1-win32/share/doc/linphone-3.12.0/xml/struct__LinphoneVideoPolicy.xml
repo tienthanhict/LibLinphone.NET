@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct__LinphoneVideoPolicy" kind="struct" language="C++" prot="public">
+    <compoundname>_LinphoneVideoPolicy</compoundname>
+    <includes local="no">types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphoneVideoPolicy_1af2844cb3185be244283d0dd310a0d7c9" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t _LinphoneVideoPolicy::automatically_initiate</definition>
+        <argsstring></argsstring>
+        <name>automatically_initiate</name>
+        <briefdescription>
+<para>Whether video shall be automatically proposed for outgoing calls. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="1174" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="1174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneVideoPolicy_1ae94ea7330374ad7aebbddde76b13f0e4" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t _LinphoneVideoPolicy::automatically_accept</definition>
+        <argsstring></argsstring>
+        <name>automatically_accept</name>
+        <briefdescription>
+<para>Whether video shall be automatically accepted for incoming calls. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="1175" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="1175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneVideoPolicy_1ac7d12dd1fc0d851953e8047961155086" prot="public" static="no" mutable="no">
+        <type>bool_t</type>
+        <definition>bool_t _LinphoneVideoPolicy::unused[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>unused</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="1176" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="1176" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure describing policy regarding video streams establishments. </para>    </briefdescription>
+    <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000149"><xreftitle>Deprecated</xreftitle><xrefdescription><para> <donotwrap />  </para></xrefdescription></xrefsect></para>    </detaileddescription>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="1173" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="1173" bodyend="1177"/>
+    <listofallmembers>
+      <member refid="struct__LinphoneVideoPolicy_1ae94ea7330374ad7aebbddde76b13f0e4" prot="public" virt="non-virtual"><scope>_LinphoneVideoPolicy</scope><name>automatically_accept</name></member>
+      <member refid="struct__LinphoneVideoPolicy_1af2844cb3185be244283d0dd310a0d7c9" prot="public" virt="non-virtual"><scope>_LinphoneVideoPolicy</scope><name>automatically_initiate</name></member>
+      <member refid="struct__LinphoneVideoPolicy_1ac7d12dd1fc0d851953e8047961155086" prot="public" virt="non-virtual"><scope>_LinphoneVideoPolicy</scope><name>unused</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

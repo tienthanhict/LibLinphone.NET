@@ -1,0 +1,728 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="event_8h" kind="file" language="C++">
+    <compoundname>event.h</compoundname>
+    <includes refid="types_8h" local="yes">linphone/types.h</includes>
+    <includedby refid="core_8h" local="yes">core.h</includedby>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__event__api_1gac0eaf12321c840596d41221f0e849b22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_event_send_subscribe</definition>
+        <argsstring>(LinphoneEvent *ev, const LinphoneContent *body)</argsstring>
+        <name>linphone_event_send_subscribe</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>ev</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+<para>Send a subscription previously created by <ref refid="group__event__api_1ga6a423ceb44b66ee9eb31aca7e94f1cbc" kindref="member">linphone_core_create_subscribe()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneEvent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>optional content to attach with the subscription. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful, -1 otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gae987b5e625a2b3ab65c8c921e7cf1d73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_event_update_subscribe</definition>
+        <argsstring>(LinphoneEvent *lev, const LinphoneContent *body)</argsstring>
+        <name>linphone_event_update_subscribe</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+<para>Update (refresh) an outgoing subscription, changing the body. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a LinphoneEvent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an optional body to include in the subscription update, may be NULL. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga0f8f88291a19386ae3de4a16f5dcae1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_event_refresh_subscribe</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_refresh_subscribe</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+<para>Refresh an outgoing subscription keeping the same body. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneEvent object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful, -1 otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga744252e83308a7f50dab9f6ad5c7fe08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_event_accept_subscription</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_accept_subscription</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+<para>Accept an incoming subcription. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gae88ad09a189b43c6253241c288567808" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_event_deny_subscription</definition>
+        <argsstring>(LinphoneEvent *lev, LinphoneReason reason)</argsstring>
+        <name>linphone_event_deny_subscription</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1ga718bb4a932186c1101a78ddce8083243" kindref="member">LinphoneReason</ref></type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+<para>Deny an incoming subscription with given reason. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga8ef76a30f239f2f7fa0704dfdb4547df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_event_notify</definition>
+        <argsstring>(LinphoneEvent *lev, const LinphoneContent *body)</argsstring>
+        <name>linphone_event_notify</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+<para>Send a notification. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> corresponding to an incoming subscription previously received and accepted. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>an optional body containing the actual notification data. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful, -1 otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga36df6a42cb16c28dc44518b0770a5d74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_event_send_publish</definition>
+        <argsstring>(LinphoneEvent *lev, const LinphoneContent *body)</argsstring>
+        <name>linphone_event_send_publish</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+<para>Send a publish created by <ref refid="group__event__api_1ga61c9286b3c0ef0407140e9978c12e55a" kindref="member">linphone_core_create_publish()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new data to be published </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gaf6fc3b6e568498bfb72e24c624bcb32f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_event_update_publish</definition>
+        <argsstring>(LinphoneEvent *lev, const LinphoneContent *body)</argsstring>
+        <name>linphone_event_update_publish</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+<para>Update (refresh) a publish. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new data to be published </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga71b39f8f396dfde1af6202bafa1fde23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_event_refresh_publish</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_refresh_publish</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+<para>Refresh an outgoing publish keeping the same body. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneEvent object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if successful, -1 otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gaab5de6f8d2f8651d485524d41ab857cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_event_pause_publish</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_pause_publish</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+<para>Prevent an event from refreshing its publish. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is useful to let registrations to expire naturally (or) when the application wants to keep control on when refreshes are sent. The refreshing operations can be resumed with <ref refid="group__proxies_1ga94411d7a66d26b421358fc4ab73a844d" kindref="member">linphone_proxy_config_refresh_register()</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga035455d1b9ca83d1415bba989bd93395" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga718bb4a932186c1101a78ddce8083243" kindref="member">LinphoneReason</ref></type>
+        <definition>LinphoneReason linphone_event_get_reason</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_reason</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+<para>Return reason code (in case of error state reached). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga76be1dba05ea6ddce71d38f621ddcfde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+        <definition>const LinphoneErrorInfo* linphone_event_get_error_info</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_error_info</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+<para>Get full details about an error occured. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gabc1e22da12a3a4ca0a76da3dbff38516" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1gaf1fc5608d1a967b13a28e2b012ceb948" kindref="member">LinphoneSubscriptionState</ref></type>
+        <definition>LinphoneSubscriptionState linphone_event_get_subscription_state</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_subscription_state</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+<para>Get subscription state. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the event object was not created by a subscription mechanism, <ref refid="group__event__api_1gga3f3f0721b654f5d9bf69451894c15fd2aeca0ec22ff12067bd9678faafb78d2c5" kindref="member">LinphoneSubscriptionNone</ref> is returned. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gaf3d059c3da69dd0f12ff65f0ecdaaf9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1ga87334f4b5de3956d0480bcdc4b6b73f1" kindref="member">LinphonePublishState</ref></type>
+        <definition>LinphonePublishState linphone_event_get_publish_state</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_publish_state</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+<para>Get publish state. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the event object was not created by a publish mechanism, <ref refid="group__event__api_1ggaaffffb466f4d5c5141f5a938760e3ce4a5db681b47c687d2e16fa96dab5589752" kindref="member">LinphonePublishNone</ref> is returned. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga51e9694c8b2121a3d71d11632c7e1155" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1gaa99839111e4d7ce2671b65c6072e8dcc" kindref="member">LinphoneSubscriptionDir</ref></type>
+        <definition>LinphoneSubscriptionDir linphone_event_get_subscription_dir</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_subscription_dir</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+<para>Get subscription direction. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the object wasn&apos;t created by a subscription mechanism, <ref refid="group__event__api_1gga952ed6766d10e5c40eb1c08027fd299eaf11428c5f350033b0771dfed91c65ec8" kindref="member">LinphoneSubscriptionInvalidDir</ref> is returned. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga9e22cf3e08ba7801189ef20e58f9afad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_event_set_user_data</definition>
+        <argsstring>(LinphoneEvent *ev, void *up)</argsstring>
+        <name>linphone_event_set_user_data</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>ev</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>up</declname>
+        </param>
+        <briefdescription>
+<para>Set a user (application) pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gac4b132995fed3dc6ba4e13c1ade928d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_event_get_user_data</definition>
+        <argsstring>(const LinphoneEvent *ev)</argsstring>
+        <name>linphone_event_get_user_data</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>ev</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve user pointer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga1a2b7563784e003df5a64e3355b44297" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_event_add_custom_header</definition>
+        <argsstring>(LinphoneEvent *ev, const char *name, const char *value)</argsstring>
+        <name>linphone_event_add_custom_header</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>ev</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Add a custom header to an outgoing susbscription or publish. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneEvent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>header&apos;s name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the header&apos;s value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga0f8793f2c6970ec61591270204eaa079" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_event_get_custom_header</definition>
+        <argsstring>(LinphoneEvent *ev, const char *name)</argsstring>
+        <name>linphone_event_get_custom_header</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>ev</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Obtain the value of a given header for an incoming subscription. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneEvent </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>header&apos;s name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the header&apos;s value or NULL if such header doesn&apos;t exist. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gaef98f2e70b0a62e46bb1e836b61a8491" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_event_terminate</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_terminate</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+<para>Terminate an incoming or outgoing subscription that was previously acccepted, or a previous publication. </para>        </briefdescription>
+        <detaileddescription>
+<para>The LinphoneEvent shall not be used anymore after this operation, unless the application explicitely took a reference on the object with <ref refid="group__event__api_1ga342d31977e58b466cf22dfc40ac9edd0" kindref="member">linphone_event_ref()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga342d31977e58b466cf22dfc40ac9edd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+        <definition>LinphoneEvent* linphone_event_ref</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_ref</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+<para>Increase reference count of LinphoneEvent. </para>        </briefdescription>
+        <detaileddescription>
+<para>By default LinphoneEvents created by the core are owned by the core only. An application that wishes to retain a reference to it must call <ref refid="group__event__api_1ga342d31977e58b466cf22dfc40ac9edd0" kindref="member">linphone_event_ref()</ref>. When this reference is no longer needed, <ref refid="group__event__api_1ga6bc3c78014b8bece4512fecc2b94cd85" kindref="member">linphone_event_unref()</ref> must be called. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga6bc3c78014b8bece4512fecc2b94cd85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_event_unref</definition>
+        <argsstring>(LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_unref</name>
+        <param>
+          <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+<para>Decrease reference count. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="see"><para><ref refid="group__event__api_1ga342d31977e58b466cf22dfc40ac9edd0" kindref="member">linphone_event_ref()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1ga7224702b342fef301e15b12aee0aaffe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_event_get_name</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_name</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+<para>Get the name of the event as specified in the event package RFC. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gae0d6c66d272f7bfe8f0b3902b6509395" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+        <definition>const LinphoneAddress* linphone_event_get_from</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_from</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+<para>Get the &quot;from&quot; address of the subscription. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gac45355bd19fd7205deb4f1fcc722410c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+        <definition>const LinphoneAddress* linphone_event_get_resource</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_resource</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+<para>Get the resource address of the subscription or publish. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="192" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__event__api_1gab2bebd450e088b98b817abeb389e7621" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+        <definition>LinphoneCore* linphone_event_get_core</definition>
+        <argsstring>(const LinphoneEvent *lev)</argsstring>
+        <name>linphone_event_get_core</name>
+        <param>
+          <type>const <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+          <declname>lev</declname>
+        </param>
+        <briefdescription>
+<para>Returns back pointer to the LinphoneCore that created this LinphoneEvent. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h" line="197" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">linphone</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2000<sp/>-<sp/>2010<sp/>Simon<sp/>MORLAT<sp/>(simon.morlat@linphone.org)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_EVENT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_EVENT_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphone/types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__event__api_1gac0eaf12321c840596d41221f0e849b22" kindref="member">linphone_event_send_subscribe</ref>(<ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*ev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref><sp/>*body);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__event__api_1gae987b5e625a2b3ab65c8c921e7cf1d73" kindref="member">linphone_event_update_subscribe</ref>(<ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref><sp/>*body);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__event__api_1ga0f8f88291a19386ae3de4a16f5dcae1e" kindref="member">linphone_event_refresh_subscribe</ref>(<ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__event__api_1ga744252e83308a7f50dab9f6ad5c7fe08" kindref="member">linphone_event_accept_subscription</ref>(<ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__event__api_1gae88ad09a189b43c6253241c288567808" kindref="member">linphone_event_deny_subscription</ref>(<ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev,<sp/><ref refid="group__misc_1ga718bb4a932186c1101a78ddce8083243" kindref="member">LinphoneReason</ref><sp/>reason);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__event__api_1ga8ef76a30f239f2f7fa0704dfdb4547df" kindref="member">linphone_event_notify</ref>(<ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref><sp/>*body);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__event__api_1ga36df6a42cb16c28dc44518b0770a5d74" kindref="member">linphone_event_send_publish</ref>(<ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref><sp/>*body);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__event__api_1gaf6fc3b6e568498bfb72e24c624bcb32f" kindref="member">linphone_event_update_publish</ref>(<ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref><sp/>*body);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__event__api_1ga71b39f8f396dfde1af6202bafa1fde23" kindref="member">linphone_event_refresh_publish</ref>(<ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gaab5de6f8d2f8651d485524d41ab857cc" kindref="member">linphone_event_pause_publish</ref>(<ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga718bb4a932186c1101a78ddce8083243" kindref="member">LinphoneReason</ref><sp/><ref refid="group__event__api_1ga035455d1b9ca83d1415bba989bd93395" kindref="member">linphone_event_get_reason</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*<ref refid="group__event__api_1ga76be1dba05ea6ddce71d38f621ddcfde" kindref="member">linphone_event_get_error_info</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__event__api_1gaf1fc5608d1a967b13a28e2b012ceb948" kindref="member">LinphoneSubscriptionState</ref><sp/><ref refid="group__event__api_1gabc1e22da12a3a4ca0a76da3dbff38516" kindref="member">linphone_event_get_subscription_state</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__event__api_1ga87334f4b5de3956d0480bcdc4b6b73f1" kindref="member">LinphonePublishState</ref><sp/><ref refid="group__event__api_1gaf3d059c3da69dd0f12ff65f0ecdaaf9d" kindref="member">linphone_event_get_publish_state</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__event__api_1gaa99839111e4d7ce2671b65c6072e8dcc" kindref="member">LinphoneSubscriptionDir</ref><sp/><ref refid="group__event__api_1ga51e9694c8b2121a3d71d11632c7e1155" kindref="member">linphone_event_get_subscription_dir</ref>(<ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga9e22cf3e08ba7801189ef20e58f9afad" kindref="member">linphone_event_set_user_data</ref>(<ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*ev,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*up);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group__event__api_1gac4b132995fed3dc6ba4e13c1ade928d1" kindref="member">linphone_event_get_user_data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*ev);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga1a2b7563784e003df5a64e3355b44297" kindref="member">linphone_event_add_custom_header</ref>(<ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*ev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__event__api_1ga0f8793f2c6970ec61591270204eaa079" kindref="member">linphone_event_get_custom_header</ref>(<ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*ev,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1gaef98f2e70b0a62e46bb1e836b61a8491" kindref="member">linphone_event_terminate</ref>(<ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*<ref refid="group__event__api_1ga342d31977e58b466cf22dfc40ac9edd0" kindref="member">linphone_event_ref</ref>(<ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga6bc3c78014b8bece4512fecc2b94cd85" kindref="member">linphone_event_unref</ref>(<ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__event__api_1ga7224702b342fef301e15b12aee0aaffe" kindref="member">linphone_event_get_name</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*<ref refid="group__event__api_1gae0d6c66d272f7bfe8f0b3902b6509395" kindref="member">linphone_event_get_from</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*<ref refid="group__event__api_1gac45355bd19fd7205deb4f1fcc722410c" kindref="member">linphone_event_get_resource</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref><sp/>*<ref refid="group__event__api_1gab2bebd450e088b98b817abeb389e7621" kindref="member">linphone_event_get_core</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref><sp/>*lev);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LINPHONE_EVENT_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/event.h"/>
+  </compounddef>
+</doxygen>

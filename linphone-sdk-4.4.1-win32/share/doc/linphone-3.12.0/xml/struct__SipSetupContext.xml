@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct__SipSetupContext" kind="struct" language="C++" prot="public">
+    <compoundname>_SipSetupContext</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__SipSetupContext_1a721b00363ecb4b89127b6c12ab0791c9" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct__SipSetup" kindref="compound">_SipSetup</ref> *</type>
+        <definition>struct _SipSetup* _SipSetupContext::funcs</definition>
+        <argsstring></argsstring>
+        <name>funcs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/sipsetup.h" line="34" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/sipsetup.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetupContext_1a93647cbb930df8f689e7390daf55b55f" prot="public" static="no" mutable="no">
+        <type>struct _LinphoneProxyConfig *</type>
+        <definition>struct _LinphoneProxyConfig* _SipSetupContext::cfg</definition>
+        <argsstring></argsstring>
+        <name>cfg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/sipsetup.h" line="35" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/sipsetup.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetupContext_1adb61d871291c1a355fe2db3ef9544e75" prot="public" static="no" mutable="no">
+        <type>struct _LinphoneXmlRpcSession *</type>
+        <definition>struct _LinphoneXmlRpcSession* _SipSetupContext::xmlrpc_session</definition>
+        <argsstring></argsstring>
+        <name>xmlrpc_session</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/sipsetup.h" line="36" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/sipsetup.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetupContext_1aa2643597298000f06316327f0a35d1a1" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _SipSetupContext::domain[128]</definition>
+        <argsstring>[128]</argsstring>
+        <name>domain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/sipsetup.h" line="37" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/sipsetup.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetupContext_1a75008504bd8f29d9acf9dd1b92b13e4e" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _SipSetupContext::username[128]</definition>
+        <argsstring>[128]</argsstring>
+        <name>username</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/sipsetup.h" line="38" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/sipsetup.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__SipSetupContext_1abdfa79f267531f3f0d63f08e634f3ecc" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _SipSetupContext::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/sipsetup.h" line="39" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/sipsetup.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="26">
+        <label>_SipSetup</label>
+        <link refid="struct__SipSetup"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>buddy_lookup_funcs</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>_BuddyLookupFuncs</label>
+        <link refid="struct__BuddyLookupFuncs"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>request_create</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>_SipSetupContext</label>
+        <link refid="struct__SipSetupContext"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>funcs</edgelabel>
+        </childnode>
+      </node>
+      <node id="28">
+        <label>_BuddyLookupRequest</label>
+        <link refid="struct__BuddyLookupRequest"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/sipsetup.h" line="33" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/sipsetup.h" bodystart="33" bodyend="40"/>
+    <listofallmembers>
+      <member refid="struct__SipSetupContext_1a93647cbb930df8f689e7390daf55b55f" prot="public" virt="non-virtual"><scope>_SipSetupContext</scope><name>cfg</name></member>
+      <member refid="struct__SipSetupContext_1abdfa79f267531f3f0d63f08e634f3ecc" prot="public" virt="non-virtual"><scope>_SipSetupContext</scope><name>data</name></member>
+      <member refid="struct__SipSetupContext_1aa2643597298000f06316327f0a35d1a1" prot="public" virt="non-virtual"><scope>_SipSetupContext</scope><name>domain</name></member>
+      <member refid="struct__SipSetupContext_1a721b00363ecb4b89127b6c12ab0791c9" prot="public" virt="non-virtual"><scope>_SipSetupContext</scope><name>funcs</name></member>
+      <member refid="struct__SipSetupContext_1a75008504bd8f29d9acf9dd1b92b13e4e" prot="public" virt="non-virtual"><scope>_SipSetupContext</scope><name>username</name></member>
+      <member refid="struct__SipSetupContext_1adb61d871291c1a355fe2db3ef9544e75" prot="public" virt="non-virtual"><scope>_SipSetupContext</scope><name>xmlrpc_session</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1148,7 +1148,10 @@ namespace Linphone
 				void set(System::String^ value);
 			}
 
-
+            /// <summary>
+            /// Get inner core pointer
+            /// </summary>
+            ::LinphoneCore* GetCorePtr();
 
         private:
             ~LinphoneCore();

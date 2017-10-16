@@ -1,0 +1,986 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="address_8h" kind="file" language="C++">
+    <compoundname>address.h</compoundname>
+    <includes refid="types_8h" local="yes">linphone/types.h</includes>
+    <includedby refid="core_8h" local="yes">core.h</includedby>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__linphone__address_1ga301c9884c0bc8b1050fe790d424e0b49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+        <definition>LinphoneAddress* linphone_address_new</definition>
+        <argsstring>(const char *addr)</argsstring>
+        <name>linphone_address_new</name>
+        <param>
+          <type>const char *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+<para>Constructs a LinphoneAddress object by parsing the user supplied address, given as a string. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga7b33626eea53bbd5cea9e5c4c58826df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+        <definition>LinphoneAddress* linphone_address_clone</definition>
+        <argsstring>(const LinphoneAddress *addr)</argsstring>
+        <name>linphone_address_clone</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+<para>Clones a LinphoneAddress object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga5441e1566c08892abf8ca1f1d7cfbe6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+        <definition>LinphoneAddress* linphone_address_ref</definition>
+        <argsstring>(LinphoneAddress *addr)</argsstring>
+        <name>linphone_address_ref</name>
+        <param>
+          <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+<para>Increment reference count of LinphoneAddress object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1gae7ed90ea85c09c793e994367e6a5422e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_address_unref</definition>
+        <argsstring>(LinphoneAddress *addr)</argsstring>
+        <name>linphone_address_unref</name>
+        <param>
+          <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+<para>Decrement reference count of LinphoneAddress object. </para>        </briefdescription>
+        <detaileddescription>
+<para>When dropped to zero, memory is freed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga3a1cb31f2ccf9ed1cc26ed109186cd00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_address_get_scheme</definition>
+        <argsstring>(const LinphoneAddress *u)</argsstring>
+        <name>linphone_address_get_scheme</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+<para>Returns the address scheme, normally &quot;sip&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga7833893b452f330019557432dfe0cd56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_address_get_display_name</definition>
+        <argsstring>(const LinphoneAddress *u)</argsstring>
+        <name>linphone_address_get_display_name</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+<para>Returns the display name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga4fa5a4927c1d2f3a6b7c6824e35a87bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_address_get_username</definition>
+        <argsstring>(const LinphoneAddress *u)</argsstring>
+        <name>linphone_address_get_username</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+<para>Returns the username. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga95a356f26c67ed4ee88db878b617c65f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_address_get_domain</definition>
+        <argsstring>(const LinphoneAddress *u)</argsstring>
+        <name>linphone_address_get_domain</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+<para>Returns the domain name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga7d8ca0ecea4ad6f93914ed8491186e14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_address_get_port</definition>
+        <argsstring>(const LinphoneAddress *u)</argsstring>
+        <name>linphone_address_get_port</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+<para>Get port number as an integer value, 0 if not present. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga1bae4dee3ad292b32ca1cf51261ae6f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_address_set_display_name</definition>
+        <argsstring>(LinphoneAddress *u, const char *display_name)</argsstring>
+        <name>linphone_address_set_display_name</name>
+        <param>
+          <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>display_name</declname>
+        </param>
+        <briefdescription>
+<para>Sets the display name. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga02f6a4e4077d36c5075e9ada7f088fef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_address_set_username</definition>
+        <argsstring>(LinphoneAddress *uri, const char *username)</argsstring>
+        <name>linphone_address_set_username</name>
+        <param>
+          <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <briefdescription>
+<para>Sets the username. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga85eff55a0183cec4638e4795ab78d53c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_address_set_domain</definition>
+        <argsstring>(LinphoneAddress *uri, const char *host)</argsstring>
+        <name>linphone_address_set_domain</name>
+        <param>
+          <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Sets the domain. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga9ac6662df9f0701305863ed26cb8f0df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_address_set_port</definition>
+        <argsstring>(LinphoneAddress *uri, int port)</argsstring>
+        <name>linphone_address_set_port</name>
+        <param>
+          <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Sets the port number. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga06b9a92a2cba3b9619561798701df25c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_address_set_transport</definition>
+        <argsstring>(LinphoneAddress *uri, LinphoneTransportType type)</argsstring>
+        <name>linphone_address_set_transport</name>
+        <param>
+          <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>uri</declname>
+        </param>
+        <param>
+          <type><ref refid="group__linphone__address_1gaf06a9ea772e47d0d4af5fb2f44ad4069" kindref="member">LinphoneTransportType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Set a transport. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1gacd575aa16b3458037ff71794812048d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_address_clean</definition>
+        <argsstring>(LinphoneAddress *uri)</argsstring>
+        <name>linphone_address_clean</name>
+        <param>
+          <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>uri</declname>
+        </param>
+        <briefdescription>
+<para>Removes address&apos;s tags and uri headers so that it is displayable to the user. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga189b77988b005bc3129a1876e8118243" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED bool_t</type>
+        <definition>LINPHONE_DEPRECATED bool_t linphone_address_is_secure</definition>
+        <argsstring>(const LinphoneAddress *addr)</argsstring>
+        <name>linphone_address_is_secure</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+<para>Returns true if address refers to a secure location (sips) </para>        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000001"><xreftitle>Deprecated</xreftitle><xrefdescription><para>use <ref refid="group__linphone__address_1gaffb7d8b1845fb410135a2ef17941a224" kindref="member">linphone_address_get_secure()</ref>  <donotwrap />  </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1gaffb7d8b1845fb410135a2ef17941a224" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_address_get_secure</definition>
+        <argsstring>(const LinphoneAddress *addr)</argsstring>
+        <name>linphone_address_get_secure</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+<para>Returns true if address refers to a secure location (sips) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1gad24d2d2fd54fb8d8b9aee3331e8f310e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_address_set_secure</definition>
+        <argsstring>(LinphoneAddress *addr, bool_t enabled)</argsstring>
+        <name>linphone_address_set_secure</name>
+        <param>
+          <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+<para>Make the address refer to a secure location (sips scheme) </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TRUE if address is requested to be secure. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1gaee86eae58b5979ad3436676f6c9cd3f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_address_is_sip</definition>
+        <argsstring>(const LinphoneAddress *uri)</argsstring>
+        <name>linphone_address_is_sip</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>uri</declname>
+        </param>
+        <briefdescription>
+<para>returns true if address is a routable sip address </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1gaf8db44753b2f5c393cfb878fc6f449f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__linphone__address_1gaf06a9ea772e47d0d4af5fb2f44ad4069" kindref="member">LinphoneTransportType</ref></type>
+        <definition>LinphoneTransportType linphone_address_get_transport</definition>
+        <argsstring>(const LinphoneAddress *uri)</argsstring>
+        <name>linphone_address_get_transport</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>uri</declname>
+        </param>
+        <briefdescription>
+<para>Get the transport. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga1d2fa50bb9d1d2eeb6bdf551c510c89a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_address_get_method_param</definition>
+        <argsstring>(const LinphoneAddress *addr)</argsstring>
+        <name>linphone_address_get_method_param</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+<para>Get the value of the method parameter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga4a12929719bd9a1e2c9ba49f5a522ab3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_address_set_method_param</definition>
+        <argsstring>(LinphoneAddress *addr, const char *method)</argsstring>
+        <name>linphone_address_set_method_param</name>
+        <param>
+          <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>method</declname>
+        </param>
+        <briefdescription>
+<para>Set the value of the method parameter. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga24c1a16f49f8b72f2bab65cc5d8a51af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* linphone_address_as_string</definition>
+        <argsstring>(const LinphoneAddress *u)</argsstring>
+        <name>linphone_address_as_string</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+<para>Returns the address as a string. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned char * must be freed by the application. Use ms_free(). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="153" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1gae14a9f3157cc4421e5e5195c9ece2038" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* linphone_address_as_string_uri_only</definition>
+        <argsstring>(const LinphoneAddress *u)</argsstring>
+        <name>linphone_address_as_string_uri_only</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+<para>Returns the SIP uri only as a string, that is display name is removed. </para>        </briefdescription>
+        <detaileddescription>
+<para>The returned char * must be freed by the application. Use ms_free(). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="159" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1gaa1a43038b407c6ba04577fbc62f598d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_address_weak_equal</definition>
+        <argsstring>(const LinphoneAddress *a1, const LinphoneAddress *a2)</argsstring>
+        <name>linphone_address_weak_equal</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>a2</declname>
+        </param>
+        <briefdescription>
+<para>Compare two LinphoneAddress ignoring tags and headers, basically just domain, username, and port. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">a1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAddress object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">a2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAddress object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean value telling if the LinphoneAddress objects are equal. </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__linphone__address_1gac062ea402053c4d0d266ddae2276df76" kindref="member">linphone_address_equal()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1gac062ea402053c4d0d266ddae2276df76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_address_equal</definition>
+        <argsstring>(const LinphoneAddress *a1, const LinphoneAddress *a2)</argsstring>
+        <name>linphone_address_equal</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>a1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>a2</declname>
+        </param>
+        <briefdescription>
+<para>Compare two LinphoneAddress taking the tags and headers into account. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">a1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAddress object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">a2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAddress object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Boolean value telling if the LinphoneAddress objects are equal. </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__linphone__address_1gaa1a43038b407c6ba04577fbc62f598d0" kindref="member">linphone_address_weak_equal()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1gae934671ec83af2ad70dd99f97181f92d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_address_set_password</definition>
+        <argsstring>(LinphoneAddress *addr, const char *passwd)</argsstring>
+        <name>linphone_address_set_password</name>
+        <param>
+          <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>passwd</declname>
+        </param>
+        <briefdescription>
+<para>Set the password encoded in the address. </para>        </briefdescription>
+        <detaileddescription>
+<para>It is used for basic authentication (not recommended). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneAddress </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>passwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the password to set. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="185" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1gac9fe7ee6852aae29fbc5ccdd184699f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_address_get_password</definition>
+        <argsstring>(const LinphoneAddress *addr)</argsstring>
+        <name>linphone_address_get_password</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+<para>Get the password encoded in the address. </para>        </briefdescription>
+        <detaileddescription>
+<para>It is used for basic authentication (not recommended). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the password, if any, NULL otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1gac64843560e3019f2ef066c161f0ad006" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_address_set_header</definition>
+        <argsstring>(LinphoneAddress *addr, const char *header_name, const char *header_value)</argsstring>
+        <name>linphone_address_set_header</name>
+        <param>
+          <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>header_name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>header_value</declname>
+        </param>
+        <briefdescription>
+<para>Set a header into the address. </para>        </briefdescription>
+        <detaileddescription>
+<para>Headers appear in the URI with &apos;?&apos;, such as &lt;sip:<ulink url="mailto:test@linphone.org">test@linphone.org</ulink>?SomeHeader=SomeValue&gt;. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>header_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the header name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>header_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the header value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="202" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga3871f2a8173b16f71dad5164c86bb5e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_address_get_header</definition>
+        <argsstring>(const LinphoneAddress *addr, const char *name)</argsstring>
+        <name>linphone_address_get_header</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Get the header encoded in the address. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the address </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="208" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1gae16e2d278619d452fe83fd3a0c0ec476" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_address_has_param</definition>
+        <argsstring>(const LinphoneAddress *addr, const char *name)</argsstring>
+        <name>linphone_address_has_param</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="210" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1gaeeda808825eecd0b56f3a940f5eb1d65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_address_get_param</definition>
+        <argsstring>(const LinphoneAddress *addr, const char *name)</argsstring>
+        <name>linphone_address_get_param</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="212" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga5d552b2bc2ec5fbf7368b4a9bf20d36e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_address_set_param</definition>
+        <argsstring>(LinphoneAddress *addr, const char *name, const char *value)</argsstring>
+        <name>linphone_address_set_param</name>
+        <param>
+          <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="214" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga04e7c82eec9fcecbaa16269762adff90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_address_set_params</definition>
+        <argsstring>(LinphoneAddress *addr, const char *params)</argsstring>
+        <name>linphone_address_set_params</name>
+        <param>
+          <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="216" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga943a30fb15f86e73111a993481df9922" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_address_set_uri_param</definition>
+        <argsstring>(LinphoneAddress *addr, const char *name, const char *value)</argsstring>
+        <name>linphone_address_set_uri_param</name>
+        <param>
+          <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="218" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga70a9bb5297760191d8d3cf0c2568e949" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_address_set_uri_params</definition>
+        <argsstring>(LinphoneAddress *addr, const char *params)</argsstring>
+        <name>linphone_address_set_uri_params</name>
+        <param>
+          <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="220" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1gaadef48b6d3ae9df24a631a4acaea92b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_address_has_uri_param</definition>
+        <argsstring>(const LinphoneAddress *addr, const char *name)</argsstring>
+        <name>linphone_address_has_uri_param</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="222" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga56863ca6748c685632df6678c5b4e6a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_address_get_uri_param</definition>
+        <argsstring>(const LinphoneAddress *addr, const char *name)</argsstring>
+        <name>linphone_address_get_uri_param</name>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="224" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__linphone__address_1ga46c6661354ae03a8f8d23d5be95f4991" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED void</type>
+        <definition>LINPHONE_DEPRECATED void linphone_address_destroy</definition>
+        <argsstring>(LinphoneAddress *u)</argsstring>
+        <name>linphone_address_destroy</name>
+        <param>
+          <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>u</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a LinphoneAddress object (actually calls <ref refid="group__linphone__address_1gae7ed90ea85c09c793e994367e6a5422e" kindref="member">linphone_address_unref()</ref>). </para>        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000002"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__linphone__address_1gae7ed90ea85c09c793e994367e6a5422e" kindref="member">linphone_address_unref()</ref> instead  <donotwrap />  </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h" line="231" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">address.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2010-2016<sp/>Belledonne<sp/>Communications<sp/>SARL</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_ADDRESS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_ADDRESS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphone/types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*<sp/><ref refid="group__linphone__address_1ga301c9884c0bc8b1050fe790d424e0b49" kindref="member">linphone_address_new</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*addr);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*<sp/><ref refid="group__linphone__address_1ga7b33626eea53bbd5cea9e5c4c58826df" kindref="member">linphone_address_clone</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*addr);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*<sp/><ref refid="group__linphone__address_1ga5441e1566c08892abf8ca1f1d7cfbe6d" kindref="member">linphone_address_ref</ref>(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*addr);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1gae7ed90ea85c09c793e994367e6a5422e" kindref="member">linphone_address_unref</ref>(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*addr);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__linphone__address_1ga3a1cb31f2ccf9ed1cc26ed109186cd00" kindref="member">linphone_address_get_scheme</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*u);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__linphone__address_1ga7833893b452f330019557432dfe0cd56" kindref="member">linphone_address_get_display_name</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref>*<sp/>u);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__linphone__address_1ga4fa5a4927c1d2f3a6b7c6824e35a87bf" kindref="member">linphone_address_get_username</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*u);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__linphone__address_1ga95a356f26c67ed4ee88db878b617c65f" kindref="member">linphone_address_get_domain</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*u);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga7d8ca0ecea4ad6f93914ed8491186e14" kindref="member">linphone_address_get_port</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*u);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__linphone__address_1ga1bae4dee3ad292b32ca1cf51261ae6f8" kindref="member">linphone_address_set_display_name</ref>(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*u,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*display_name);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__linphone__address_1ga02f6a4e4077d36c5075e9ada7f088fef" kindref="member">linphone_address_set_username</ref>(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*uri,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*username);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__linphone__address_1ga85eff55a0183cec4638e4795ab78d53c" kindref="member">linphone_address_set_domain</ref>(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*uri,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*host);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__linphone__address_1ga9ac6662df9f0701305863ed26cb8f0df" kindref="member">linphone_address_set_port</ref>(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*uri,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>port);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__linphone__address_1ga06b9a92a2cba3b9619561798701df25c" kindref="member">linphone_address_set_transport</ref>(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*uri,<ref refid="group__linphone__address_1gaf06a9ea772e47d0d4af5fb2f44ad4069" kindref="member">LinphoneTransportType</ref><sp/>type);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1gacd575aa16b3458037ff71794812048d3" kindref="member">linphone_address_clean</ref>(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*uri);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">LINPHONE_DEPRECATED<sp/>LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__linphone__address_1ga189b77988b005bc3129a1876e8118243" kindref="member">linphone_address_is_secure</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*addr);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__linphone__address_1gaffb7d8b1845fb410135a2ef17941a224" kindref="member">linphone_address_get_secure</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*addr);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1gad24d2d2fd54fb8d8b9aee3331e8f310e" kindref="member">linphone_address_set_secure</ref>(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*addr,<sp/>bool_t<sp/>enabled);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__linphone__address_1gaee86eae58b5979ad3436676f6c9cd3f5" kindref="member">linphone_address_is_sip</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*uri);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__linphone__address_1gaf06a9ea772e47d0d4af5fb2f44ad4069" kindref="member">LinphoneTransportType</ref><sp/><ref refid="group__linphone__address_1gaf8db44753b2f5c393cfb878fc6f449f8" kindref="member">linphone_address_get_transport</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*uri);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__linphone__address_1ga1d2fa50bb9d1d2eeb6bdf551c510c89a" kindref="member">linphone_address_get_method_param</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*addr);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga4a12929719bd9a1e2c9ba49f5a522ab3" kindref="member">linphone_address_set_method_param</ref>(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*addr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*method);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__linphone__address_1ga24c1a16f49f8b72f2bab65cc5d8a51af" kindref="member">linphone_address_as_string</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*u);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__linphone__address_1gae14a9f3157cc4421e5e5195c9ece2038" kindref="member">linphone_address_as_string_uri_only</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*u);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__linphone__address_1gaa1a43038b407c6ba04577fbc62f598d0" kindref="member">linphone_address_weak_equal</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*a1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*a2);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__linphone__address_1gac062ea402053c4d0d266ddae2276df76" kindref="member">linphone_address_equal</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*a1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*a2);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1gae934671ec83af2ad70dd99f97181f92d" kindref="member">linphone_address_set_password</ref>(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*addr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*passwd);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__linphone__address_1gac9fe7ee6852aae29fbc5ccdd184699f8" kindref="member">linphone_address_get_password</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*addr);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1gac64843560e3019f2ef066c161f0ad006" kindref="member">linphone_address_set_header</ref>(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*addr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*header_name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*header_value);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__linphone__address_1ga3871f2a8173b16f71dad5164c86bb5e7" kindref="member">linphone_address_get_header</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*addr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/>linphone_address_has_param(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*addr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>linphone_address_get_param(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*addr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_address_set_param(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*addr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_address_set_params(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*addr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*params);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_address_set_uri_param(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*addr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_address_set_uri_params(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*addr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*params);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/>linphone_address_has_uri_param(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*addr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>linphone_address_get_uri_param(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*addr,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal">LINPHONE_DEPRECATED<sp/>LINPHONE_PUBLIC<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga46c6661354ae03a8f8d23d5be95f4991" kindref="member">linphone_address_destroy</ref>(<ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*u);</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LINPHONE_ADDRESS_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/address.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="wrapper__utils_8h" kind="file" language="C++">
+    <compoundname>wrapper_utils.h</compoundname>
+    <includes refid="types_8h" local="yes">linphone/types.h</includes>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wrapper_1ga9b3ee67aa5e93066fe5794d93ebe9c79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_chat_room_send_chat_message_2</definition>
+        <argsstring>(LinphoneChatRoom *cr, LinphoneChatMessage *msg)</argsstring>
+        <name>linphone_chat_room_send_chat_message_2</name>
+        <param>
+          <type><ref refid="group__chatroom_1ga37902f3fc715b7f6451c241d0efd0299" kindref="member">LinphoneChatRoom</ref> *</type>
+          <declname>cr</declname>
+        </param>
+        <param>
+          <type><ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Send a message to peer member of this chat room. </para>        </briefdescription>
+        <detaileddescription>
+<para>The state of the sending message will be notified via the callbacks defined in the <ref refid="group__chatroom_1gaa1a715195601cd8885ca3a45bb3a1e6a" kindref="member">LinphoneChatMessageCbs</ref> object that can be obtained by calling <ref refid="group__chatroom_1ga2ec794964eed8849b421f315429c16ed" kindref="member">linphone_chat_message_get_callbacks()</ref>. <simplesect kind="note"><para>Unlike <ref refid="group__chatroom_1ga4f6a53c5c3c0ec9afe7ade876d2da102" kindref="member">linphone_chat_room_send_chat_message()</ref>, that function only takes a reference on the <ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> instead of totaly takes ownership on it. Thus, the <ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> object must be released by the API user after calling that function.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A chat room. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message to send. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/wrapper_utils.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wrapper_1ga4a51af228fd7f8f2ea417a6f0f470ea0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_chat_message_resend_2</definition>
+        <argsstring>(LinphoneChatMessage *msg)</argsstring>
+        <name>linphone_chat_message_resend_2</name>
+        <param>
+          <type><ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Resend a chat message if it is in the &apos;not delivered&apos; state for whatever reason. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Unlike <ref refid="group__chatroom_1ga65436ae23d8f3360494eb77dd9a83fb4" kindref="member">linphone_chat_message_resend()</ref>, that function only takes a reference on the <ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> instead of totaly takes ownership on it. Thus, the <ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> object must be released by the API user after calling that function.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneChatMessage object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/wrapper_utils.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wrapper_1ga33e3e028e1551a47a6d7af26ce864f5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_vcard_get_belcard</definition>
+        <argsstring>(LinphoneVcard *vcard)</argsstring>
+        <name>linphone_vcard_get_belcard</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vcard</declname>
+        </param>
+        <briefdescription>
+<para>Accessor for the shared_ptr&lt;BelCard&gt; stored by a <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/wrapper_utils.h" line="66" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">wrapper_utils.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2017<sp/>Belledonne<sp/>Communications<sp/>SARL</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>That<sp/>file<sp/>declares<sp/>functions<sp/>that<sp/>are<sp/>used<sp/>by<sp/>automatic<sp/>API<sp/>wrapper<sp/>generators.<sp/>These</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>should<sp/>not<sp/>be<sp/>used<sp/>by<sp/>C<sp/>API<sp/>users.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_WRAPPER_UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_WRAPPER_UTILS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphone/types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wrapper_1ga9b3ee67aa5e93066fe5794d93ebe9c79" kindref="member">linphone_chat_room_send_chat_message_2</ref>(<ref refid="group__chatroom_1ga37902f3fc715b7f6451c241d0efd0299" kindref="member">LinphoneChatRoom</ref><sp/>*cr,<sp/><ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref><sp/>*msg);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__wrapper_1ga4a51af228fd7f8f2ea417a6f0f470ea0" kindref="member">linphone_chat_message_resend_2</ref>(<ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref><sp/>*msg);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group__wrapper_1ga33e3e028e1551a47a6d7af26ce864f5e" kindref="member">linphone_vcard_get_belcard</ref>(<ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref><sp/>*vcard);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>_WRAPPER_UTILS_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/wrapper_utils.h"/>
+  </compounddef>
+</doxygen>

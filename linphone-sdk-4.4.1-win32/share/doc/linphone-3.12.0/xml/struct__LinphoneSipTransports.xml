@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct__LinphoneSipTransports" kind="struct" language="C++" prot="public">
+    <compoundname>_LinphoneSipTransports</compoundname>
+    <includes local="no">types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphoneSipTransports_1a7d5edf2d85193b46b04396e5adb292b6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LinphoneSipTransports::udp_port</definition>
+        <argsstring></argsstring>
+        <name>udp_port</name>
+        <briefdescription>
+<para>SIP/UDP port. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="1013" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="1013" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneSipTransports_1aff688cd9c7d4c02292832d2e5dd5a898" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LinphoneSipTransports::tcp_port</definition>
+        <argsstring></argsstring>
+        <name>tcp_port</name>
+        <briefdescription>
+<para>SIP/TCP port. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="1014" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="1014" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneSipTransports_1aaccaedee79038a30c066707ceaea099f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LinphoneSipTransports::dtls_port</definition>
+        <argsstring></argsstring>
+        <name>dtls_port</name>
+        <briefdescription>
+<para>SIP/DTLS port. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="1015" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="1015" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneSipTransports_1a93f24e32cfc8f1883f70667a18474de9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LinphoneSipTransports::tls_port</definition>
+        <argsstring></argsstring>
+        <name>tls_port</name>
+        <briefdescription>
+<para>SIP/TLS port. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="1016" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="1016" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Linphone core SIP transport ports. </para>    </briefdescription>
+    <detaileddescription>
+<para>Special values <ref refid="group__initializing_1gadc507b9a498d5ce572fd219e385ad1f4" kindref="member">LC_SIP_TRANSPORT_RANDOM</ref>, <ref refid="group__initializing_1gadc507b9a498d5ce572fd219e385ad1f4" kindref="member">LC_SIP_TRANSPORT_RANDOM</ref>, <ref refid="group__initializing_1ga59ea266df5d16b9954ddf4224eb348ae" kindref="member">LC_SIP_TRANSPORT_DONTBIND</ref> can be used. Use with <ref refid="group__network__parameters_1ga3bdb9b78916cc32533053afc070df516" kindref="member">linphone_core_set_sip_transports</ref> <xrefsect id="deprecated_1_deprecated000147"><xreftitle>Deprecated</xreftitle><xrefdescription><para> <donotwrap />  </para></xrefdescription></xrefsect></para>    </detaileddescription>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="1012" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="1012" bodyend="1017"/>
+    <listofallmembers>
+      <member refid="struct__LinphoneSipTransports_1aaccaedee79038a30c066707ceaea099f" prot="public" virt="non-virtual"><scope>_LinphoneSipTransports</scope><name>dtls_port</name></member>
+      <member refid="struct__LinphoneSipTransports_1aff688cd9c7d4c02292832d2e5dd5a898" prot="public" virt="non-virtual"><scope>_LinphoneSipTransports</scope><name>tcp_port</name></member>
+      <member refid="struct__LinphoneSipTransports_1a93f24e32cfc8f1883f70667a18474de9" prot="public" virt="non-virtual"><scope>_LinphoneSipTransports</scope><name>tls_port</name></member>
+      <member refid="struct__LinphoneSipTransports_1a7d5edf2d85193b46b04396e5adb292b6" prot="public" virt="non-virtual"><scope>_LinphoneSipTransports</scope><name>udp_port</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

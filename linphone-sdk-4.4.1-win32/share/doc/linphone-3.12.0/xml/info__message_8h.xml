@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="info__message_8h" kind="file" language="C++">
+    <compoundname>info_message.h</compoundname>
+    <includes refid="types_8h" local="yes">linphone/types.h</includes>
+    <includedby refid="core_8h" local="yes">core.h</includedby>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__misc_1gaea8b442cc5e2e77074b2bcc8d4b72382" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_info_message_add_header</definition>
+        <argsstring>(LinphoneInfoMessage *im, const char *name, const char *value)</argsstring>
+        <name>linphone_info_message_add_header</name>
+        <param>
+          <type><ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref> *</type>
+          <declname>im</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Add a header to an info message to be sent. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>im</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the info message </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the header&apos;name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the header&apos;s value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/info_message.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gae1208437221bb6046bacb1bd3c110049" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_info_message_get_header</definition>
+        <argsstring>(const LinphoneInfoMessage *im, const char *name)</argsstring>
+        <name>linphone_info_message_get_header</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref> *</type>
+          <declname>im</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Obtain a header value from a received info message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>im</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the info message </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the header&apos;name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the corresponding header&apos;s value, or NULL if not exists. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/info_message.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga800d90875bf73051d5471c4389d52a5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_info_message_set_content</definition>
+        <argsstring>(LinphoneInfoMessage *im, const LinphoneContent *content)</argsstring>
+        <name>linphone_info_message_set_content</name>
+        <param>
+          <type><ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref> *</type>
+          <declname>im</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+          <declname>content</declname>
+        </param>
+        <briefdescription>
+<para>Assign a content to the info message. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>im</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the linphone info message </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>content</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the content described as a <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> structure. All fields of the LinphoneContent are copied, thus the application can destroy/modify/recycloe the content object freely ater the function returns. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/info_message.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gabe9effd28670ca365455d2222da38936" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> *</type>
+        <definition>const LinphoneContent* linphone_info_message_get_content</definition>
+        <argsstring>(const LinphoneInfoMessage *im)</argsstring>
+        <name>linphone_info_message_get_content</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref> *</type>
+          <declname>im</declname>
+        </param>
+        <briefdescription>
+<para>Returns the info message&apos;s content as a <ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref> structure. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/info_message.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga0465a2ff6f4f0ad6ee70b631b776d81d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref> *</type>
+        <definition>LinphoneInfoMessage* linphone_info_message_ref</definition>
+        <argsstring>(LinphoneInfoMessage *im)</argsstring>
+        <name>linphone_info_message_ref</name>
+        <param>
+          <type><ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref> *</type>
+          <declname>im</declname>
+        </param>
+        <briefdescription>
+<para>Take a reference on a <ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/info_message.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga637de84b906fdf9b16423ca5fe55f241" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_info_message_unref</definition>
+        <argsstring>(LinphoneInfoMessage *im)</argsstring>
+        <name>linphone_info_message_unref</name>
+        <param>
+          <type><ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref> *</type>
+          <declname>im</declname>
+        </param>
+        <briefdescription>
+<para>Release a reference on a <ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/info_message.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga3699a472da6c55677e14294c961d128f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED void</type>
+        <definition>LINPHONE_DEPRECATED void linphone_info_message_destroy</definition>
+        <argsstring>(LinphoneInfoMessage *im)</argsstring>
+        <name>linphone_info_message_destroy</name>
+        <param>
+          <type><ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref> *</type>
+          <declname>im</declname>
+        </param>
+        <briefdescription>
+<para>Destroy a LinphoneInfoMessage. </para>        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000130"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__misc_1ga637de84b906fdf9b16423ca5fe55f241" kindref="member">linphone_info_message_unref()</ref> instead.  <donotwrap />  </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/info_message.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gac12115fcfe1a6e9378202d9ffe23183a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref> *</type>
+        <definition>LinphoneInfoMessage* linphone_info_message_copy</definition>
+        <argsstring>(const LinphoneInfoMessage *orig)</argsstring>
+        <name>linphone_info_message_copy</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref> *</type>
+          <declname>orig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/info_message.h" line="84" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">info_message.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2010-2017<sp/>Belledonne<sp/>Communications<sp/>SARL</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_INFO_MESSAGE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_INFO_MESSAGE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphone/types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gaea8b442cc5e2e77074b2bcc8d4b72382" kindref="member">linphone_info_message_add_header</ref>(<ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref><sp/>*im,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__misc_1gae1208437221bb6046bacb1bd3c110049" kindref="member">linphone_info_message_get_header</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref><sp/>*im,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga800d90875bf73051d5471c4389d52a5b" kindref="member">linphone_info_message_set_content</ref>(<ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref><sp/>*im,<sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref><sp/>*content);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gaec435ed53168e70535e64b69a906304b" kindref="member">LinphoneContent</ref><sp/>*<sp/><ref refid="group__misc_1gabe9effd28670ca365455d2222da38936" kindref="member">linphone_info_message_get_content</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref><sp/>*im);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref><sp/>*<ref refid="group__misc_1ga0465a2ff6f4f0ad6ee70b631b776d81d" kindref="member">linphone_info_message_ref</ref>(<ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref><sp/>*im);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga637de84b906fdf9b16423ca5fe55f241" kindref="member">linphone_info_message_unref</ref>(<ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref><sp/>*im);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">LINPHONE_PUBLIC<sp/>LINPHONE_DEPRECATED<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga3699a472da6c55677e14294c961d128f" kindref="member">linphone_info_message_destroy</ref>(<ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref><sp/>*im);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref><sp/>*linphone_info_message_copy(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref><sp/>*orig);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LINPHONE_INFO_MESSAGE_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/info_message.h"/>
+  </compounddef>
+</doxygen>

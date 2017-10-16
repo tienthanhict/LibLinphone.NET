@@ -1,0 +1,1025 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="factory_8h" kind="file" language="C++">
+    <compoundname>factory.h</compoundname>
+    <includes refid="types_8h" local="yes">linphone/types.h</includes>
+    <includedby refid="core_8h" local="yes">core.h</includedby>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__initializing_1gad5c6ec08691a00b9c3225b774fe1dc68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+        <definition>LinphoneFactory* linphone_factory_get</definition>
+        <argsstring>(void)</argsstring>
+        <name>linphone_factory_get</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Create the <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> if that has not been done and return a pointer on it. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A pointer on the <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga26563195924f5edad82918cb8e93691b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_factory_clean</definition>
+        <argsstring>(void)</argsstring>
+        <name>linphone_factory_clean</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Clean the factory. </para>        </briefdescription>
+        <detaileddescription>
+<para>This function is generally useless as the factory is unique per process, however calling this function at the end avoid getting reports from belle-sip leak detector about memory leaked in <ref refid="group__initializing_1gad5c6ec08691a00b9c3225b774fe1dc68" kindref="member">linphone_factory_get()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga0f71be9d7c8fac862e2f929ed0419e80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+        <definition>LinphoneCore* linphone_factory_create_core</definition>
+        <argsstring>(const LinphoneFactory *factory, LinphoneCoreCbs *cbs, const char *config_path, const char *factory_config_path)</argsstring>
+        <name>linphone_factory_create_core</name>
+        <param>
+          <type>const <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type><ref refid="group__initializing_1gaa4a52a9cdc319baccd2232dda6681f8f" kindref="member">LinphoneCoreCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>config_path</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>factory_config_path</declname>
+        </param>
+        <briefdescription>
+<para>Instanciate a <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para>The LinphoneCore object is the primary handle for doing all phone actions. It should be unique within your application. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> singleton. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="group__initializing_1gaa4a52a9cdc319baccd2232dda6681f8f" kindref="member">LinphoneCoreCbs</ref> object holding your application callbacks. A reference will be taken on it until the destruciton of the core or the unregistration with linphone_core_remove_cbs(). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a path to a config file. If it does not exists it will be created. The config file is used to store all settings, call logs, friends, proxies... so that all these settings become persistent over the life of the LinphoneCore object. It is allowed to set a NULL config file. In that case LinphoneCore will not store any settings. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>factory_config_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a path to a read-only config file that can be used to to store hard-coded preference such as proxy settings or internal preferences. The settings in this factory file always override the one in the normal config file. It is OPTIONAL, use NULL if unneeded. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__initializing_1gab3739459d3d102f97f5a0b2106fac6ea" kindref="member">linphone_core_new_with_config</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1gacf77ea8002867d2dd93f197eda80f22b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+        <definition>LinphoneCore* linphone_factory_create_core_with_config</definition>
+        <argsstring>(const LinphoneFactory *factory, LinphoneCoreCbs *cbs, LinphoneConfig *config)</argsstring>
+        <name>linphone_factory_create_core_with_config</name>
+        <param>
+          <type>const <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type><ref refid="group__initializing_1gaa4a52a9cdc319baccd2232dda6681f8f" kindref="member">LinphoneCoreCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1gaf621181934fa2be96ebb2b498fc59cff" kindref="member">LinphoneConfig</ref> *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+<para>Instantiates a LinphoneCore object with a given LpConfig. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> singleton. The LinphoneCore object is the primary handle for doing all phone actions. It should be unique within your application. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a <ref refid="group__initializing_1gaa4a52a9cdc319baccd2232dda6681f8f" kindref="member">LinphoneCoreCbs</ref> object holding your application callbacks. A reference will be taken on it until the destruciton of the core or the unregistration with linphone_core_remove_cbs(). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a pointer to an LpConfig object holding the configuration of the LinphoneCore to be instantiated. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__initializing_1ga9601ae3c81a1bbf110e84a1a484f3fee" kindref="member">linphone_core_new</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga216de83e5bfcf8487d4c22dfc7fcbeb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1gaa4a52a9cdc319baccd2232dda6681f8f" kindref="member">LinphoneCoreCbs</ref> *</type>
+        <definition>LinphoneCoreCbs* linphone_factory_create_core_cbs</definition>
+        <argsstring>(const LinphoneFactory *factory)</argsstring>
+        <name>linphone_factory_create_core_cbs</name>
+        <param>
+          <type>const <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+<para>Instanciate a <ref refid="group__initializing_1gaa4a52a9cdc319baccd2232dda6681f8f" kindref="member">LinphoneCoreCbs</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a new <ref refid="group__initializing_1gaa4a52a9cdc319baccd2232dda6681f8f" kindref="member">LinphoneCoreCbs</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga15d1de56e0ec023c766b90f4b283c86f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+        <definition>LinphoneAddress* linphone_factory_create_address</definition>
+        <argsstring>(const LinphoneFactory *factory, const char *addr)</argsstring>
+        <name>linphone_factory_create_address</name>
+        <param>
+          <type>const <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+<para>Parse a string holding a SIP URI and create the according <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> singleton. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A string holding the SIP URI to parse. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga65bba925b4d7040d70cec71f20d4e174" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+        <definition>LinphoneAuthInfo* linphone_factory_create_auth_info</definition>
+        <argsstring>(const LinphoneFactory *factory, const char *username, const char *userid, const char *passwd, const char *ha1, const char *realm, const char *domain)</argsstring>
+        <name>linphone_factory_create_auth_info</name>
+        <param>
+          <type>const <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>userid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>passwd</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>ha1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>realm</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>domain</declname>
+        </param>
+        <briefdescription>
+<para>Creates a <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object. </para>        </briefdescription>
+        <detaileddescription>
+<para>The object can be created empty, that is with all arguments set to NULL. Username, userid, password, realm and domain can be set later using specific methods. At the end, username and passwd (or ha1) are required. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> singleton. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The username that needs to be authenticated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The userid used for authenticating (use NULL if you don&apos;t know what it is) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>passwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The password in clear text </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ha1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ha1-encrypted password if password is not given in clear text. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The authentication domain (which can be larger than the sip domain. Unfortunately many SIP servers don&apos;t use this parameter. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The SIP domain for which this authentication information is valid, if it has to be restricted for a single SIP domain. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object. linphone_auth_info_destroy() must be used to destroy it when no longer needed. The LinphoneCore makes a copy of LinphoneAuthInfo passed through <ref refid="group__authentication_1ga62ac5bb34f0342f7edc733c42473b7aa" kindref="member">linphone_core_add_auth_info()</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1gab6e69c9eae9550424929a48bb8570015" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__control_1gac16e901c67900cd8df5c9b78d238a8ae" kindref="member">LinphoneCallCbs</ref> *</type>
+        <definition>LinphoneCallCbs* linphone_factory_create_call_cbs</definition>
+        <argsstring>(const LinphoneFactory *factory)</argsstring>
+        <name>linphone_factory_create_call_cbs</name>
+        <param>
+          <type>const <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+<para>Create a LinphoneCallCbs object that holds callbacks for events happening on a call. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFactory singletion object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new LinphoneCallCbs object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1gadc2a4f8d711702768ddd86f267e6e66d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+        <definition>LinphoneVcard* linphone_factory_create_vcard</definition>
+        <argsstring>(LinphoneFactory *factory)</argsstring>
+        <name>linphone_factory_create_vcard</name>
+        <param>
+          <type><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+<para>Create an empty <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a new <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga456ba2843cdca9be32a9ddffb13f0423" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+        <definition>LinphoneVideoDefinition* linphone_factory_create_video_definition</definition>
+        <argsstring>(const LinphoneFactory *factory, unsigned int width, unsigned int height)</argsstring>
+        <name>linphone_factory_create_video_definition</name>
+        <param>
+          <type>const <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Create a LinphoneVideoDefinition from a given width and height. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFactory singleton object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of the created video definition </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the created video definition </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new LinphoneVideoDefinition object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1gab10dc49e546c077be553ef6719fdc1ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+        <definition>LinphoneVideoDefinition* linphone_factory_create_video_definition_from_name</definition>
+        <argsstring>(const LinphoneFactory *factory, const char *name)</argsstring>
+        <name>linphone_factory_create_video_definition_from_name</name>
+        <param>
+          <type>const <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Create a LinphoneVideoDefinition from a given standard definition name. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFactory singleton object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The standard definition name of the video definition to create </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new LinphoneVideoDefinition object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1gaf694003781e5b2d5c2515306c82bb5de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const bctbx_list_t *</type>
+        <definition>const bctbx_list_t* linphone_factory_get_supported_video_definitions</definition>
+        <argsstring>(const LinphoneFactory *factory)</argsstring>
+        <name>linphone_factory_get_supported_video_definitions</name>
+        <param>
+          <type>const <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+<para>Get the list of standard video definitions supported by Linphone. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFactory singleton object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A list of <ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> objects. <bctbxlist>LinphoneVideoDefinition</bctbxlist>  </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="150" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga14d12139c9720778c47e5250b506d654" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_factory_get_top_resources_dir</definition>
+        <argsstring>(const LinphoneFactory *factory)</argsstring>
+        <name>linphone_factory_get_top_resources_dir</name>
+        <param>
+          <type>const <ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+<para>Get the top directory where the resources are located. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFactory object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The path to the top directory where the resources are located </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga3b7f29223030c229727fc0620d43e984" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_factory_set_top_resources_dir</definition>
+        <argsstring>(LinphoneFactory *factory, const char *path)</argsstring>
+        <name>linphone_factory_set_top_resources_dir</name>
+        <param>
+          <type><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Set the top directory where the resources are located. </para>        </briefdescription>
+        <detaileddescription>
+<para>If you only define this top directory, the other resources directory will automatically be derived form this one. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFactory object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the top directory where the resources are located </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1gafc93ff3fc11cccd775a248bd1d5501c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_factory_get_data_resources_dir</definition>
+        <argsstring>(LinphoneFactory *factory)</argsstring>
+        <name>linphone_factory_get_data_resources_dir</name>
+        <param>
+          <type><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+<para>Get the directory where the data resources are located. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFactory object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The path to the directory where the data resources are located </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1gaa05ccfc679ee44ad4fcf03201e6c4cc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_factory_set_data_resources_dir</definition>
+        <argsstring>(LinphoneFactory *factory, const char *path)</argsstring>
+        <name>linphone_factory_set_data_resources_dir</name>
+        <param>
+          <type><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Set the directory where the data resources are located. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFactory object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path where the data resources are located </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga67352b5837a992706dc0763e0777e85e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_factory_get_sound_resources_dir</definition>
+        <argsstring>(LinphoneFactory *factory)</argsstring>
+        <name>linphone_factory_get_sound_resources_dir</name>
+        <param>
+          <type><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+<para>Get the directory where the sound resources are located. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFactory object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The path to the directory where the sound resources are located </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga0e0cdc0ac5d548df301c645a2294a671" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_factory_set_sound_resources_dir</definition>
+        <argsstring>(LinphoneFactory *factory, const char *path)</argsstring>
+        <name>linphone_factory_set_sound_resources_dir</name>
+        <param>
+          <type><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Set the directory where the sound resources are located. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFactory object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path where the sound resources are located </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1gab4316f3b8d1e9fe9ef07e3971fc79b0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_factory_get_ring_resources_dir</definition>
+        <argsstring>(LinphoneFactory *factory)</argsstring>
+        <name>linphone_factory_get_ring_resources_dir</name>
+        <param>
+          <type><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+<para>Get the directory where the ring resources are located. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFactory object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The path to the directory where the ring resources are located </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga9a10e8a77e8ddde7164213493ca42a5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_factory_set_ring_resources_dir</definition>
+        <argsstring>(LinphoneFactory *factory, const char *path)</argsstring>
+        <name>linphone_factory_set_ring_resources_dir</name>
+        <param>
+          <type><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Set the directory where the ring resources are located. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFactory object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path where the ring resources are located </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga1a1574bd635de6d120c219a951fc17c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_factory_get_image_resources_dir</definition>
+        <argsstring>(LinphoneFactory *factory)</argsstring>
+        <name>linphone_factory_get_image_resources_dir</name>
+        <param>
+          <type><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+<para>Get the directory where the image resources are located. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFactory object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The path to the directory where the image resources are located </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="214" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga7b0fb588eb196b7fd57541ba3c46fc85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_factory_set_image_resources_dir</definition>
+        <argsstring>(LinphoneFactory *factory, const char *path)</argsstring>
+        <name>linphone_factory_set_image_resources_dir</name>
+        <param>
+          <type><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Set the directory where the image resources are located. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFactory object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path where the image resources are located </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="221" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga4bbdcd78e10ad13148eff3a000ce1092" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_factory_get_msplugins_dir</definition>
+        <argsstring>(LinphoneFactory *factory)</argsstring>
+        <name>linphone_factory_get_msplugins_dir</name>
+        <param>
+          <type><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+<para>Get the directory where the mediastreamer2 plugins are located. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFactory object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The path to the directory where the mediastreamer2 plugins are located, or NULL if it has not been set </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="228" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga54460d8d2a1b858b0908fff7b582c5fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_factory_set_msplugins_dir</definition>
+        <argsstring>(LinphoneFactory *factory, const char *path)</argsstring>
+        <name>linphone_factory_set_msplugins_dir</name>
+        <param>
+          <type><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+<para>Set the directory where the mediastreamer2 plugins are located. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFactory object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the directory where the mediastreamer2 plugins are located </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="235" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1gaea88da82a441106a7cbed6c897cca5ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+        <definition>LinphoneErrorInfo* linphone_factory_create_error_info</definition>
+        <argsstring>(LinphoneFactory *factory)</argsstring>
+        <name>linphone_factory_create_error_info</name>
+        <param>
+          <type><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+<para>Creates an object LinphoneErrorInfo. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFactory object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneErrorInfo object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="242" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga74122305df465025ce1594b63a0b165b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga1584d2bdd5daa84d4345a96998b663db" kindref="member">LinphoneRange</ref> *</type>
+        <definition>LinphoneRange* linphone_factory_create_range</definition>
+        <argsstring>(LinphoneFactory *factory)</argsstring>
+        <name>linphone_factory_create_range</name>
+        <param>
+          <type><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+<para>Creates an object LinphoneRange. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFactory object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneRange object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="249" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1gadfde7262203cf185a26db80835baf337" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1gac1340b5ae8cffe55c6d19e0457be149f" kindref="member">LinphoneTransports</ref> *</type>
+        <definition>LinphoneTransports* linphone_factory_create_transports</definition>
+        <argsstring>(LinphoneFactory *factory)</argsstring>
+        <name>linphone_factory_create_transports</name>
+        <param>
+          <type><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+<para>Creates an object LinphoneTransports. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFactory object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneTransports object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="256" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__initializing_1ga1df9a5a66959d5256c92dbde197b8116" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__media__parameters_1gacfde104a153a94eb85e7d14e4235d974" kindref="member">LinphoneVideoActivationPolicy</ref> *</type>
+        <definition>LinphoneVideoActivationPolicy* linphone_factory_create_video_activation_policy</definition>
+        <argsstring>(LinphoneFactory *factory)</argsstring>
+        <name>linphone_factory_create_video_activation_policy</name>
+        <param>
+          <type><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref> *</type>
+          <declname>factory</declname>
+        </param>
+        <briefdescription>
+<para>Creates an object LinphoneVideoActivationPolicy. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">factory</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneFactory object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneVideoActivationPolicy object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h" line="263" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">linphone</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2016<sp/>Belledonne<sp/>Communications<sp/>&lt;info@belledonne-communications.com&gt;</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_FACTORY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_FACTORY_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphone/types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*<ref refid="group__initializing_1gad5c6ec08691a00b9c3225b774fe1dc68" kindref="member">linphone_factory_get</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga26563195924f5edad82918cb8e93691b" kindref="member">linphone_factory_clean</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref><sp/>*<ref refid="group__initializing_1ga0f71be9d7c8fac862e2f929ed0419e80" kindref="member">linphone_factory_create_core</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory,<sp/><ref refid="group__initializing_1gaa4a52a9cdc319baccd2232dda6681f8f" kindref="member">LinphoneCoreCbs</ref><sp/>*cbs,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*config_path,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*factory_config_path);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref><sp/>*<ref refid="group__initializing_1gacf77ea8002867d2dd93f197eda80f22b" kindref="member">linphone_factory_create_core_with_config</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory,<sp/><ref refid="group__initializing_1gaa4a52a9cdc319baccd2232dda6681f8f" kindref="member">LinphoneCoreCbs</ref><sp/>*cbs,<sp/><ref refid="group__misc_1gaf621181934fa2be96ebb2b498fc59cff" kindref="member">LinphoneConfig</ref><sp/>*config);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__initializing_1gaa4a52a9cdc319baccd2232dda6681f8f" kindref="member">LinphoneCoreCbs</ref><sp/>*<ref refid="group__initializing_1ga216de83e5bfcf8487d4c22dfc7fcbeb1" kindref="member">linphone_factory_create_core_cbs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*<ref refid="group__initializing_1ga15d1de56e0ec023c766b90f4b283c86f" kindref="member">linphone_factory_create_address</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*addr);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*<ref refid="group__initializing_1ga65bba925b4d7040d70cec71f20d4e174" kindref="member">linphone_factory_create_auth_info</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*username,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*userid,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*passwd,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ha1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*realm,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*domain);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__call__control_1gac16e901c67900cd8df5c9b78d238a8ae" kindref="member">LinphoneCallCbs</ref><sp/>*<sp/><ref refid="group__initializing_1gab6e69c9eae9550424929a48bb8570015" kindref="member">linphone_factory_create_call_cbs</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref><sp/>*<ref refid="group__initializing_1gadc2a4f8d711702768ddd86f267e6e66d" kindref="member">linphone_factory_create_vcard</ref>(<ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*<sp/><ref refid="group__initializing_1ga456ba2843cdca9be32a9ddffb13f0423" kindref="member">linphone_factory_create_video_definition</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*<sp/><ref refid="group__initializing_1gab10dc49e546c077be553ef6719fdc1ef" kindref="member">linphone_factory_create_video_definition_from_name</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>bctbx_list_t<sp/>*<sp/><ref refid="group__initializing_1gaf694003781e5b2d5c2515306c82bb5de" kindref="member">linphone_factory_get_supported_video_definitions</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__initializing_1ga14d12139c9720778c47e5250b506d654" kindref="member">linphone_factory_get_top_resources_dir</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga3b7f29223030c229727fc0620d43e984" kindref="member">linphone_factory_set_top_resources_dir</ref>(<ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__initializing_1gafc93ff3fc11cccd775a248bd1d5501c9" kindref="member">linphone_factory_get_data_resources_dir</ref>(<ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1gaa05ccfc679ee44ad4fcf03201e6c4cc3" kindref="member">linphone_factory_set_data_resources_dir</ref>(<ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__initializing_1ga67352b5837a992706dc0763e0777e85e" kindref="member">linphone_factory_get_sound_resources_dir</ref>(<ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga0e0cdc0ac5d548df301c645a2294a671" kindref="member">linphone_factory_set_sound_resources_dir</ref>(<ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__initializing_1gab4316f3b8d1e9fe9ef07e3971fc79b0c" kindref="member">linphone_factory_get_ring_resources_dir</ref>(<ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga9a10e8a77e8ddde7164213493ca42a5f" kindref="member">linphone_factory_set_ring_resources_dir</ref>(<ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__initializing_1ga1a1574bd635de6d120c219a951fc17c3" kindref="member">linphone_factory_get_image_resources_dir</ref>(<ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga7b0fb588eb196b7fd57541ba3c46fc85" kindref="member">linphone_factory_set_image_resources_dir</ref>(<ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__initializing_1ga4bbdcd78e10ad13148eff3a000ce1092" kindref="member">linphone_factory_get_msplugins_dir</ref>(<ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1ga54460d8d2a1b858b0908fff7b582c5fb" kindref="member">linphone_factory_set_msplugins_dir</ref>(<ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal">LINPHONE_PUBLIC<sp/><sp/><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*<ref refid="group__initializing_1gaea88da82a441106a7cbed6c897cca5ac" kindref="member">linphone_factory_create_error_info</ref>(<ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga1584d2bdd5daa84d4345a96998b663db" kindref="member">LinphoneRange</ref><sp/>*<ref refid="group__initializing_1ga74122305df465025ce1594b63a0b165b" kindref="member">linphone_factory_create_range</ref>(<ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__initializing_1gac1340b5ae8cffe55c6d19e0457be149f" kindref="member">LinphoneTransports</ref><sp/>*<ref refid="group__initializing_1gadfde7262203cf185a26db80835baf337" kindref="member">linphone_factory_create_transports</ref>(<ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__media__parameters_1gacfde104a153a94eb85e7d14e4235d974" kindref="member">LinphoneVideoActivationPolicy</ref><sp/>*<ref refid="group__initializing_1ga1df9a5a66959d5256c92dbde197b8116" kindref="member">linphone_factory_create_video_activation_policy</ref>(<ref refid="group__initializing_1ga3ce8cc4b9af4382f08540edc368f7310" kindref="member">LinphoneFactory</ref><sp/>*factory);</highlight></codeline>
+<codeline lineno="268"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>LINPHONE_FACTORY_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/factory.h"/>
+  </compounddef>
+</doxygen>

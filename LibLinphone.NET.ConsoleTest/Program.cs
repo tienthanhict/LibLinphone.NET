@@ -14,7 +14,7 @@ namespace TestLibLinphoneCLIConsole
             LinphoneCore lc = Globals.Instance.LinphoneCore;
             listener.Lc = lc;
 
-            var proxyCfg = new LinphoneProxyConfig();
+            var proxyCfg = new LinphoneProxyConfig(lc);
             proxyCfg.SetIdentity("test 1000 <sip:1000@192.168.6.241>");
             proxyCfg.ServerAddr = "192.168.6.241";
             proxyCfg.RegisterEnabled = true;

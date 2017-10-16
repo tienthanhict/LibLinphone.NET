@@ -1,0 +1,939 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="group__carddav__vcard" kind="group">
+    <compoundname>carddav_vcard</compoundname>
+    <title>Carddav_vcard</title>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" prot="public" static="no">
+        <type>struct _LinphoneVcard</type>
+        <definition>typedef struct _LinphoneVcard LinphoneVcard</definition>
+        <argsstring></argsstring>
+        <name>LinphoneVcard</name>
+        <briefdescription>
+<para>The LinphoneVcard object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="1032" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="1149" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__carddav__vcard_1gaea61c899c2f7bb5b1594075c448e6963" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+        <definition>LINPHONE_DEPRECATED LinphoneVcard* linphone_vcard_new</definition>
+        <argsstring>(void)</argsstring>
+        <name>linphone_vcard_new</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Creates a LinphoneVcard object that has a pointer to an empty vCard. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a new LinphoneVcard object </para></simplesect>
+<xrefsect id="deprecated_1_deprecated000151"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__initializing_1gadc2a4f8d711702768ddd86f267e6e66d" kindref="member">linphone_factory_create_vcard()</ref> instead.  <donotwrap />  </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1ga76bd449da0fa3d24a111e413ccd10592" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED void</type>
+        <definition>LINPHONE_DEPRECATED void linphone_vcard_free</definition>
+        <argsstring>(LinphoneVcard *vCard)</argsstring>
+        <name>linphone_vcard_free</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <briefdescription>
+<para>Deletes a LinphoneVcard object properly. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard to destroy </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000152"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__carddav__vcard_1ga7836283a1e82814fbd55513be27bb852" kindref="member">linphone_vcard_unref()</ref> or belle_sip_object_unref() instead.  <donotwrap />  </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1ga12981bc39c522f6b37f2c1bfb0b69829" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+        <definition>LinphoneVcard* linphone_vcard_ref</definition>
+        <argsstring>(LinphoneVcard *vCard)</argsstring>
+        <name>linphone_vcard_ref</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <briefdescription>
+<para>Take a ref on a <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneVcard object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1ga7836283a1e82814fbd55513be27bb852" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_vcard_unref</definition>
+        <argsstring>(LinphoneVcard *vCard)</argsstring>
+        <name>linphone_vcard_unref</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <briefdescription>
+<para>Release a <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneVcard object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1ga3bdc2f8934e7a2ef10e62befe9a108e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+        <definition>LinphoneVcard* linphone_vcard_clone</definition>
+        <argsstring>(const LinphoneVcard *vCard)</argsstring>
+        <name>linphone_vcard_clone</name>
+        <param>
+          <type>const <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <briefdescription>
+<para>Clone a <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneVcard object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a new LinphoneVcard object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1ga28cc2bf4080fe6b0836c2814009e88d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_vcard_as_vcard4_string</definition>
+        <argsstring>(LinphoneVcard *vCard)</argsstring>
+        <name>linphone_vcard_as_vcard4_string</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <briefdescription>
+<para>Returns the vCard4 representation of the LinphoneVcard. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a const char * that represents the vCard </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1gaae52377e83d0e0a44f734c4b53ef41cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_vcard_set_full_name</definition>
+        <argsstring>(LinphoneVcard *vCard, const char *name)</argsstring>
+        <name>linphone_vcard_set_full_name</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Sets the FN attribute of the vCard (which is mandatory). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the display name to set for the vCard </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1gaf45a07fc8f1d7aa65ef27c004a90f3bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_vcard_get_full_name</definition>
+        <argsstring>(const LinphoneVcard *vCard)</argsstring>
+        <name>linphone_vcard_get_full_name</name>
+        <param>
+          <type>const <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <briefdescription>
+<para>Returns the FN attribute of the vCard, or NULL if it isn&apos;t set yet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the display name of the vCard, or NULL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1gaa182458047e6e013198c7b0ce5dc5ca8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_vcard_set_skip_validation</definition>
+        <argsstring>(LinphoneVcard *vCard, bool_t skip)</argsstring>
+        <name>linphone_vcard_set_skip_validation</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>skip</declname>
+        </param>
+        <briefdescription>
+<para>Sets the skipFieldValidation property of the vcard. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">skip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>skipFieldValidation property of the vcard </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1gaf629a6b63d5e913489be8a0a6c5c5a2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_vcard_get_skip_validation</definition>
+        <argsstring>(const LinphoneVcard *vCard)</argsstring>
+        <name>linphone_vcard_get_skip_validation</name>
+        <param>
+          <type>const <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <briefdescription>
+<para>Returns the skipFieldValidation property of the vcard. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the skipFieldValidation property of the vcard </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1gaa961dc3c1bfcf48222ca3ed89823b027" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_vcard_set_family_name</definition>
+        <argsstring>(LinphoneVcard *vCard, const char *name)</argsstring>
+        <name>linphone_vcard_set_family_name</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Sets the family name in the N attribute of the vCard. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the family name to set for the vCard </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1ga89eaed36dfa2624bdba31e11ac390c75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_vcard_get_family_name</definition>
+        <argsstring>(const LinphoneVcard *vCard)</argsstring>
+        <name>linphone_vcard_get_family_name</name>
+        <param>
+          <type>const <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <briefdescription>
+<para>Returns the family name in the N attribute of the vCard, or NULL if it isn&apos;t set yet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the family name of the vCard, or NULL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1ga5a252a9005de3025a9a2429541494a6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_vcard_set_given_name</definition>
+        <argsstring>(LinphoneVcard *vCard, const char *name)</argsstring>
+        <name>linphone_vcard_set_given_name</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Sets the given name in the N attribute of the vCard. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the given name to set for the vCard </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1gae4dd8cd4522e6aaf77d9a0551165939d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_vcard_get_given_name</definition>
+        <argsstring>(const LinphoneVcard *vCard)</argsstring>
+        <name>linphone_vcard_get_given_name</name>
+        <param>
+          <type>const <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <briefdescription>
+<para>Returns the given name in the N attribute of the vCard, or NULL if it isn&apos;t set yet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the given name of the vCard, or NULL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1ga9daa232e8c64c047e139c9165a2e5a54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_vcard_add_sip_address</definition>
+        <argsstring>(LinphoneVcard *vCard, const char *sip_address)</argsstring>
+        <name>linphone_vcard_add_sip_address</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>sip_address</declname>
+        </param>
+        <briefdescription>
+<para>Adds a SIP address in the vCard, using the IMPP property. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">sip_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the SIP address to add </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1ga712e4cfbdfe4dd168e9f8c3b3045f3f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_vcard_remove_sip_address</definition>
+        <argsstring>(LinphoneVcard *vCard, const char *sip_address)</argsstring>
+        <name>linphone_vcard_remove_sip_address</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>sip_address</declname>
+        </param>
+        <briefdescription>
+<para>Removes a SIP address in the vCard (if it exists), using the IMPP property. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">sip_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the SIP address to remove </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="150" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1gaa862c70d0843c56d2307a958393cd27d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_vcard_edit_main_sip_address</definition>
+        <argsstring>(LinphoneVcard *vCard, const char *sip_address)</argsstring>
+        <name>linphone_vcard_edit_main_sip_address</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>sip_address</declname>
+        </param>
+        <briefdescription>
+<para>Edits the preferred SIP address in the vCard (or the first one), using the IMPP property. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">sip_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the new SIP address </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1gaf675597125cef44a4ba8da30a4db67f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const bctbx_list_t *</type>
+        <definition>const bctbx_list_t* linphone_vcard_get_sip_addresses</definition>
+        <argsstring>(LinphoneVcard *vCard)</argsstring>
+        <name>linphone_vcard_get_sip_addresses</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <briefdescription>
+<para>Returns the list of SIP addresses (as LinphoneAddress) in the vCard (all the IMPP attributes that has an URI value starting by &quot;sip:&quot;) or NULL. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A list of <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> objects. <bctbxlist>LinphoneAddress</bctbxlist>  </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1ga784eb9ec86c65231b57b7d52af9c0736" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_vcard_add_phone_number</definition>
+        <argsstring>(LinphoneVcard *vCard, const char *phone)</argsstring>
+        <name>linphone_vcard_add_phone_number</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>phone</declname>
+        </param>
+        <briefdescription>
+<para>Adds a phone number in the vCard, using the TEL property. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">phone</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the phone number to add </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1gadd29cf906c4f669ca6dc6724f5ab31c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_vcard_remove_phone_number</definition>
+        <argsstring>(LinphoneVcard *vCard, const char *phone)</argsstring>
+        <name>linphone_vcard_remove_phone_number</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>phone</declname>
+        </param>
+        <briefdescription>
+<para>Removes a phone number in the vCard (if it exists), using the TEL property. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">phone</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the phone number to remove </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="178" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1gaafdaa221c667ba5b3f0f9ea3cb21d8ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bctbx_list_t *</type>
+        <definition>bctbx_list_t* linphone_vcard_get_phone_numbers</definition>
+        <argsstring>(const LinphoneVcard *vCard)</argsstring>
+        <name>linphone_vcard_get_phone_numbers</name>
+        <param>
+          <type>const <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <briefdescription>
+<para>Returns the list of phone numbers (as string) in the vCard (all the TEL attributes) or NULL. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A list of const char * objects. <bctbxlist>const char *</bctbxlist>  </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="185" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1gaa9b18b9f7ea4a1ef1833c736f6fecc48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_vcard_set_organization</definition>
+        <argsstring>(LinphoneVcard *vCard, const char *organization)</argsstring>
+        <name>linphone_vcard_set_organization</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>organization</declname>
+        </param>
+        <briefdescription>
+<para>Fills the Organization field of the vCard. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">organization</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the Organization </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="192" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1gaf4739e5282d45f9365868722a59a94b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_vcard_get_organization</definition>
+        <argsstring>(const LinphoneVcard *vCard)</argsstring>
+        <name>linphone_vcard_get_organization</name>
+        <param>
+          <type>const <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <briefdescription>
+<para>Gets the Organization of the vCard. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the Organization of the vCard or NULL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1ga65af1583646141da625864ecbefbbb53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_vcard_generate_unique_id</definition>
+        <argsstring>(LinphoneVcard *vCard)</argsstring>
+        <name>linphone_vcard_generate_unique_id</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <briefdescription>
+<para>Generates a random unique id for the vCard. </para>        </briefdescription>
+        <detaileddescription>
+<para>If is required to be able to synchronize the vCard with a CardDAV server <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE if operation is successful, otherwise FALSE (for example if it already has an unique ID) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1ga193ac24174b7dbd3f6c4d19e109826c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_vcard_set_uid</definition>
+        <argsstring>(LinphoneVcard *vCard, const char *uid)</argsstring>
+        <name>linphone_vcard_set_uid</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>uid</declname>
+        </param>
+        <briefdescription>
+<para>Sets the unique ID of the vCard. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">uid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the unique id </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="214" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1gab82ef267fd427712011a06c18c458436" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_vcard_get_uid</definition>
+        <argsstring>(const LinphoneVcard *vCard)</argsstring>
+        <name>linphone_vcard_get_uid</name>
+        <param>
+          <type>const <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <briefdescription>
+<para>Gets the UID of the vCard. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the UID of the vCard, otherwise NULL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="221" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1gae1ddf171ce6c3c6fd529c11001223755" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_vcard_set_etag</definition>
+        <argsstring>(LinphoneVcard *vCard, const char *etag)</argsstring>
+        <name>linphone_vcard_set_etag</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>etag</declname>
+        </param>
+        <briefdescription>
+<para>Sets the eTAG of the vCard. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">etag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the eTAG </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="228" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1ga68a2a6a621226748d60e7fd301c56659" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_vcard_get_etag</definition>
+        <argsstring>(const LinphoneVcard *vCard)</argsstring>
+        <name>linphone_vcard_get_etag</name>
+        <param>
+          <type>const <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <briefdescription>
+<para>Gets the eTag of the vCard. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the eTag of the vCard in the CardDAV server, otherwise NULL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="235" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1gace8428dfaa06ff21077de5541901459c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_vcard_set_url</definition>
+        <argsstring>(LinphoneVcard *vCard, const char *url)</argsstring>
+        <name>linphone_vcard_set_url</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+<para>Sets the URL of the vCard. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the URL </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="242" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__carddav__vcard_1ga6f1474904c68784b71612d86b72aa158" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_vcard_get_url</definition>
+        <argsstring>(const LinphoneVcard *vCard)</argsstring>
+        <name>linphone_vcard_get_url</name>
+        <param>
+          <type>const <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vCard</declname>
+        </param>
+        <briefdescription>
+<para>Gets the URL of the vCard. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vCard</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneVcard </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the URL of the vCard in the CardDAV server, otherwise NULL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="249" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__carddav__vcard_1ga3a9572e215fd5fd2c4bd84b47bb76d63" prot="public" static="no">
+        <name>LINPHONE_VCARD</name>
+        <initializer>BELLE_SIP_CAST(object, <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref>)</initializer>
+        <briefdescription>
+<para>Cast a belle_sip_object_t into LinphoneVcard. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" line="38" column="9" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/vcard.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1448 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="group__tunnel" kind="group">
+    <compoundname>tunnel</compoundname>
+    <title>Tunnel</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__tunnel_1gac832d7950d88dc22e3d002ffd46a2d36" prot="public" static="no">
+        <name>_LinphoneTunnelMode</name>
+        <enumvalue id="group__tunnel_1ggac832d7950d88dc22e3d002ffd46a2d36a52d2fc6a079979cffe8bdb3a0b1e2faa" prot="public">
+          <name>LinphoneTunnelModeDisable</name>
+          <briefdescription>
+<para>The tunnel is disabled. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__tunnel_1ggac832d7950d88dc22e3d002ffd46a2d36aff4e1cb7aeacdc18ea31844b98ac3aaa" prot="public">
+          <name>LinphoneTunnelModeEnable</name>
+          <briefdescription>
+<para>The tunnel is enabled. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__tunnel_1ggac832d7950d88dc22e3d002ffd46a2d36a7b5180b37f9211cc046f0f77dda8a39f" prot="public">
+          <name>LinphoneTunnelModeAuto</name>
+          <briefdescription>
+<para>The tunnel is enabled automatically if it is required. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum describing the tunnel modes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="1124" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="1124" bodyend="1128"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__tunnel_1gafac6fdea7804b750849d0df376b45052" prot="public" static="no">
+        <type>struct _LinphoneTunnel</type>
+        <definition>typedef struct _LinphoneTunnel LinphoneTunnel</definition>
+        <argsstring></argsstring>
+        <name>LinphoneTunnel</name>
+        <briefdescription>
+<para>Linphone tunnel object. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="1032" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="1116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__tunnel_1ga78ea57de829da9eabff1bc87f816aef5" prot="public" static="no">
+        <type>enum <ref refid="group__tunnel_1gac832d7950d88dc22e3d002ffd46a2d36" kindref="member">_LinphoneTunnelMode</ref></type>
+        <definition>typedef enum _LinphoneTunnelMode  LinphoneTunnelMode</definition>
+        <argsstring></argsstring>
+        <name>LinphoneTunnelMode</name>
+        <briefdescription>
+<para>Enum describing the tunnel modes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="1128" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__tunnel_1ga6c411bd114b1e45806dbbb7c02912b35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_core_tunnel_available</definition>
+        <argsstring>(void)</argsstring>
+        <name>linphone_core_tunnel_available</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>True if tunnel support was compiled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="4264" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga672373b56a111f52d8aed78f375c11be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+        <definition>LinphoneTunnel* linphone_core_get_tunnel</definition>
+        <argsstring>(const LinphoneCore *lc)</argsstring>
+        <name>linphone_core_get_tunnel</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <briefdescription>
+<para>get tunnel instance if available </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>core object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneTunnel or NULL if not available </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="4272" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga779c4280b7f6c1e5a161fd98e6671d81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LinphoneTunnelConfig *</type>
+        <definition>LinphoneTunnelConfig* linphone_tunnel_config_new</definition>
+        <argsstring>(void)</argsstring>
+        <name>linphone_tunnel_config_new</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Create a new tunnel configuration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga32b44eed2a87bdb889d27f89209ce16d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+        <definition>LinphoneTunnel* linphone_tunnel_ref</definition>
+        <argsstring>(LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_ref</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+<para>Take a reference on a <ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> whose the ref counter will be increased. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer on the freshly refed <ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga6a0c447395a5fa9df2b46e73f3c53c00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_unref</definition>
+        <argsstring>(LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_unref</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+<para>Release a reference on a <ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> whose the ref counter will be decreased. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga3528ad019e02f1dafbed28b588032309" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_config_set_host</definition>
+        <argsstring>(LinphoneTunnelConfig *tunnel, const char *host)</argsstring>
+        <name>linphone_tunnel_config_set_host</name>
+        <param>
+          <type>LinphoneTunnelConfig *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Set the IP address or hostname of the tunnel server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnelConfig object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tunnel server IP address or hostname </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1gafa66d330fd8ab9c34943141e01951062" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_tunnel_config_get_host</definition>
+        <argsstring>(const LinphoneTunnelConfig *tunnel)</argsstring>
+        <name>linphone_tunnel_config_get_host</name>
+        <param>
+          <type>const LinphoneTunnelConfig *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+<para>Get the IP address or hostname of the tunnel server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnelConfig object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The tunnel server IP address or hostname </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="121" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga01f6ec956efbb074a611c4256e86eab0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_config_set_port</definition>
+        <argsstring>(LinphoneTunnelConfig *tunnel, int port)</argsstring>
+        <name>linphone_tunnel_config_set_port</name>
+        <param>
+          <type>LinphoneTunnelConfig *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Set tls port of server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnelConfig object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tunnel server TLS port, recommended value is 443 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga489397d1b58df97ee4060d0522ad7d4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_tunnel_config_get_port</definition>
+        <argsstring>(const LinphoneTunnelConfig *tunnel)</argsstring>
+        <name>linphone_tunnel_config_get_port</name>
+        <param>
+          <type>const LinphoneTunnelConfig *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+<para>Get the TLS port of the tunnel server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnelConfig object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The TLS port of the tunnel server </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga6ae686dc83cadbef4af76ea1ccb7db7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_config_set_host2</definition>
+        <argsstring>(LinphoneTunnelConfig *tunnel, const char *host)</argsstring>
+        <name>linphone_tunnel_config_set_host2</name>
+        <param>
+          <type>LinphoneTunnelConfig *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>host</declname>
+        </param>
+        <briefdescription>
+<para>Set the IP address or hostname of the second tunnel server when using dual tunnel client. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnelConfig object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tunnel server IP address or hostname </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1gab3fb40460fd89036cc9a798030362cbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_tunnel_config_get_host2</definition>
+        <argsstring>(const LinphoneTunnelConfig *tunnel)</argsstring>
+        <name>linphone_tunnel_config_get_host2</name>
+        <param>
+          <type>const LinphoneTunnelConfig *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+<para>Get the IP address or hostname of the second tunnel server when using dual tunnel client. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnelConfig object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The tunnel server IP address or hostname </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga7e7db78f9340a7da6124bf0e54cd8961" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_config_set_port2</definition>
+        <argsstring>(LinphoneTunnelConfig *tunnel, int port)</argsstring>
+        <name>linphone_tunnel_config_set_port2</name>
+        <param>
+          <type>LinphoneTunnelConfig *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+<para>Set tls port of the second server when using dual tunnel client. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnelConfig object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tunnel server TLS port, recommended value is 443 </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga6ed4ad2bf8ec1c87baee5893e0f77567" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_tunnel_config_get_port2</definition>
+        <argsstring>(const LinphoneTunnelConfig *tunnel)</argsstring>
+        <name>linphone_tunnel_config_get_port2</name>
+        <param>
+          <type>const LinphoneTunnelConfig *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+<para>Get the TLS port of the second tunnel server when using dual tunnel client. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnelConfig object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The TLS port of the tunnel server </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga16b085d99ac03532ec604980c1c575cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_config_set_remote_udp_mirror_port</definition>
+        <argsstring>(LinphoneTunnelConfig *tunnel, int remote_udp_mirror_port)</argsstring>
+        <name>linphone_tunnel_config_set_remote_udp_mirror_port</name>
+        <param>
+          <type>LinphoneTunnelConfig *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>remote_udp_mirror_port</declname>
+        </param>
+        <briefdescription>
+<para>Set the remote port on the tunnel server side used to test UDP reachability. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is used when the mode is set auto, to detect whether the tunnel has to be enabled or not. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnelConfig object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>remote_udp_mirror_port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The remote port on the tunnel server side used to test UDP reachability, set to -1 to disable the feature </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1gab2e28e4cdc76d9cd18441c7da2bad71f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_tunnel_config_get_remote_udp_mirror_port</definition>
+        <argsstring>(const LinphoneTunnelConfig *tunnel)</argsstring>
+        <name>linphone_tunnel_config_get_remote_udp_mirror_port</name>
+        <param>
+          <type>const LinphoneTunnelConfig *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+<para>Get the remote port on the tunnel server side used to test UDP reachability. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is used when the mode is set auto, to detect whether the tunnel has to be enabled or not. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnelConfig object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The remote port on the tunnel server side used to test UDP reachability </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga16a880e0479e5ab816e910b70abc2fa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_config_set_delay</definition>
+        <argsstring>(LinphoneTunnelConfig *tunnel, int delay)</argsstring>
+        <name>linphone_tunnel_config_set_delay</name>
+        <param>
+          <type>LinphoneTunnelConfig *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>delay</declname>
+        </param>
+        <briefdescription>
+<para>Set the UDP packet round trip delay in ms for a tunnel configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnelConfig object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>delay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The UDP packet round trip delay in ms considered as acceptable (recommended value is 1000 ms). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga7ca84486dfe60616558f5cf9ddd2313e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_tunnel_config_get_delay</definition>
+        <argsstring>(const LinphoneTunnelConfig *tunnel)</argsstring>
+        <name>linphone_tunnel_config_get_delay</name>
+        <param>
+          <type>const LinphoneTunnelConfig *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+<para>Get the UDP packet round trip delay in ms for a tunnel configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnelConfig object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The UDP packet round trip delay in ms. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga980f0cb00358b9e850b3913df279dd89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LinphoneTunnelConfig *</type>
+        <definition>LinphoneTunnelConfig* linphone_tunnel_config_ref</definition>
+        <argsstring>(LinphoneTunnelConfig *cfg)</argsstring>
+        <name>linphone_tunnel_config_ref</name>
+        <param>
+          <type>LinphoneTunnelConfig *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Increment the refcount of LinphoneTunnelConfig object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneTunnelConfig object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the same cfg object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga33f6342a82b43174b8e5a3ca87d4f532" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_config_unref</definition>
+        <argsstring>(LinphoneTunnelConfig *cfg)</argsstring>
+        <name>linphone_tunnel_config_unref</name>
+        <param>
+          <type>LinphoneTunnelConfig *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Decrement the refcount of LinphoneTunnelConfig object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneTunnelConfig object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="206" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga8356ca53f3f0f7d5220f5f3ba3b80cc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED void</type>
+        <definition>LINPHONE_DEPRECATED void linphone_tunnel_config_destroy</definition>
+        <argsstring>(LinphoneTunnelConfig *tunnel)</argsstring>
+        <name>linphone_tunnel_config_destroy</name>
+        <param>
+          <type>LinphoneTunnelConfig *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+<para>Destroy a tunnel configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnelConfig object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000139"><xreftitle>Deprecated</xreftitle><xrefdescription><para>use <ref refid="group__tunnel_1ga33f6342a82b43174b8e5a3ca87d4f532" kindref="member">linphone_tunnel_config_unref()</ref>.  <donotwrap />  </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="213" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga3af1248717bbb610343a6b6fa352c36c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_config_set_user_data</definition>
+        <argsstring>(LinphoneTunnelConfig *cfg, void *ud)</argsstring>
+        <name>linphone_tunnel_config_set_user_data</name>
+        <param>
+          <type>LinphoneTunnelConfig *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ud</declname>
+        </param>
+        <briefdescription>
+<para>Store a user data in the tunnel config object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the tunnel config </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the user data </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="220" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga30b71f0701051bb97a760bfb56985bd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_tunnel_config_get_user_data</definition>
+        <argsstring>(LinphoneTunnelConfig *cfg)</argsstring>
+        <name>linphone_tunnel_config_get_user_data</name>
+        <param>
+          <type>LinphoneTunnelConfig *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve user data from the tunnel config. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the tunnel config </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the user data </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="227" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga762cc31830da8eb5736017e690ced895" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_add_server</definition>
+        <argsstring>(LinphoneTunnel *tunnel, LinphoneTunnelConfig *tunnel_config)</argsstring>
+        <name>linphone_tunnel_add_server</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>LinphoneTunnelConfig *</type>
+          <declname>tunnel_config</declname>
+        </param>
+        <briefdescription>
+<para>Add a tunnel server configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tunnel_config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnelConfig object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="234" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1gabf2355476ef1e2e28da5d09fb9713ae7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_remove_server</definition>
+        <argsstring>(LinphoneTunnel *tunnel, LinphoneTunnelConfig *tunnel_config)</argsstring>
+        <name>linphone_tunnel_remove_server</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>LinphoneTunnelConfig *</type>
+          <declname>tunnel_config</declname>
+        </param>
+        <briefdescription>
+<para>Remove a tunnel server configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tunnel_config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnelConfig object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="241" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga3c9e143f3904c7228908d3b6e1350c96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const bctbx_list_t *</type>
+        <definition>const bctbx_list_t* linphone_tunnel_get_servers</definition>
+        <argsstring>(const LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_get_servers</name>
+        <param>
+          <type>const <ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+<para>Get added servers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A list of LinphoneTunnelConfig objects. <bctbxlist>LinphoneTunnelConfig</bctbxlist>  </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="248" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga691d163b762cbf5e159883feab1e9ab4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_clean_servers</definition>
+        <argsstring>(LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_clean_servers</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+<para>Remove all tunnel server addresses previously entered with <ref refid="group__tunnel_1ga762cc31830da8eb5736017e690ced895" kindref="member">linphone_tunnel_add_server()</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="254" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga2ff9779aefdb5455c3509d75cf89a88c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_set_mode</definition>
+        <argsstring>(LinphoneTunnel *tunnel, LinphoneTunnelMode mode)</argsstring>
+        <name>linphone_tunnel_set_mode</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type><ref refid="group__tunnel_1ga78ea57de829da9eabff1bc87f816aef5" kindref="member">LinphoneTunnelMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Set the tunnel mode. </para>        </briefdescription>
+        <detaileddescription>
+<para>The tunnel mode can be &apos;enable&apos;, &apos;disable&apos; or &apos;auto&apos; If the mode is set to &apos;auto&apos;, the tunnel manager will try to established an RTP session with the tunnel server on the UdpMirrorPort. If the connection fail, the tunnel is automatically activated whereas the tunnel is automatically disabled if the connection succeed. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The desired LinphoneTunnelMode </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="265" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1gaf526043ec604b44782b5eedc2a806a40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__tunnel_1ga78ea57de829da9eabff1bc87f816aef5" kindref="member">LinphoneTunnelMode</ref></type>
+        <definition>LinphoneTunnelMode linphone_tunnel_get_mode</definition>
+        <argsstring>(const LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_get_mode</name>
+        <param>
+          <type>const <ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+<para>Get the tunnel mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current LinphoneTunnelMode </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="272" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1gaacfe8d9491972b0f0d405b8c51efc1f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_enable_dual_mode</definition>
+        <argsstring>(LinphoneTunnel *tunnel, bool_t dual_mode_enabled)</argsstring>
+        <name>linphone_tunnel_enable_dual_mode</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>dual_mode_enabled</declname>
+        </param>
+        <briefdescription>
+<para>Sets whether or not to use the dual tunnel client mode. </para>        </briefdescription>
+        <detaileddescription>
+<para>By default this feature is disabled. After enabling it, add a server with 2 hosts and 2 ports for the feature to work. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dual_mode_enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>TRUE to enable it, FALSE to disable it </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="281" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga43424accb2eed18dd9fb0aee0403bd2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_tunnel_dual_mode_enabled</definition>
+        <argsstring>(const LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_dual_mode_enabled</name>
+        <param>
+          <type>const <ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+<para>Get the dual tunnel client mode. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE if dual tunnel client mode is enabled, FALSE otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="288" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1gaf5236ffc93b2a983fcb888c0f4614d85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_tunnel_get_activated</definition>
+        <argsstring>(const LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_get_activated</name>
+        <param>
+          <type>const <ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+<para>Returns whether the tunnel is activated. </para>        </briefdescription>
+        <detaileddescription>
+<para>If mode is set to auto, this gives indication whether the automatic detection determined that tunnel was necessary or not. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the tunnel </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE if tunnel is in use, FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="296" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga047ca9bc9546a6c5bffb27209b0a7706" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_tunnel_connected</definition>
+        <argsstring>(const LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_connected</name>
+        <param>
+          <type>const <ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+<para>Check whether the tunnel is connected. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A boolean value telling if the tunnel is connected </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="304" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga1676eda6a96c9bd730a873124459ac9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_reconnect</definition>
+        <argsstring>(LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_reconnect</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+<para>Force reconnection to the tunnel server. </para>        </briefdescription>
+        <detaileddescription>
+<para>This method is useful when the device switches from wifi to Edge/3G or vice versa. In most cases the tunnel client socket won&apos;t be notified promptly that its connection is now zombie, so it is recommended to call this method that will cause the lost connection to be closed and new connection to be issued. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="313" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1gafc4e154bec332ad975c373e205f66795" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_enable_sip</definition>
+        <argsstring>(LinphoneTunnel *tunnel, bool_t enable)</argsstring>
+        <name>linphone_tunnel_enable_sip</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Set whether SIP packets must be directly sent to a UA or pass through the tunnel. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, SIP packets shall pass through the tunnel </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="320" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga92b4df41ad2c71ce4e59de5acd37674b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_tunnel_sip_enabled</definition>
+        <argsstring>(const LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_sip_enabled</name>
+        <param>
+          <type>const <ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+<para>Check whether tunnel is set to transport SIP packets. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A boolean value telling whether SIP packets shall pass through the tunnel </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="327" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1gae0718a3a72763c91b63a2afe67205d8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_set_http_proxy</definition>
+        <argsstring>(LinphoneTunnel *tunnel, const char *host, int port, const char *username, const char *passwd)</argsstring>
+        <name>linphone_tunnel_set_http_proxy</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>passwd</declname>
+        </param>
+        <briefdescription>
+<para>Set an optional http proxy to go through when connecting to tunnel server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>http proxy host </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>http proxy port </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional http proxy username if the proxy request authentication. Currently only basic authentication is supported. Use NULL if not needed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>passwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional http proxy password. Use NULL if not needed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="337" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1gab41bfb94d11b7c31d09ab65776f7e701" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_get_http_proxy</definition>
+        <argsstring>(LinphoneTunnel *tunnel, const char **host, int *port, const char **username, const char **passwd)</argsstring>
+        <name>linphone_tunnel_get_http_proxy</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>port</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>const char **</type>
+          <declname>passwd</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve optional http proxy configuration previously set with <ref refid="group__tunnel_1gae0718a3a72763c91b63a2afe67205d8b" kindref="member">linphone_tunnel_set_http_proxy()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>host</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>http proxy host </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>http proxy port </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional http proxy username if the proxy request authentication. Currently only basic authentication is supported. Use NULL if not needed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>passwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Optional http proxy password. Use NULL if not needed.  <donotwrap />  </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="348" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga3f0eb1ebe109c8c58c7e92c7d2226423" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_set_http_proxy_auth_info</definition>
+        <argsstring>(LinphoneTunnel *tunnel, const char *username, const char *passwd)</argsstring>
+        <name>linphone_tunnel_set_http_proxy_auth_info</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>passwd</declname>
+        </param>
+        <briefdescription>
+<para>Set authentication info for the http proxy. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>User name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>passwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Password </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="356" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1gaf215fabef9349712e323aed676a41da9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED void</type>
+        <definition>LINPHONE_DEPRECATED void linphone_tunnel_enable</definition>
+        <argsstring>(LinphoneTunnel *tunnel, bool_t enabled)</argsstring>
+        <name>linphone_tunnel_enable</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+<para>Sets whether tunneling of SIP and RTP is required. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true enter in tunneled mode, if false exits from tunneled mode. The TunnelManager takes care of refreshing SIP registration when switching on or off the tunneled mode. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000140"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Replaced by <ref refid="group__tunnel_1ga2ff9779aefdb5455c3509d75cf89a88c" kindref="member">linphone_tunnel_set_mode()</ref>  <donotwrap />  </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="366" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1gaf0f50dce4bb56e248232bc72fbb6cc5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED bool_t</type>
+        <definition>LINPHONE_DEPRECATED bool_t linphone_tunnel_enabled</definition>
+        <argsstring>(const LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_enabled</name>
+        <param>
+          <type>const <ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+<para>Check whether tunnel is enabled. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns a boolean indicating whether tunneled operation is enabled. </para></simplesect>
+<xrefsect id="deprecated_1_deprecated000141"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Replaced by <ref refid="group__tunnel_1gaf526043ec604b44782b5eedc2a806a40" kindref="member">linphone_tunnel_get_mode()</ref>  <donotwrap />  </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="375" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga8e56c8bd91a630e36eee0b4444840654" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED void</type>
+        <definition>LINPHONE_DEPRECATED void linphone_tunnel_auto_detect</definition>
+        <argsstring>(LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_auto_detect</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+<para>Start tunnel need detection. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>object In auto detect mode, the tunnel manager try to establish a real time rtp communication with the tunnel server on specified port. <linebreak/>
+In case of success, the tunnel is automatically turned off. Otherwise, if no udp communication is feasible, tunnel mode is turned on. <linebreak/>
+ Call this method each time to run the auto detection algorithm </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000142"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Replaced by linphone_tunnel_set_mode(LinphoneTunnelModeAuto)  <donotwrap />  </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="386" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga33ddcc837865707f7919ead2b3d998f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED bool_t</type>
+        <definition>LINPHONE_DEPRECATED bool_t linphone_tunnel_auto_detect_enabled</definition>
+        <argsstring>(LinphoneTunnel *tunnel)</argsstring>
+        <name>linphone_tunnel_auto_detect_enabled</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <briefdescription>
+<para>Tell whether tunnel auto detection is enabled. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tunnel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneTunnel object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE if auto detection is enabled, FALSE otherwise. </para></simplesect>
+<xrefsect id="deprecated_1_deprecated000143"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Replaced by <ref refid="group__tunnel_1gaf526043ec604b44782b5eedc2a806a40" kindref="member">linphone_tunnel_get_mode()</ref>  <donotwrap />  </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="395" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__tunnel_1ga58485cb859eabb7cbdda267780cb17c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_tunnel_simulate_udp_loss</definition>
+        <argsstring>(LinphoneTunnel *tunnel, bool_t enabled)</argsstring>
+        <name>linphone_tunnel_simulate_udp_loss</name>
+        <param>
+          <type><ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref> *</type>
+          <declname>tunnel</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="397" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__tunnel_1ga60fead31e5ef822855a9a622eb6bd834" prot="public" static="no">
+        <name>LINPHONE_TUNNEL</name>
+        <param><defname>obj</defname></param>
+        <initializer>BELLE_SIP_CAST(obj, <ref refid="group__tunnel_1gafac6fdea7804b750849d0df376b45052" kindref="member">LinphoneTunnel</ref>)</initializer>
+        <briefdescription>
+<para>Linphone tunnel aims is to bypass IP traffic blocking due to aggressive firewalls which typically only authorize TCP traffic with destination port 443. </para>        </briefdescription>
+        <detaileddescription>
+<para><linebreak/>
+ Its principle is tunneling all SIP and/or RTP traffic through a single secure https connection up to a detunnelizer server. <linebreak/>
+ This set of methods enhance LinphoneCore functionalities in order to provide an easy to use API to <itemizedlist>
+<listitem><para>provision tunnel servers IP addresses and ports. This functionality is an option not implemented under GPL. Availability can be check at runtime using function <ref refid="group__tunnel_1ga6c411bd114b1e45806dbbb7c02912b35" kindref="member">linphone_core_tunnel_available</ref> </para></listitem>
+<listitem><para>start/stop the tunneling service </para></listitem>
+<listitem><para>perform auto-detection whether tunneling is required, based on a test of sending/receiving a flow of UDP packets.</para></listitem>
+</itemizedlist>
+It takes in charge automatically the SIP registration procedure when connecting or disconnecting to a tunnel server. No other action on LinphoneCore is required to enable full operation in tunnel mode.</para><para><linebreak/>
+ Provision is done using object #LinphoneTunnelConfig created by function <ref refid="group__tunnel_1ga779c4280b7f6c1e5a161fd98e6671d81" kindref="member">linphone_tunnel_config_new()</ref>. Functions <ref refid="group__tunnel_1ga3528ad019e02f1dafbed28b588032309" kindref="member">linphone_tunnel_config_set_host</ref> and <ref refid="group__tunnel_1ga01f6ec956efbb074a611c4256e86eab0" kindref="member">linphone_tunnel_config_set_port</ref> allow to point to tunnel server IP/port. Once set, use function <ref refid="group__tunnel_1ga762cc31830da8eb5736017e690ced895" kindref="member">linphone_tunnel_add_server</ref> to provision a tunnel server. <linebreak/>
+ Finally tunnel mode configuration is achieved by function <ref refid="group__tunnel_1ga2ff9779aefdb5455c3509d75cf89a88c" kindref="member">linphone_tunnel_set_mode</ref>. <linebreak/>
+ Tunnel connection status can be checked using function <ref refid="group__tunnel_1ga047ca9bc9546a6c5bffb27209b0a7706" kindref="member">linphone_tunnel_connected</ref>.</para><para>Bellow pseudo code that can be use to configure, enable, check state and disable tunnel functionality:</para><para><programlisting><codeline><highlight class="normal">LinphoneTunnel<sp/>*tunnel<sp/>=<sp/>linphone_core_get_tunnel(linphone_core);</highlight></codeline>
+<codeline><highlight class="normal">LinphoneTunnelConfig<sp/>*config=linphone_tunnel_config_new();<sp/>//instantiate<sp/>tunnel<sp/>configuration</highlight></codeline>
+<codeline><highlight class="normal">linphone_tunnel_config_set_host(config,<sp/>&quot;tunnel.linphone.org&quot;);<sp/>//set<sp/>tunnel<sp/>server<sp/>host<sp/>address</highlight></codeline>
+<codeline><highlight class="normal">linphone_tunnel_config_set_port(config,<sp/>443);<sp/>//set<sp/>tunnel<sp/>server<sp/>port</highlight></codeline>
+<codeline><highlight class="normal">linphone_tunnel_add_server(tunnel,<sp/>config);<sp/>//provision<sp/>tunnel<sp/>config</highlight></codeline>
+<codeline><highlight class="normal">linphone_tunnel_set_mode(tunnel,<sp/>LinphoneTunnelModeEnable);<sp/>//activate<sp/>the<sp/>tunnel<sp/>unconditional</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">while<sp/>(!linphone_tunnel_connected(tunnel))<sp/>{<sp/>//wait<sp/>for<sp/>tunnel<sp/>to<sp/>be<sp/>ready</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>linphone_core_iterate(linphone_core);<sp/>//schedule<sp/>core<sp/>main<sp/>loop</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>ms_sleep(100);<sp/>//wait<sp/>100ms</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">LinphoneCall<sp/>*call<sp/>=<sp/>linphone_core_invite(linphone_core,&quot;sip:foo@example.org&quot;);<sp/>//place<sp/>an<sp/>outgoing<sp/>call</highlight></codeline>
+<codeline><highlight class="normal">linphone_call_ref(call);<sp/>//acquire<sp/>a<sp/>reference<sp/>on<sp/>the<sp/>call<sp/>to<sp/>avoid<sp/>deletion<sp/>after<sp/>completion</highlight></codeline>
+<codeline><highlight class="normal">//...</highlight></codeline>
+<codeline><highlight class="normal">linphone_core_terminate_call(linphone_core,call);</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">while<sp/>(linphone_call_get_state(call)<sp/>!=<sp/>LinphoneCallReleased)<sp/>{<sp/>//wait<sp/>for<sp/>call<sp/>to<sp/>be<sp/>in<sp/>release<sp/>state</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>linphone_core_iterate(linphone_core);<sp/>//schedule<sp/>core<sp/>main<sp/>loop</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/>ms_sleep(100);<sp/>//wait<sp/>100ms</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">linphone_tunnel_set_mode(tunnel,<sp/>LinphoneTunnelModeDisable);<sp/>//deactivate<sp/>tunnel</highlight></codeline>
+<codeline><highlight class="normal">linphone_call_unref(call);<sp/>//release<sp/>reference<sp/>on<sp/>the<sp/>call</highlight></codeline>
+</programlisting> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" line="84" column="9" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/tunnel.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

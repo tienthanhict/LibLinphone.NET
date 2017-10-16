@@ -1,0 +1,10 @@
+# This is a comment
+prefix=C:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop
+exec_prefix=C:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop
+
+Name:  bctoolbox
+Description: A common set of tools used by Belledonne Communication's softwares
+Version: 0.6.0
+Libs: -LC:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop/lib -lbctoolbox
+Libs.private:  C:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop/lib/mbedtls.lib C:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop/lib/mbedx509.lib C:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop/lib/mbedcrypto.lib
+Cflags: -IC:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop/include

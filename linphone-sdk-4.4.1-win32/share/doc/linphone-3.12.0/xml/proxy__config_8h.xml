@@ -1,0 +1,2231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="proxy__config_8h" kind="file" language="C++">
+    <compoundname>proxy_config.h</compoundname>
+    <includes refid="types_8h" local="yes">linphone/types.h</includes>
+    <includedby refid="core_8h" local="yes">core.h</includedby>
+    <includedby refid="linphone__proxy__config_8h" local="no">linphone_proxy_config.h</includedby>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__proxies_1ga2929b27c5f57444aa2656e27bbedd1b0" prot="public" static="no">
+        <name>linphone_proxy_config_expires</name>
+        <initializer><ref refid="group__proxies_1gaedc369323b04e8e9c4b3f210234fe783" kindref="member">linphone_proxy_config_set_expires</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="107" column="9" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__proxies_1ga07e7f3ea8e067e3741bf6dcd6871675e" prot="public" static="no">
+        <name>linphone_proxy_config_enableregister</name>
+        <initializer><ref refid="group__proxies_1gaea39579996645d4bc5e62e68ab097f17" kindref="member">linphone_proxy_config_enable_register</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="117" column="9" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__proxies_1gac4313bfe50cf4bf57c50584beb4aef10" prot="public" static="no">
+        <name>linphone_proxy_config_get_addr</name>
+        <initializer><ref refid="group__proxies_1ga44a3fa191fd4d47999749e28b0158d6e" kindref="member">linphone_proxy_config_get_server_addr</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="284" column="9" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__proxies_1gac435e6efb12fedf8a016745c88ee09a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+        <definition>LINPHONE_DEPRECATED LinphoneProxyConfig* linphone_proxy_config_new</definition>
+        <argsstring>(void)</argsstring>
+        <name>linphone_proxy_config_new</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Creates an empty proxy config. </para>        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000132"><xreftitle>Deprecated</xreftitle><xrefdescription><para>, use <ref refid="group__proxies_1ga165451afd911ce954c3c7a0880fe52f5" kindref="member">linphone_core_create_proxy_config</ref> instead  <donotwrap />  </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga25e37ca48aad663a3f18f418ea92dfd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+        <definition>LinphoneProxyConfig* linphone_proxy_config_ref</definition>
+        <argsstring>(LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_ref</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Acquire a reference to the proxy config. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The same proxy config. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga813af731d0baf61dd6b25590344b62a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_unref</definition>
+        <argsstring>(LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_unref</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Release reference to the proxy config. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gabb1e3eae0dab32c619d7aaf30e9724f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_proxy_config_get_user_data</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_user_data</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve the user pointer associated with the proxy config. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user pointer associated with the proxy config. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga4258acbc13b3ba3ab36ff9ce06bffa9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_set_user_data</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, void *ud)</argsstring>
+        <name>linphone_proxy_config_set_user_data</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ud</declname>
+        </param>
+        <briefdescription>
+<para>Assign a user pointer to the proxy config. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user pointer to associate with the proxy config. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga6e896345be76aaf6399ab4ed4532b2a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_proxy_config_set_server_addr</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, const char *server_addr)</argsstring>
+        <name>linphone_proxy_config_set_server_addr</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>server_addr</declname>
+        </param>
+        <briefdescription>
+<para>Sets the proxy address. </para>        </briefdescription>
+        <detaileddescription>
+<para>Examples of valid sip proxy address are:<itemizedlist>
+<listitem><para>IP address: sip:87.98.157.38</para></listitem><listitem><para>IP address with port: sip:87.98.157.38:5062</para></listitem><listitem><para>hostnames : sip:sip.example.net </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga978c00a218b907a2f98fc59f5d217805" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED <ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LINPHONE_DEPRECATED LinphoneStatus linphone_proxy_config_set_identity</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, const char *identity)</argsstring>
+        <name>linphone_proxy_config_set_identity</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>identity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000133"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__proxies_1ga0980474bbee09845232fdf4ed6f300f6" kindref="member">linphone_proxy_config_set_identity_address()</ref>  <donotwrap />  </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga0980474bbee09845232fdf4ed6f300f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_proxy_config_set_identity_address</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, const LinphoneAddress *identity)</argsstring>
+        <name>linphone_proxy_config_set_identity_address</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>identity</declname>
+        </param>
+        <briefdescription>
+<para>Sets the user identity as a SIP address. </para>        </briefdescription>
+        <detaileddescription>
+<para>This identity is normally formed with display name, username and domain, such as: Alice &lt;sip:<ulink url="mailto:alice@example.net">alice@example.net</ulink>&gt; The REGISTER messages will have from and to set to this identity. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gab774e242021e96efb7b4af86885bdbcc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_proxy_config_set_route</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, const char *route)</argsstring>
+        <name>linphone_proxy_config_set_route</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>route</declname>
+        </param>
+        <briefdescription>
+<para>Sets a SIP route. </para>        </briefdescription>
+        <detaileddescription>
+<para>When a route is set, all outgoing calls will go to the route&apos;s destination if this proxy is the default one (see <ref refid="group__proxies_1ga2082f2c37ffbf5d46e8d20ae8bccc2a4" kindref="member">linphone_core_set_default_proxy()</ref> ). <simplesect kind="return"><para>-1 if route is invalid, 0 otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gaedc369323b04e8e9c4b3f210234fe783" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_set_expires</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, int expires)</argsstring>
+        <name>linphone_proxy_config_set_expires</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>expires</declname>
+        </param>
+        <briefdescription>
+<para>Sets the registration expiration time in seconds. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gaea39579996645d4bc5e62e68ab097f17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_enable_register</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, bool_t val)</argsstring>
+        <name>linphone_proxy_config_enable_register</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Indicates either or not, REGISTRATION must be issued for this <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> . </para>        </briefdescription>
+        <detaileddescription>
+<para><linebreak/>
+ In case this <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> has been added to <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref>, follows the <ref refid="group__proxies_1gadfddcce1c3dd138f144ae0421782834b" kindref="member">linphone_proxy_config_edit()</ref> rule. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, registration will be engaged </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gadfddcce1c3dd138f144ae0421782834b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_edit</definition>
+        <argsstring>(LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_edit</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Starts editing a proxy configuration. </para>        </briefdescription>
+        <detaileddescription>
+<para>Because proxy configuration must be consistent, applications MUST call <ref refid="group__proxies_1gadfddcce1c3dd138f144ae0421782834b" kindref="member">linphone_proxy_config_edit()</ref> before doing any attempts to modify proxy configuration (such as identity, proxy address and so on). Once the modifications are done, then the application must call <ref refid="group__proxies_1ga2f48ab930fd797e1065c61b389f57988" kindref="member">linphone_proxy_config_done()</ref> to commit the changes. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga2f48ab930fd797e1065c61b389f57988" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_proxy_config_done</definition>
+        <argsstring>(LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_done</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Commits modification made to the proxy configuration. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gaf21d29929d15256e0c993a4959d570cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_enable_publish</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, bool_t val)</argsstring>
+        <name>linphone_proxy_config_enable_publish</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Indicates either or not, PUBLISH must be issued for this <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> . </para>        </briefdescription>
+        <detaileddescription>
+<para><linebreak/>
+ In case this <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> has been added to <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref>, follows the <ref refid="group__proxies_1gadfddcce1c3dd138f144ae0421782834b" kindref="member">linphone_proxy_config_edit()</ref> rule. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if true, publish will be engaged </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga6646671d50f8a447a0f89a534edf0dd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_set_publish_expires</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, int expires)</argsstring>
+        <name>linphone_proxy_config_set_publish_expires</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>expires</declname>
+        </param>
+        <briefdescription>
+<para>Set the publish expiration time in second. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>expires</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>in second </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga3522d9f0b04089588a84ea13cd836060" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_proxy_config_get_publish_expires</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_publish_expires</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>get the publish expiration time in second. </para>        </briefdescription>
+        <detaileddescription>
+<para>Default value is the registration expiration value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>expires in second </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gadf8ce7a15604a3b8469e7149f992d916" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_set_dial_escape_plus</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, bool_t val)</argsstring>
+        <name>linphone_proxy_config_set_dial_escape_plus</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Sets whether liblinphone should replace &quot;+&quot; by international calling prefix in dialed numbers (passed to <ref refid="group__call__control_1gaaea662739cc3825eaa80d8ac264a883c" kindref="member">linphone_core_invite</ref> ). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga34cc952a4053bd82f65f8de965e239dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_set_dial_prefix</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, const char *prefix)</argsstring>
+        <name>linphone_proxy_config_set_dial_prefix</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>prefix</declname>
+        </param>
+        <briefdescription>
+<para>Sets a dialing prefix to be automatically prepended when inviting a number with <ref refid="group__call__control_1gaaea662739cc3825eaa80d8ac264a883c" kindref="member">linphone_core_invite()</ref>; This dialing prefix shall usually be the country code of the country where the user is living, without &quot;+&quot;. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gacc39ea2058541b920b54606d06aed37d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_enable_quality_reporting</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, bool_t enable)</argsstring>
+        <name>linphone_proxy_config_enable_quality_reporting</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Indicates whether quality statistics during call should be stored and sent to a collector according to RFC 6035. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to sotre quality statistics and sent them to the collector, false to disable it. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gafa768bc49afd9c987d5676328ae71771" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_proxy_config_quality_reporting_enabled</definition>
+        <argsstring>(LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_quality_reporting_enabled</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Indicates whether quality statistics during call should be stored and sent to a collector according to RFC 6035. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if quality repotring is enabled, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga5eb818aafb8cca230f40617ef3e18bba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_set_quality_reporting_collector</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, const char *collector)</argsstring>
+        <name>linphone_proxy_config_set_quality_reporting_collector</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>collector</declname>
+        </param>
+        <briefdescription>
+<para>Set the route of the collector end-point when using quality reporting. </para>        </briefdescription>
+        <detaileddescription>
+<para>This SIP address should be used on server-side to process packets directly before discarding packets. Collector address should be a non existing account and will not receive any messages. If NULL, reports will be send to the proxy domain. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">collector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>route of the collector end-point, if NULL PUBLISH will be sent to the proxy domain. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="194" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga1fcc3327df0fe15efb3b5a7f7f0d61cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_proxy_config_get_quality_reporting_collector</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_quality_reporting_collector</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Get the route of the collector end-point when using quality reporting. </para>        </briefdescription>
+        <detaileddescription>
+<para>This SIP address should be used on server-side to process packets directly before discarding packets. Collector address should be a non existing account and will not receive any messages. If NULL, reports will be send to the proxy domain. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The SIP address of the collector end-point. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="204" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga077037b144a42b6067c3025596eaa897" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_set_quality_reporting_interval</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, int interval)</argsstring>
+        <name>linphone_proxy_config_set_quality_reporting_interval</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>interval</declname>
+        </param>
+        <briefdescription>
+<para>Set the interval between 2 interval reports sending when using quality reporting. </para>        </briefdescription>
+        <detaileddescription>
+<para>If call exceed interval size, an interval report will be sent to the collector. On call termination, a session report will be sent for the remaining period. Value must be 0 (disabled) or positive. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">interval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The interval in seconds, 0 means interval reports are disabled. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="213" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gab6eb2d0f234a917a55fff2e7dea55da8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_proxy_config_get_quality_reporting_interval</definition>
+        <argsstring>(LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_quality_reporting_interval</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Get the interval between interval reports when using quality reporting. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The interval in seconds, 0 means interval reports are disabled. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="221" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga5ae722780e8c0a03545736c01bb7018b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__proxies_1gabf1415b6c3722e92fc39ce592b1fe3e0" kindref="member">LinphoneRegistrationState</ref></type>
+        <definition>LinphoneRegistrationState linphone_proxy_config_get_state</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_state</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Get the registration state of the given proxy config. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The registration state of the proxy config. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="228" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga4fda970e7f94e39eae6f80935b77b8d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED bool_t</type>
+        <definition>LINPHONE_DEPRECATED bool_t linphone_proxy_config_is_registered</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_is_registered</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>a boolean indicating that the user is sucessfully registered on the proxy. </para></simplesect>
+<xrefsect id="deprecated_1_deprecated000134"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__proxies_1ga5ae722780e8c0a03545736c01bb7018b" kindref="member">linphone_proxy_config_get_state()</ref> instead.  <donotwrap />  </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="235" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga946996ee0054eeb049fd1a360750b49e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_proxy_config_get_domain</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_domain</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Get the domain name of the given proxy config. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The domain name of the proxy config. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="242" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga58c37b50e9f5477e32042e4f0bd355d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_proxy_config_get_realm</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_realm</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Get the realm of the given proxy config. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The realm of the proxy config. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="249" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga4279d99d9f33955bfb3249467d7e98c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_set_realm</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, const char *realm)</argsstring>
+        <name>linphone_proxy_config_set_realm</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>realm</declname>
+        </param>
+        <briefdescription>
+<para>Set the realm of the given proxy config. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">realm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New realm value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="256" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gafc5b942439a74b727de1b8578636394d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_proxy_config_get_route</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_route</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the route set for this proxy configuration. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="261" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gaf11990682f68c340e914b2962cf088b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+        <definition>const LinphoneAddress* linphone_proxy_config_get_identity_address</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_identity_address</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the SIP identity that belongs to this proxy configuration. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="266" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga24cee22ec8347c97b6757f0bcb9f8dbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED const char *</type>
+        <definition>LINPHONE_DEPRECATED const char* linphone_proxy_config_get_identity</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_identity</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000135"><xreftitle>Deprecated</xreftitle><xrefdescription><para>use <ref refid="group__proxies_1gaf11990682f68c340e914b2962cf088b1" kindref="member">linphone_proxy_config_get_identity_address()</ref>  <donotwrap />  </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="272" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga7b5dc74b961381a1e220f0f8e3e03ac0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_proxy_config_publish_enabled</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_publish_enabled</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>TRUE if PUBLISH request is enabled for this proxy. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="277" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga44a3fa191fd4d47999749e28b0158d6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_proxy_config_get_server_addr</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_server_addr</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the proxy&apos;s SIP address. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="282" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gaa473134be85e065921df2da1353d256c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_proxy_config_get_expires</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_expires</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>the duration of registration. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="289" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga0b8cd45acee99fda4a8273f159f9db51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_proxy_config_register_enabled</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_register_enabled</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>TRUE if registration to the proxy is enabled. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="294" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga94411d7a66d26b421358fc4ab73a844d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_refresh_register</definition>
+        <argsstring>(LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_refresh_register</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Refresh a proxy registration. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is useful if for example you resuming from suspend, thus IP address may have changed. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="300" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gac588358be5ccfcef184c5e501f98c112" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_pause_register</definition>
+        <argsstring>(LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_pause_register</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Prevent a proxy config from refreshing its registration. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is useful to let registrations to expire naturally (or) when the application wants to keep control on when refreshes are sent. However, linphone_core_set_network_reachable(lc,TRUE) will always request the proxy configs to refresh their registrations. The refreshing operations can be resumed with <ref refid="group__proxies_1ga94411d7a66d26b421358fc4ab73a844d" kindref="member">linphone_proxy_config_refresh_register()</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="310" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gafa6b4e48bd179c6a4f5a8e746db2ee1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+        <definition>const LinphoneAddress* linphone_proxy_config_get_contact</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_contact</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="312" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga21bfae676398cc76e0b3d749b7881892" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_proxy_config_get_contact_parameters</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_contact_parameters</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>previously set contact parameters. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="317" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga5cc64979a1d040467a87b29e8c71ec6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_set_contact_parameters</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, const char *contact_params)</argsstring>
+        <name>linphone_proxy_config_set_contact_parameters</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>contact_params</declname>
+        </param>
+        <briefdescription>
+<para>Set optional contact parameters that will be added to the contact information sent in the registration. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>contact_params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a string contaning the additional parameters in text form, like &quot;myparam=something;myparam2=something_else&quot;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+The main use case for this function is provide the proxy additional information regarding the user agent, like for example unique identifier or apple push id. As an example, the contact address in the SIP register sent will look like &lt;sip:<ulink url="mailto:joe@15.128.128.93">joe@15.128.128.93</ulink>:50421&gt;;apple-push-id=43143-DFE23F-2323-FA2232. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="327" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gaa563205dd35ba911f10c6c1ff1221a72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_set_contact_uri_parameters</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, const char *contact_uri_params)</argsstring>
+        <name>linphone_proxy_config_set_contact_uri_parameters</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>contact_uri_params</declname>
+        </param>
+        <briefdescription>
+<para>Set optional contact parameters that will be added to the contact information sent in the registration, inside the URI. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>contact_uri_params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>a string containing the additional parameters in text form, like &quot;myparam=something;myparam2=something_else&quot;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+The main use case for this function is provide the proxy additional information regarding the user agent, like for example unique identifier or apple push id. As an example, the contact address in the SIP register sent will look like &lt;sip:<ulink url="mailto:joe@15.128.128.93">joe@15.128.128.93</ulink>:50421;apple-push-id=43143-DFE23F-2323-FA2232&gt;. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="337" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga9f96669aa19b314a2354ff0d3d682109" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_proxy_config_get_contact_uri_parameters</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_contact_uri_parameters</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>previously set contact URI parameters. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="342" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga2e9ba1893bd890747ba2055e9cc09117" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+        <definition>LinphoneCore* linphone_proxy_config_get_core</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_core</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Get the <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object to which is associated the <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> object to which is associated the <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="349" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga5f7d7b51c71f544c40e76a64bd81da04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_proxy_config_get_dial_escape_plus</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_dial_escape_plus</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>whether liblinphone should replace &quot;+&quot; by &quot;00&quot; in dialed numbers (passed to <ref refid="group__call__control_1gaaea662739cc3825eaa80d8ac264a883c" kindref="member">linphone_core_invite</ref> ). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="356" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga783ee03e3420b88c2cae25e3897ea237" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_proxy_config_get_dial_prefix</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_dial_prefix</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>dialing prefix. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="361" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga245ddcd6772adad4ac8ecc64a10494ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga718bb4a932186c1101a78ddce8083243" kindref="member">LinphoneReason</ref></type>
+        <definition>LinphoneReason linphone_proxy_config_get_error</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_error</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Get the reason why registration failed when the proxy config state is LinphoneRegistrationFailed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The reason why registration failed for this proxy config. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="368" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gacee7b20f44e48bfb1a2ccbc00eada052" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+        <definition>const LinphoneErrorInfo* linphone_proxy_config_get_error_info</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_error_info</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Get detailed information why registration failed when the proxy config state is LinphoneRegistrationFailed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The details why registration failed for this proxy config. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="375" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga2505c0225f920e0c3e933de24662bd8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_proxy_config_get_transport</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_transport</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Get the transport from either service route, route or addr. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The transport as a string (I.E udp, tcp, tls, dtls) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="382" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga454d93372a1a089fe938e2ee475c7a8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED void</type>
+        <definition>LINPHONE_DEPRECATED void linphone_proxy_config_destroy</definition>
+        <argsstring>(LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_destroy</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Destroys a proxy config. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>: LinphoneProxyConfig that have been removed from LinphoneCore with <ref refid="group__proxies_1ga70c5efbfea5392003eb6b1e402d8c811" kindref="member">linphone_core_remove_proxy_config()</ref> must not be freed. </para></simplesect>
+<xrefsect id="deprecated_1_deprecated000136"><xreftitle>Deprecated</xreftitle><xrefdescription><para> <donotwrap />  </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="391" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga7edff4b44460cbbffb172b83054c9dc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_set_sip_setup</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, const char *type)</argsstring>
+        <name>linphone_proxy_config_set_sip_setup</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="393" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga0eb38455de041ed793d885cfbcf3c91c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref> *</type>
+        <definition>SipSetupContext* linphone_proxy_config_get_sip_setup_context</definition>
+        <argsstring>(LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_sip_setup_context</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="395" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga3cad96a9adafcf02e6ecbfa8030e2202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct__SipSetup" kindref="compound">SipSetup</ref> *</type>
+        <definition>SipSetup* linphone_proxy_config_get_sip_setup</definition>
+        <argsstring>(LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_sip_setup</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="397" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga81859303cbfbf1c86cbd5c346df69ba6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_proxy_config_is_phone_number</definition>
+        <argsstring>(LinphoneProxyConfig *proxy, const char *username)</argsstring>
+        <name>linphone_proxy_config_is_phone_number</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>proxy</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <briefdescription>
+<para>Detect if the given input is a phone number or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>proxy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> argument, unused yet but may contain useful data. Can be NULL. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string to parse. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE if input is a phone number, FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="405" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga37c772255042876d0c713073209c5fa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED bool_t</type>
+        <definition>LINPHONE_DEPRECATED bool_t linphone_proxy_config_normalize_number</definition>
+        <argsstring>(LinphoneProxyConfig *proxy, const char *username, char *result, size_t result_len)</argsstring>
+        <name>linphone_proxy_config_normalize_number</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>proxy</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>result_len</declname>
+        </param>
+        <briefdescription>
+<para>See linphone_proxy_config_normalize_phone_number. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>proxy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object containing country code and/or escape symbol. If NULL passed, will use default configuration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the string to parse </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the newly normalized number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>result_len</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the size of the normalized number <emphasis>result</emphasis> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE if a phone number was recognized, FALSE otherwise. </para></simplesect>
+<xrefsect id="deprecated_1_deprecated000137"><xreftitle>Deprecated</xreftitle><xrefdescription><para>use <ref refid="group__proxies_1ga77b72de9ab152d8792615623cc5e8964" kindref="member">linphone_proxy_config_normalize_phone_number()</ref>  <donotwrap />  </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="417" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga77b72de9ab152d8792615623cc5e8964" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* linphone_proxy_config_normalize_phone_number</definition>
+        <argsstring>(LinphoneProxyConfig *proxy, const char *username)</argsstring>
+        <name>linphone_proxy_config_normalize_phone_number</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>proxy</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <briefdescription>
+<para>Normalize a human readable phone number into a basic string. </para>        </briefdescription>
+        <detaileddescription>
+<para>888-444-222 becomes 888444222 or +33888444222 depending on the <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. This function will always generate a normalized username if input is a phone number. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>proxy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object containing country code and/or escape symbol. If NULL passed, will use default configuration. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the string to parse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>NULL if input is an invalid phone number, normalized phone number from username input otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="427" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gac6573670d9ec138d3add3303a7f3a669" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+        <definition>LinphoneAddress* linphone_proxy_config_normalize_sip_uri</definition>
+        <argsstring>(LinphoneProxyConfig *proxy, const char *username)</argsstring>
+        <name>linphone_proxy_config_normalize_sip_uri</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>proxy</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <briefdescription>
+<para>Normalize a human readable sip uri into a fully qualified LinphoneAddress. </para>        </briefdescription>
+        <detaileddescription>
+<para>A sip address should look like DisplayName &lt;sip:username@domain:port&gt; . Basically this function performs the following tasks<itemizedlist>
+<listitem><para>if a phone number is entered, prepend country prefix and eventually escape the &apos;+&apos; by 00 of the proxy config.</para></listitem><listitem><para>if no domain part is supplied, append the domain name of the proxy config. Returns NULL if no proxy is provided at this point.</para></listitem><listitem><para>if no sip: is present, prepend it.</para></listitem></itemizedlist>
+</para><para>The result is a syntactically correct SIP address. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>proxy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object containing country code, escape symbol and/or domain name. Can be NULL if domain is already provided. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the string to parse </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>NULL if invalid input, normalized sip address otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="442" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga361a02178ca3ef43fb20bd9814254288" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_set_privacy</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, LinphonePrivacyMask privacy)</argsstring>
+        <name>linphone_proxy_config_set_privacy</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__control_1gaaf53c411435a78bcc9154e1924c934f9" kindref="member">LinphonePrivacyMask</ref></type>
+          <declname>privacy</declname>
+        </param>
+        <briefdescription>
+<para>Set default privacy policy for all calls routed through this proxy. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>privacy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePrivacy to configure privacy </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="449" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga94721646dad94bb19ff9bc560d74de77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__control_1gaaf53c411435a78bcc9154e1924c934f9" kindref="member">LinphonePrivacyMask</ref></type>
+        <definition>LinphonePrivacyMask linphone_proxy_config_get_privacy</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_privacy</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Get default privacy policy for all calls routed through this proxy. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Privacy mode </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="456" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga80967171aab9c0564676d5faec831ebd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_set_file_transfer_server</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, const char *server_url)</argsstring>
+        <name>linphone_proxy_config_set_file_transfer_server</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>server_url</declname>
+        </param>
+        <briefdescription>
+<para>Set the http file transfer server to be used for content type application/vnd.gsma.rcs-ft-http+xml. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>server_url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>URL of the file server like <ulink url="https://file.linphone.org/upload.php">https://file.linphone.org/upload.php</ulink> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>That function isn&apos;t implemented yet.  <donotwrap />  </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="465" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga46a8c15232a6edb8450132210e4b664f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_proxy_config_get_file_transfer_server</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_file_transfer_server</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Get the http file transfer server to be used for content type application/vnd.gsma.rcs-ft-http+xml. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>URL of the file server like <ulink url="https://file.linphone.org/upload.php">https://file.linphone.org/upload.php</ulink> </para></simplesect>
+<simplesect kind="warning"><para>That function isn&apos;t implemented yet.  <donotwrap />  </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="474" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga1455616c1b22e5ebccb56ba4557280f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED void</type>
+        <definition>LINPHONE_DEPRECATED void linphone_proxy_config_enable_avpf</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, bool_t enable)</argsstring>
+        <name>linphone_proxy_config_enable_avpf</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Indicates whether AVPF/SAVPF must be used for calls using this proxy config. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True to enable AVPF/SAVF, false to disable it. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000138"><xreftitle>Deprecated</xreftitle><xrefdescription><para>use <ref refid="group__proxies_1ga3bbd52c26bdbc7df7fb84f804101a6d8" kindref="member">linphone_proxy_config_set_avpf_mode()</ref>  <donotwrap />  </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="483" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga118eccd24901b763b342a4cbeab42c4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_proxy_config_avpf_enabled</definition>
+        <argsstring>(LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_avpf_enabled</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Indicates whether AVPF/SAVPF is being used for calls using this proxy config. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True if AVPF/SAVPF is enabled, false otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="490" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga676e7545e2a09ab61c86a700d78b7082" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_set_avpf_rr_interval</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, uint8_t interval)</argsstring>
+        <name>linphone_proxy_config_set_avpf_rr_interval</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>interval</declname>
+        </param>
+        <briefdescription>
+<para>Set the interval between regular RTCP reports when using AVPF/SAVPF. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">interval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The interval in seconds (between 0 and 5 seconds). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="497" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gaafe4fa6cdcddaac450ad9a999109f642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t linphone_proxy_config_get_avpf_rr_interval</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_avpf_rr_interval</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Get the interval between regular RTCP reports when using AVPF/SAVPF. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The interval in seconds. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="504" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gaabd040abc63ac202ea4a7ed0bbb81108" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__media__parameters_1ga1281981fd0640abb65822041bfd20e01" kindref="member">LinphoneAVPFMode</ref></type>
+        <definition>LinphoneAVPFMode linphone_proxy_config_get_avpf_mode</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_avpf_mode</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Get enablement status of RTCP feedback (also known as AVPF profile). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the enablement mode, which can be LinphoneAVPFDefault (use LinphoneCore&apos;s mode), LinphoneAVPFEnabled (avpf is enabled), or LinphoneAVPFDisabled (disabled). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="511" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga3bbd52c26bdbc7df7fb84f804101a6d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_set_avpf_mode</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, LinphoneAVPFMode mode)</argsstring>
+        <name>linphone_proxy_config_set_avpf_mode</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type><ref refid="group__media__parameters_1ga1281981fd0640abb65822041bfd20e01" kindref="member">LinphoneAVPFMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+<para>Enable the use of RTCP feedback (also known as AVPF profile). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the enablement mode, which can be LinphoneAVPFDefault (use LinphoneCore&apos;s mode), LinphoneAVPFEnabled (avpf is enabled), or LinphoneAVPFDisabled (disabled). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="518" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga7a8c087752cc2c4af91e609becc3368e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_proxy_config_get_custom_header</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, const char *header_name)</argsstring>
+        <name>linphone_proxy_config_get_custom_header</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>header_name</declname>
+        </param>
+        <briefdescription>
+<para>Obtain the value of a header sent by the server in last answer to REGISTER. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>header_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the header name for which to fetch corresponding value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the value of the queried header. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="526" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gaa912e274897579302aebe440d74bdc82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_set_custom_header</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, const char *header_name, const char *header_value)</argsstring>
+        <name>linphone_proxy_config_set_custom_header</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>header_name</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>header_value</declname>
+        </param>
+        <briefdescription>
+<para>Set the value of a custom header sent to the server in REGISTERs request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>header_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the header name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>header_value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the header&apos;s value </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="534" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga638c613d6b340c71eec58d3ed46c02fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+        <definition>const LinphoneAuthInfo* linphone_proxy_config_find_auth_info</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_find_auth_info</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Find authentication info matching proxy config, if any, similarly to linphone_core_find_auth_info. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>a <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> matching proxy config criteria if possible, NULL if nothing can be found. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="541" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga23bf76cb122ee4840007cc8f85e87907" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_proxy_config_get_ref_key</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_ref_key</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Get the persistent reference key associated to the proxy config. </para>        </briefdescription>
+        <detaileddescription>
+<para>The reference key can be for example an id to an external database. It is stored in the config file, thus can survive to process exits/restarts.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The reference key string that has been associated to the proxy config, or NULL if none has been associated. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="552" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga47060a21fe08f981cd5166067496f92d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_set_ref_key</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, const char *refkey)</argsstring>
+        <name>linphone_proxy_config_set_ref_key</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>refkey</declname>
+        </param>
+        <briefdescription>
+<para>Associate a persistent reference key to the proxy config. </para>        </briefdescription>
+        <detaileddescription>
+<para>The reference key can be for example an id to an external database. It is stored in the config file, thus can survive to process exits/restarts.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">refkey</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reference key string to associate to the proxy config. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="563" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1gaaa0a0d5dcd440f4fb1e556c7f489e5b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+        <definition>LinphoneNatPolicy* linphone_proxy_config_get_nat_policy</definition>
+        <argsstring>(const LinphoneProxyConfig *cfg)</argsstring>
+        <name>linphone_proxy_config_get_nat_policy</name>
+        <param>
+          <type>const <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <briefdescription>
+<para>Get The policy that is used to pass through NATs/firewalls when using this proxy config. </para>        </briefdescription>
+        <detaileddescription>
+<para>If it is set to NULL, the default NAT policy from the core will be used instead. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneNatPolicy object in use. </para></simplesect>
+<simplesect kind="see"><para><ref refid="group__network__parameters_1ga96d97e153a69a61ac21db4e6b3a21327" kindref="member">linphone_core_get_nat_policy()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="572" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__proxies_1ga56ef55bd8c1b82945de38d7c63b18283" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_proxy_config_set_nat_policy</definition>
+        <argsstring>(LinphoneProxyConfig *cfg, LinphoneNatPolicy *policy)</argsstring>
+        <name>linphone_proxy_config_set_nat_policy</name>
+        <param>
+          <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+          <declname>cfg</declname>
+        </param>
+        <param>
+          <type><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref> *</type>
+          <declname>policy</declname>
+        </param>
+        <briefdescription>
+<para>Set the policy to use to pass through NATs/firewalls when using this proxy config. </para>        </briefdescription>
+        <detaileddescription>
+<para>If it is set to NULL, the default NAT policy from the core will be used instead. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cfg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">policy</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneNatPolicy object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ref refid="group__network__parameters_1gad4a583bc56e9fec5b6fe647f9147d200" kindref="member">linphone_core_set_nat_policy()</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h" line="581" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(C)<sp/>2010-2015<sp/>Belledonne<sp/>Communications<sp/>SARL</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"></highlight></codeline>
+<codeline lineno="9"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_PROXY_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_PROXY_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphone/types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">LINPHONE_PUBLIC<sp/>LINPHONE_DEPRECATED<sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*<ref refid="group__proxies_1gac435e6efb12fedf8a016745c88ee09a4" kindref="member">linphone_proxy_config_new</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*<ref refid="group__proxies_1ga25e37ca48aad663a3f18f418ea92dfd2" kindref="member">linphone_proxy_config_ref</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga813af731d0baf61dd6b25590344b62a2" kindref="member">linphone_proxy_config_unref</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group__proxies_1gabb1e3eae0dab32c619d7aaf30e9724f8" kindref="member">linphone_proxy_config_get_user_data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga4258acbc13b3ba3ab36ff9ce06bffa9a" kindref="member">linphone_proxy_config_set_user_data</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ud);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__proxies_1ga6e896345be76aaf6399ab4ed4532b2a4" kindref="member">linphone_proxy_config_set_server_addr</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*server_addr);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">LINPHONE_PUBLIC<sp/>LINPHONE_DEPRECATED<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__proxies_1ga978c00a218b907a2f98fc59f5d217805" kindref="member">linphone_proxy_config_set_identity</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*identity);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__proxies_1ga0980474bbee09845232fdf4ed6f300f6" kindref="member">linphone_proxy_config_set_identity_address</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*identity);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__proxies_1gab774e242021e96efb7b4af86885bdbcc" kindref="member">linphone_proxy_config_set_route</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*route);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1gaedc369323b04e8e9c4b3f210234fe783" kindref="member">linphone_proxy_config_set_expires</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>expires);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>linphone_proxy_config_expires<sp/>linphone_proxy_config_set_expires</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1gaea39579996645d4bc5e62e68ab097f17" kindref="member">linphone_proxy_config_enable_register</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/>bool_t<sp/>val);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>linphone_proxy_config_enableregister<sp/>linphone_proxy_config_enable_register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1gadfddcce1c3dd138f144ae0421782834b" kindref="member">linphone_proxy_config_edit</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__proxies_1ga2f48ab930fd797e1065c61b389f57988" kindref="member">linphone_proxy_config_done</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1gaf21d29929d15256e0c993a4959d570cd" kindref="member">linphone_proxy_config_enable_publish</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/>bool_t<sp/>val);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga6646671d50f8a447a0f89a534edf0dd9" kindref="member">linphone_proxy_config_set_publish_expires</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>expires);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga3522d9f0b04089588a84ea13cd836060" kindref="member">linphone_proxy_config_get_publish_expires</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1gadf8ce7a15604a3b8469e7149f992d916" kindref="member">linphone_proxy_config_set_dial_escape_plus</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/>bool_t<sp/>val);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga34cc952a4053bd82f65f8de965e239dc" kindref="member">linphone_proxy_config_set_dial_prefix</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*prefix);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1gacc39ea2058541b920b54606d06aed37d" kindref="member">linphone_proxy_config_enable_quality_reporting</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/>bool_t<sp/>enable);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__proxies_1gafa768bc49afd9c987d5676328ae71771" kindref="member">linphone_proxy_config_quality_reporting_enabled</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga5eb818aafb8cca230f40617ef3e18bba" kindref="member">linphone_proxy_config_set_quality_reporting_collector</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*collector);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__proxies_1ga1fcc3327df0fe15efb3b5a7f7f0d61cd" kindref="member">linphone_proxy_config_get_quality_reporting_collector</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga077037b144a42b6067c3025596eaa897" kindref="member">linphone_proxy_config_set_quality_reporting_interval</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>interval);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1gab6eb2d0f234a917a55fff2e7dea55da8" kindref="member">linphone_proxy_config_get_quality_reporting_interval</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__proxies_1gabf1415b6c3722e92fc39ce592b1fe3e0" kindref="member">LinphoneRegistrationState</ref><sp/><ref refid="group__proxies_1ga5ae722780e8c0a03545736c01bb7018b" kindref="member">linphone_proxy_config_get_state</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal">LINPHONE_PUBLIC<sp/>LINPHONE_DEPRECATED<sp/>bool_t<sp/><ref refid="group__proxies_1ga4fda970e7f94e39eae6f80935b77b8d0" kindref="member">linphone_proxy_config_is_registered</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__proxies_1ga946996ee0054eeb049fd1a360750b49e" kindref="member">linphone_proxy_config_get_domain</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__proxies_1ga58c37b50e9f5477e32042e4f0bd355d7" kindref="member">linphone_proxy_config_get_realm</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga4279d99d9f33955bfb3249467d7e98c1" kindref="member">linphone_proxy_config_set_realm</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>realm);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__proxies_1gafc5b942439a74b727de1b8578636394d" kindref="member">linphone_proxy_config_get_route</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*<ref refid="group__proxies_1gaf11990682f68c340e914b2962cf088b1" kindref="member">linphone_proxy_config_get_identity_address</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal">LINPHONE_PUBLIC<sp/>LINPHONE_DEPRECATED<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__proxies_1ga24cee22ec8347c97b6757f0bcb9f8dbe" kindref="member">linphone_proxy_config_get_identity</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__proxies_1ga7b5dc74b961381a1e220f0f8e3e03ac0" kindref="member">linphone_proxy_config_publish_enabled</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__proxies_1ga44a3fa191fd4d47999749e28b0158d6e" kindref="member">linphone_proxy_config_get_server_addr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>linphone_proxy_config_get_addr<sp/>linphone_proxy_config_get_server_addr</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1gaa473134be85e065921df2da1353d256c" kindref="member">linphone_proxy_config_get_expires</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__proxies_1ga0b8cd45acee99fda4a8273f159f9db51" kindref="member">linphone_proxy_config_register_enabled</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga94411d7a66d26b421358fc4ab73a844d" kindref="member">linphone_proxy_config_refresh_register</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1gac588358be5ccfcef184c5e501f98c112" kindref="member">linphone_proxy_config_pause_register</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref>*<sp/>linphone_proxy_config_get_contact(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__proxies_1ga21bfae676398cc76e0b3d749b7881892" kindref="member">linphone_proxy_config_get_contact_parameters</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga5cc64979a1d040467a87b29e8c71ec6b" kindref="member">linphone_proxy_config_set_contact_parameters</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*contact_params);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1gaa563205dd35ba911f10c6c1ff1221a72" kindref="member">linphone_proxy_config_set_contact_uri_parameters</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*contact_uri_params);</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="group__proxies_1ga9f96669aa19b314a2354ff0d3d682109" kindref="member">linphone_proxy_config_get_contact_uri_parameters</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref><sp/>*<sp/><ref refid="group__proxies_1ga2e9ba1893bd890747ba2055e9cc09117" kindref="member">linphone_proxy_config_get_core</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__proxies_1ga5f7d7b51c71f544c40e76a64bd81da04" kindref="member">linphone_proxy_config_get_dial_escape_plus</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__proxies_1ga783ee03e3420b88c2cae25e3897ea237" kindref="member">linphone_proxy_config_get_dial_prefix</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga718bb4a932186c1101a78ddce8083243" kindref="member">LinphoneReason</ref><sp/><ref refid="group__proxies_1ga245ddcd6772adad4ac8ecc64a10494ce" kindref="member">linphone_proxy_config_get_error</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*<ref refid="group__proxies_1gacee7b20f44e48bfb1a2ccbc00eada052" kindref="member">linphone_proxy_config_get_error_info</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="group__proxies_1ga2505c0225f920e0c3e933de24662bd8b" kindref="member">linphone_proxy_config_get_transport</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal">LINPHONE_PUBLIC<sp/>LINPHONE_DEPRECATED<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga454d93372a1a089fe938e2ee475c7a8a" kindref="member">linphone_proxy_config_destroy</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="393"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_proxy_config_set_sip_setup(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*type);</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="struct__SipSetupContext" kindref="compound">SipSetupContext</ref><sp/>*linphone_proxy_config_get_sip_setup_context(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="struct__SipSetup" kindref="compound">SipSetup</ref><sp/>*linphone_proxy_config_get_sip_setup(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight></codeline>
+<codeline lineno="405"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__proxies_1ga81859303cbfbf1c86cbd5c346df69ba6" kindref="member">linphone_proxy_config_is_phone_number</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*proxy,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*username);</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal">LINPHONE_PUBLIC<sp/>LINPHONE_DEPRECATED<sp/>bool_t<sp/><ref refid="group__proxies_1ga37c772255042876d0c713073209c5fa4" kindref="member">linphone_proxy_config_normalize_number</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*proxy,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*username,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*result,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>result_len);</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="group__proxies_1ga77b72de9ab152d8792615623cc5e8964" kindref="member">linphone_proxy_config_normalize_phone_number</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*proxy,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*username);</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref>*<sp/><ref refid="group__proxies_1gac6573670d9ec138d3add3303a7f3a669" kindref="member">linphone_proxy_config_normalize_sip_uri</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*proxy,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*username);</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight></codeline>
+<codeline lineno="449"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga361a02178ca3ef43fb20bd9814254288" kindref="member">linphone_proxy_config_set_privacy</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/><ref refid="group__call__control_1gaaf53c411435a78bcc9154e1924c934f9" kindref="member">LinphonePrivacyMask</ref><sp/>privacy);</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__call__control_1gaaf53c411435a78bcc9154e1924c934f9" kindref="member">LinphonePrivacyMask</ref><sp/><ref refid="group__proxies_1ga94721646dad94bb19ff9bc560d74de77" kindref="member">linphone_proxy_config_get_privacy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"></highlight></codeline>
+<codeline lineno="465"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga80967171aab9c0564676d5faec831ebd" kindref="member">linphone_proxy_config_set_file_transfer_server</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>server_url);</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"></highlight></codeline>
+<codeline lineno="474"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="group__proxies_1ga46a8c15232a6edb8450132210e4b664f" kindref="member">linphone_proxy_config_get_file_transfer_server</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"></highlight></codeline>
+<codeline lineno="483"><highlight class="normal">LINPHONE_DEPRECATED<sp/>LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1455616c1b22e5ebccb56ba4557280f7" kindref="member">linphone_proxy_config_enable_avpf</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/>bool_t<sp/>enable);</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"></highlight></codeline>
+<codeline lineno="490"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__proxies_1ga118eccd24901b763b342a4cbeab42c4a" kindref="member">linphone_proxy_config_avpf_enabled</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"></highlight></codeline>
+<codeline lineno="497"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga676e7545e2a09ab61c86a700d78b7082" kindref="member">linphone_proxy_config_set_avpf_rr_interval</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/>uint8_t<sp/>interval);</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"></highlight></codeline>
+<codeline lineno="504"><highlight class="normal">LINPHONE_PUBLIC<sp/>uint8_t<sp/><ref refid="group__proxies_1gaafe4fa6cdcddaac450ad9a999109f642" kindref="member">linphone_proxy_config_get_avpf_rr_interval</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"></highlight></codeline>
+<codeline lineno="511"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__media__parameters_1ga1281981fd0640abb65822041bfd20e01" kindref="member">LinphoneAVPFMode</ref><sp/><ref refid="group__proxies_1gaabd040abc63ac202ea4a7ed0bbb81108" kindref="member">linphone_proxy_config_get_avpf_mode</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"></highlight></codeline>
+<codeline lineno="518"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga3bbd52c26bdbc7df7fb84f804101a6d8" kindref="member">linphone_proxy_config_set_avpf_mode</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/><ref refid="group__media__parameters_1ga1281981fd0640abb65822041bfd20e01" kindref="member">LinphoneAVPFMode</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"></highlight></codeline>
+<codeline lineno="526"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__proxies_1ga7a8c087752cc2c4af91e609becc3368e" kindref="member">linphone_proxy_config_get_custom_header</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*header_name);</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"></highlight></codeline>
+<codeline lineno="534"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1gaa912e274897579302aebe440d74bdc82" kindref="member">linphone_proxy_config_set_custom_header</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*header_name,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*header_value);</highlight></codeline>
+<codeline lineno="535"><highlight class="normal"></highlight></codeline>
+<codeline lineno="541"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref>*<sp/><ref refid="group__proxies_1ga638c613d6b340c71eec58d3ed46c02fe" kindref="member">linphone_proxy_config_find_auth_info</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"></highlight></codeline>
+<codeline lineno="552"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__proxies_1ga23bf76cb122ee4840007cc8f85e87907" kindref="member">linphone_proxy_config_get_ref_key</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"></highlight></codeline>
+<codeline lineno="563"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga47060a21fe08f981cd5166067496f92d" kindref="member">linphone_proxy_config_set_ref_key</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*refkey);</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"></highlight></codeline>
+<codeline lineno="572"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*<sp/><ref refid="group__proxies_1gaaa0a0d5dcd440f4fb1e556c7f489e5b3" kindref="member">linphone_proxy_config_get_nat_policy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg);</highlight></codeline>
+<codeline lineno="573"><highlight class="normal"></highlight></codeline>
+<codeline lineno="581"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__proxies_1ga56ef55bd8c1b82945de38d7c63b18283" kindref="member">linphone_proxy_config_set_nat_policy</ref>(<ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref><sp/>*cfg,<sp/><ref refid="group__network__parameters_1gabcd02b5383f812275c66875588b76180" kindref="member">LinphoneNatPolicy</ref><sp/>*policy);</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"></highlight></codeline>
+<codeline lineno="587"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="588"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="590"><highlight class="normal"></highlight></codeline>
+<codeline lineno="591"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/proxy_config.h"/>
+  </compounddef>
+</doxygen>

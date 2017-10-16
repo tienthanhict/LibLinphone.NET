@@ -119,32 +119,32 @@ float Linphone::Core::LinphoneCallStats::GetReceiverLossRate(const ::LinphoneCal
 
 float Linphone::Core::LinphoneCallStats::GetSenderInterarrivalJitter(const ::LinphoneCallStats *stats)
 {
-	return linphone_call_stats_get_sender_interarrival_jitter(stats, this->call);
+	return linphone_call_stats_get_sender_interarrival_jitter(stats);
 }
 
 float Linphone::Core::LinphoneCallStats::GetReceiverInterarrivalJitter(const ::LinphoneCallStats *stats)
 {
-	return linphone_call_stats_get_receiver_interarrival_jitter(stats, this->call);
+	return linphone_call_stats_get_receiver_interarrival_jitter(stats);
 }
 
 int64 Linphone::Core::LinphoneCallStats::GetLatePacketsCumulativeNumber(const ::LinphoneCallStats *stats)
 {
-	return linphone_call_stats_get_late_packets_cumulative_number(stats, this->call);
+	return linphone_call_stats_get_late_packets_cumulative_number(stats);
 }
 
 void Linphone::Core::LinphoneCallStats::FillStats(const ::LinphoneCallStats *stats)
 {
-	this->mediaType = (Linphone::Core::MediaType) stats->type;
-	this->iceState = (Linphone::Core::IceState) stats->ice_state;
-	this->downloadBandwidth = stats->download_bandwidth;
-	this->uploadBandwidth = stats->upload_bandwidth;
+	this->mediaType = (Linphone::Core::MediaType) linphone_call_stats_get_type(stats);
+	this->iceState = (Linphone::Core::IceState) linphone_call_stats_get_ice_state(stats);
+	this->downloadBandwidth = linphone_call_stats_get_download_bandwidth(stats);
+	this->uploadBandwidth = linphone_call_stats_get_upload_bandwidth(stats);
 	this->senderLossRate = GetSenderLossRate(stats);
 	this->receiverLossRate = GetReceiverLossRate(stats);
 	this->senderInterarrivalJitter = GetSenderInterarrivalJitter(stats);
 	this->receiverInterarrivalJitter = GetReceiverInterarrivalJitter(stats);
-	this->roundTripDelay = stats->round_trip_delay;
+	this->roundTripDelay = linphone_call_stats_get_round_trip_delay(stats);
 	this->cumulativeLatePackets = GetLatePacketsCumulativeNumber(stats);
-	this->jitterBufferSize = stats->jitter_stats.jitter_buffer_size_ms;
-	this->localLossRate = stats->local_loss_rate;
-	this->localLateRate = stats->local_late_rate;
+	this->jitterBufferSize = linphone_call_stats_get_jitter_buffer_size_ms(stats);
+	this->localLossRate = linphone_call_stats_get_local_loss_rate(stats);
+	this->localLateRate = linphone_call_stats_get_local_late_rate(stats);
 }

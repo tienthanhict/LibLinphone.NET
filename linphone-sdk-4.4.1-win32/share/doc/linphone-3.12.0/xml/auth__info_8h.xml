@@ -1,0 +1,909 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="auth__info_8h" kind="file" language="C++">
+    <compoundname>auth_info.h</compoundname>
+    <includes local="no">mediastreamer2/mscommon.h</includes>
+    <includes refid="types_8h" local="yes">linphone/types.h</includes>
+    <includedby refid="core_8h" local="yes">core.h</includedby>
+    <incdepgraph>
+      <node id="6">
+        <label>auth_info.h</label>
+        <link refid="auth_info.h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mediastreamer2/mscommon.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__authentication_1gaaab1cdaf2cce67ad5efd0e5fe4a0cae4" prot="public" static="no">
+        <name>LINPHONE_AUTH_INFO</name>
+        <param><defname>obj</defname></param>
+        <initializer>BELLE_SIP_CAST(obj, <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref>)</initializer>
+        <briefdescription>
+<para>Safely cast a belle_sip_object_t into LinphoneAuthInfo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="34" column="9" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__authentication_1ga3ed49f2183897be832c8196dafc1d2a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+        <definition>LinphoneAuthInfo* linphone_auth_info_new</definition>
+        <argsstring>(const char *username, const char *userid, const char *passwd, const char *ha1, const char *realm, const char *domain)</argsstring>
+        <name>linphone_auth_info_new</name>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>userid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>passwd</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>ha1</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>realm</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>domain</declname>
+        </param>
+        <briefdescription>
+<para>Creates a <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object with supplied information. </para>        </briefdescription>
+        <detaileddescription>
+<para>The object can be created empty, that is with all arguments set to NULL. Username, userid, password, realm and domain can be set later using specific methods. At the end, username and passwd (or ha1) are required. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The username that needs to be authenticated </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>userid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The userid used for authenticating (use NULL if you don&apos;t know what it is) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>passwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The password in clear text </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ha1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ha1-encrypted password if password is not given in clear text. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>realm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The authentication domain (which can be larger than the sip domain. Unfortunately many SIP servers don&apos;t use this parameter. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The SIP domain for which this authentication information is valid, if it has to be restricted for a single SIP domain. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object. linphone_auth_info_destroy() must be used to destroy it when no longer needed. The LinphoneCore makes a copy of LinphoneAuthInfo passed through <ref refid="group__authentication_1ga62ac5bb34f0342f7edc733c42473b7aa" kindref="member">linphone_core_add_auth_info()</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1gaa6105a0a6029b1579b1b35c9dd52bbe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+        <definition>LinphoneAuthInfo* linphone_auth_info_clone</definition>
+        <argsstring>(const LinphoneAuthInfo *source)</argsstring>
+        <name>linphone_auth_info_clone</name>
+        <param>
+          <type>const <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+<para>Instantiates a new auth info with values from source. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">source</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object to be cloned </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The newly created <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga209075d64b24c216463c94c58b60a3d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+        <definition>LinphoneAuthInfo* linphone_auth_info_ref</definition>
+        <argsstring>(LinphoneAuthInfo *info)</argsstring>
+        <name>linphone_auth_info_ref</name>
+        <param>
+          <type><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Take a reference on a <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1gae955bbb5634baca1e1671c54d830ccd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_auth_info_unref</definition>
+        <argsstring>(LinphoneAuthInfo *info)</argsstring>
+        <name>linphone_auth_info_unref</name>
+        <param>
+          <type><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Release a <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga004d3d5228cb74697df157e4ae93f6c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_auth_info_set_passwd</definition>
+        <argsstring>(LinphoneAuthInfo *info, const char *passwd)</argsstring>
+        <name>linphone_auth_info_set_passwd</name>
+        <param>
+          <type><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>passwd</declname>
+        </param>
+        <briefdescription>
+<para>Sets the password. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">passwd</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The password. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga36c0b48f8ce1b1b3e632f00d301ea4c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_auth_info_set_username</definition>
+        <argsstring>(LinphoneAuthInfo *info, const char *username)</argsstring>
+        <name>linphone_auth_info_set_username</name>
+        <param>
+          <type><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <briefdescription>
+<para>Sets the username. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The username. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1gaceda2fc2a33f5e5ea05d16bc0ecd2167" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_auth_info_set_userid</definition>
+        <argsstring>(LinphoneAuthInfo *info, const char *userid)</argsstring>
+        <name>linphone_auth_info_set_userid</name>
+        <param>
+          <type><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>userid</declname>
+        </param>
+        <briefdescription>
+<para>Sets the userid. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">userid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The userid. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga9b59442c828894f86a106d40bab2563e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_auth_info_set_realm</definition>
+        <argsstring>(LinphoneAuthInfo *info, const char *realm)</argsstring>
+        <name>linphone_auth_info_set_realm</name>
+        <param>
+          <type><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>realm</declname>
+        </param>
+        <briefdescription>
+<para>Sets the realm. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">realm</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The realm. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga039bc35669147f691a9453455bcc2b82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_auth_info_set_domain</definition>
+        <argsstring>(LinphoneAuthInfo *info, const char *domain)</argsstring>
+        <name>linphone_auth_info_set_domain</name>
+        <param>
+          <type><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>domain</declname>
+        </param>
+        <briefdescription>
+<para>Sets the domain for which this authentication is valid. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The domain. This should not be necessary because realm is supposed to be unique and sufficient. However, many SIP servers don&apos;t set realm correctly, then domain has to be used to distinguish between several SIP account bearing the same username. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga6c71e015d27bff6bfb6ef96d328eb4c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_auth_info_set_ha1</definition>
+        <argsstring>(LinphoneAuthInfo *info, const char *ha1)</argsstring>
+        <name>linphone_auth_info_set_ha1</name>
+        <param>
+          <type><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>ha1</declname>
+        </param>
+        <briefdescription>
+<para>Sets the ha1. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ha1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ha1. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga222994d0b1fc3f819c0ac77dd19c65e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_auth_info_set_tls_cert</definition>
+        <argsstring>(LinphoneAuthInfo *info, const char *tls_cert)</argsstring>
+        <name>linphone_auth_info_set_tls_cert</name>
+        <param>
+          <type><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>tls_cert</declname>
+        </param>
+        <briefdescription>
+<para>Sets the TLS certificate. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tls_cert</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TLS certificate. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga95d2cfe12886e7e61fd31c9683f5515b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_auth_info_set_tls_key</definition>
+        <argsstring>(LinphoneAuthInfo *info, const char *tls_key)</argsstring>
+        <name>linphone_auth_info_set_tls_key</name>
+        <param>
+          <type><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>tls_key</declname>
+        </param>
+        <briefdescription>
+<para>Sets the TLS key. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tls_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TLS key. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="130" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1gac18f84d8f5628fa50799e250e52d4960" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_auth_info_set_tls_cert_path</definition>
+        <argsstring>(LinphoneAuthInfo *info, const char *tls_cert_path)</argsstring>
+        <name>linphone_auth_info_set_tls_cert_path</name>
+        <param>
+          <type><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>tls_cert_path</declname>
+        </param>
+        <briefdescription>
+<para>Sets the TLS certificate path. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tls_cert_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TLS certificate path. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1gac297c4a4a64e1a334bceb69293ca1d64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_auth_info_set_tls_key_path</definition>
+        <argsstring>(LinphoneAuthInfo *info, const char *tls_key_path)</argsstring>
+        <name>linphone_auth_info_set_tls_key_path</name>
+        <param>
+          <type><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>tls_key_path</declname>
+        </param>
+        <briefdescription>
+<para>Sets the TLS key path. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">tls_key_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The TLS key path. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1gadfdb3db5efa7a8a22ab43745834fa503" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_auth_info_get_username</definition>
+        <argsstring>(const LinphoneAuthInfo *info)</argsstring>
+        <name>linphone_auth_info_get_username</name>
+        <param>
+          <type>const <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Gets the username. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The username. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga353a92748b63674c43c7d82195b27a09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_auth_info_get_passwd</definition>
+        <argsstring>(const LinphoneAuthInfo *info)</argsstring>
+        <name>linphone_auth_info_get_passwd</name>
+        <param>
+          <type>const <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Gets the password. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The password. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="158" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga2ccc0947445f60eb63dc621d9e13a444" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_auth_info_get_userid</definition>
+        <argsstring>(const LinphoneAuthInfo *info)</argsstring>
+        <name>linphone_auth_info_get_userid</name>
+        <param>
+          <type>const <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Gets the userid. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The userid. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1gad5b9adca20ae4251e736b10669e7b7c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_auth_info_get_realm</definition>
+        <argsstring>(const LinphoneAuthInfo *info)</argsstring>
+        <name>linphone_auth_info_get_realm</name>
+        <param>
+          <type>const <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Gets the realm. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The realm. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga9bcfc3334b721912b40270d169b2b41e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_auth_info_get_domain</definition>
+        <argsstring>(const LinphoneAuthInfo *info)</argsstring>
+        <name>linphone_auth_info_get_domain</name>
+        <param>
+          <type>const <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Gets the domain. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The domain. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga19865806c8252c75bf67d9bf2499e4f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_auth_info_get_ha1</definition>
+        <argsstring>(const LinphoneAuthInfo *info)</argsstring>
+        <name>linphone_auth_info_get_ha1</name>
+        <param>
+          <type>const <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Gets the ha1. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The ha1. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1gaeab202083c2146df7c6d4181f3a5e0c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_auth_info_get_tls_cert</definition>
+        <argsstring>(const LinphoneAuthInfo *info)</argsstring>
+        <name>linphone_auth_info_get_tls_cert</name>
+        <param>
+          <type>const <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Gets the TLS certificate. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The TLS certificate. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1gacedae8d22d6b5fc3eccf0468dcc418a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_auth_info_get_tls_key</definition>
+        <argsstring>(const LinphoneAuthInfo *info)</argsstring>
+        <name>linphone_auth_info_get_tls_key</name>
+        <param>
+          <type>const <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Gets the TLS key. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The TLS key. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga64d5486ce9b03ccedae71e00d6eb2d5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_auth_info_get_tls_cert_path</definition>
+        <argsstring>(const LinphoneAuthInfo *info)</argsstring>
+        <name>linphone_auth_info_get_tls_cert_path</name>
+        <param>
+          <type>const <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Gets the TLS certificate path. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The TLS certificate path. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1ga3b1e7c28a7e13d67bd4bc81d7e966f8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_auth_info_get_tls_key_path</definition>
+        <argsstring>(const LinphoneAuthInfo *info)</argsstring>
+        <name>linphone_auth_info_get_tls_key_path</name>
+        <param>
+          <type>const <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Gets the TLS key path. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The TLS key path. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="214" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__authentication_1gafe7f00ce564d29a20530f53ad8236565" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED void</type>
+        <definition>LINPHONE_DEPRECATED void linphone_auth_info_destroy</definition>
+        <argsstring>(LinphoneAuthInfo *info)</argsstring>
+        <name>linphone_auth_info_destroy</name>
+        <param>
+          <type><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h" line="217" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">auth_info.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2016<sp/><sp/>Belledonne<sp/>Communications<sp/>SARL</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_AUTH_INFO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_AUTH_INFO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;mediastreamer2/mscommon.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphone/types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor">#define<sp/>LINPHONE_AUTH_INFO(obj)<sp/>BELLE_SIP_CAST(obj,<sp/>LinphoneAuthInfo)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*<ref refid="group__authentication_1ga3ed49f2183897be832c8196dafc1d2a6" kindref="member">linphone_auth_info_new</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*username,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*userid,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*passwd,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ha1,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*realm,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*domain);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*<ref refid="group__authentication_1gaa6105a0a6029b1579b1b35c9dd52bbe9" kindref="member">linphone_auth_info_clone</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref>*<sp/>source);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*<ref refid="group__authentication_1ga209075d64b24c216463c94c58b60a3d9" kindref="member">linphone_auth_info_ref</ref>(<ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1gae955bbb5634baca1e1671c54d830ccd2" kindref="member">linphone_auth_info_unref</ref>(<ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1ga004d3d5228cb74697df157e4ae93f6c7" kindref="member">linphone_auth_info_set_passwd</ref>(<ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*passwd);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1ga36c0b48f8ce1b1b3e632f00d301ea4c7" kindref="member">linphone_auth_info_set_username</ref>(<ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*username);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1gaceda2fc2a33f5e5ea05d16bc0ecd2167" kindref="member">linphone_auth_info_set_userid</ref>(<ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*userid);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1ga9b59442c828894f86a106d40bab2563e" kindref="member">linphone_auth_info_set_realm</ref>(<ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*realm);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1ga039bc35669147f691a9453455bcc2b82" kindref="member">linphone_auth_info_set_domain</ref>(<ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*domain);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1ga6c71e015d27bff6bfb6ef96d328eb4c8" kindref="member">linphone_auth_info_set_ha1</ref>(<ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*ha1);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1ga222994d0b1fc3f819c0ac77dd19c65e6" kindref="member">linphone_auth_info_set_tls_cert</ref>(<ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*tls_cert);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1ga95d2cfe12886e7e61fd31c9683f5515b" kindref="member">linphone_auth_info_set_tls_key</ref>(<ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*tls_key);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1gac18f84d8f5628fa50799e250e52d4960" kindref="member">linphone_auth_info_set_tls_cert_path</ref>(<ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*tls_cert_path);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1gac297c4a4a64e1a334bceb69293ca1d64" kindref="member">linphone_auth_info_set_tls_key_path</ref>(<ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*tls_key_path);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__authentication_1gadfdb3db5efa7a8a22ab43745834fa503" kindref="member">linphone_auth_info_get_username</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__authentication_1ga353a92748b63674c43c7d82195b27a09" kindref="member">linphone_auth_info_get_passwd</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__authentication_1ga2ccc0947445f60eb63dc621d9e13a444" kindref="member">linphone_auth_info_get_userid</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__authentication_1gad5b9adca20ae4251e736b10669e7b7c2" kindref="member">linphone_auth_info_get_realm</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__authentication_1ga9bcfc3334b721912b40270d169b2b41e" kindref="member">linphone_auth_info_get_domain</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__authentication_1ga19865806c8252c75bf67d9bf2499e4f6" kindref="member">linphone_auth_info_get_ha1</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__authentication_1gaeab202083c2146df7c6d4181f3a5e0c4" kindref="member">linphone_auth_info_get_tls_cert</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__authentication_1gacedae8d22d6b5fc3eccf0468dcc418a6" kindref="member">linphone_auth_info_get_tls_key</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__authentication_1ga64d5486ce9b03ccedae71e00d6eb2d5d" kindref="member">linphone_auth_info_get_tls_cert_path</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__authentication_1ga3b1e7c28a7e13d67bd4bc81d7e966f8e" kindref="member">linphone_auth_info_get_tls_key_path</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>you<sp/>don&apos;t<sp/>need<sp/>those<sp/>function*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal">LINPHONE_PUBLIC<sp/>LINPHONE_DEPRECATED<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_auth_info_destroy(<ref refid="group__authentication_1ga0f8289c1aab407992864a68869107f4f" kindref="member">LinphoneAuthInfo</ref><sp/>*info);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LINPHONE_AUTH_INFO_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/auth_info.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structMyAppData" kind="struct" language="C++" prot="public">
+    <compoundname>MyAppData</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structMyAppData_1aff9bc592b5ab219061cb741c16d5f15e" prot="public" static="no" mutable="no">
+        <type><ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> *</type>
+        <definition>LinphoneEvent* MyAppData::ev</definition>
+        <argsstring></argsstring>
+        <name>ev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/coreapi/help/examples/C/notify.c" line="50" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/coreapi/help/examples/C/notify.c" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/coreapi/help/examples/C/notify.c" line="49" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/coreapi/help/examples/C/notify.c" bodystart="49" bodyend="51"/>
+    <listofallmembers>
+      <member refid="structMyAppData_1aff9bc592b5ab219061cb741c16d5f15e" prot="public" virt="non-virtual"><scope>MyAppData</scope><name>ev</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

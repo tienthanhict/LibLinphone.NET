@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_efc99ad84d263e00294190b8296b0971" kind="dir">
+    <compoundname>linphone</compoundname>
+    <innerdir refid="dir_94a67402189a6431b37f33e76e273719">coreapi</innerdir>
+    <innerdir refid="dir_9662a90d8324b706d67b130a49c96271">include</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/"/>
+  </compounddef>
+</doxygen>

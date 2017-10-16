@@ -1,0 +1,647 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="player_8h" kind="file" language="C++">
+    <compoundname>player.h</compoundname>
+    <includes refid="types_8h" local="yes">linphone/types.h</includes>
+    <includes local="yes">mediastreamer2/msinterfaces.h</includes>
+    <includedby refid="core_8h" local="yes">core.h</includedby>
+    <incdepgraph>
+      <node id="103">
+        <label>mediastreamer2/msinterfaces.h</label>
+      </node>
+      <node id="102">
+        <label>player.h</label>
+        <link refid="player.h"/>
+        <childnode refid="103" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__call__control_1ga6f92a64a84c228a36447d2675d89b80e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref> *</type>
+        <definition>LinphonePlayer* linphone_player_ref</definition>
+        <argsstring>(LinphonePlayer *player)</argsstring>
+        <name>linphone_player_ref</name>
+        <param>
+          <type><ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref> *</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>Acquire a reference to the player. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePlayer object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The same LinphonePlayer object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/player.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1gaaa076aaf08618aaefaa7ce5adc620b06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_player_unref</definition>
+        <argsstring>(LinphonePlayer *player)</argsstring>
+        <name>linphone_player_unref</name>
+        <param>
+          <type><ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref> *</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>Release reference to the player. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePlayer object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/player.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1ga84e64bc91f4e7009757ff1386b997ebb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_player_get_user_data</definition>
+        <argsstring>(const LinphonePlayer *player)</argsstring>
+        <name>linphone_player_get_user_data</name>
+        <param>
+          <type>const <ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref> *</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve the user pointer associated with the player. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePlayer object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user pointer associated with the player. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/player.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1gad2d03eb3f0a7bee5caebddefac4e6d24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_player_set_user_data</definition>
+        <argsstring>(LinphonePlayer *player, void *ud)</argsstring>
+        <name>linphone_player_set_user_data</name>
+        <param>
+          <type><ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref> *</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ud</declname>
+        </param>
+        <briefdescription>
+<para>Assign a user pointer to the player. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePlayer object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user pointer to associate with the player. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/player.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1gae39b6515ff783039884d9ac051110a7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__control_1ga27e69f05d429633cd60ef26c7c2bf83c" kindref="member">LinphonePlayerCbs</ref> *</type>
+        <definition>LinphonePlayerCbs* linphone_player_get_callbacks</definition>
+        <argsstring>(const LinphonePlayer *player)</argsstring>
+        <name>linphone_player_get_callbacks</name>
+        <param>
+          <type>const <ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref> *</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+<para>Get the LinphonePlayerCbs object associated with the LinphonePlayer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">player</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePlayer object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The LinphonePlayerCbs object associated with the LinphonePlayer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/player.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1gaaeeef1c55be03726d19a91db77c38910" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_player_open</definition>
+        <argsstring>(LinphonePlayer *obj, const char *filename)</argsstring>
+        <name>linphone_player_open</name>
+        <param>
+          <type><ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Open a file for playing. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePlayer object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path to the file to open </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/player.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1ga55e9a0a80493e3ae61ea8bb5db3525c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_player_start</definition>
+        <argsstring>(LinphonePlayer *obj)</argsstring>
+        <name>linphone_player_start</name>
+        <param>
+          <type><ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Start playing a file that has been opened with <ref refid="group__call__control_1gaaeeef1c55be03726d19a91db77c38910" kindref="member">linphone_player_open()</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePlayer object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative value otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/player.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1gae129eabd71e0853149daf360b29e47ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_player_pause</definition>
+        <argsstring>(LinphonePlayer *obj)</argsstring>
+        <name>linphone_player_pause</name>
+        <param>
+          <type><ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Pause the playing of a file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePlayer object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative value otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/player.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1ga2f159143977f1fe1c054b707d8987af2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_player_seek</definition>
+        <argsstring>(LinphonePlayer *obj, int time_ms)</argsstring>
+        <name>linphone_player_seek</name>
+        <param>
+          <type><ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>time_ms</declname>
+        </param>
+        <briefdescription>
+<para>Seek in an opened file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePlayer object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">time_ms</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time we want to go to in the file (in milliseconds). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 on success, a negative value otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/player.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1ga829171ac492abbdd9d0f222962168142" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__control_1gaf968760f10343a52578404b40e00d578" kindref="member">LinphonePlayerState</ref></type>
+        <definition>LinphonePlayerState linphone_player_get_state</definition>
+        <argsstring>(LinphonePlayer *obj)</argsstring>
+        <name>linphone_player_get_state</name>
+        <param>
+          <type><ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Get the current state of a player. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePlayer object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current state of the player. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/player.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1ga87df0196d099492e2af6491420c8ef64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_player_get_duration</definition>
+        <argsstring>(LinphonePlayer *obj)</argsstring>
+        <name>linphone_player_get_duration</name>
+        <param>
+          <type><ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Get the duration of the opened file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePlayer object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The duration of the opened file </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/player.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1ga5b3c285127c02f36b6b68a88d475008f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_player_get_current_position</definition>
+        <argsstring>(LinphonePlayer *obj)</argsstring>
+        <name>linphone_player_get_current_position</name>
+        <param>
+          <type><ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Get the current position in the opened file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePlayer object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current position in the opened file </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/player.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1ga3ce415bfe18ff76e316dd859fcd67daf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_player_close</definition>
+        <argsstring>(LinphonePlayer *obj)</argsstring>
+        <name>linphone_player_close</name>
+        <param>
+          <type><ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Close the opened file. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePlayer object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/player.h" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1gaf2d0bc7b13d8a1e89a6eb575a7083745" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__control_1ga27e69f05d429633cd60ef26c7c2bf83c" kindref="member">LinphonePlayerCbs</ref> *</type>
+        <definition>LinphonePlayerCbs* linphone_player_cbs_ref</definition>
+        <argsstring>(LinphonePlayerCbs *cbs)</argsstring>
+        <name>linphone_player_cbs_ref</name>
+        <param>
+          <type><ref refid="group__call__control_1ga27e69f05d429633cd60ef26c7c2bf83c" kindref="member">LinphonePlayerCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Acquire a reference to the LinphonePlayerCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePlayerCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The same LinphonePlayerCbs object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/player.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1gac60bf8abcbd0effb1b942b236248452a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_player_cbs_unref</definition>
+        <argsstring>(LinphonePlayerCbs *cbs)</argsstring>
+        <name>linphone_player_cbs_unref</name>
+        <param>
+          <type><ref refid="group__call__control_1ga27e69f05d429633cd60ef26c7c2bf83c" kindref="member">LinphonePlayerCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Release reference to the LinphonePlayerCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePlayerCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/player.h" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1ga917986c907020db7a41af08a0d50c9bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_player_cbs_get_user_data</definition>
+        <argsstring>(const LinphonePlayerCbs *cbs)</argsstring>
+        <name>linphone_player_cbs_get_user_data</name>
+        <param>
+          <type>const <ref refid="group__call__control_1ga27e69f05d429633cd60ef26c7c2bf83c" kindref="member">LinphonePlayerCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve the user pointer associated with the LinphonePlayerCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePlayerCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user pointer associated with the LinphonePlayerCbs object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/player.h" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1ga0d08e1953905b49f3391acc1008b10e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_player_cbs_set_user_data</definition>
+        <argsstring>(LinphonePlayerCbs *cbs, void *ud)</argsstring>
+        <name>linphone_player_cbs_set_user_data</name>
+        <param>
+          <type><ref refid="group__call__control_1ga27e69f05d429633cd60ef26c7c2bf83c" kindref="member">LinphonePlayerCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ud</declname>
+        </param>
+        <briefdescription>
+<para>Assign a user pointer to the LinphonePlayerCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePlayerCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user pointer to associate with the LinphonePlayerCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/player.h" line="154" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1ga7df130e51e923f849f922fb0fda4f798" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__control_1gaa0dcbfe4b5df0d74940b83ae33b8bfbd" kindref="member">LinphonePlayerCbsEofReachedCb</ref></type>
+        <definition>LinphonePlayerCbsEofReachedCb linphone_player_cbs_get_eof_reached</definition>
+        <argsstring>(const LinphonePlayerCbs *cbs)</argsstring>
+        <name>linphone_player_cbs_get_eof_reached</name>
+        <param>
+          <type>const <ref refid="group__call__control_1ga27e69f05d429633cd60ef26c7c2bf83c" kindref="member">LinphonePlayerCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Get the end-of-file reached callback. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePlayerCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current end-of-file reached callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/player.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1ga6ba5c0bb81f8c8fa6f1e89f5104a987c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_player_cbs_set_eof_reached</definition>
+        <argsstring>(LinphonePlayerCbs *cbs, LinphonePlayerCbsEofReachedCb cb)</argsstring>
+        <name>linphone_player_cbs_set_eof_reached</name>
+        <param>
+          <type><ref refid="group__call__control_1ga27e69f05d429633cd60ef26c7c2bf83c" kindref="member">LinphonePlayerCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__control_1gaa0dcbfe4b5df0d74940b83ae33b8bfbd" kindref="member">LinphonePlayerCbsEofReachedCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+<para>Set the end-of-file reached callback. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphonePlayerCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The end-of-file reached callback to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/player.h" line="168" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">player.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2010-2017<sp/>Belledonne<sp/>Communications<sp/>SARL</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_PLAYER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_PLAYER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphone/types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;mediastreamer2/msinterfaces.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref><sp/>*<sp/><ref refid="group__call__control_1ga6f92a64a84c228a36447d2675d89b80e" kindref="member">linphone_player_ref</ref>(<ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref><sp/>*player);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__call__control_1gaaa076aaf08618aaefaa7ce5adc620b06" kindref="member">linphone_player_unref</ref>(<ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref><sp/>*player);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group__call__control_1ga84e64bc91f4e7009757ff1386b997ebb" kindref="member">linphone_player_get_user_data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref><sp/>*player);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__call__control_1gad2d03eb3f0a7bee5caebddefac4e6d24" kindref="member">linphone_player_set_user_data</ref>(<ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref><sp/>*player,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ud);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__call__control_1ga27e69f05d429633cd60ef26c7c2bf83c" kindref="member">LinphonePlayerCbs</ref><sp/>*<sp/><ref refid="group__call__control_1gae39b6515ff783039884d9ac051110a7c" kindref="member">linphone_player_get_callbacks</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref><sp/>*player);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__call__control_1gaaeeef1c55be03726d19a91db77c38910" kindref="member">linphone_player_open</ref>(<ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref><sp/>*obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__call__control_1ga55e9a0a80493e3ae61ea8bb5db3525c9" kindref="member">linphone_player_start</ref>(<ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref><sp/>*obj);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__call__control_1gae129eabd71e0853149daf360b29e47ef" kindref="member">linphone_player_pause</ref>(<ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref><sp/>*obj);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__call__control_1ga2f159143977f1fe1c054b707d8987af2" kindref="member">linphone_player_seek</ref>(<ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref><sp/>*obj,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>time_ms);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__call__control_1gaf968760f10343a52578404b40e00d578" kindref="member">LinphonePlayerState</ref><sp/><ref refid="group__call__control_1ga829171ac492abbdd9d0f222962168142" kindref="member">linphone_player_get_state</ref>(<ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref><sp/>*obj);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__call__control_1ga87df0196d099492e2af6491420c8ef64" kindref="member">linphone_player_get_duration</ref>(<ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref><sp/>*obj);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__call__control_1ga5b3c285127c02f36b6b68a88d475008f" kindref="member">linphone_player_get_current_position</ref>(<ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref><sp/>*obj);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__call__control_1ga3ce415bfe18ff76e316dd859fcd67daf" kindref="member">linphone_player_close</ref>(<ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref><sp/>*obj);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__call__control_1ga27e69f05d429633cd60ef26c7c2bf83c" kindref="member">LinphonePlayerCbs</ref><sp/>*<sp/><ref refid="group__call__control_1gaf2d0bc7b13d8a1e89a6eb575a7083745" kindref="member">linphone_player_cbs_ref</ref>(<ref refid="group__call__control_1ga27e69f05d429633cd60ef26c7c2bf83c" kindref="member">LinphonePlayerCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__call__control_1gac60bf8abcbd0effb1b942b236248452a" kindref="member">linphone_player_cbs_unref</ref>(<ref refid="group__call__control_1ga27e69f05d429633cd60ef26c7c2bf83c" kindref="member">LinphonePlayerCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group__call__control_1ga917986c907020db7a41af08a0d50c9bd" kindref="member">linphone_player_cbs_get_user_data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__call__control_1ga27e69f05d429633cd60ef26c7c2bf83c" kindref="member">LinphonePlayerCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__call__control_1ga0d08e1953905b49f3391acc1008b10e6" kindref="member">linphone_player_cbs_set_user_data</ref>(<ref refid="group__call__control_1ga27e69f05d429633cd60ef26c7c2bf83c" kindref="member">LinphonePlayerCbs</ref><sp/>*cbs,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ud);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__call__control_1gaa0dcbfe4b5df0d74940b83ae33b8bfbd" kindref="member">LinphonePlayerCbsEofReachedCb</ref><sp/><ref refid="group__call__control_1ga7df130e51e923f849f922fb0fda4f798" kindref="member">linphone_player_cbs_get_eof_reached</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__call__control_1ga27e69f05d429633cd60ef26c7c2bf83c" kindref="member">LinphonePlayerCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__call__control_1ga6ba5c0bb81f8c8fa6f1e89f5104a987c" kindref="member">linphone_player_cbs_set_eof_reached</ref>(<ref refid="group__call__control_1ga27e69f05d429633cd60ef26c7c2bf83c" kindref="member">LinphonePlayerCbs</ref><sp/>*cbs,<sp/><ref refid="group__call__control_1gaa0dcbfe4b5df0d74940b83ae33b8bfbd" kindref="member">LinphonePlayerCbsEofReachedCb</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LINPHONE_PLAYER_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/player.h"/>
+  </compounddef>
+</doxygen>

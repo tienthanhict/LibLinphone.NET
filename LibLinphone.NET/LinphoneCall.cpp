@@ -135,7 +135,7 @@ void Linphone::Core::LinphoneCall::AuthenticationTokenVerified::set(System::Bool
 System::Boolean Linphone::Core::LinphoneCall::InConference::get()
 {
 	API_LOCK;
-	return (linphone_call_is_in_conference(this->call) == TRUE);
+	return (linphone_call_get_conference(this->call) != NULL);
 }
 
 float Linphone::Core::LinphoneCall::PlayVolume::get()

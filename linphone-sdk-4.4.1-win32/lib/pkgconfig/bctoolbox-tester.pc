@@ -1,0 +1,9 @@
+# This is a comment
+prefix=C:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop
+exec_prefix=C:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop
+Name:  bctoolbox-tester
+Description: A common set of tester wrappers used by Belledonne Communications's softwares
+Requires.private: bcunit
+Version: 0.6.0
+Libs: -LC:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop/lib -lbctoolbox-tester
+Cflags: -IC:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop/include

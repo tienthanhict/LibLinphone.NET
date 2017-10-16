@@ -125,10 +125,9 @@ static void status_cb(::LinphoneChatMessage* msg, ::LinphoneChatMessageState sta
 void Linphone::Core::LinphoneChatMessage::StartFileDownload(Linphone::Core::LinphoneChatMessageListener^ listener, String^ filepath)
 {
 	API_LOCK;
-	RefToPtrProxy<LinphoneChatMessageListener^> *listenerPtr = new RefToPtrProxy<LinphoneChatMessageListener^>(listener);
 	const char *cfilepath = Utils::pstoccs(filepath);
 	linphone_chat_message_set_file_transfer_filepath(this->message, cfilepath);
-	linphone_chat_message_start_file_download(this->message, status_cb, listenerPtr);
+    linphone_chat_message_download_file(this->message);
 	delete(cfilepath);
 }
 

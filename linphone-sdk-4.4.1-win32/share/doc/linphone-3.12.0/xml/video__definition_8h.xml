@@ -1,0 +1,555 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="video__definition_8h" kind="file" language="C++">
+    <compoundname>video_definition.h</compoundname>
+    <includes refid="types_8h" local="yes">linphone/types.h</includes>
+    <includedby refid="core_8h" local="yes">core.h</includedby>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__media__parameters_1gac01ee9321bb97a201e94f5dcf02561f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+        <definition>LinphoneVideoDefinition* linphone_video_definition_ref</definition>
+        <argsstring>(LinphoneVideoDefinition *vdef)</argsstring>
+        <name>linphone_video_definition_ref</name>
+        <param>
+          <type><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+          <declname>vdef</declname>
+        </param>
+        <briefdescription>
+<para>Acquire a reference to the video definition. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vdef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneVideoDefinition object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The same LinphoneVideoDefinition object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/video_definition.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1gab94190cd256f561bc951cb80628b5b27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_video_definition_unref</definition>
+        <argsstring>(LinphoneVideoDefinition *vdef)</argsstring>
+        <name>linphone_video_definition_unref</name>
+        <param>
+          <type><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+          <declname>vdef</declname>
+        </param>
+        <briefdescription>
+<para>Release reference to the video definition. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vdef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneVideoDefinition object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/video_definition.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga7b6d19813b35d97b2c2ef045e4975b1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_video_definition_get_user_data</definition>
+        <argsstring>(const LinphoneVideoDefinition *vdef)</argsstring>
+        <name>linphone_video_definition_get_user_data</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+          <declname>vdef</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve the user pointer associated with the video definition. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vdef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneVideoDefinition object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user pointer associated with the video definition. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/video_definition.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga86e3373a20263dc853614563cc1a6c26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_video_definition_set_user_data</definition>
+        <argsstring>(LinphoneVideoDefinition *vdef, void *ud)</argsstring>
+        <name>linphone_video_definition_set_user_data</name>
+        <param>
+          <type><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+          <declname>vdef</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ud</declname>
+        </param>
+        <briefdescription>
+<para>Assign a user pointer to the video definition. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vdef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneVideoDefinition object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user pointer to associate with the video definition. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/video_definition.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga3b080144971409981191b232dc2e8e5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+        <definition>LinphoneVideoDefinition* linphone_video_definition_clone</definition>
+        <argsstring>(const LinphoneVideoDefinition *vdef)</argsstring>
+        <name>linphone_video_definition_clone</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+          <declname>vdef</declname>
+        </param>
+        <briefdescription>
+<para>Clone a video definition. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vdef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneVideoDefinition object to be cloned </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new clone of the video definition </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/video_definition.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga1dc90cf03510984caed734409706c2a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int linphone_video_definition_get_width</definition>
+        <argsstring>(const LinphoneVideoDefinition *vdef)</argsstring>
+        <name>linphone_video_definition_get_width</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+          <declname>vdef</declname>
+        </param>
+        <briefdescription>
+<para>Get the width of the video definition. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vdef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneVideoDefinition object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The width of the video definition </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/video_definition.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga9538771cc133a32ab53e73f7587f5f92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_video_definition_set_width</definition>
+        <argsstring>(LinphoneVideoDefinition *vdef, unsigned int width)</argsstring>
+        <name>linphone_video_definition_set_width</name>
+        <param>
+          <type><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+          <declname>vdef</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Set the width of the video definition. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vdef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneVideoDefinition object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of the video definition </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/video_definition.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1gae80a4996584b24f1ddfebff45576557d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int linphone_video_definition_get_height</definition>
+        <argsstring>(const LinphoneVideoDefinition *vdef)</argsstring>
+        <name>linphone_video_definition_get_height</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+          <declname>vdef</declname>
+        </param>
+        <briefdescription>
+<para>Get the height of the video definition. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vdef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneVideoDefinition object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The height of the video definition </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/video_definition.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga6dc06268803bbe769b6b735ab2f86e80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_video_definition_set_height</definition>
+        <argsstring>(LinphoneVideoDefinition *vdef, unsigned int height)</argsstring>
+        <name>linphone_video_definition_set_height</name>
+        <param>
+          <type><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+          <declname>vdef</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Set the height of the video definition. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vdef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneVideoDefinition object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the video definition </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/video_definition.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1gad1045ef9fce8720a3d1f789f5737306d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_video_definition_set_definition</definition>
+        <argsstring>(LinphoneVideoDefinition *vdef, unsigned int width, unsigned int height)</argsstring>
+        <name>linphone_video_definition_set_definition</name>
+        <param>
+          <type><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+          <declname>vdef</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+<para>Set the width and the height of the video definition. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vdef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneVideoDefinition object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The width of the video definition </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The height of the video definition </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/video_definition.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga313b645a4b06f617c6ae228cd2ea2fdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_video_definition_get_name</definition>
+        <argsstring>(const LinphoneVideoDefinition *vdef)</argsstring>
+        <name>linphone_video_definition_get_name</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+          <declname>vdef</declname>
+        </param>
+        <briefdescription>
+<para>Get the name of the video definition. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vdef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneVideoDefinition object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The name of the video definition </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/video_definition.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1gabeef547d41deeb39806bb5cf83701c98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_video_definition_set_name</definition>
+        <argsstring>(LinphoneVideoDefinition *vdef, const char *name)</argsstring>
+        <name>linphone_video_definition_set_name</name>
+        <param>
+          <type><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+          <declname>vdef</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Set the name of the video definition. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vdef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneVideoDefinition object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the video definition </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/video_definition.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga4c0b1c902f8894f9f82ce306bfac7dec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_video_definition_equals</definition>
+        <argsstring>(const LinphoneVideoDefinition *vdef1, const LinphoneVideoDefinition *vdef2)</argsstring>
+        <name>linphone_video_definition_equals</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+          <declname>vdef1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+          <declname>vdef2</declname>
+        </param>
+        <briefdescription>
+<para>Tells whether two LinphoneVideoDefinition objects are equal (the widths and the heights are the same but can be switched). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vdef1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneVideoDefinition object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vdef2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneVideoDefinition object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A boolean value telling whether the two LinphoneVideoDefinition objects are equal. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/video_definition.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1gaae5d4516c416bfa4ce673c13fb1cbbf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_video_definition_strict_equals</definition>
+        <argsstring>(const LinphoneVideoDefinition *vdef1, const LinphoneVideoDefinition *vdef2)</argsstring>
+        <name>linphone_video_definition_strict_equals</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+          <declname>vdef1</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+          <declname>vdef2</declname>
+        </param>
+        <briefdescription>
+<para>Tells whether two LinphoneVideoDefinition objects are strictly equal (the widths are the same and the heights are the same). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vdef1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneVideoDefinition object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vdef2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneVideoDefinition object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A boolean value telling whether the two LinphoneVideoDefinition objects are strictly equal. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/video_definition.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1gac31b88dbb924b3bbc3dfdeac743590f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_video_definition_is_undefined</definition>
+        <argsstring>(const LinphoneVideoDefinition *vdef)</argsstring>
+        <name>linphone_video_definition_is_undefined</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref> *</type>
+          <declname>vdef</declname>
+        </param>
+        <briefdescription>
+<para>Tells whether a LinphoneVideoDefinition is undefined. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vdef</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneVideoDefinition object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A boolean value telling whether the LinphoneVideoDefinition is undefined. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/video_definition.h" line="142" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">video_definition.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2010-2017<sp/>Belledonne<sp/>Communications<sp/>SARL</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_VIDEO_DEFINITION_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_VIDEO_DEFINITION_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphone/types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*<sp/><ref refid="group__media__parameters_1gac01ee9321bb97a201e94f5dcf02561f8" kindref="member">linphone_video_definition_ref</ref>(<ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*vdef);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gab94190cd256f561bc951cb80628b5b27" kindref="member">linphone_video_definition_unref</ref>(<ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*vdef);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group__media__parameters_1ga7b6d19813b35d97b2c2ef045e4975b1e" kindref="member">linphone_video_definition_get_user_data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*vdef);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1ga86e3373a20263dc853614563cc1a6c26" kindref="member">linphone_video_definition_set_user_data</ref>(<ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*vdef,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ud);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*<sp/><ref refid="group__media__parameters_1ga3b080144971409981191b232dc2e8e5a" kindref="member">linphone_video_definition_clone</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*vdef);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1ga1dc90cf03510984caed734409706c2a4" kindref="member">linphone_video_definition_get_width</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*vdef);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1ga9538771cc133a32ab53e73f7587f5f92" kindref="member">linphone_video_definition_set_width</ref>(<ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*vdef,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gae80a4996584b24f1ddfebff45576557d" kindref="member">linphone_video_definition_get_height</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*vdef);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1ga6dc06268803bbe769b6b735ab2f86e80" kindref="member">linphone_video_definition_set_height</ref>(<ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*vdef,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gad1045ef9fce8720a3d1f789f5737306d" kindref="member">linphone_video_definition_set_definition</ref>(<ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*vdef,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__media__parameters_1ga313b645a4b06f617c6ae228cd2ea2fdd" kindref="member">linphone_video_definition_get_name</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*vdef);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gabeef547d41deeb39806bb5cf83701c98" kindref="member">linphone_video_definition_set_name</ref>(<ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*vdef,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__media__parameters_1ga4c0b1c902f8894f9f82ce306bfac7dec" kindref="member">linphone_video_definition_equals</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*vdef1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*vdef2);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__media__parameters_1gaae5d4516c416bfa4ce673c13fb1cbbf9" kindref="member">linphone_video_definition_strict_equals</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*vdef1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*vdef2);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__media__parameters_1gac31b88dbb924b3bbc3dfdeac743590f8" kindref="member">linphone_video_definition_is_undefined</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaceddfc8adcd8d5a97baa1f1df9335670" kindref="member">LinphoneVideoDefinition</ref><sp/>*vdef);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LINPHONE_VIDEO_DEFINITION_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/video_definition.h"/>
+  </compounddef>
+</doxygen>

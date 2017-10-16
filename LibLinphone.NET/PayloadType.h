@@ -28,7 +28,7 @@ namespace Linphone
 		public ref class PayloadType sealed
 		{
 		public:
-            PayloadType(::PayloadType *payload);
+            PayloadType(::LinphonePayloadType *payload);
 
 			/// <summary>
 			/// Gets the MIME type of the payload type.
@@ -49,12 +49,12 @@ namespace Linphone
             /// <summary>
             /// Get inner PayloadType pointer
             /// </summary>
-            ::PayloadType* GetPayloadPtr();
+            ::LinphonePayloadType* GetPayloadPtr();
 
 		private:			
 			~PayloadType();
 
-			::PayloadType *payload;
+			::LinphonePayloadType *payload;
 		};
 	}
 }

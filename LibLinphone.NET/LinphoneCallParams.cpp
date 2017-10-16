@@ -41,7 +41,7 @@ Linphone::Core::PayloadType^ Linphone::Core::LinphoneCallParams::UsedAudioCodec:
 {
 	API_LOCK;
 	Linphone::Core::PayloadType^ payloadType = nullptr;
-	const ::PayloadType *pt = linphone_call_params_get_used_audio_codec(this->params);
+	const ::LinphonePayloadType *pt = linphone_call_params_get_used_audio_payload_type(this->params);
 	if (pt != nullptr) {
 		payloadType = (Linphone::Core::PayloadType^) Linphone::Core::Utils::CreatePayloadType((void*)pt);
 	}
@@ -76,7 +76,7 @@ Linphone::Core::PayloadType^ Linphone::Core::LinphoneCallParams::UsedVideoCodec:
 {
 	API_LOCK;
 	Linphone::Core::PayloadType^ payloadType = nullptr;
-	const ::PayloadType *pt = linphone_call_params_get_used_video_codec(this->params);
+	const ::LinphonePayloadType *pt = linphone_call_params_get_used_video_payload_type(this->params);
 	if (pt != nullptr) {
 		payloadType = (Linphone::Core::PayloadType^) Linphone::Core::Utils::CreatePayloadType((void*)pt);
 	}
@@ -86,17 +86,21 @@ Linphone::Core::PayloadType^ Linphone::Core::LinphoneCallParams::UsedVideoCodec:
 Linphone::Core::VideoSize^ Linphone::Core::LinphoneCallParams::SentVideoSize::get()
 {
 	API_LOCK;
-	MSVideoSize vs = linphone_call_params_get_sent_video_size(this->params);
-    Linphone::Core::VideoSize^ size = gcnew Linphone::Core::VideoSize(vs.width, vs.height);
+	const ::LinphoneVideoDefinition* vs = linphone_call_params_get_sent_video_definition(this->params);
+    int width = linphone_video_definition_get_width(vs);
+    int height = linphone_video_definition_get_height(vs);
+    Linphone::Core::VideoSize^ size = gcnew Linphone::Core::VideoSize(width, height);
 	return size;
 }
 
 Linphone::Core::VideoSize^ Linphone::Core::LinphoneCallParams::ReceivedVideoSize::get()
 {
 	API_LOCK;
-	MSVideoSize vs = linphone_call_params_get_received_video_size(this->params);
-    Linphone::Core::VideoSize^ size = gcnew Linphone::Core::VideoSize(vs.width, vs.height);
-	return size;
+    const ::LinphoneVideoDefinition* vs = linphone_call_params_get_received_video_definition(this->params);
+    int width = linphone_video_definition_get_width(vs);
+    int height = linphone_video_definition_get_height(vs);
+    Linphone::Core::VideoSize^ size = gcnew Linphone::Core::VideoSize(width, height);
+    return size;
 }
 
 Linphone::Core::MediaDirection Linphone::Core::LinphoneCallParams::AudioDirection::get()

@@ -1,0 +1,240 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ldapprovider_8h" kind="file" language="C++">
+    <compoundname>ldapprovider.h</compoundname>
+    <includes refid="contactprovider_8h" local="yes">linphone/contactprovider.h</includes>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ldapprovider_8h_1a3494ec2bce6280d66bf9364e159628b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LinphoneLDAPContactSearch *</type>
+        <definition>LinphoneLDAPContactSearch* linphone_ldap_contact_search_create</definition>
+        <argsstring>(LinphoneLDAPContactProvider *ld, const char *predicate, ContactSearchCallback cb, void *cb_data)</argsstring>
+        <name>linphone_ldap_contact_search_create</name>
+        <param>
+          <type>LinphoneLDAPContactProvider *</type>
+          <declname>ld</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>predicate</declname>
+        </param>
+        <param>
+          <type>ContactSearchCallback</type>
+          <declname>cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>cb_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/ldapprovider.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ldapprovider_8h_1abc18e07998c06dc3cbf72a3749c18f99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int linphone_ldap_contact_search_result_count</definition>
+        <argsstring>(LinphoneLDAPContactSearch *obj)</argsstring>
+        <name>linphone_ldap_contact_search_result_count</name>
+        <param>
+          <type>LinphoneLDAPContactSearch *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/ldapprovider.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ldapprovider_8h_1ad62ee8bcf3b6c31f149d5b87284d40aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LinphoneLDAPContactSearch *</type>
+        <definition>LinphoneLDAPContactSearch* linphone_ldap_contact_search_cast</definition>
+        <argsstring>(void *obj)</argsstring>
+        <name>linphone_ldap_contact_search_cast</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/ldapprovider.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ldapprovider_8h_1a9f343a4a45336696b9f65643ea8ee3d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LinphoneLDAPContactProvider *</type>
+        <definition>LinphoneLDAPContactProvider* linphone_ldap_contact_provider_create</definition>
+        <argsstring>(LinphoneCore *lc, const LinphoneDictionary *config)</argsstring>
+        <name>linphone_ldap_contact_provider_create</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>lc</declname>
+        </param>
+        <param>
+          <type>const LinphoneDictionary *</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/ldapprovider.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ldapprovider_8h_1a07a18f35f65400b4040427cd75e9f730" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int linphone_ldap_contact_provider_get_max_result</definition>
+        <argsstring>(const LinphoneLDAPContactProvider *obj)</argsstring>
+        <name>linphone_ldap_contact_provider_get_max_result</name>
+        <param>
+          <type>const LinphoneLDAPContactProvider *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/ldapprovider.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ldapprovider_8h_1a73f41925af7224a744e63c364aebb691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LinphoneLDAPContactProvider *</type>
+        <definition>LinphoneLDAPContactProvider* linphone_ldap_contact_provider_ref</definition>
+        <argsstring>(void *obj)</argsstring>
+        <name>linphone_ldap_contact_provider_ref</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/ldapprovider.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ldapprovider_8h_1a1f1c9733934285215bcd6ecf69f72572" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_ldap_contact_provider_unref</definition>
+        <argsstring>(void *obj)</argsstring>
+        <name>linphone_ldap_contact_provider_unref</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/ldapprovider.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ldapprovider_8h_1abb8e834845dbde5a9cf0efc66b08a5cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LinphoneLDAPContactProvider *</type>
+        <definition>LinphoneLDAPContactProvider* linphone_ldap_contact_provider_cast</definition>
+        <argsstring>(void *obj)</argsstring>
+        <name>linphone_ldap_contact_provider_cast</name>
+        <param>
+          <type>void *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/ldapprovider.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="ldapprovider_8h_1a16a37cb4624392213e1c0b417e65571f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_ldap_contact_provider_available</definition>
+        <argsstring>(void)</argsstring>
+        <name>linphone_ldap_contact_provider_available</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/ldapprovider.h" line="49" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/>GNU<sp/>Library<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/>02111-1307,<sp/>USA.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_LDAPPROVIDER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_LDAPPROVIDER_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphone/contactprovider.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>LinphoneLDAPContactSearch<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">LinphoneLDAPContactSearch<sp/>*<sp/>linphone_ldap_contact_search_create(LinphoneLDAPContactProvider<sp/>*ld,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*predicate,<sp/>ContactSearchCallback<sp/>cb,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*cb_data);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linphone_ldap_contact_search_result_count(LinphoneLDAPContactSearch<sp/>*obj);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">LINPHONE_PUBLIC<sp/>LinphoneLDAPContactSearch<sp/>*<sp/>linphone_ldap_contact_search_cast(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>LinphoneLDAPContactProvider<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">LINPHONE_PUBLIC<sp/>LinphoneLDAPContactProvider<sp/>*<sp/>linphone_ldap_contact_provider_create(<ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref><sp/>*lc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LinphoneDictionary<sp/>*config);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linphone_ldap_contact_provider_get_max_result(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LinphoneLDAPContactProvider<sp/>*obj);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">LINPHONE_PUBLIC<sp/>LinphoneLDAPContactProvider<sp/>*<sp/>linphone_ldap_contact_provider_ref(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>linphone_ldap_contact_provider_unref(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">LinphoneLDAPContactProvider<sp/>*<sp/>linphone_ldap_contact_provider_cast(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*obj);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>linphone_ldap_contact_provider_available(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LINPHONE_LDAPPROVIDER_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/ldapprovider.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_1b07ab7d00cdc4ed73b6537da36bd180" kind="dir">
+    <compoundname>linphone</compoundname>
+    <innerfile refid="account__creator_8h">account_creator.h</innerfile>
+    <innerfile refid="account__creator__service_8h">account_creator_service.h</innerfile>
+    <innerfile refid="address_8h">address.h</innerfile>
+    <innerfile refid="auth__info_8h">auth_info.h</innerfile>
+    <innerfile refid="buffer_8h">buffer.h</innerfile>
+    <innerfile refid="call_8h">call.h</innerfile>
+    <innerfile refid="call__log_8h">call_log.h</innerfile>
+    <innerfile refid="call__params_8h">call_params.h</innerfile>
+    <innerfile refid="call__stats_8h">call_stats.h</innerfile>
+    <innerfile refid="callbacks_8h">callbacks.h</innerfile>
+    <innerfile refid="chat_8h">chat.h</innerfile>
+    <innerfile refid="conference_8h">conference.h</innerfile>
+    <innerfile refid="contactprovider_8h">contactprovider.h</innerfile>
+    <innerfile refid="content_8h">content.h</innerfile>
+    <innerfile refid="core_8h">core.h</innerfile>
+    <innerfile refid="core__utils_8h">core_utils.h</innerfile>
+    <innerfile refid="defs_8h">defs.h</innerfile>
+    <innerfile refid="dictionary_8h">dictionary.h</innerfile>
+    <innerfile refid="error__info_8h">error_info.h</innerfile>
+    <innerfile refid="event_8h">event.h</innerfile>
+    <innerfile refid="factory_8h">factory.h</innerfile>
+    <innerfile refid="friend_8h">friend.h</innerfile>
+    <innerfile refid="friendlist_8h">friendlist.h</innerfile>
+    <innerfile refid="headers_8h">headers.h</innerfile>
+    <innerfile refid="im__encryption__engine_8h">im_encryption_engine.h</innerfile>
+    <innerfile refid="im__notif__policy_8h">im_notif_policy.h</innerfile>
+    <innerfile refid="info__message_8h">info_message.h</innerfile>
+    <innerfile refid="ldapprovider_8h">ldapprovider.h</innerfile>
+    <innerfile refid="linphone__proxy__config_8h">linphone_proxy_config.h</innerfile>
+    <innerfile refid="linphone__tunnel_8h">linphone_tunnel.h</innerfile>
+    <innerfile refid="linphonecore_8h">linphonecore.h</innerfile>
+    <innerfile refid="linphonecore__utils_8h">linphonecore_utils.h</innerfile>
+    <innerfile refid="linphonefriend_8h">linphonefriend.h</innerfile>
+    <innerfile refid="linphonepresence_8h">linphonepresence.h</innerfile>
+    <innerfile refid="lpconfig_8h">lpconfig.h</innerfile>
+    <innerfile refid="misc_8h">misc.h</innerfile>
+    <innerfile refid="nat__policy_8h">nat_policy.h</innerfile>
+    <innerfile refid="payload__type_8h">payload_type.h</innerfile>
+    <innerfile refid="player_8h">player.h</innerfile>
+    <innerfile refid="presence_8h">presence.h</innerfile>
+    <innerfile refid="proxy__config_8h">proxy_config.h</innerfile>
+    <innerfile refid="ringtoneplayer_8h">ringtoneplayer.h</innerfile>
+    <innerfile refid="sipsetup_8h">sipsetup.h</innerfile>
+    <innerfile refid="tunnel_8h">tunnel.h</innerfile>
+    <innerfile refid="types_8h">types.h</innerfile>
+    <innerfile refid="vcard_8h">vcard.h</innerfile>
+    <innerfile refid="video__definition_8h">video_definition.h</innerfile>
+    <innerfile refid="wrapper__utils_8h">wrapper_utils.h</innerfile>
+    <innerfile refid="xmlrpc_8h">xmlrpc.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/"/>
+  </compounddef>
+</doxygen>

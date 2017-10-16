@@ -1,0 +1,13 @@
+# This is a comment
+prefix=C:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop
+exec_prefix=C:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop/bin
+includedir=C:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop/include
+
+Name: belle-sip 
+Description: A c based implementation of the SIP (RFC 3261)  telephony protocol 
+Requires: bctoolbox
+Requires.private:  z 
+Version: 1.6.3
+Libs: -LC:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop/lib -lbellesip
+Libs.private: -LC:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop/lib -lantlr3c -L -lbctoolbox
+Cflags: -IC:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop/include 

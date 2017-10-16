@@ -1,0 +1,10 @@
+# This is a comment
+prefix=C:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop
+exec_prefix=C:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop/bin
+includedir=C:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop/include
+
+Name: oRTP 
+Description: Implement the RFC3550 (RTP) with a easy to use API with high and low level access.
+Version: 1.0.2
+Libs: -LC:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop/lib -lortp 
+Cflags: -IC:/Jenkins/workspace/linphone-qt-win32/OUTPUT/desktop/include 

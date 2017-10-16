@@ -1,0 +1,425 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="conference_8h" kind="file" language="C++">
+    <compoundname>conference.h</compoundname>
+    <includes refid="types_8h" local="yes">linphone/types.h</includes>
+    <includedby refid="core_8h" local="yes">core.h</includedby>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__call__control_1ga48844b1fbf7635e3620e39b910c9acb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref> *</type>
+        <definition>LinphoneConferenceParams* linphone_conference_params_new</definition>
+        <argsstring>(const LinphoneCore *core)</argsstring>
+        <name>linphone_conference_params_new</name>
+        <param>
+          <type>const <ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>core</declname>
+        </param>
+        <briefdescription>
+<para>Create a <ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref> with default parameters set. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>core</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> to use to find out the default parameters. Can be NULL. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A freshly allocated <ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/conference.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1ga09e19a14001ac3ab7ff3a9f09839be14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref> *</type>
+        <definition>LinphoneConferenceParams* linphone_conference_params_ref</definition>
+        <argsstring>(LinphoneConferenceParams *params)</argsstring>
+        <name>linphone_conference_params_ref</name>
+        <param>
+          <type><ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Take a reference on a #LinphoneConferencParams. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref> to ref. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The freshly refed <ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/conference.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1ga7e671f48cd55b1fdba0d7fcf8791f965" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_conference_params_unref</definition>
+        <argsstring>(LinphoneConferenceParams *params)</argsstring>
+        <name>linphone_conference_params_unref</name>
+        <param>
+          <type><ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Release a <ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref> to release. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/conference.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1ga92e5a606ba8bad39f825ed5118545e10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED void</type>
+        <definition>LINPHONE_DEPRECATED void linphone_conference_params_free</definition>
+        <argsstring>(LinphoneConferenceParams *params)</argsstring>
+        <name>linphone_conference_params_free</name>
+        <param>
+          <type><ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Free a <ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref> to free </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<xrefsect id="deprecated_1_deprecated000028"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use <ref refid="group__call__control_1ga7e671f48cd55b1fdba0d7fcf8791f965" kindref="member">linphone_conference_params_unref()</ref> instead.  <donotwrap />  </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/conference.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1ga23d16399bc09bba8a8878bff4c3d5e19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref> *</type>
+        <definition>LinphoneConferenceParams* linphone_conference_params_clone</definition>
+        <argsstring>(const LinphoneConferenceParams *params)</argsstring>
+        <name>linphone_conference_params_clone</name>
+        <param>
+          <type>const <ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Clone a <ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref> to clone </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>An allocated <ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref> with the same parameters than params </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/conference.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1gaeeed37eeda03fcc94b2642636c5f6a9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_conference_params_enable_video</definition>
+        <argsstring>(LinphoneConferenceParams *params, bool_t enable)</argsstring>
+        <name>linphone_conference_params_enable_video</name>
+        <param>
+          <type><ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Enable video when starting a conference. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>If true, video will be enabled during conference </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/conference.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1ga94b765104684819feb2cddb09c56beea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_conference_params_video_requested</definition>
+        <argsstring>(const LinphoneConferenceParams *params)</argsstring>
+        <name>linphone_conference_params_video_requested</name>
+        <param>
+          <type>const <ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Check whether video will be enable at conference starting. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>if true, the video will be enable at conference starting </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/conference.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1ga0ad1e084d97982776f7dbe187b5da96d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__control_1gaf737b61f13b90ddd6895f7a530aa2165" kindref="member">LinphoneConference</ref> *</type>
+        <definition>LinphoneConference* linphone_conference_ref</definition>
+        <argsstring>(LinphoneConference *conf)</argsstring>
+        <name>linphone_conference_ref</name>
+        <param>
+          <type><ref refid="group__call__control_1gaf737b61f13b90ddd6895f7a530aa2165" kindref="member">LinphoneConference</ref> *</type>
+          <declname>conf</declname>
+        </param>
+        <briefdescription>
+<para>Take a reference on a <ref refid="group__call__control_1gaf737b61f13b90ddd6895f7a530aa2165" kindref="member">LinphoneConference</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__call__control_1gaf737b61f13b90ddd6895f7a530aa2165" kindref="member">LinphoneConference</ref> to ref. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The freshly refed <ref refid="group__call__control_1gaf737b61f13b90ddd6895f7a530aa2165" kindref="member">LinphoneConference</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/conference.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1gac96f0814946d2ef7f6b10d821a56c060" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_conference_unref</definition>
+        <argsstring>(LinphoneConference *conf)</argsstring>
+        <name>linphone_conference_unref</name>
+        <param>
+          <type><ref refid="group__call__control_1gaf737b61f13b90ddd6895f7a530aa2165" kindref="member">LinphoneConference</ref> *</type>
+          <declname>conf</declname>
+        </param>
+        <briefdescription>
+<para>Release a <ref refid="group__call__control_1gaf737b61f13b90ddd6895f7a530aa2165" kindref="member">LinphoneConference</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">conf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The <ref refid="group__call__control_1gaf737b61f13b90ddd6895f7a530aa2165" kindref="member">LinphoneConference</ref> to release. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/conference.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1ga17c115720548a536d73dd584f5dc97bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_conference_remove_participant</definition>
+        <argsstring>(LinphoneConference *obj, const LinphoneAddress *uri)</argsstring>
+        <name>linphone_conference_remove_participant</name>
+        <param>
+          <type><ref refid="group__call__control_1gaf737b61f13b90ddd6895f7a530aa2165" kindref="member">LinphoneConference</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> *</type>
+          <declname>uri</declname>
+        </param>
+        <briefdescription>
+<para>Remove a participant from a conference. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <ref refid="group__call__control_1gaf737b61f13b90ddd6895f7a530aa2165" kindref="member">LinphoneConference</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>uri</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SIP URI of the participant to remove </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>The passed SIP URI must be one of the URIs returned by <ref refid="group__call__control_1ga9f40474789a57f1a10f167647b1531a6" kindref="member">linphone_conference_get_participants()</ref> </para></simplesect>
+<simplesect kind="return"><para>0 if succeeded, -1 if failed </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/conference.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1ga9f40474789a57f1a10f167647b1531a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bctbx_list_t *</type>
+        <definition>bctbx_list_t* linphone_conference_get_participants</definition>
+        <argsstring>(const LinphoneConference *obj)</argsstring>
+        <name>linphone_conference_get_participants</name>
+        <param>
+          <type>const <ref refid="group__call__control_1gaf737b61f13b90ddd6895f7a530aa2165" kindref="member">LinphoneConference</ref> *</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Get URIs of all participants of one conference The returned bctbx_list_t contains URIs of all participant. </para>        </briefdescription>
+        <detaileddescription>
+<para>That list must be freed after use and each URI must be unref with <ref refid="group__linphone__address_1gae7ed90ea85c09c793e994367e6a5422e" kindref="member">linphone_address_unref()</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A <ref refid="group__call__control_1gaf737b61f13b90ddd6895f7a530aa2165" kindref="member">LinphoneConference</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A list of <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> objects. <bctbxlist>LinphoneAddress</bctbxlist>  </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/conference.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__control_1gaa6dbf6831df8d9eb644cdd0b428759c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_conference_invite_participants</definition>
+        <argsstring>(LinphoneConference *conf, const bctbx_list_t *addresses, const LinphoneCallParams *params)</argsstring>
+        <name>linphone_conference_invite_participants</name>
+        <param>
+          <type><ref refid="group__call__control_1gaf737b61f13b90ddd6895f7a530aa2165" kindref="member">LinphoneConference</ref> *</type>
+          <declname>conf</declname>
+        </param>
+        <param>
+          <type>const bctbx_list_t *</type>
+          <declname>addresses</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__call__control_1gaa91f7e76e8f038ae9acdf42d1bc80a22" kindref="member">LinphoneCallParams</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Invite participants to the conference, by supplying a list of LinphoneAddress. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The conference. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>addresses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A list of <ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref> objects. <bctbxlist>LinphoneAddress</bctbxlist>  </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__call__control_1gaa91f7e76e8f038ae9acdf42d1bc80a22" kindref="member">LinphoneCallParams</ref> to use for inviting the participants. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/conference.h" line="126" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>conference.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/><sp/>Thu<sp/>Nov<sp/>26,<sp/>2015</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/>Copyright<sp/><sp/>2015<sp/><sp/>Belledonne<sp/>Communications</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/>Author:<sp/>Linphone&apos;s<sp/>team</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/>Email<sp/>info@belledonne-communications.com</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/>This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/><sp/>This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/>along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/>Foundation,<sp/>Inc.,<sp/>59<sp/>Temple<sp/>Place<sp/>-<sp/>Suite<sp/>330,<sp/>Boston,<sp/>MA<sp/>02111-1307,<sp/>USA.</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_CONFERENCE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_CONFERENCE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphone/types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref><sp/>*<ref refid="group__call__control_1ga48844b1fbf7635e3620e39b910c9acb7" kindref="member">linphone_conference_params_new</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref><sp/>*core);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref><sp/>*<ref refid="group__call__control_1ga09e19a14001ac3ab7ff3a9f09839be14" kindref="member">linphone_conference_params_ref</ref>(<ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref><sp/>*params);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__call__control_1ga7e671f48cd55b1fdba0d7fcf8791f965" kindref="member">linphone_conference_params_unref</ref>(<ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref><sp/>*params);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal">LINPHONE_PUBLIC<sp/>LINPHONE_DEPRECATED<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__call__control_1ga92e5a606ba8bad39f825ed5118545e10" kindref="member">linphone_conference_params_free</ref>(<ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref><sp/>*params);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref><sp/>*<ref refid="group__call__control_1ga23d16399bc09bba8a8878bff4c3d5e19" kindref="member">linphone_conference_params_clone</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref><sp/>*params);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__call__control_1gaeeed37eeda03fcc94b2642636c5f6a9e" kindref="member">linphone_conference_params_enable_video</ref>(<ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref><sp/>*params,<sp/>bool_t<sp/>enable);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__call__control_1ga94b765104684819feb2cddb09c56beea" kindref="member">linphone_conference_params_video_requested</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__call__control_1ga6a6e093e291f3476658b75e08b195ffa" kindref="member">LinphoneConferenceParams</ref><sp/>*params);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__call__control_1gaf737b61f13b90ddd6895f7a530aa2165" kindref="member">LinphoneConference</ref><sp/>*<ref refid="group__call__control_1ga0ad1e084d97982776f7dbe187b5da96d" kindref="member">linphone_conference_ref</ref>(<ref refid="group__call__control_1gaf737b61f13b90ddd6895f7a530aa2165" kindref="member">LinphoneConference</ref><sp/>*conf);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__call__control_1gac96f0814946d2ef7f6b10d821a56c060" kindref="member">linphone_conference_unref</ref>(<ref refid="group__call__control_1gaf737b61f13b90ddd6895f7a530aa2165" kindref="member">LinphoneConference</ref><sp/>*conf);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__call__control_1ga17c115720548a536d73dd584f5dc97bc" kindref="member">linphone_conference_remove_participant</ref>(<ref refid="group__call__control_1gaf737b61f13b90ddd6895f7a530aa2165" kindref="member">LinphoneConference</ref><sp/>*obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__linphone__address_1ga5af5a516ac253e3cda4f51b599a5385b" kindref="member">LinphoneAddress</ref><sp/>*uri);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">LINPHONE_PUBLIC<sp/>bctbx_list_t<sp/>*<ref refid="group__call__control_1ga9f40474789a57f1a10f167647b1531a6" kindref="member">linphone_conference_get_participants</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__call__control_1gaf737b61f13b90ddd6895f7a530aa2165" kindref="member">LinphoneConference</ref><sp/>*obj);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref><sp/><ref refid="group__call__control_1gaa6dbf6831df8d9eb644cdd0b428759c6" kindref="member">linphone_conference_invite_participants</ref>(<ref refid="group__call__control_1gaf737b61f13b90ddd6895f7a530aa2165" kindref="member">LinphoneConference</ref><sp/>*conf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>bctbx_list_t<sp/>*addresses,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__call__control_1gaa91f7e76e8f038ae9acdf42d1bc80a22" kindref="member">LinphoneCallParams</ref><sp/>*params);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>LINPHONE_CONFERENCE_H</highlight></codeline>
+    </programlisting>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/conference.h"/>
+  </compounddef>
+</doxygen>

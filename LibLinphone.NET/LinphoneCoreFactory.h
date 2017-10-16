@@ -127,9 +127,10 @@ namespace Linphone
 			/// </summary>
 			/// <param name="udp_port">The UDP port to use (0 to disable)</param>
 			/// <param name="tcp_port">The TCP port to use (0 to disable)</param>
-			/// <param name="tls_port">The TLS port to use (0 to disable)</param>
+            /// <param name="dtls_port">The DTLS port to use (0 to disable)</param>
+            /// <param name="tls_port">The TLS port to use (0 to disable)</param>
 			/// <returns>The Transports that has been created</returns>
-			Transports^ CreateTransports(int udp_port, int tcp_port, int tls_port);
+			Transports^ CreateTransports(int udp_port, int tcp_port, int dtls_port, int tls_port);
 
 			/// <summary>
 			/// Duplicates a Transports object.
