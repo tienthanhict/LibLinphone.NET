@@ -32,7 +32,7 @@ namespace Linphone
 		{
 		public:
             Transports();
-            Transports(int udp_port, int tcp_port, int tls_port);
+            Transports(int udp_port, int tcp_port, int dtls_port, int tls_port);
             Transports(Transports^ t);
 
 			/// <summary>
@@ -59,6 +59,15 @@ namespace Linphone
 				void set(int value);
 			}
 
+            /// <summary>
+            /// DTLS port of the Transports object.
+            /// </summary>
+            property int DTLS
+            {
+                int get();
+                void set(int value);
+            }
+
 			/// <summary>
 			/// TLS port of the Transports object.
 			/// </summary>
@@ -70,6 +79,7 @@ namespace Linphone
 		private:
 			int udp;
 			int tcp;
+            int dtls;
 			int tls;
 		};
 	}

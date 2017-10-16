@@ -46,8 +46,7 @@ static void chat_room_callback(::LinphoneChatMessage* msg, ::LinphoneChatMessage
 void Linphone::Core::LinphoneChatRoom::SendMessage(Linphone::Core::LinphoneChatMessage^ message, Linphone::Core::LinphoneChatMessageListener^ listener)
 {
 	API_LOCK;
-	RefToPtrProxy<LinphoneChatMessageListener^> *listenerPtr = new RefToPtrProxy<LinphoneChatMessageListener^>(listener);
-	linphone_chat_room_send_message2(this->room, message->GetMessagePtr(), chat_room_callback, listenerPtr);
+    linphone_chat_room_send_chat_message(this->room, message->GetMessagePtr());
 }
 
 Linphone::Core::LinphoneChatMessage^ Linphone::Core::LinphoneChatRoom::CreateLinphoneChatMessage(String^ message)
@@ -133,7 +132,7 @@ IList<Object^>^ Linphone::Core::LinphoneChatRoom::History::get()
 	IList<Object^>^ history = gcnew List<Object^>();
 	MSList* messages = linphone_chat_room_get_history(this->room, 0);
     Linphone::Core::RefToPtrProxy<IList<Object^>^> *historyPtr = new Linphone::Core::RefToPtrProxy<IList<Object^>^>(history);
-	ms_list_for_each2(messages, AddChatMessageToVector, historyPtr);
+    bctbx_list_for_each2(messages, AddChatMessageToVector, historyPtr);
 	return history;
 }
 

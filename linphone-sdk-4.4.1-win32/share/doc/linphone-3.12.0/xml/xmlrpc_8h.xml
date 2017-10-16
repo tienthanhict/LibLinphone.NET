@@ -1,0 +1,884 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="xmlrpc_8h" kind="file" language="C++">
+    <compoundname>xmlrpc.h</compoundname>
+    <includes refid="types_8h" local="yes">linphone/types.h</includes>
+    <includedby refid="core_8h" local="yes">core.h</includedby>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__misc_1gab026dea16d3c11217fee77938e2ed7bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref> *</type>
+        <definition>LinphoneXmlRpcRequest* linphone_xml_rpc_request_new</definition>
+        <argsstring>(LinphoneXmlRpcArgType return_type, const char *method)</argsstring>
+        <name>linphone_xml_rpc_request_new</name>
+        <param>
+          <type><ref refid="group__misc_1ga29aa8f6ff6f9b210ac8f0b93112879b4" kindref="member">LinphoneXmlRpcArgType</ref></type>
+          <declname>return_type</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>method</declname>
+        </param>
+        <briefdescription>
+<para>Create a new LinphoneXmlRpcRequest object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">return_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expected XML-RPC response type. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The XML-RPC method to call. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new LinphoneXmlRpcRequest object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gad088f846b27b6127c1ca289b1075993d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref> *</type>
+        <definition>LinphoneXmlRpcRequest* linphone_xml_rpc_request_new_with_args</definition>
+        <argsstring>(LinphoneXmlRpcArgType return_type, const char *method,...)</argsstring>
+        <name>linphone_xml_rpc_request_new_with_args</name>
+        <param>
+          <type><ref refid="group__misc_1ga29aa8f6ff6f9b210ac8f0b93112879b4" kindref="member">LinphoneXmlRpcArgType</ref></type>
+          <declname>return_type</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+<para>Create a new LinphoneXmlRpcRequest object giving the arguments to the method call. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">return_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The expected XML-RPC response type. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">method</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The XML-RPC method to call. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new LinphoneXmlRpcRequest object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gaecca690c97be9ed9fe805343deec62a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref> *</type>
+        <definition>LinphoneXmlRpcRequest* linphone_xml_rpc_request_ref</definition>
+        <argsstring>(LinphoneXmlRpcRequest *request)</argsstring>
+        <name>linphone_xml_rpc_request_ref</name>
+        <param>
+          <type><ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref> *</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+<para>Acquire a reference to the XML-RPC request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcRequest object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The same LinphoneXmlRpcRequest object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gac86ca7658bc3d9216a4549f7a4591932" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_xml_rpc_request_unref</definition>
+        <argsstring>(LinphoneXmlRpcRequest *request)</argsstring>
+        <name>linphone_xml_rpc_request_unref</name>
+        <param>
+          <type><ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref> *</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+<para>Release reference to the XML-RPC request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcRequest object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gadbfd9726dbdbf5ff325b5b5707f739bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_xml_rpc_request_get_user_data</definition>
+        <argsstring>(const LinphoneXmlRpcRequest *request)</argsstring>
+        <name>linphone_xml_rpc_request_get_user_data</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref> *</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve the user pointer associated with the XML-RPC request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcRequest object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user pointer associated with the XML-RPC request. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga9e8431c4fda6517cb7f6d032100bd87d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_xml_rpc_request_set_user_data</definition>
+        <argsstring>(LinphoneXmlRpcRequest *request, void *ud)</argsstring>
+        <name>linphone_xml_rpc_request_set_user_data</name>
+        <param>
+          <type><ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref> *</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ud</declname>
+        </param>
+        <briefdescription>
+<para>Assign a user pointer to the XML-RPC request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcRequest object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user pointer to associate with the XML-RPC request. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gaab4a08b402cea8c064636fae56a5c979" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_xml_rpc_request_add_int_arg</definition>
+        <argsstring>(LinphoneXmlRpcRequest *request, int value)</argsstring>
+        <name>linphone_xml_rpc_request_add_int_arg</name>
+        <param>
+          <type><ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref> *</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Add an integer argument to an XML-RPC request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcRequest object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The integer value of the added argument. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga53187e8e8620520072168481b920af8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_xml_rpc_request_add_string_arg</definition>
+        <argsstring>(LinphoneXmlRpcRequest *request, const char *value)</argsstring>
+        <name>linphone_xml_rpc_request_add_string_arg</name>
+        <param>
+          <type><ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref> *</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Add a string argument to an XML-RPC request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcRequest object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string value of the added argument. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gacdd94b9dd3ac3ca10794772e2bbc8502" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gae904819121257097ad42e40e15d456e4" kindref="member">LinphoneXmlRpcRequestCbs</ref> *</type>
+        <definition>LinphoneXmlRpcRequestCbs* linphone_xml_rpc_request_get_callbacks</definition>
+        <argsstring>(const LinphoneXmlRpcRequest *request)</argsstring>
+        <name>linphone_xml_rpc_request_get_callbacks</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref> *</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+<para>Get the LinphoneXmlRpcRequestCbs object associated with a LinphoneXmlRpcRequest. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcRequest object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The LinphoneXmlRpcRequestCbs object associated with the LinphoneXmlRpcRequest. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga72a6b0b5c193c2ec8e246b1325398e06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_xml_rpc_request_get_content</definition>
+        <argsstring>(const LinphoneXmlRpcRequest *request)</argsstring>
+        <name>linphone_xml_rpc_request_get_content</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref> *</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+<para>Get the content of the XML-RPC request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcRequest object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The string representation of the content of the XML-RPC request. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gacee067f188ad31229c552091e221477d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga206d079816de950cfc54433f0db54e68" kindref="member">LinphoneXmlRpcStatus</ref></type>
+        <definition>LinphoneXmlRpcStatus linphone_xml_rpc_request_get_status</definition>
+        <argsstring>(const LinphoneXmlRpcRequest *request)</argsstring>
+        <name>linphone_xml_rpc_request_get_status</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref> *</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+<para>Get the status of the XML-RPC request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcRequest object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The status of the XML-RPC request. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga408683ade74e2c264cdfb632ffa9e7ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_xml_rpc_request_get_int_response</definition>
+        <argsstring>(const LinphoneXmlRpcRequest *request)</argsstring>
+        <name>linphone_xml_rpc_request_get_int_response</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref> *</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+<para>Get the response to an XML-RPC request sent with <ref refid="group__misc_1ga04d99efae20b1df40cf56505cd5aa0a5" kindref="member">linphone_xml_rpc_session_send_request()</ref> and returning an integer response. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcRequest object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The integer response to the XML-RPC request. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gacb8ee2886de3b4a01d874e239dd4f8ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_xml_rpc_request_get_string_response</definition>
+        <argsstring>(const LinphoneXmlRpcRequest *request)</argsstring>
+        <name>linphone_xml_rpc_request_get_string_response</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref> *</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+<para>Get the response to an XML-RPC request sent with <ref refid="group__misc_1ga04d99efae20b1df40cf56505cd5aa0a5" kindref="member">linphone_xml_rpc_session_send_request()</ref> and returning a string response. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcRequest object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The string response to the XML-RPC request. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gad906eec60ae17e3f0891920759d4d62f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gac46af5ea6d192456169de5d0ac39dc0b" kindref="member">LinphoneXmlRpcSession</ref> *</type>
+        <definition>LinphoneXmlRpcSession* linphone_xml_rpc_session_new</definition>
+        <argsstring>(LinphoneCore *core, const char *url)</argsstring>
+        <name>linphone_xml_rpc_session_new</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>core</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+<para>Create a new LinphoneXmlRpcSession object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">core</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The LinphoneCore object used to send the XML-RPC requests. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The URL of the XML-RPC server to send the XML-RPC requests to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A new LinphoneXmlRpcSession object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga6fdddc46a583cdad27f9186b3aa01c4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gac46af5ea6d192456169de5d0ac39dc0b" kindref="member">LinphoneXmlRpcSession</ref> *</type>
+        <definition>LinphoneXmlRpcSession* linphone_xml_rpc_session_ref</definition>
+        <argsstring>(LinphoneXmlRpcSession *session)</argsstring>
+        <name>linphone_xml_rpc_session_ref</name>
+        <param>
+          <type><ref refid="group__misc_1gac46af5ea6d192456169de5d0ac39dc0b" kindref="member">LinphoneXmlRpcSession</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <briefdescription>
+<para>Acquire a reference to the XML-RPC session. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcSession object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The same LinphoneXmlRpcSession object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga594c174060218a5d7f032dc4912d0b0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_xml_rpc_session_unref</definition>
+        <argsstring>(LinphoneXmlRpcSession *session)</argsstring>
+        <name>linphone_xml_rpc_session_unref</name>
+        <param>
+          <type><ref refid="group__misc_1gac46af5ea6d192456169de5d0ac39dc0b" kindref="member">LinphoneXmlRpcSession</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <briefdescription>
+<para>Release reference to the XML-RPC session. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcSession object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="warning"><para>This will not stop pending xml-rpc requests. Use <ref refid="group__misc_1ga551a5ec90e3801860255514ca804a472" kindref="member">linphone_xml_rpc_session_release()</ref> instead if this is intended. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga4121beeab0869562a9d98275921eaa7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_xml_rpc_session_get_user_data</definition>
+        <argsstring>(const LinphoneXmlRpcSession *session)</argsstring>
+        <name>linphone_xml_rpc_session_get_user_data</name>
+        <param>
+          <type>const <ref refid="group__misc_1gac46af5ea6d192456169de5d0ac39dc0b" kindref="member">LinphoneXmlRpcSession</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve the user pointer associated with the XML-RPC session. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcSession object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user pointer associated with the XML-RPC session. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga777bcf84afd987f5c987d46e72dd1771" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_xml_rpc_session_set_user_data</definition>
+        <argsstring>(LinphoneXmlRpcSession *session, void *ud)</argsstring>
+        <name>linphone_xml_rpc_session_set_user_data</name>
+        <param>
+          <type><ref refid="group__misc_1gac46af5ea6d192456169de5d0ac39dc0b" kindref="member">LinphoneXmlRpcSession</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ud</declname>
+        </param>
+        <briefdescription>
+<para>Assign a user pointer to the XML-RPC session. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcSession object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user pointer to associate with the XML-RPC session. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga04d99efae20b1df40cf56505cd5aa0a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_xml_rpc_session_send_request</definition>
+        <argsstring>(LinphoneXmlRpcSession *session, LinphoneXmlRpcRequest *request)</argsstring>
+        <name>linphone_xml_rpc_session_send_request</name>
+        <param>
+          <type><ref refid="group__misc_1gac46af5ea6d192456169de5d0ac39dc0b" kindref="member">LinphoneXmlRpcSession</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref> *</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+<para>Send an XML-RPC request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcSession object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">request</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The LinphoneXmlRpcRequest to be sent. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga551a5ec90e3801860255514ca804a472" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_xml_rpc_session_release</definition>
+        <argsstring>(LinphoneXmlRpcSession *session)</argsstring>
+        <name>linphone_xml_rpc_session_release</name>
+        <param>
+          <type><ref refid="group__misc_1gac46af5ea6d192456169de5d0ac39dc0b" kindref="member">LinphoneXmlRpcSession</ref> *</type>
+          <declname>session</declname>
+        </param>
+        <briefdescription>
+<para>Stop and unref an XML rpc session. </para>        </briefdescription>
+        <detaileddescription>
+<para>Pending requests will be aborted. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">session</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcSession object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="176" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga22ca4e91e5fdc4ece6da93f78ec44790" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gae904819121257097ad42e40e15d456e4" kindref="member">LinphoneXmlRpcRequestCbs</ref> *</type>
+        <definition>LinphoneXmlRpcRequestCbs* linphone_xml_rpc_request_cbs_ref</definition>
+        <argsstring>(LinphoneXmlRpcRequestCbs *cbs)</argsstring>
+        <name>linphone_xml_rpc_request_cbs_ref</name>
+        <param>
+          <type><ref refid="group__misc_1gae904819121257097ad42e40e15d456e4" kindref="member">LinphoneXmlRpcRequestCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Acquire a reference to a LinphoneXmlRpcRequestCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcRequestCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The same LinphoneXmlRpcRequestCbs object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga9fe1ea2ad50d5da7030532b6262860c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_xml_rpc_request_cbs_unref</definition>
+        <argsstring>(LinphoneXmlRpcRequestCbs *cbs)</argsstring>
+        <name>linphone_xml_rpc_request_cbs_unref</name>
+        <param>
+          <type><ref refid="group__misc_1gae904819121257097ad42e40e15d456e4" kindref="member">LinphoneXmlRpcRequestCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Release a reference to a LinphoneXmlRpcRequestCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcRequestCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="189" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gacc604493e3f4ce0b4a1b960e029845b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_xml_rpc_request_cbs_get_user_data</definition>
+        <argsstring>(const LinphoneXmlRpcRequestCbs *cbs)</argsstring>
+        <name>linphone_xml_rpc_request_cbs_get_user_data</name>
+        <param>
+          <type>const <ref refid="group__misc_1gae904819121257097ad42e40e15d456e4" kindref="member">LinphoneXmlRpcRequestCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve the user pointer associated with a LinphoneXmlRpcRequestCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcRequestCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user pointer associated with the LinphoneXmlRpcRequestCbs object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="196" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga0aaa72f83fd6cb43dfdc4c1b75401fed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_xml_rpc_request_cbs_set_user_data</definition>
+        <argsstring>(LinphoneXmlRpcRequestCbs *cbs, void *ud)</argsstring>
+        <name>linphone_xml_rpc_request_cbs_set_user_data</name>
+        <param>
+          <type><ref refid="group__misc_1gae904819121257097ad42e40e15d456e4" kindref="member">LinphoneXmlRpcRequestCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ud</declname>
+        </param>
+        <briefdescription>
+<para>Assign a user pointer to a LinphoneXmlRpcRequestCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcRequestCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user pointer to associate with the LinphoneXmlRpcRequestCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga33be73f029f8432e9cc6636a9cc22eee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1gaf6443bc25b7cbab080bd6a2b19738a6f" kindref="member">LinphoneXmlRpcRequestCbsResponseCb</ref></type>
+        <definition>LinphoneXmlRpcRequestCbsResponseCb linphone_xml_rpc_request_cbs_get_response</definition>
+        <argsstring>(const LinphoneXmlRpcRequestCbs *cbs)</argsstring>
+        <name>linphone_xml_rpc_request_cbs_get_response</name>
+        <param>
+          <type>const <ref refid="group__misc_1gae904819121257097ad42e40e15d456e4" kindref="member">LinphoneXmlRpcRequestCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Get the response callback. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcRequestCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current response callback. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="210" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga0de27af78035916a98ab886a61d5d770" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_xml_rpc_request_cbs_set_response</definition>
+        <argsstring>(LinphoneXmlRpcRequestCbs *cbs, LinphoneXmlRpcRequestCbsResponseCb cb)</argsstring>
+        <name>linphone_xml_rpc_request_cbs_set_response</name>
+        <param>
+          <type><ref refid="group__misc_1gae904819121257097ad42e40e15d456e4" kindref="member">LinphoneXmlRpcRequestCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1gaf6443bc25b7cbab080bd6a2b19738a6f" kindref="member">LinphoneXmlRpcRequestCbsResponseCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+<para>Set the response callback. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneXmlRpcRequestCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The response callback to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h" line="217" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">xmlrpc.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2010-2015<sp/>Belledonne<sp/>Communications<sp/>SARL</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_XMLRPC_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_XMLRPC_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphone/types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref><sp/>*<sp/><ref refid="group__misc_1gab026dea16d3c11217fee77938e2ed7bc" kindref="member">linphone_xml_rpc_request_new</ref>(<ref refid="group__misc_1ga29aa8f6ff6f9b210ac8f0b93112879b4" kindref="member">LinphoneXmlRpcArgType</ref><sp/>return_type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*method);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref><sp/>*<sp/><ref refid="group__misc_1gad088f846b27b6127c1ca289b1075993d" kindref="member">linphone_xml_rpc_request_new_with_args</ref>(<ref refid="group__misc_1ga29aa8f6ff6f9b210ac8f0b93112879b4" kindref="member">LinphoneXmlRpcArgType</ref><sp/>return_type,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*method,<sp/>...);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref><sp/>*<sp/><ref refid="group__misc_1gaecca690c97be9ed9fe805343deec62a6" kindref="member">linphone_xml_rpc_request_ref</ref>(<ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref><sp/>*request);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gac86ca7658bc3d9216a4549f7a4591932" kindref="member">linphone_xml_rpc_request_unref</ref>(<ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref><sp/>*request);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group__misc_1gadbfd9726dbdbf5ff325b5b5707f739bb" kindref="member">linphone_xml_rpc_request_get_user_data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref><sp/>*request);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga9e8431c4fda6517cb7f6d032100bd87d" kindref="member">linphone_xml_rpc_request_set_user_data</ref>(<ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref><sp/>*request,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ud);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gaab4a08b402cea8c064636fae56a5c979" kindref="member">linphone_xml_rpc_request_add_int_arg</ref>(<ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref><sp/>*request,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga53187e8e8620520072168481b920af8d" kindref="member">linphone_xml_rpc_request_add_string_arg</ref>(<ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref><sp/>*request,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*value);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gae904819121257097ad42e40e15d456e4" kindref="member">LinphoneXmlRpcRequestCbs</ref><sp/>*<sp/><ref refid="group__misc_1gacdd94b9dd3ac3ca10794772e2bbc8502" kindref="member">linphone_xml_rpc_request_get_callbacks</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref><sp/>*request);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__misc_1ga72a6b0b5c193c2ec8e246b1325398e06" kindref="member">linphone_xml_rpc_request_get_content</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref><sp/>*request);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga206d079816de950cfc54433f0db54e68" kindref="member">LinphoneXmlRpcStatus</ref><sp/><ref refid="group__misc_1gacee067f188ad31229c552091e221477d" kindref="member">linphone_xml_rpc_request_get_status</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref><sp/>*request);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga408683ade74e2c264cdfb632ffa9e7ed" kindref="member">linphone_xml_rpc_request_get_int_response</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref><sp/>*request);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__misc_1gacb8ee2886de3b4a01d874e239dd4f8ae" kindref="member">linphone_xml_rpc_request_get_string_response</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref><sp/>*request);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gac46af5ea6d192456169de5d0ac39dc0b" kindref="member">LinphoneXmlRpcSession</ref><sp/>*<sp/><ref refid="group__misc_1gad906eec60ae17e3f0891920759d4d62f" kindref="member">linphone_xml_rpc_session_new</ref>(<ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref><sp/>*core,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*url);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gac46af5ea6d192456169de5d0ac39dc0b" kindref="member">LinphoneXmlRpcSession</ref><sp/>*<sp/><ref refid="group__misc_1ga6fdddc46a583cdad27f9186b3aa01c4a" kindref="member">linphone_xml_rpc_session_ref</ref>(<ref refid="group__misc_1gac46af5ea6d192456169de5d0ac39dc0b" kindref="member">LinphoneXmlRpcSession</ref><sp/>*session);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga594c174060218a5d7f032dc4912d0b0e" kindref="member">linphone_xml_rpc_session_unref</ref>(<ref refid="group__misc_1gac46af5ea6d192456169de5d0ac39dc0b" kindref="member">LinphoneXmlRpcSession</ref><sp/>*session);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group__misc_1ga4121beeab0869562a9d98275921eaa7a" kindref="member">linphone_xml_rpc_session_get_user_data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gac46af5ea6d192456169de5d0ac39dc0b" kindref="member">LinphoneXmlRpcSession</ref><sp/>*session);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga777bcf84afd987f5c987d46e72dd1771" kindref="member">linphone_xml_rpc_session_set_user_data</ref>(<ref refid="group__misc_1gac46af5ea6d192456169de5d0ac39dc0b" kindref="member">LinphoneXmlRpcSession</ref><sp/>*session,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ud);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga04d99efae20b1df40cf56505cd5aa0a5" kindref="member">linphone_xml_rpc_session_send_request</ref>(<ref refid="group__misc_1gac46af5ea6d192456169de5d0ac39dc0b" kindref="member">LinphoneXmlRpcSession</ref><sp/>*session,<sp/><ref refid="group__misc_1ga7a93eeab19d58ffc25eff6254f995d53" kindref="member">LinphoneXmlRpcRequest</ref><sp/>*request);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga551a5ec90e3801860255514ca804a472" kindref="member">linphone_xml_rpc_session_release</ref>(<ref refid="group__misc_1gac46af5ea6d192456169de5d0ac39dc0b" kindref="member">LinphoneXmlRpcSession</ref><sp/>*session);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gae904819121257097ad42e40e15d456e4" kindref="member">LinphoneXmlRpcRequestCbs</ref><sp/>*<sp/><ref refid="group__misc_1ga22ca4e91e5fdc4ece6da93f78ec44790" kindref="member">linphone_xml_rpc_request_cbs_ref</ref>(<ref refid="group__misc_1gae904819121257097ad42e40e15d456e4" kindref="member">LinphoneXmlRpcRequestCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga9fe1ea2ad50d5da7030532b6262860c8" kindref="member">linphone_xml_rpc_request_cbs_unref</ref>(<ref refid="group__misc_1gae904819121257097ad42e40e15d456e4" kindref="member">LinphoneXmlRpcRequestCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="group__misc_1gacc604493e3f4ce0b4a1b960e029845b9" kindref="member">linphone_xml_rpc_request_cbs_get_user_data</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gae904819121257097ad42e40e15d456e4" kindref="member">LinphoneXmlRpcRequestCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga0aaa72f83fd6cb43dfdc4c1b75401fed" kindref="member">linphone_xml_rpc_request_cbs_set_user_data</ref>(<ref refid="group__misc_1gae904819121257097ad42e40e15d456e4" kindref="member">LinphoneXmlRpcRequestCbs</ref><sp/>*cbs,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ud);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1gaf6443bc25b7cbab080bd6a2b19738a6f" kindref="member">LinphoneXmlRpcRequestCbsResponseCb</ref><sp/><ref refid="group__misc_1ga33be73f029f8432e9cc6636a9cc22eee" kindref="member">linphone_xml_rpc_request_cbs_get_response</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gae904819121257097ad42e40e15d456e4" kindref="member">LinphoneXmlRpcRequestCbs</ref><sp/>*cbs);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga0de27af78035916a98ab886a61d5d770" kindref="member">linphone_xml_rpc_request_cbs_set_response</ref>(<ref refid="group__misc_1gae904819121257097ad42e40e15d456e4" kindref="member">LinphoneXmlRpcRequestCbs</ref><sp/>*cbs,<sp/><ref refid="group__misc_1gaf6443bc25b7cbab080bd6a2b19738a6f" kindref="member">LinphoneXmlRpcRequestCbsResponseCb</ref><sp/>cb);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LINPHONE_XMLRPC_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/xmlrpc.h"/>
+  </compounddef>
+</doxygen>

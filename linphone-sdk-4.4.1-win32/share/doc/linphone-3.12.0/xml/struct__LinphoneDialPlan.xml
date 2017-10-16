@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct__LinphoneDialPlan" kind="struct" language="C++" prot="public">
+    <compoundname>_LinphoneDialPlan</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphoneDialPlan_1a4cf1bedbd4f79820f19dd42ff36816a7" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* _LinphoneDialPlan::country</definition>
+        <argsstring></argsstring>
+        <name>country</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core_utils.h" line="91" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core_utils.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneDialPlan_1a03d6ff12360835ecb9647e9d564018d1" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* _LinphoneDialPlan::iso_country_code</definition>
+        <argsstring></argsstring>
+        <name>iso_country_code</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core_utils.h" line="92" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core_utils.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneDialPlan_1a16074d134299065b40707123caad267b" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _LinphoneDialPlan::ccc[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>ccc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core_utils.h" line="93" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core_utils.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneDialPlan_1a8bae85daf864aca10bf399b71899bc0f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _LinphoneDialPlan::nnl</definition>
+        <argsstring></argsstring>
+        <name>nnl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core_utils.h" line="94" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core_utils.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneDialPlan_1aadd1ef0f342c7a280dbb77fde3eebf66" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* _LinphoneDialPlan::icp</definition>
+        <argsstring></argsstring>
+        <name>icp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core_utils.h" line="95" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core_utils.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core_utils.h" line="90" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core_utils.h" bodystart="90" bodyend="96"/>
+    <listofallmembers>
+      <member refid="struct__LinphoneDialPlan_1a16074d134299065b40707123caad267b" prot="public" virt="non-virtual"><scope>_LinphoneDialPlan</scope><name>ccc</name></member>
+      <member refid="struct__LinphoneDialPlan_1a4cf1bedbd4f79820f19dd42ff36816a7" prot="public" virt="non-virtual"><scope>_LinphoneDialPlan</scope><name>country</name></member>
+      <member refid="struct__LinphoneDialPlan_1aadd1ef0f342c7a280dbb77fde3eebf66" prot="public" virt="non-virtual"><scope>_LinphoneDialPlan</scope><name>icp</name></member>
+      <member refid="struct__LinphoneDialPlan_1a03d6ff12360835ecb9647e9d564018d1" prot="public" virt="non-virtual"><scope>_LinphoneDialPlan</scope><name>iso_country_code</name></member>
+      <member refid="struct__LinphoneDialPlan_1a8bae85daf864aca10bf399b71899bc0f" prot="public" virt="non-virtual"><scope>_LinphoneDialPlan</scope><name>nnl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

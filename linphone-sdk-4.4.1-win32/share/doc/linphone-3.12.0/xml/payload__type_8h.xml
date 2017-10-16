@@ -1,0 +1,637 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="payload__type_8h" kind="file" language="C++">
+    <compoundname>payload_type.h</compoundname>
+    <includes refid="types_8h" local="yes">linphone/types.h</includes>
+    <includedby refid="call__params_8h" local="yes">call_params.h</includedby>
+    <includedby refid="core_8h" local="yes">core.h</includedby>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__media__parameters_1gaa2000f5bd48144e4439ad4adb847e0c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+        <definition>LinphonePayloadType* linphone_payload_type_ref</definition>
+        <argsstring>(LinphonePayloadType *pt)</argsstring>
+        <name>linphone_payload_type_ref</name>
+        <param>
+          <type><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>Take a reference on a <ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1gad3bd129d9e849012155b2ead58a128dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_payload_type_unref</definition>
+        <argsstring>(LinphonePayloadType *pt)</argsstring>
+        <name>linphone_payload_type_unref</name>
+        <param>
+          <type><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>Release a reference on a <ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1gada076a216edd083e1d68869096bb301c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_payload_type_get_type</definition>
+        <argsstring>(const LinphonePayloadType *pt)</argsstring>
+        <name>linphone_payload_type_get_type</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>Get the type of a payload type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The type of the payload e.g. PAYLOAD_AUDIO_CONTINUOUS or PAYLOAD_VIDEO. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga45330593a3064c784b9b48cffba5fe21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_payload_type_enable</definition>
+        <argsstring>(LinphonePayloadType *pt, bool_t enabled)</argsstring>
+        <name>linphone_payload_type_enable</name>
+        <param>
+          <type><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type>bool_t</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+<para>Enable/disable a payload type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload type to enable/disable. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set TRUE for enabling and FALSE for disabling. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 for success, -1 for failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga7058cbbc74d136e8c293c9251185b561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_payload_type_enabled</definition>
+        <argsstring>(const LinphonePayloadType *pt)</argsstring>
+        <name>linphone_payload_type_enabled</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>Check whether a palyoad type is enabled. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>TRUE if enabled, FALSE if disabled. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga276bd9d497f854eb9d7f5bf0d1d079ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* linphone_payload_type_get_description</definition>
+        <argsstring>(const LinphonePayloadType *pt)</argsstring>
+        <name>linphone_payload_type_get_description</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>Return a string describing a payload type. </para>        </briefdescription>
+        <detaileddescription>
+<para>The format of the string is &lt;mime_type&gt;/&lt;clock_rate&gt;/&lt;channels&gt;. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The description of the payload type. Must be release after use. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga5da81a119f9cbc4e290cea768c15dabd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_payload_type_get_encoder_description</definition>
+        <argsstring>(const LinphonePayloadType *pt)</argsstring>
+        <name>linphone_payload_type_get_encoder_description</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>Get a description of the encoder used to provide a payload type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The description of the encoder. Can be NULL if the payload type is not supported by Mediastreamer2. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga7c78eec9bed2b13f2a1523548c73dfa8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_payload_type_get_normal_bitrate</definition>
+        <argsstring>(const LinphonePayloadType *pt)</argsstring>
+        <name>linphone_payload_type_get_normal_bitrate</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>Get the normal bitrate in bits/s. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The normal bitrate in bits/s or -1 if an error has occured. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga70a18aabffd2cfe221f42fd84c0f58ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_payload_type_set_normal_bitrate</definition>
+        <argsstring>(LinphonePayloadType *pt, int bitrate)</argsstring>
+        <name>linphone_payload_type_set_normal_bitrate</name>
+        <param>
+          <type><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>bitrate</declname>
+        </param>
+        <briefdescription>
+<para>Change the normal bitrate of a payload type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload type to change. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">bitrate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new bitrate in bits/s. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h" line="93" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1gac1590573bd98b1aecd6f2692e718420e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_payload_type_get_mime_type</definition>
+        <argsstring>(const LinphonePayloadType *pt)</argsstring>
+        <name>linphone_payload_type_get_mime_type</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>Get the mime type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The mime type. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga084ed389f82edb6b06d23edf213bfe71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_payload_type_get_channels</definition>
+        <argsstring>(const LinphonePayloadType *pt)</argsstring>
+        <name>linphone_payload_type_get_channels</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of channels. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of channels. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga8d660e3f76c8126f5edfcedbbeeb4ce9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_payload_type_get_number</definition>
+        <argsstring>(const LinphonePayloadType *pt)</argsstring>
+        <name>linphone_payload_type_get_number</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>Returns the payload type number assigned for this codec. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of the payload type. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga93f088d9363f9e768f7048ab50682a10" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_payload_type_set_number</definition>
+        <argsstring>(LinphonePayloadType *pt, int number)</argsstring>
+        <name>linphone_payload_type_set_number</name>
+        <param>
+          <type><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>number</declname>
+        </param>
+        <briefdescription>
+<para>Force a number for a payload type. </para>        </briefdescription>
+        <detaileddescription>
+<para>The LinphoneCore does payload type number assignment automatically. This function is mainly to be used for tests, in order to override the automatic assignment mechanism. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload type. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number to assign to the payload type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga9ed904023fa53547874c87941c6bd4b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_payload_type_get_recv_fmtp</definition>
+        <argsstring>(const LinphonePayloadType *pt)</argsstring>
+        <name>linphone_payload_type_get_recv_fmtp</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>Get the format parameters for incoming streams. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The format parameters as string. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga2e05c4fbb44151950ae1a1a3b3ed2a6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_payload_type_set_recv_fmtp</definition>
+        <argsstring>(LinphonePayloadType *pt, const char *recv_fmtp)</argsstring>
+        <name>linphone_payload_type_set_recv_fmtp</name>
+        <param>
+          <type><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>recv_fmtp</declname>
+        </param>
+        <briefdescription>
+<para>Set the format parameters for incoming streams. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload type. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">recv_fmtp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new format parameters as string. The string will be copied. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga5fb91d5a3f1ce952e3c08a387b3b2e26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_payload_type_get_send_fmtp</definition>
+        <argsstring>(const LinphonePayloadType *pt)</argsstring>
+        <name>linphone_payload_type_get_send_fmtp</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>Get the format parameters for outgoing streams. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The format parameters as string. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1gab23a9865b8a15383af40d7468d9829a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_payload_type_set_send_fmtp</definition>
+        <argsstring>(LinphonePayloadType *pt, const char *send_fmtp)</argsstring>
+        <name>linphone_payload_type_set_send_fmtp</name>
+        <param>
+          <type><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>send_fmtp</declname>
+        </param>
+        <briefdescription>
+<para>Set the format parameters for outgoing streams. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload type. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">send_fmtp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new format parameters as string. The string will be copied. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h" line="150" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga0045812dcc6da6dfc6ad1eea2f1824b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_payload_type_get_clock_rate</definition>
+        <argsstring>(const LinphonePayloadType *pt)</argsstring>
+        <name>linphone_payload_type_get_clock_rate</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>Get the clock rate of a payload type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>[in] The clock rate in Hz. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1gac4e807675df447d2a020a5d880f63dd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_payload_type_is_vbr</definition>
+        <argsstring>(const LinphonePayloadType *pt)</argsstring>
+        <name>linphone_payload_type_is_vbr</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>Tells whether the specified payload type represents a variable bitrate codec. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE if the payload type represents a VBR codec, FALSE instead. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__media__parameters_1ga3877de8779aff1dbeb0e8a934742e2de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_payload_type_is_usable</definition>
+        <argsstring>(const LinphonePayloadType *pt)</argsstring>
+        <name>linphone_payload_type_is_usable</name>
+        <param>
+          <type>const <ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref> *</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+<para>Check whether the payload is usable according the bandwidth targets set in the core. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The payload type to test. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE if the payload type is usable. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h" line="171" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">payload_type.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2010-2017<sp/>Belledonne<sp/>Communications<sp/>SARL</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_PAYLOAD_TYPE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_PAYLOAD_TYPE_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphone/types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*<ref refid="group__media__parameters_1gaa2000f5bd48144e4439ad4adb847e0c4" kindref="member">linphone_payload_type_ref</ref>(<ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*pt);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gad3bd129d9e849012155b2ead58a128dc" kindref="member">linphone_payload_type_unref</ref>(<ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*pt);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gada076a216edd083e1d68869096bb301c" kindref="member">linphone_payload_type_get_type</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*pt);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1ga45330593a3064c784b9b48cffba5fe21" kindref="member">linphone_payload_type_enable</ref>(<ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*pt,<sp/>bool_t<sp/>enabled);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__media__parameters_1ga7058cbbc74d136e8c293c9251185b561" kindref="member">linphone_payload_type_enabled</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*pt);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__media__parameters_1ga276bd9d497f854eb9d7f5bf0d1d079ca" kindref="member">linphone_payload_type_get_description</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*pt);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__media__parameters_1ga5da81a119f9cbc4e290cea768c15dabd" kindref="member">linphone_payload_type_get_encoder_description</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*pt);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1ga7c78eec9bed2b13f2a1523548c73dfa8" kindref="member">linphone_payload_type_get_normal_bitrate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*pt);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1ga70a18aabffd2cfe221f42fd84c0f58ab" kindref="member">linphone_payload_type_set_normal_bitrate</ref>(<ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*pt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bitrate);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__media__parameters_1gac1590573bd98b1aecd6f2692e718420e" kindref="member">linphone_payload_type_get_mime_type</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*pt);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1ga084ed389f82edb6b06d23edf213bfe71" kindref="member">linphone_payload_type_get_channels</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*pt);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1ga8d660e3f76c8126f5edfcedbbeeb4ce9" kindref="member">linphone_payload_type_get_number</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*pt);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1ga93f088d9363f9e768f7048ab50682a10" kindref="member">linphone_payload_type_set_number</ref>(<ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*pt,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__media__parameters_1ga9ed904023fa53547874c87941c6bd4b6" kindref="member">linphone_payload_type_get_recv_fmtp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*pt);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1ga2e05c4fbb44151950ae1a1a3b3ed2a6e" kindref="member">linphone_payload_type_set_recv_fmtp</ref>(<ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*pt,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*recv_fmtp);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__media__parameters_1ga5fb91d5a3f1ce952e3c08a387b3b2e26" kindref="member">linphone_payload_type_get_send_fmtp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*pt);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gab23a9865b8a15383af40d7468d9829a8" kindref="member">linphone_payload_type_set_send_fmtp</ref>(<ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*pt,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*send_fmtp);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1ga0045812dcc6da6dfc6ad1eea2f1824b8" kindref="member">linphone_payload_type_get_clock_rate</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*pt);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__media__parameters_1gac4e807675df447d2a020a5d880f63dd6" kindref="member">linphone_payload_type_is_vbr</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*pt);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal">LINPHONE_PUBLIC<sp/>bool_t<sp/><ref refid="group__media__parameters_1ga3877de8779aff1dbeb0e8a934742e2de" kindref="member">linphone_payload_type_is_usable</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__media__parameters_1gaf12c1654abbcb5cffe74841fc282b7d7" kindref="member">LinphonePayloadType</ref><sp/>*pt);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LINPHONE_PAYLOAD_TYPE_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/payload_type.h"/>
+  </compounddef>
+</doxygen>

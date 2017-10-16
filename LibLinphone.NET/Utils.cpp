@@ -144,7 +144,7 @@ System::Object^ Linphone::Core::Utils::CreateLpConfig(System::String^ configPath
 
 System::Object^ Linphone::Core::Utils::CreatePayloadType(void* pt)
 {
-	return gcnew Linphone::Core::PayloadType((::PayloadType *)pt);
+	return gcnew Linphone::Core::PayloadType((::LinphonePayloadType *)pt);
 }
 
 System::Object^ Linphone::Core::Utils::CreateLinphoneCall(void* call)
@@ -205,9 +205,9 @@ System::Object^ Linphone::Core::Utils::CreateTransports()
 	return gcnew Linphone::Core::Transports();
 }
 
-System::Object^ Linphone::Core::Utils::CreateTransports(int udp_port, int tcp_port, int tls_port)
+System::Object^ Linphone::Core::Utils::CreateTransports(int udp_port, int tcp_port, int dtls_port, int tls_port)
 {
-	return gcnew Linphone::Core::Transports(udp_port, tcp_port, tls_port);
+	return gcnew Linphone::Core::Transports(udp_port, tcp_port, dtls_port, tls_port);
 }
 
 System::Object^ Linphone::Core::Utils::CreateTransports(System::Object^ t)

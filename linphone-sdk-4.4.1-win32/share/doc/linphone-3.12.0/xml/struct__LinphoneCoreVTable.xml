@@ -1,0 +1,577 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct__LinphoneCoreVTable" kind="struct" language="C++" prot="public">
+    <compoundname>_LinphoneCoreVTable</compoundname>
+    <includes local="no">core.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a706e1ad8826fb8b9e431f654358ecb1f" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gad3277d4d17cd2e8e37d0167f0d81f7b3" kindref="member">LinphoneCoreGlobalStateChangedCb</ref></type>
+        <definition>LinphoneCoreGlobalStateChangedCb _LinphoneCoreVTable::global_state_changed</definition>
+        <argsstring></argsstring>
+        <name>global_state_changed</name>
+        <briefdescription>
+<para>Notifies global state changes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="181" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a2483143cd4b2e2b8ede6f3c916740938" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gad9b2976cbbec1a2ab0360008fcf2ecd1" kindref="member">LinphoneCoreRegistrationStateChangedCb</ref></type>
+        <definition>LinphoneCoreRegistrationStateChangedCb _LinphoneCoreVTable::registration_state_changed</definition>
+        <argsstring></argsstring>
+        <name>registration_state_changed</name>
+        <briefdescription>
+<para>Notifies registration state changes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="182" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a771c633cfce7bae2cc0160fbd377bf28" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gaa680c67133ac6e4e2f08363d5d83c471" kindref="member">LinphoneCoreCallStateChangedCb</ref></type>
+        <definition>LinphoneCoreCallStateChangedCb _LinphoneCoreVTable::call_state_changed</definition>
+        <argsstring></argsstring>
+        <name>call_state_changed</name>
+        <briefdescription>
+<para>Notifies call state changes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="183" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1aaeba9b7914a3274d4061097575b45717" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga75b1bcd1ecc9262730bca77e1ed81e92" kindref="member">LinphoneCoreNotifyPresenceReceivedCb</ref></type>
+        <definition>LinphoneCoreNotifyPresenceReceivedCb _LinphoneCoreVTable::notify_presence_received</definition>
+        <argsstring></argsstring>
+        <name>notify_presence_received</name>
+        <briefdescription>
+<para>Notify received presence events. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="184" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a591701ec52886eadffcd718772ffb3a5" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga92aae6f2ee9254824db139c95a3608b8" kindref="member">LinphoneCoreNotifyPresenceReceivedForUriOrTelCb</ref></type>
+        <definition>LinphoneCoreNotifyPresenceReceivedForUriOrTelCb _LinphoneCoreVTable::notify_presence_received_for_uri_or_tel</definition>
+        <argsstring></argsstring>
+        <name>notify_presence_received_for_uri_or_tel</name>
+        <briefdescription>
+<para>Notify received presence events. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="185" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a94c1c96ebb851f6a686377347a3dc39a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga1e1df51de6d1042ad39a72d5970851be" kindref="member">LinphoneCoreNewSubscriptionRequestedCb</ref></type>
+        <definition>LinphoneCoreNewSubscriptionRequestedCb _LinphoneCoreVTable::new_subscription_requested</definition>
+        <argsstring></argsstring>
+        <name>new_subscription_requested</name>
+        <briefdescription>
+<para>Notify about pending presence subscription request. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="186" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a2405d3592f982c3f6e7345ffc70b2165" prot="public" static="no" mutable="no">
+        <type>LINPHONE_DEPRECATED <ref refid="group__initializing_1gad3a716c0a60a3a9d9d422b8dbc0827a7" kindref="member">LinphoneCoreAuthInfoRequestedCb</ref></type>
+        <definition>LINPHONE_DEPRECATED LinphoneCoreAuthInfoRequestedCb _LinphoneCoreVTable::auth_info_requested</definition>
+        <argsstring></argsstring>
+        <name>auth_info_requested</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000115"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Use authentication_requested instead.</para></xrefdescription></xrefsect>Ask the application some authentication information </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="187" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ae7385f21c9786a5c5f51449d9409d3d2" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gae0ca646ce3ba6c35822b5ee843462fe2" kindref="member">LinphoneCoreAuthenticationRequestedCb</ref></type>
+        <definition>LinphoneCoreAuthenticationRequestedCb _LinphoneCoreVTable::authentication_requested</definition>
+        <argsstring></argsstring>
+        <name>authentication_requested</name>
+        <briefdescription>
+<para>Ask the application some authentication information. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="188" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ae16c00a663001f7aecd5cfbe8fa91fd5" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga5bbef62e015696d52f0ac456d3d744f6" kindref="member">LinphoneCoreCallLogUpdatedCb</ref></type>
+        <definition>LinphoneCoreCallLogUpdatedCb _LinphoneCoreVTable::call_log_updated</definition>
+        <argsstring></argsstring>
+        <name>call_log_updated</name>
+        <briefdescription>
+<para>Notifies that call log list has been updated. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="189" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ab95d28d6d50c459dc46cb43133d7ceb8" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga4e9690585a5e6d2b4685c4bd19bbd5a3" kindref="member">LinphoneCoreMessageReceivedCb</ref></type>
+        <definition>LinphoneCoreMessageReceivedCb _LinphoneCoreVTable::message_received</definition>
+        <argsstring></argsstring>
+        <name>message_received</name>
+        <briefdescription>
+<para>a message is received, can be text or external body </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="190" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a982365f3887489fd878bf14b17407070" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gaa878458bae239e07700762cd7bf70ce4" kindref="member">LinphoneCoreCbsMessageReceivedUnableDecryptCb</ref></type>
+        <definition>LinphoneCoreCbsMessageReceivedUnableDecryptCb _LinphoneCoreVTable::message_received_unable_decrypt</definition>
+        <argsstring></argsstring>
+        <name>message_received_unable_decrypt</name>
+        <briefdescription>
+<para>an encrypted message is received but we can&apos;t decrypt it </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="191" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1afb34622357b9a7138db200040878dba2" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga18aea1c8329ef3faeaa33b7c00675442" kindref="member">LinphoneCoreIsComposingReceivedCb</ref></type>
+        <definition>LinphoneCoreIsComposingReceivedCb _LinphoneCoreVTable::is_composing_received</definition>
+        <argsstring></argsstring>
+        <name>is_composing_received</name>
+        <briefdescription>
+<para>An is-composing notification has been received. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="192" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a45d2aeaebc18bd237bee895b92f15c68" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gab38f96217ce96183cf61034f447a5db3" kindref="member">LinphoneCoreDtmfReceivedCb</ref></type>
+        <definition>LinphoneCoreDtmfReceivedCb _LinphoneCoreVTable::dtmf_received</definition>
+        <argsstring></argsstring>
+        <name>dtmf_received</name>
+        <briefdescription>
+<para>A dtmf has been received received. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="193" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a506c7d14f539829d96d80c7ce359017b" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga3809ce88557b31dc17b5a25f909051f3" kindref="member">LinphoneCoreReferReceivedCb</ref></type>
+        <definition>LinphoneCoreReferReceivedCb _LinphoneCoreVTable::refer_received</definition>
+        <argsstring></argsstring>
+        <name>refer_received</name>
+        <briefdescription>
+<para>An out of call refer was received. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="194" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a31e10f0b8297cf99f3c337352d54c4ad" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga2ab66df7bf00e8862278c4cba555f7f2" kindref="member">LinphoneCoreCallEncryptionChangedCb</ref></type>
+        <definition>LinphoneCoreCallEncryptionChangedCb _LinphoneCoreVTable::call_encryption_changed</definition>
+        <argsstring></argsstring>
+        <name>call_encryption_changed</name>
+        <briefdescription>
+<para>Notifies on change in the encryption of call streams. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="195" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a9e7176e49c4f45306962c0eea97e8060" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga1ed746cd1cd37dbb31522d994c14b8c0" kindref="member">LinphoneCoreTransferStateChangedCb</ref></type>
+        <definition>LinphoneCoreTransferStateChangedCb _LinphoneCoreVTable::transfer_state_changed</definition>
+        <argsstring></argsstring>
+        <name>transfer_state_changed</name>
+        <briefdescription>
+<para>Notifies when a transfer is in progress. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="196" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a635ddd79f5752f7a27402152871a66cc" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga5b2775a59c1ceae9b0e952fcf2cb54e8" kindref="member">LinphoneCoreBuddyInfoUpdatedCb</ref></type>
+        <definition>LinphoneCoreBuddyInfoUpdatedCb _LinphoneCoreVTable::buddy_info_updated</definition>
+        <argsstring></argsstring>
+        <name>buddy_info_updated</name>
+        <briefdescription>
+<para>a LinphoneFriend&apos;s BuddyInfo has changed </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="197" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a331cc2d86632554b85346f163a188b1c" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gae50aa77005e69df0137977b45bc9e832" kindref="member">LinphoneCoreCallStatsUpdatedCb</ref></type>
+        <definition>LinphoneCoreCallStatsUpdatedCb _LinphoneCoreVTable::call_stats_updated</definition>
+        <argsstring></argsstring>
+        <name>call_stats_updated</name>
+        <briefdescription>
+<para>Notifies on refreshing of call&apos;s statistics. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="198" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1aadaca6d67eee62be103d2add96aba0ba" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga26ae2ee20f564612343d3b27ac7f4b8d" kindref="member">LinphoneCoreInfoReceivedCb</ref></type>
+        <definition>LinphoneCoreInfoReceivedCb _LinphoneCoreVTable::info_received</definition>
+        <argsstring></argsstring>
+        <name>info_received</name>
+        <briefdescription>
+<para>Notifies an incoming informational message received. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="199" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ad74e9de0bfb7eb63fd4aea705304940d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__event__api_1ga3e06431a6e36a1dcb7c0c8dbf2afc176" kindref="member">LinphoneCoreSubscriptionStateChangedCb</ref></type>
+        <definition>LinphoneCoreSubscriptionStateChangedCb _LinphoneCoreVTable::subscription_state_changed</definition>
+        <argsstring></argsstring>
+        <name>subscription_state_changed</name>
+        <briefdescription>
+<para>Notifies subscription state change. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="200" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a4e50dd528160791435706add7e9dc403" prot="public" static="no" mutable="no">
+        <type><ref refid="group__event__api_1ga781d3878a7f5f8dd007134df999af779" kindref="member">LinphoneCoreNotifyReceivedCb</ref></type>
+        <definition>LinphoneCoreNotifyReceivedCb _LinphoneCoreVTable::notify_received</definition>
+        <argsstring></argsstring>
+        <name>notify_received</name>
+        <briefdescription>
+<para>Notifies a an event notification, see <ref refid="group__event__api_1ga7f26a525c7acc4a51a32e36c795e1930" kindref="member">linphone_core_subscribe()</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="201" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a0c97e13eeffa865030b2c01a4a1925a7" prot="public" static="no" mutable="no">
+        <type><ref refid="group__event__api_1ga5d46e912a055805bf3beb2558b0ab329" kindref="member">LinphoneCorePublishStateChangedCb</ref></type>
+        <definition>LinphoneCorePublishStateChangedCb _LinphoneCoreVTable::publish_state_changed</definition>
+        <argsstring></argsstring>
+        <name>publish_state_changed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="202" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a4bd70f9d456eadfac49f95a4733e67c1" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gaf5e3cf61f49516c43baf52a1a82a756c" kindref="member">LinphoneCoreConfiguringStatusCb</ref></type>
+        <definition>LinphoneCoreConfiguringStatusCb _LinphoneCoreVTable::configuring_status</definition>
+        <argsstring></argsstring>
+        <name>configuring_status</name>
+        <briefdescription>
+<para>Notifies publish state change (only from <ref refid="group__event__api_1ga4befcba96583d9e9d9f2b775cccfb2b7" kindref="member">LinphoneEvent</ref> api) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="203" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1add2831377e7a3e1b2fb7f00b01a9d671" prot="public" static="no" mutable="no">
+        <type>LINPHONE_DEPRECATED <ref refid="group__initializing_1ga06824b67ad8b8cc6289c872936d37eef" kindref="member">DisplayStatusCb</ref></type>
+        <definition>LINPHONE_DEPRECATED DisplayStatusCb _LinphoneCoreVTable::display_status</definition>
+        <argsstring></argsstring>
+        <name>display_status</name>
+        <briefdescription>
+<para>Notifies configuring status changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000116"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Callback that notifies various events with human readable text.</para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="204" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ac572671b02f61236791489ec04841d40" prot="public" static="no" mutable="no">
+        <type>LINPHONE_DEPRECATED <ref refid="group__initializing_1gabca6f7f125879614f51e9d8e81e842d8" kindref="member">DisplayMessageCb</ref></type>
+        <definition>LINPHONE_DEPRECATED DisplayMessageCb _LinphoneCoreVTable::display_message</definition>
+        <argsstring></argsstring>
+        <name>display_message</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000117"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Callback to display a message to the user </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="205" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a7894f7d05170dab08baaf99a64c91308" prot="public" static="no" mutable="no">
+        <type>LINPHONE_DEPRECATED <ref refid="group__initializing_1gabca6f7f125879614f51e9d8e81e842d8" kindref="member">DisplayMessageCb</ref></type>
+        <definition>LINPHONE_DEPRECATED DisplayMessageCb _LinphoneCoreVTable::display_warning</definition>
+        <argsstring></argsstring>
+        <name>display_warning</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000118"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Callback to display a warning to the user </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="206" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1afeedf0ac015be5a541db52af6ef0cea6" prot="public" static="no" mutable="no">
+        <type>LINPHONE_DEPRECATED <ref refid="group__initializing_1gacec618a4370fd9655046b8cfc1c3d862" kindref="member">DisplayUrlCb</ref></type>
+        <definition>LINPHONE_DEPRECATED DisplayUrlCb _LinphoneCoreVTable::display_url</definition>
+        <argsstring></argsstring>
+        <name>display_url</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000119"><xreftitle>Deprecated</xreftitle><xrefdescription></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="207" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ac767ce8ffdea73d1f5a2db9ccceb6004" prot="public" static="no" mutable="no">
+        <type>LINPHONE_DEPRECATED <ref refid="group__initializing_1ga66dcb36a9b8dc5652a5c466d3e538094" kindref="member">ShowInterfaceCb</ref></type>
+        <definition>LINPHONE_DEPRECATED ShowInterfaceCb _LinphoneCoreVTable::show</definition>
+        <argsstring></argsstring>
+        <name>show</name>
+        <briefdescription>
+<para>vNotifies the application that it should show up </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="208" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1aa8c03429942bf96b1ad5420d406114c8" prot="public" static="no" mutable="no">
+        <type>LINPHONE_DEPRECATED <ref refid="group__initializing_1ga5af9f41a4dd97c8352252bdbb0d4284b" kindref="member">LinphoneCoreTextMessageReceivedCb</ref></type>
+        <definition>LINPHONE_DEPRECATED LinphoneCoreTextMessageReceivedCb _LinphoneCoreVTable::text_received</definition>
+        <argsstring></argsstring>
+        <name>text_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000120"><xreftitle>Deprecated</xreftitle><xrefdescription><para>, use <ref refid="struct__LinphoneCoreVTable_1ab95d28d6d50c459dc46cb43133d7ceb8" kindref="member">message_received</ref> instead <linebreak/>
+ A text message has been received </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="209" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a1dd40b9ec6ebcc1b3989ea87154a2331" prot="public" static="no" mutable="no">
+        <type>LINPHONE_DEPRECATED <ref refid="group__initializing_1ga378db35c796a1302e02c8a1e648adab1" kindref="member">LinphoneCoreFileTransferRecvCb</ref></type>
+        <definition>LINPHONE_DEPRECATED LinphoneCoreFileTransferRecvCb _LinphoneCoreVTable::file_transfer_recv</definition>
+        <argsstring></argsstring>
+        <name>file_transfer_recv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000121"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Callback to store file received attached to a <ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="210" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a9a89cd8da3e543fd8bc05726115bbf74" prot="public" static="no" mutable="no">
+        <type>LINPHONE_DEPRECATED <ref refid="group__initializing_1gaf3a1ea9eae909f6ceab371cf3c435e0c" kindref="member">LinphoneCoreFileTransferSendCb</ref></type>
+        <definition>LINPHONE_DEPRECATED LinphoneCoreFileTransferSendCb _LinphoneCoreVTable::file_transfer_send</definition>
+        <argsstring></argsstring>
+        <name>file_transfer_send</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000122"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Callback to collect file chunk to be sent for a <ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="211" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ac6aec9222991888c430e8c8b1a9ab3c7" prot="public" static="no" mutable="no">
+        <type>LINPHONE_DEPRECATED <ref refid="group__initializing_1ga3c3844707b8dc8f5cb98e8d3734e4d0d" kindref="member">LinphoneCoreFileTransferProgressIndicationCb</ref></type>
+        <definition>LINPHONE_DEPRECATED LinphoneCoreFileTransferProgressIndicationCb _LinphoneCoreVTable::file_transfer_progress_indication</definition>
+        <argsstring></argsstring>
+        <name>file_transfer_progress_indication</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><xrefsect id="deprecated_1_deprecated000123"><xreftitle>Deprecated</xreftitle><xrefdescription><para>Callback to indicate file transfer progress </para></xrefdescription></xrefsect></para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="212" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a0a74a3a47b6085c20bc18066d48170a0" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gae6a84b63e8831e764389defd2b1c901c" kindref="member">LinphoneCoreNetworkReachableCb</ref></type>
+        <definition>LinphoneCoreNetworkReachableCb _LinphoneCoreVTable::network_reachable</definition>
+        <argsstring></argsstring>
+        <name>network_reachable</name>
+        <briefdescription>
+<para>Callback to report IP network status (I.E up/down ) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="213" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a5c4d34c2587402dea1ed08a8cc2f1662" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga681beb66c1505268cf5be9cdfed65a46" kindref="member">LinphoneCoreLogCollectionUploadStateChangedCb</ref></type>
+        <definition>LinphoneCoreLogCollectionUploadStateChangedCb _LinphoneCoreVTable::log_collection_upload_state_changed</definition>
+        <argsstring></argsstring>
+        <name>log_collection_upload_state_changed</name>
+        <briefdescription>
+<para>Callback to upload collected logs. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="214" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a23e6dd80976b540b656f0f2789e069e3" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga8ce0f8028882192141f84eeb64b38d67" kindref="member">LinphoneCoreLogCollectionUploadProgressIndicationCb</ref></type>
+        <definition>LinphoneCoreLogCollectionUploadProgressIndicationCb _LinphoneCoreVTable::log_collection_upload_progress_indication</definition>
+        <argsstring></argsstring>
+        <name>log_collection_upload_progress_indication</name>
+        <briefdescription>
+<para>Callback to indicate log collection upload progress. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="215" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a9f9023a392427a0ec6da80cf4a428a68" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga2b655b61f0dff265e881941b7ce7fb06" kindref="member">LinphoneCoreFriendListCreatedCb</ref></type>
+        <definition>LinphoneCoreFriendListCreatedCb _LinphoneCoreVTable::friend_list_created</definition>
+        <argsstring></argsstring>
+        <name>friend_list_created</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="216" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a960dfc6f1393db4ebe3b0d113aeccc8a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1gaa0df86d6da73105e9b44ebda11a30dcf" kindref="member">LinphoneCoreFriendListRemovedCb</ref></type>
+        <definition>LinphoneCoreFriendListRemovedCb _LinphoneCoreVTable::friend_list_removed</definition>
+        <argsstring></argsstring>
+        <name>friend_list_removed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="217" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ae88b01db68b6fbc153edf9040f6e64bc" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga2a9852f87b982d2141cecf9d511bb2cf" kindref="member">LinphoneCoreCbsCallCreatedCb</ref></type>
+        <definition>LinphoneCoreCbsCallCreatedCb _LinphoneCoreVTable::call_created</definition>
+        <argsstring></argsstring>
+        <name>call_created</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="218" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1a4ef9e178234a64b042436f8b891f1010" prot="public" static="no" mutable="no">
+        <type><ref refid="group__initializing_1ga09019592c8ff3fbb8a227d6030397ec5" kindref="member">LinphoneCoreCbsVersionUpdateCheckResultReceivedCb</ref></type>
+        <definition>LinphoneCoreCbsVersionUpdateCheckResultReceivedCb _LinphoneCoreVTable::version_update_check_result_received</definition>
+        <argsstring></argsstring>
+        <name>version_update_check_result_received</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="219" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__LinphoneCoreVTable_1ae86fb9c345a2a304f8ccb7a9730cb6a7" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _LinphoneCoreVTable::user_data</definition>
+        <argsstring></argsstring>
+        <name>user_data</name>
+        <briefdescription>
+<para>User data associated with the above callbacks. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="220" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This structure holds all callbacks that the application should implement. </para>    </briefdescription>
+    <detaileddescription>
+<para>None is mandatory.  <donotwrap />  </para>    </detaileddescription>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="180" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" bodystart="180" bodyend="221"/>
+    <listofallmembers>
+      <member refid="struct__LinphoneCoreVTable_1a2405d3592f982c3f6e7345ffc70b2165" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>auth_info_requested</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ae7385f21c9786a5c5f51449d9409d3d2" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>authentication_requested</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a635ddd79f5752f7a27402152871a66cc" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>buddy_info_updated</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ae88b01db68b6fbc153edf9040f6e64bc" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>call_created</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a31e10f0b8297cf99f3c337352d54c4ad" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>call_encryption_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ae16c00a663001f7aecd5cfbe8fa91fd5" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>call_log_updated</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a771c633cfce7bae2cc0160fbd377bf28" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>call_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a331cc2d86632554b85346f163a188b1c" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>call_stats_updated</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a4bd70f9d456eadfac49f95a4733e67c1" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>configuring_status</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ac572671b02f61236791489ec04841d40" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>display_message</name></member>
+      <member refid="struct__LinphoneCoreVTable_1add2831377e7a3e1b2fb7f00b01a9d671" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>display_status</name></member>
+      <member refid="struct__LinphoneCoreVTable_1afeedf0ac015be5a541db52af6ef0cea6" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>display_url</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a7894f7d05170dab08baaf99a64c91308" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>display_warning</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a45d2aeaebc18bd237bee895b92f15c68" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>dtmf_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ac6aec9222991888c430e8c8b1a9ab3c7" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>file_transfer_progress_indication</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a1dd40b9ec6ebcc1b3989ea87154a2331" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>file_transfer_recv</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a9a89cd8da3e543fd8bc05726115bbf74" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>file_transfer_send</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a9f9023a392427a0ec6da80cf4a428a68" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>friend_list_created</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a960dfc6f1393db4ebe3b0d113aeccc8a" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>friend_list_removed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a706e1ad8826fb8b9e431f654358ecb1f" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>global_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1aadaca6d67eee62be103d2add96aba0ba" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>info_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1afb34622357b9a7138db200040878dba2" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>is_composing_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a23e6dd80976b540b656f0f2789e069e3" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>log_collection_upload_progress_indication</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a5c4d34c2587402dea1ed08a8cc2f1662" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>log_collection_upload_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ab95d28d6d50c459dc46cb43133d7ceb8" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>message_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a982365f3887489fd878bf14b17407070" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>message_received_unable_decrypt</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a0a74a3a47b6085c20bc18066d48170a0" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>network_reachable</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a94c1c96ebb851f6a686377347a3dc39a" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>new_subscription_requested</name></member>
+      <member refid="struct__LinphoneCoreVTable_1aaeba9b7914a3274d4061097575b45717" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>notify_presence_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a591701ec52886eadffcd718772ffb3a5" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>notify_presence_received_for_uri_or_tel</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a4e50dd528160791435706add7e9dc403" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>notify_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a0c97e13eeffa865030b2c01a4a1925a7" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>publish_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a506c7d14f539829d96d80c7ce359017b" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>refer_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a2483143cd4b2e2b8ede6f3c916740938" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>registration_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ac767ce8ffdea73d1f5a2db9ccceb6004" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>show</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ad74e9de0bfb7eb63fd4aea705304940d" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>subscription_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1aa8c03429942bf96b1ad5420d406114c8" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>text_received</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a9e7176e49c4f45306962c0eea97e8060" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>transfer_state_changed</name></member>
+      <member refid="struct__LinphoneCoreVTable_1ae86fb9c345a2a304f8ccb7a9730cb6a7" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>user_data</name></member>
+      <member refid="struct__LinphoneCoreVTable_1a4ef9e178234a64b042436f8b891f1010" prot="public" virt="non-virtual"><scope>_LinphoneCoreVTable</scope><name>version_update_check_result_received</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

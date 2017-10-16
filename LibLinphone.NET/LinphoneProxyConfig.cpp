@@ -44,8 +44,8 @@ void Linphone::Core::LinphoneProxyConfig::SetIdentity(String^ displayname, Strin
 	linphone_address_set_username(addr, cc_username);
 	linphone_address_set_domain(addr, cc_domain);
 	linphone_address_set_display_name(addr, cc_displayname);
-	linphone_proxy_config_set_identity(this->proxy_config, linphone_address_as_string(addr));
-	linphone_address_destroy(addr);
+    linphone_proxy_config_set_identity_address(this->proxy_config, addr);
+    linphone_address_unref(addr);
 
 	delete(cc_username);
 	delete(cc_domain);
@@ -57,7 +57,7 @@ void Linphone::Core::LinphoneProxyConfig::SetIdentity(String^ sipAddress)
     API_LOCK;
 
     const char* cc_identity = Utils::pstoccs(sipAddress);
-    linphone_proxy_config_set_identity(this->proxy_config, cc_identity);
+    linphone_proxy_config_set_identity_address(this->proxy_config, linphone_address_new(cc_identity));
 
     delete(cc_identity);
 }
@@ -65,7 +65,8 @@ void Linphone::Core::LinphoneProxyConfig::SetIdentity(String^ sipAddress)
 String^ Linphone::Core::LinphoneProxyConfig::GetIdentity()
 {
 	API_LOCK;
-	return Utils::cctops(linphone_proxy_config_get_identity(this->proxy_config));
+    const ::LinphoneAddress* address = linphone_proxy_config_get_identity_address(this->proxy_config);
+	return Utils::cctops(linphone_address_as_string(address));
 }
 
 void Linphone::Core::LinphoneProxyConfig::ServerAddr::set(String^ proxyUri)
@@ -104,9 +105,7 @@ String^ Linphone::Core::LinphoneProxyConfig::NormalizePhoneNumber(String^ phoneN
 {
 	API_LOCK;
 	const char* cc = Utils::pstoccs(phoneNumber);
-	char* result = (char*) malloc(phoneNumber->Length);
-	int result_size = 0;
-	linphone_proxy_config_normalize_number(this->proxy_config, cc, result, result_size);
+    char* result = linphone_proxy_config_normalize_phone_number(this->proxy_config, cc);
 	String^ val = Utils::cctops(result);
 	delete(cc);
 	delete(result);
@@ -154,7 +153,7 @@ String^ Linphone::Core::LinphoneProxyConfig::Domain::get()
 System::Boolean Linphone::Core::LinphoneProxyConfig::IsRegistered::get()
 {
 	API_LOCK;
-	return (linphone_proxy_config_is_registered(this->proxy_config) == TRUE);
+	return (linphone_proxy_config_get_state(this->proxy_config) == LinphoneRegistrationState::LinphoneRegistrationOk);
 }
 
 void Linphone::Core::LinphoneProxyConfig::Route::set(String^ routeUri)
@@ -250,7 +249,7 @@ String^ Linphone::Core::LinphoneProxyConfig::ContactUriParameters::get()
 void Linphone::Core::LinphoneProxyConfig::AVPFEnabled::set(System::Boolean enable)
 {
 	API_LOCK;
-	linphone_proxy_config_enable_avpf(this->proxy_config, enable);
+    linphone_proxy_config_set_avpf_mode(this->proxy_config, enable ? LinphoneAVPFMode::LinphoneAVPFEnabled : LinphoneAVPFMode::LinphoneAVPFDisabled);
 }
 
 System::Boolean Linphone::Core::LinphoneProxyConfig::AVPFEnabled::get()
@@ -264,10 +263,10 @@ System::Boolean Linphone::Core::LinphoneProxyConfig::AVPFEnabled::get()
     return this->proxy_config;
 }
 
-Linphone::Core::LinphoneProxyConfig::LinphoneProxyConfig()
+Linphone::Core::LinphoneProxyConfig::LinphoneProxyConfig(LinphoneCore^ lc)
 {
 	API_LOCK;
-	this->proxy_config = linphone_proxy_config_new();
+	this->proxy_config = linphone_core_create_proxy_config(lc->GetCorePtr());
 	RefToPtrProxy<LinphoneProxyConfig^> *proxy = new RefToPtrProxy<LinphoneProxyConfig^>(this);
 	linphone_proxy_config_set_user_data(this->proxy_config, proxy);
 }

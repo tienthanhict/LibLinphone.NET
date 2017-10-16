@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="group__wrapper" kind="group">
+    <compoundname>wrapper</compoundname>
+    <title>Wrapper</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__wrapper_1ga9b3ee67aa5e93066fe5794d93ebe9c79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_chat_room_send_chat_message_2</definition>
+        <argsstring>(LinphoneChatRoom *cr, LinphoneChatMessage *msg)</argsstring>
+        <name>linphone_chat_room_send_chat_message_2</name>
+        <param>
+          <type><ref refid="group__chatroom_1ga37902f3fc715b7f6451c241d0efd0299" kindref="member">LinphoneChatRoom</ref> *</type>
+          <declname>cr</declname>
+        </param>
+        <param>
+          <type><ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Send a message to peer member of this chat room. </para>        </briefdescription>
+        <detaileddescription>
+<para>The state of the sending message will be notified via the callbacks defined in the <ref refid="group__chatroom_1gaa1a715195601cd8885ca3a45bb3a1e6a" kindref="member">LinphoneChatMessageCbs</ref> object that can be obtained by calling <ref refid="group__chatroom_1ga2ec794964eed8849b421f315429c16ed" kindref="member">linphone_chat_message_get_callbacks()</ref>. <simplesect kind="note"><para>Unlike <ref refid="group__chatroom_1ga4f6a53c5c3c0ec9afe7ade876d2da102" kindref="member">linphone_chat_room_send_chat_message()</ref>, that function only takes a reference on the <ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> instead of totaly takes ownership on it. Thus, the <ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> object must be released by the API user after calling that function.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A chat room. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message to send. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/wrapper_utils.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wrapper_1ga4a51af228fd7f8f2ea417a6f0f470ea0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_chat_message_resend_2</definition>
+        <argsstring>(LinphoneChatMessage *msg)</argsstring>
+        <name>linphone_chat_message_resend_2</name>
+        <param>
+          <type><ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Resend a chat message if it is in the &apos;not delivered&apos; state for whatever reason. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Unlike <ref refid="group__chatroom_1ga65436ae23d8f3360494eb77dd9a83fb4" kindref="member">linphone_chat_message_resend()</ref>, that function only takes a reference on the <ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> instead of totaly takes ownership on it. Thus, the <ref refid="group__chatroom_1gada79c4417919389b5247e254279f7833" kindref="member">LinphoneChatMessage</ref> object must be released by the API user after calling that function.</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneChatMessage object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/wrapper_utils.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__wrapper_1ga33e3e028e1551a47a6d7af26ce864f5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_vcard_get_belcard</definition>
+        <argsstring>(LinphoneVcard *vcard)</argsstring>
+        <name>linphone_vcard_get_belcard</name>
+        <param>
+          <type><ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref> *</type>
+          <declname>vcard</declname>
+        </param>
+        <briefdescription>
+<para>Accessor for the shared_ptr&lt;BelCard&gt; stored by a <ref refid="group__carddav__vcard_1ga9331db7d45400f64b3eff8fed0c39219" kindref="member">LinphoneVcard</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/wrapper_utils.h" line="66" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Wrapper utilities. </para>    </briefdescription>
+    <detaileddescription>
+<para>These functions are used by automatic API wrapper generators and should not be used by C API users. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

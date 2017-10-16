@@ -81,10 +81,10 @@ Linphone::Core::Transports^ LinphoneCoreFactory::CreateTransports()
 	return dynamic_cast<Linphone::Core::Transports^>(Utils::CreateTransports());
 }
 
-Linphone::Core::Transports^ LinphoneCoreFactory::CreateTransports(int udp_port, int tcp_port, int tls_port)
+Linphone::Core::Transports^ LinphoneCoreFactory::CreateTransports(int udp_port, int tcp_port, int dtls_port, int tls_port)
 {
 	API_LOCK;
-	return dynamic_cast<Linphone::Core::Transports^>(Utils::CreateTransports(udp_port, tcp_port, tls_port));
+	return dynamic_cast<Linphone::Core::Transports^>(Utils::CreateTransports(udp_port, tcp_port, dtls_port, tls_port));
 }
 
 Linphone::Core::Transports^ LinphoneCoreFactory::CreateTransports(Linphone::Core::Transports^ t)

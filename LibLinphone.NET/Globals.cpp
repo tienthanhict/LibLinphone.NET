@@ -16,8 +16,6 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 
 #include "Globals.h"
 #include "ApiLock.h"
-#include "LinphoneCoreFactory.h"
-#include "LinphoneCore.h"
 #include "BackgroundModeLogger.h"
 
 using namespace Linphone::Core;

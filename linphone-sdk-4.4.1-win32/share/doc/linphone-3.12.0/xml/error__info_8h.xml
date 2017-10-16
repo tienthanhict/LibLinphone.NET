@@ -1,0 +1,603 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="error__info_8h" kind="file" language="C++">
+    <compoundname>error_info.h</compoundname>
+    <includes refid="types_8h" local="yes">linphone/types.h</includes>
+    <includedby refid="core_8h" local="yes">core.h</includedby>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__misc_1ga7ff306d17bd63027b751b8a1d398a3ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+        <definition>LinphoneErrorInfo* linphone_error_info_new</definition>
+        <argsstring>(void)</argsstring>
+        <name>linphone_error_info_new</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Create an empty LinphoneErrorInfo object. </para>        </briefdescription>
+        <detaileddescription>
+<para>The LinphoneErrorInfo object carries these fields:<itemizedlist>
+<listitem><para>a LinphoneReason enum member giving overall signification of the error reported.</para></listitem><listitem><para>the &quot;protocol&quot; name in which the protocol reason code has meaning, for example SIP or Q.850</para></listitem><listitem><para>the &quot;protocol code&quot;, an integer referencing the kind of error reported</para></listitem><listitem><para>the &quot;phrase&quot;, a text phrase describing the error</para></listitem><listitem><para>the &quot;warning&quot;, the content of warning headers if any</para></listitem><listitem><para>a sub &quot;LinphoneErrorInfo&quot; may be provided if a SIP response includes a Reason header (RFC3326). </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/error_info.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga2408d6a06eeb6eea580178274ea75a6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+        <definition>LinphoneErrorInfo* linphone_error_info_ref</definition>
+        <argsstring>(LinphoneErrorInfo *ei)</argsstring>
+        <name>linphone_error_info_ref</name>
+        <param>
+          <type><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+          <declname>ei</declname>
+        </param>
+        <briefdescription>
+<para>Increment refcount. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ErrorInfo object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/error_info.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga2b18c66c12140b6c3ee0504143bc3378" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_error_info_unref</definition>
+        <argsstring>(LinphoneErrorInfo *ei)</argsstring>
+        <name>linphone_error_info_unref</name>
+        <param>
+          <type><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+          <declname>ei</declname>
+        </param>
+        <briefdescription>
+<para>Decrement refcount and possibly free the object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ErrorInfo object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/error_info.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga3297420b41659c4bd1ffb64a1e6b7d64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga718bb4a932186c1101a78ddce8083243" kindref="member">LinphoneReason</ref></type>
+        <definition>LinphoneReason linphone_error_info_get_reason</definition>
+        <argsstring>(const LinphoneErrorInfo *ei)</argsstring>
+        <name>linphone_error_info_get_reason</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+          <declname>ei</declname>
+        </param>
+        <briefdescription>
+<para>Get reason code from the error info. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ErrorInfo object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A <ref refid="group__misc_1ga718bb4a932186c1101a78ddce8083243" kindref="member">LinphoneReason</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/error_info.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga501e8aa225e56a78021c41a956d7c371" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+        <definition>LinphoneErrorInfo* linphone_error_info_get_sub_error_info</definition>
+        <argsstring>(const LinphoneErrorInfo *ei)</argsstring>
+        <name>linphone_error_info_get_sub_error_info</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+          <declname>ei</declname>
+        </param>
+        <briefdescription>
+<para>Get pointer to chained LinphoneErrorInfo set in sub_ei. </para>        </briefdescription>
+        <detaileddescription>
+<para>It corresponds to a Reason header in a received SIP response. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ErrorInfo object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneErrorInfo pointer defined in the ei object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/error_info.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gad9b4b4688a97c4de2ce1c9b77748ff16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_error_info_get_phrase</definition>
+        <argsstring>(const LinphoneErrorInfo *ei)</argsstring>
+        <name>linphone_error_info_get_phrase</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+          <declname>ei</declname>
+        </param>
+        <briefdescription>
+<para>Get textual phrase from the error info. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is the text that is provided by the peer in the protocol (SIP). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ErrorInfo object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The error phrase </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/error_info.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga5c8606ba0f415a892ba4f336d1c4d01d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_error_info_get_protocol</definition>
+        <argsstring>(const LinphoneErrorInfo *ei)</argsstring>
+        <name>linphone_error_info_get_protocol</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+          <declname>ei</declname>
+        </param>
+        <briefdescription>
+<para>Get protocol from the error info. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ErrorInfo object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The protocol </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/error_info.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gafc6b3b77c88fe61a86636ba63421ae1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_error_info_get_warnings</definition>
+        <argsstring>(const LinphoneErrorInfo *ei)</argsstring>
+        <name>linphone_error_info_get_warnings</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+          <declname>ei</declname>
+        </param>
+        <briefdescription>
+<para>Provides additional information regarding the failure. </para>        </briefdescription>
+        <detaileddescription>
+<para>With SIP protocol, the content of &quot;Warning&quot; headers are returned. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ErrorInfo object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>More details about the failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/error_info.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gac4ea3eb351188c7219852246a96127a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int linphone_error_info_get_protocol_code</definition>
+        <argsstring>(const LinphoneErrorInfo *ei)</argsstring>
+        <name>linphone_error_info_get_protocol_code</name>
+        <param>
+          <type>const <ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+          <declname>ei</declname>
+        </param>
+        <briefdescription>
+<para>Get the status code from the low level protocol (ex a SIP status code). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ErrorInfo object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The status code </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/error_info.h" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga77a94aa4a56d69fe8da4f6b5040f4649" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_error_info_set</definition>
+        <argsstring>(LinphoneErrorInfo *ei, const char *protocol, LinphoneReason reason, int code, const char *status_string, const char *warning)</argsstring>
+        <name>linphone_error_info_set</name>
+        <param>
+          <type><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+          <declname>ei</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>protocol</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1ga718bb4a932186c1101a78ddce8083243" kindref="member">LinphoneReason</ref></type>
+          <declname>reason</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>status_string</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>warning</declname>
+        </param>
+        <briefdescription>
+<para>Assign information to a LinphoneErrorInfo object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ErrorInfo object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">protocol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>protocol name </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reason from LinphoneReason enum </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>protocol code </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">status_string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>description of the reason </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">warning</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>warning message </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/error_info.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gac4be1973502906f50f030f0ded788a90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_error_info_set_sub_error_info</definition>
+        <argsstring>(LinphoneErrorInfo *ei, LinphoneErrorInfo *appended_ei)</argsstring>
+        <name>linphone_error_info_set_sub_error_info</name>
+        <param>
+          <type><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+          <declname>ei</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+          <declname>appended_ei</declname>
+        </param>
+        <briefdescription>
+<para>Set the sub_ei in LinphoneErrorInfo to another LinphoneErrorInfo. </para>        </briefdescription>
+        <detaileddescription>
+<para>Used when a reason header is to be added in a SIP response. The first level LinphoneErrorInfo defines the SIP response code and phrase, the second (sub) LinphoneErroInfo defining the content of the Reason header. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneErrorInfo object to which the other LinphoneErrorInfo will be appended as ei-&gt;sub_ei. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">appended_ei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneErrorInfo to append </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/error_info.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga651172f24c8b08449b13cb792baea498" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_error_info_set_reason</definition>
+        <argsstring>(LinphoneErrorInfo *ei, LinphoneReason reason)</argsstring>
+        <name>linphone_error_info_set_reason</name>
+        <param>
+          <type><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+          <declname>ei</declname>
+        </param>
+        <param>
+          <type><ref refid="group__misc_1ga718bb4a932186c1101a78ddce8083243" kindref="member">LinphoneReason</ref></type>
+          <declname>reason</declname>
+        </param>
+        <briefdescription>
+<para>Assign reason LinphoneReason to a LinphoneErrorInfo object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ErrorInfo object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">reason</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reason from LinphoneReason enum </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/error_info.h" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gaa63025e6c0f11870f48ae480d111c649" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_error_info_set_protocol</definition>
+        <argsstring>(LinphoneErrorInfo *ei, const char *proto)</argsstring>
+        <name>linphone_error_info_set_protocol</name>
+        <param>
+          <type><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+          <declname>ei</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>proto</declname>
+        </param>
+        <briefdescription>
+<para>Assign protocol name to a LinphoneErrorInfo object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ErrorInfo object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">proto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the protocol name </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/error_info.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga9c26f683c97ed78ed9ae60275aec133b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_error_info_set_protocol_code</definition>
+        <argsstring>(LinphoneErrorInfo *ei, int code)</argsstring>
+        <name>linphone_error_info_set_protocol_code</name>
+        <param>
+          <type><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+          <declname>ei</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+<para>Assign protocol code to a LinphoneErrorInfo object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ErrorInfo object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the protocol code </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/error_info.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1gad640aa04d5f74ca1665f8e98d99f1f6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_error_info_set_phrase</definition>
+        <argsstring>(LinphoneErrorInfo *ei, const char *phrase)</argsstring>
+        <name>linphone_error_info_set_phrase</name>
+        <param>
+          <type><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+          <declname>ei</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>phrase</declname>
+        </param>
+        <briefdescription>
+<para>Assign phrase to a LinphoneErrorInfo object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ErrorInfo object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">phrase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the phrase explaining the error </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/error_info.h" line="150" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__misc_1ga628eea321a02e92a88cf80b1c04484ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_error_info_set_warnings</definition>
+        <argsstring>(LinphoneErrorInfo *ei, const char *warnings)</argsstring>
+        <name>linphone_error_info_set_warnings</name>
+        <param>
+          <type><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref> *</type>
+          <declname>ei</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>warnings</declname>
+        </param>
+        <briefdescription>
+<para>Assign warnings to a LinphoneErrorInfo object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ei</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ErrorInfo object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">phrase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the warnings </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/error_info.h" line="157" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">error_info.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Copyright<sp/>(C)<sp/>2016<sp/><sp/>Belledonne<sp/>Communications<sp/>SARL</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment">This<sp/>program<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either<sp/>version<sp/>2</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">This<sp/>program<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">along<sp/>with<sp/>this<sp/>program;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>Street,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301,<sp/>USA.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>LINPHONE_ERROR_INFO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LINPHONE_ERROR_INFO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;linphone/types.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*<ref refid="group__misc_1ga7ff306d17bd63027b751b8a1d398a3ab" kindref="member">linphone_error_info_new</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*<ref refid="group__misc_1ga2408d6a06eeb6eea580178274ea75a6f" kindref="member">linphone_error_info_ref</ref>(<ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*ei);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga2b18c66c12140b6c3ee0504143bc3378" kindref="member">linphone_error_info_unref</ref>(<ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*ei);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga718bb4a932186c1101a78ddce8083243" kindref="member">LinphoneReason</ref><sp/><ref refid="group__misc_1ga3297420b41659c4bd1ffb64a1e6b7d64" kindref="member">linphone_error_info_get_reason</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*ei);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">LINPHONE_PUBLIC<sp/><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref>*<sp/><ref refid="group__misc_1ga501e8aa225e56a78021c41a956d7c371" kindref="member">linphone_error_info_get_sub_error_info</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*ei);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__misc_1gad9b4b4688a97c4de2ce1c9b77748ff16" kindref="member">linphone_error_info_get_phrase</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*ei);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="group__misc_1ga5c8606ba0f415a892ba4f336d1c4d01d" kindref="member">linphone_error_info_get_protocol</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*ei);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/><ref refid="group__misc_1gafc6b3b77c88fe61a86636ba63421ae1d" kindref="member">linphone_error_info_get_warnings</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*ei);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gac4ea3eb351188c7219852246a96127a7" kindref="member">linphone_error_info_get_protocol_code</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*ei);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga77a94aa4a56d69fe8da4f6b5040f4649" kindref="member">linphone_error_info_set</ref>(<ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*ei,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*protocol,<sp/><ref refid="group__misc_1ga718bb4a932186c1101a78ddce8083243" kindref="member">LinphoneReason</ref><sp/>reason,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>code,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*status_string,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*warning);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gac4be1973502906f50f030f0ded788a90" kindref="member">linphone_error_info_set_sub_error_info</ref>(<ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*ei,<sp/><ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*appended_ei);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga651172f24c8b08449b13cb792baea498" kindref="member">linphone_error_info_set_reason</ref>(<ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*ei,<sp/><ref refid="group__misc_1ga718bb4a932186c1101a78ddce8083243" kindref="member">LinphoneReason</ref><sp/>reason);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gaa63025e6c0f11870f48ae480d111c649" kindref="member">linphone_error_info_set_protocol</ref>(<ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*ei,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*proto);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga9c26f683c97ed78ed9ae60275aec133b" kindref="member">linphone_error_info_set_protocol_code</ref>(<ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*ei,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>code);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1gad640aa04d5f74ca1665f8e98d99f1f6d" kindref="member">linphone_error_info_set_phrase</ref>(<ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*ei,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*phrase);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal">LINPHONE_PUBLIC<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__misc_1ga628eea321a02e92a88cf80b1c04484ac" kindref="member">linphone_error_info_set_warnings</ref>(<ref refid="group__misc_1ga8f3b35ce44e1284465ac2859ffbb9db7" kindref="member">LinphoneErrorInfo</ref><sp/>*ei,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*warnings);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LINPHONE_ERROR_INFO_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/error_info.h"/>
+  </compounddef>
+</doxygen>

@@ -25,9 +25,10 @@ tls(0)
 {
 }
 
-Linphone::Core::Transports::Transports(int udp_port, int tcp_port, int tls_port) :
+Linphone::Core::Transports::Transports(int udp_port, int tcp_port, int dtls_port, int tls_port) :
 udp(udp_port),
 tcp(tcp_port),
+dtls(dtls_port),
 tls(tls_port)
 {
 }
@@ -61,6 +62,18 @@ void Linphone::Core::Transports::TCP::set(int value)
 	this->udp = 0;
 	this->tcp = value;
 	this->tls = 0;
+}
+
+int Linphone::Core::Transports::DTLS::get()
+{
+    return dtls;
+}
+
+void Linphone::Core::Transports::DTLS::set(int value)
+{
+    this->udp = 0;
+    this->tcp = 0;
+    this->dtls = value;
 }
 
 int Linphone::Core::Transports::TLS::get()

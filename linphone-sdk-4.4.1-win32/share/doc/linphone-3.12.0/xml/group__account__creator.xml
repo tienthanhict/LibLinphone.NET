@@ -1,0 +1,2488 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="group__account__creator" kind="group">
+    <compoundname>Account_creator</compoundname>
+    <title>Account_creator</title>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__account__creator_1ga097ffa08941e1fe785a694048999e788" prot="public" static="no">
+        <name>_LinphoneAccountCreatorPhoneNumberStatus</name>
+        <enumvalue id="group__account__creator_1gga097ffa08941e1fe785a694048999e788aa815e6b04f60f5dd44bfd65da747047b" prot="public">
+          <name>LinphoneAccountCreatorPhoneNumberStatusOk</name>
+          <initializer>= 0x1</initializer>
+          <briefdescription>
+<para>Phone number ok. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__account__creator_1gga097ffa08941e1fe785a694048999e788a249dd9bbd68fb3da44f7cc92e23c0f57" prot="public">
+          <name>LinphoneAccountCreatorPhoneNumberStatusTooShort</name>
+          <initializer>= 0x2</initializer>
+          <briefdescription>
+<para>Phone number too short. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__account__creator_1gga097ffa08941e1fe785a694048999e788abc980ad5b9fb15abf7149556bf2e1983" prot="public">
+          <name>LinphoneAccountCreatorPhoneNumberStatusTooLong</name>
+          <initializer>= 0x4</initializer>
+          <briefdescription>
+<para>Phone number too long. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__account__creator_1gga097ffa08941e1fe785a694048999e788aa244c49d2b7d023bbcbc1227eae45b5b" prot="public">
+          <name>LinphoneAccountCreatorPhoneNumberStatusInvalidCountryCode</name>
+          <initializer>= 0x8</initializer>
+          <briefdescription>
+<para>Country code invalid. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__account__creator_1gga097ffa08941e1fe785a694048999e788a10e6c0163395c36754a80c7b8507664d" prot="public">
+          <name>LinphoneAccountCreatorPhoneNumberStatusInvalid</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+<para>Phone number invalid. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum describing Phone number checking. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="53" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="53" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__account__creator_1gae547f7c4026a4d0d261f492f80aee61e" prot="public" static="no">
+        <name>_LinphoneAccountCreatorUsernameStatus</name>
+        <enumvalue id="group__account__creator_1ggae547f7c4026a4d0d261f492f80aee61ea9c14230ca772e37b7f77db384453b4b0" prot="public">
+          <name>LinphoneAccountCreatorUsernameStatusOk</name>
+          <briefdescription>
+<para>Username ok. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__account__creator_1ggae547f7c4026a4d0d261f492f80aee61ea381cf90fbd2b5a2fa2a0d8c5c12036c3" prot="public">
+          <name>LinphoneAccountCreatorUsernameStatusTooShort</name>
+          <briefdescription>
+<para>Username too short. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__account__creator_1ggae547f7c4026a4d0d261f492f80aee61eaea9d5db59277d7b994dda52e7131b475" prot="public">
+          <name>LinphoneAccountCreatorUsernameStatusTooLong</name>
+          <briefdescription>
+<para>Username too long. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__account__creator_1ggae547f7c4026a4d0d261f492f80aee61eac66c32b147728b3b49b19d336f429da3" prot="public">
+          <name>LinphoneAccountCreatorUsernameStatusInvalidCharacters</name>
+          <briefdescription>
+<para>Contain invalid characters. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__account__creator_1ggae547f7c4026a4d0d261f492f80aee61ea216eb71b416b635f7ae09fdb452597bb" prot="public">
+          <name>LinphoneAccountCreatorUsernameStatusInvalid</name>
+          <briefdescription>
+<para>Invalid username. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum describing Username checking. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="71" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="71" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__account__creator_1gaf4f0dff9f3c84dcff8d35d23ca2a4443" prot="public" static="no">
+        <name>_LinphoneAccountCreatorEmailStatus</name>
+        <enumvalue id="group__account__creator_1ggaf4f0dff9f3c84dcff8d35d23ca2a4443a5e836e2e537192aa0cebea224bdd82f8" prot="public">
+          <name>LinphoneAccountCreatorEmailStatusOk</name>
+          <briefdescription>
+<para>Email ok. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__account__creator_1ggaf4f0dff9f3c84dcff8d35d23ca2a4443a843bccce441d633b793020cda43a79ca" prot="public">
+          <name>LinphoneAccountCreatorEmailStatusMalformed</name>
+          <briefdescription>
+<para>Email malformed. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__account__creator_1ggaf4f0dff9f3c84dcff8d35d23ca2a4443a32a489c2b2d75dc0590634b77775a265" prot="public">
+          <name>LinphoneAccountCreatorEmailStatusInvalidCharacters</name>
+          <briefdescription>
+<para>Contain invalid characters. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum describing Email checking. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="83" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="83" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__account__creator_1gaa631012c048e927b52689588960b8a7b" prot="public" static="no">
+        <name>_LinphoneAccountCreatorPasswordStatus</name>
+        <enumvalue id="group__account__creator_1ggaa631012c048e927b52689588960b8a7ba6d78e0a9c9772b8352242e783249008b" prot="public">
+          <name>LinphoneAccountCreatorPasswordStatusOk</name>
+          <briefdescription>
+<para>Password ok. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__account__creator_1ggaa631012c048e927b52689588960b8a7ba7fed795171b27bd0c7990d3928d961cc" prot="public">
+          <name>LinphoneAccountCreatorPasswordStatusTooShort</name>
+          <briefdescription>
+<para>Password too short. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__account__creator_1ggaa631012c048e927b52689588960b8a7bab32ce11ca06741979b2126aa536e9617" prot="public">
+          <name>LinphoneAccountCreatorPasswordStatusTooLong</name>
+          <briefdescription>
+<para>Password too long. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__account__creator_1ggaa631012c048e927b52689588960b8a7ba8b112e933ae6f2331a0d7e31117a8dde" prot="public">
+          <name>LinphoneAccountCreatorPasswordStatusInvalidCharacters</name>
+          <briefdescription>
+<para>Contain invalid characters. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__account__creator_1ggaa631012c048e927b52689588960b8a7ba93c67abb08052fd663ad703025926730" prot="public">
+          <name>LinphoneAccountCreatorPasswordStatusMissingCharacters</name>
+          <briefdescription>
+<para>Missing specific characters. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum describing Password checking. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="93" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="93" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__account__creator_1gad1ea280a5db103e48d3ef76fd8ec72c0" prot="public" static="no">
+        <name>_LinphoneAccountCreatorLanguageStatus</name>
+        <enumvalue id="group__account__creator_1ggad1ea280a5db103e48d3ef76fd8ec72c0ab54fed283290913f32460ecc171a7695" prot="public">
+          <name>LinphoneAccountCreatorLanguageStatusOk</name>
+          <briefdescription>
+<para>Language ok. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum describing language checking. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="105" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="105" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__account__creator_1ga619402132c71a9dd5c5a093356395da7" prot="public" static="no">
+        <name>_LinphoneAccountCreatorActivationCodeStatus</name>
+        <enumvalue id="group__account__creator_1gga619402132c71a9dd5c5a093356395da7afdc177c2c3bf189fb4c5711f2b10b17f" prot="public">
+          <name>LinphoneAccountCreatorActivationCodeStatusOk</name>
+          <briefdescription>
+<para>Activation code ok. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__account__creator_1gga619402132c71a9dd5c5a093356395da7a832748e52a96ac57a741110af9f3a6f3" prot="public">
+          <name>LinphoneAccountCreatorActivationCodeStatusTooShort</name>
+          <briefdescription>
+<para>Activation code too short. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__account__creator_1gga619402132c71a9dd5c5a093356395da7a78723ddd462ea6192632801440d3f9ec" prot="public">
+          <name>LinphoneAccountCreatorActivationCodeStatusTooLong</name>
+          <briefdescription>
+<para>Activation code too long. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__account__creator_1gga619402132c71a9dd5c5a093356395da7a19b60f6432b288ae32b040ecc17fa05f" prot="public">
+          <name>LinphoneAccountCreatorActivationCodeStatusInvalidCharacters</name>
+          <briefdescription>
+<para>Contain invalid characters. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum describing Activation code checking. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="113" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="113" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__account__creator_1ga1afac9e713c0926c900e7f16a45319b4" prot="public" static="no">
+        <name>_LinphoneAccountCreatorDomainStatus</name>
+        <enumvalue id="group__account__creator_1gga1afac9e713c0926c900e7f16a45319b4a52640eee1a95ed8ccb1fa5187fa2820e" prot="public">
+          <name>LinphoneAccountCreatorDomainOk</name>
+          <briefdescription>
+<para>Domain ok. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__account__creator_1gga1afac9e713c0926c900e7f16a45319b4a869c427c914a65b5123975e16eacbc01" prot="public">
+          <name>LinphoneAccountCreatorDomainInvalid</name>
+          <briefdescription>
+<para>Domain invalid. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum describing Domain checking. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="124" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__account__creator_1ga177614d399c8d1e811c8c9c3836356df" prot="public" static="no">
+        <name>_LinphoneAccountCreatorTransportStatus</name>
+        <enumvalue id="group__account__creator_1gga177614d399c8d1e811c8c9c3836356dfa72d79a1586c94fcb8ee2513e2740f295" prot="public">
+          <name>LinphoneAccountCreatorTransportOk</name>
+          <briefdescription>
+<para>Transport ok. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__account__creator_1gga177614d399c8d1e811c8c9c3836356dfa474f0c2494e67a9a5f59f304af9ff4ac" prot="public">
+          <name>LinphoneAccountCreatorTransportUnsupported</name>
+          <briefdescription>
+<para>Transport invalid. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum describing Transport checking. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="133" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="133" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* LinphoneAccountCreatorCbsStatusCb) (LinphoneAccountCreator *creator, LinphoneAccountCreatorStatus status, const char *resp)</definition>
+        <argsstring>)(LinphoneAccountCreator *creator, LinphoneAccountCreatorStatus status, const char *resp)</argsstring>
+        <name>LinphoneAccountCreatorCbsStatusCb</name>
+        <briefdescription>
+<para>Callback to notify a response of server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The status of the LinphoneAccountCreator test existence operation that has just finished </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="39" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" prot="public" static="no">
+        <type>struct _LinphoneAccountCreator</type>
+        <definition>typedef struct _LinphoneAccountCreator LinphoneAccountCreator</definition>
+        <argsstring></argsstring>
+        <name>LinphoneAccountCreator</name>
+        <briefdescription>
+<para>The LinphoneAccountCreator object used to configure an account on a server via XML-RPC. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="397" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__account__creator_1ga29e0eb995c7253e1e47d0d0ce07940e1" prot="public" static="no">
+        <type>struct _LinphoneAccountCreatorService</type>
+        <definition>typedef struct _LinphoneAccountCreatorService LinphoneAccountCreatorService</definition>
+        <argsstring></argsstring>
+        <name>LinphoneAccountCreatorService</name>
+        <briefdescription>
+<para>An object to define a LinphoneAccountCreator service. </para>        </briefdescription>
+        <detaileddescription>
+<para> <donotwrap />  </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="397" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" prot="public" static="no">
+        <type>struct _LinphoneAccountCreatorCbs</type>
+        <definition>typedef struct _LinphoneAccountCreatorCbs LinphoneAccountCreatorCbs</definition>
+        <argsstring></argsstring>
+        <name>LinphoneAccountCreatorCbs</name>
+        <briefdescription>
+<para>An object to handle the responses callbacks for handling the LinphoneAccountCreator operations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="397" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__account__creator_1gac08168873d49aa3212cd63b725992543" prot="public" static="no">
+        <type>enum <ref refid="group__account__creator_1ga097ffa08941e1fe785a694048999e788" kindref="member">_LinphoneAccountCreatorPhoneNumberStatus</ref></type>
+        <definition>typedef enum _LinphoneAccountCreatorPhoneNumberStatus  LinphoneAccountCreatorPhoneNumberStatus</definition>
+        <argsstring></argsstring>
+        <name>LinphoneAccountCreatorPhoneNumberStatus</name>
+        <briefdescription>
+<para>Enum describing Phone number checking. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__account__creator_1gaa5505bb64319732629225e8cdd921830" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int LinphoneAccountCreatorPhoneNumberStatusMask</definition>
+        <argsstring></argsstring>
+        <name>LinphoneAccountCreatorPhoneNumberStatusMask</name>
+        <briefdescription>
+<para>A mask of <ref refid="group__account__creator_1gac08168873d49aa3212cd63b725992543" kindref="member">LinphoneAccountCreatorPhoneNumberStatus</ref> values. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="65" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__account__creator_1ga7e707878f97af5a393a115fa8f914674" prot="public" static="no">
+        <type>enum <ref refid="group__account__creator_1gae547f7c4026a4d0d261f492f80aee61e" kindref="member">_LinphoneAccountCreatorUsernameStatus</ref></type>
+        <definition>typedef enum _LinphoneAccountCreatorUsernameStatus  LinphoneAccountCreatorUsernameStatus</definition>
+        <argsstring></argsstring>
+        <name>LinphoneAccountCreatorUsernameStatus</name>
+        <briefdescription>
+<para>Enum describing Username checking. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__account__creator_1ga5d12f05feb180340e2cf0d4f6fe0b709" prot="public" static="no">
+        <type>enum <ref refid="group__account__creator_1gaf4f0dff9f3c84dcff8d35d23ca2a4443" kindref="member">_LinphoneAccountCreatorEmailStatus</ref></type>
+        <definition>typedef enum _LinphoneAccountCreatorEmailStatus  LinphoneAccountCreatorEmailStatus</definition>
+        <argsstring></argsstring>
+        <name>LinphoneAccountCreatorEmailStatus</name>
+        <briefdescription>
+<para>Enum describing Email checking. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__account__creator_1ga072d1e436d28c49ea44ef053058af4db" prot="public" static="no">
+        <type>enum <ref refid="group__account__creator_1gaa631012c048e927b52689588960b8a7b" kindref="member">_LinphoneAccountCreatorPasswordStatus</ref></type>
+        <definition>typedef enum _LinphoneAccountCreatorPasswordStatus  LinphoneAccountCreatorPasswordStatus</definition>
+        <argsstring></argsstring>
+        <name>LinphoneAccountCreatorPasswordStatus</name>
+        <briefdescription>
+<para>Enum describing Password checking. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__account__creator_1gab09a679101ff9caa639e603f5b8505d4" prot="public" static="no">
+        <type>enum <ref refid="group__account__creator_1gad1ea280a5db103e48d3ef76fd8ec72c0" kindref="member">_LinphoneAccountCreatorLanguageStatus</ref></type>
+        <definition>typedef enum _LinphoneAccountCreatorLanguageStatus  LinphoneAccountCreatorLanguageStatus</definition>
+        <argsstring></argsstring>
+        <name>LinphoneAccountCreatorLanguageStatus</name>
+        <briefdescription>
+<para>Enum describing language checking. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__account__creator_1ga73aafcb533e7a15bcbe1eedb7bd7907d" prot="public" static="no">
+        <type>enum <ref refid="group__account__creator_1ga619402132c71a9dd5c5a093356395da7" kindref="member">_LinphoneAccountCreatorActivationCodeStatus</ref></type>
+        <definition>typedef enum _LinphoneAccountCreatorActivationCodeStatus  LinphoneAccountCreatorActivationCodeStatus</definition>
+        <argsstring></argsstring>
+        <name>LinphoneAccountCreatorActivationCodeStatus</name>
+        <briefdescription>
+<para>Enum describing Activation code checking. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__account__creator_1gad273f8c7533d520719fbb4ea8af41c95" prot="public" static="no">
+        <type>enum <ref refid="group__account__creator_1ga1afac9e713c0926c900e7f16a45319b4" kindref="member">_LinphoneAccountCreatorDomainStatus</ref></type>
+        <definition>typedef enum _LinphoneAccountCreatorDomainStatus  LinphoneAccountCreatorDomainStatus</definition>
+        <argsstring></argsstring>
+        <name>LinphoneAccountCreatorDomainStatus</name>
+        <briefdescription>
+<para>Enum describing Domain checking. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__account__creator_1ga183ce1cbb59d8d378432b42c37299de6" prot="public" static="no">
+        <type>enum <ref refid="group__account__creator_1ga177614d399c8d1e811c8c9c3836356df" kindref="member">_LinphoneAccountCreatorTransportStatus</ref></type>
+        <definition>typedef enum _LinphoneAccountCreatorTransportStatus  LinphoneAccountCreatorTransportStatus</definition>
+        <argsstring></argsstring>
+        <name>LinphoneAccountCreatorTransportStatus</name>
+        <briefdescription>
+<para>Enum describing Transport checking. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="136" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__account__creator_1ga01872a5f797fd97a0bd8915ed169637e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+        <definition>LinphoneAccountCreator* linphone_account_creator_new</definition>
+        <argsstring>(LinphoneCore *core, const char *xmlrpc_url)</argsstring>
+        <name>linphone_account_creator_new</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>core</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>xmlrpc_url</declname>
+        </param>
+        <briefdescription>
+<para>Create a LinphoneAccountCreator and set Linphone Request callbacks. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">core</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The LinphoneCore used for the XML-RPC communication </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">xmlrpc_url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The URL to the XML-RPC server. Must be NON NULL. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new LinphoneAccountCreator object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga3052e185b83aaa74fd44f3ff717a58ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_reset</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_reset</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Reset the account creator entries like username, password, phone number... </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga9ae53f2981f197f6ad63a58dda1b9f21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator__request_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_is_account_exist</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_is_account_exist</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Send a request to know the existence of account on server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorStatusRequestOk if the request has been sent, LinphoneAccountCreatorStatusRequestFailed otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga89929431634a64bbadbfc4eba1934153" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator__request_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_create_account</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_create_account</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Send a request to create an account on server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorStatusRequestOk if the request has been sent, LinphoneAccountCreatorStatusRequestFailed otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga9813bddc9285266bef03d672cf695b69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator__request_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_is_account_activated</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_is_account_activated</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Send a request to know if an account is activated on server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorStatusRequestOk if the request has been sent, LinphoneAccountCreatorStatusRequestFailed otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga5248f54e110168295b72b5e1d02d08d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator__request_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_activate_account</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_activate_account</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Send a request to activate an account on server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorStatusRequestOk if the request has been sent, LinphoneAccountCreatorStatusRequestFailed otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga7c9bc3888d0af18d1f167638102fec7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator__request_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_link_account</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_link_account</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Send a request to link an account to an alias. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorStatusRequestOk if the request has been sent, LinphoneAccountCreatorStatusRequestFailed otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1gad455ed9e6296fb01616d4c6a168bbacf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator__request_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_activate_alias</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_activate_alias</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Send a request to activate an alias. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorStatusRequestOk if the request has been sent, LinphoneAccountCreatorStatusRequestFailed otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga6fea5b2162df707cc6cd83ff4a39e4be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator__request_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_is_alias_used</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_is_alias_used</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Send a request to know if an alias is used. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorStatusRequestOk if the request has been sent, LinphoneAccountCreatorStatusRequestFailed otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1gae3deac3b5806eccde8042a483556fa67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator__request_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_is_account_linked</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_is_account_linked</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Send a request to know if an account is linked. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorStatusRequestOk if the request has been sent, LinphoneAccountCreatorStatusRequestFailed otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga173ce4b653433967427e4cb6cef56e91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator__request_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_recover_account</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_recover_account</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Send a request to recover an account. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorStatusRequestOk if the request has been sent, LinphoneAccountCreatorStatusRequestFailed otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga2d88f01f5d8d58e841502ed2f6679994" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator__request_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LinphoneAccountCreatorStatus linphone_account_creator_update_account</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_update_account</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Send a request to update an account. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorStatusRequestOk if the request has been sent, LinphoneAccountCreatorStatusRequestFailed otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1gab09f020b4281d8709fc26fd519088416" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+        <definition>LinphoneAccountCreator* linphone_account_creator_ref</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_ref</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Acquire a reference to the LinphoneAccountCreator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The same LinphoneAccountCreator object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga7830dc91f9632c7ae1d5677188d56eb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_unref</definition>
+        <argsstring>(LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_unref</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Release reference to the LinphoneAccountCreator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga473f21dff2acb5b12cc6f5183f55a7a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_account_creator_get_user_data</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_user_data</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve the user pointer associated with the LinphoneAccountCreator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user pointer associated with the LinphoneAccountCreator. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga7a9a647987112a74d5b2d80ef9f76f9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_set_user_data</definition>
+        <argsstring>(LinphoneAccountCreator *creator, void *ud)</argsstring>
+        <name>linphone_account_creator_set_user_data</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ud</declname>
+        </param>
+        <briefdescription>
+<para>Assign a user pointer to the LinphoneAccountCreator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user pointer to associate with the LinphoneAccountCreator. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="153" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga4c46c37d1754f1502b25d39144f48c3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1ga7e707878f97af5a393a115fa8f914674" kindref="member">LinphoneAccountCreatorUsernameStatus</ref></type>
+        <definition>LinphoneAccountCreatorUsernameStatus linphone_account_creator_set_username</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *username)</argsstring>
+        <name>linphone_account_creator_set_username</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>username</declname>
+        </param>
+        <briefdescription>
+<para>Set the username. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">username</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The username to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorUsernameStatusOk if everything is OK, or a specific error otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga23c955c6f20c34ba4568993325e8b31c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_account_creator_get_username</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_username</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Get the username. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The username of the LinphoneAccountCreator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga82607128140759af8a4fc26fc646eadf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1gaa5505bb64319732629225e8cdd921830" kindref="member">LinphoneAccountCreatorPhoneNumberStatusMask</ref></type>
+        <definition>LinphoneAccountCreatorPhoneNumberStatusMask linphone_account_creator_set_phone_number</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *phone_number, const char *country_code)</argsstring>
+        <name>linphone_account_creator_set_phone_number</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>phone_number</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>country_code</declname>
+        </param>
+        <briefdescription>
+<para>Set the phone number normalized. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">phone_number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The phone number to set </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">country_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Country code to associate phone number with </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorPhoneNumberStatusOk if everything is OK, or specific(s) error(s) otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga067d45b4546223c0511ebb483220b5b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_account_creator_get_phone_number</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_phone_number</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Get the RFC 3966 normalized phone number. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The phone number of the LinphoneAccountCreator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga1c45b67534af801a46317d35ebfb80bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1ga072d1e436d28c49ea44ef053058af4db" kindref="member">LinphoneAccountCreatorPasswordStatus</ref></type>
+        <definition>LinphoneAccountCreatorPasswordStatus linphone_account_creator_set_password</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *password)</argsstring>
+        <name>linphone_account_creator_set_password</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+<para>Set the password. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">password</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The password to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorPasswordStatusOk if everything is OK, or specific(s) error(s) otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="192" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1gab65e965b5d4c11dd06cc657b0d723079" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_account_creator_get_password</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_password</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Get the password. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The password of the LinphoneAccountCreator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1gaebbf09c4b50706afee8e3d0c08ddc7e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1ga072d1e436d28c49ea44ef053058af4db" kindref="member">LinphoneAccountCreatorPasswordStatus</ref></type>
+        <definition>LinphoneAccountCreatorPasswordStatus linphone_account_creator_set_ha1</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *ha1)</argsstring>
+        <name>linphone_account_creator_set_ha1</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>ha1</declname>
+        </param>
+        <briefdescription>
+<para>Set the ha1. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ha1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ha1 to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorPasswordStatusOk if everything is OK, or a specific error otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga1560266f1766692fd789f203694ca11d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_account_creator_get_ha1</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_ha1</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Get the ha1. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The ha1 of the LinphoneAccountCreator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="214" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1gaa5b60098aea98073e6c41ea5be000f3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1ga73aafcb533e7a15bcbe1eedb7bd7907d" kindref="member">LinphoneAccountCreatorActivationCodeStatus</ref></type>
+        <definition>LinphoneAccountCreatorActivationCodeStatus linphone_account_creator_set_activation_code</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *activation_code)</argsstring>
+        <name>linphone_account_creator_set_activation_code</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>activation_code</declname>
+        </param>
+        <briefdescription>
+<para>Set the activation code. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">activation_code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The activation code to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorActivationCodeStatusOk if everything is OK, or a specific error otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="222" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga871e59488a87cb8daf450cb4c4746709" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_account_creator_get_activation_code</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_activation_code</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Get the activation code. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The activation code of the LinphoneAccountCreator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="229" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1gac7b455881301233d6473fdc31d1c1554" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1gab09a679101ff9caa639e603f5b8505d4" kindref="member">LinphoneAccountCreatorLanguageStatus</ref></type>
+        <definition>LinphoneAccountCreatorLanguageStatus linphone_account_creator_set_language</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *lang)</argsstring>
+        <name>linphone_account_creator_set_language</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>lang</declname>
+        </param>
+        <briefdescription>
+<para>Set the language to use in email or SMS if supported. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">lang</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The language to use </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorLanguageStatusOk if everything is OK, or a specific error otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="237" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga03eaf280a8b5993028b90c408c56e925" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_account_creator_get_language</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_language</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Get the language use in email of SMS. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The language of the LinphoneAccountCreator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="244" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga6b00b4b3ff83c04758811b4f38e5423b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1ga7e707878f97af5a393a115fa8f914674" kindref="member">LinphoneAccountCreatorUsernameStatus</ref></type>
+        <definition>LinphoneAccountCreatorUsernameStatus linphone_account_creator_set_display_name</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *display_name)</argsstring>
+        <name>linphone_account_creator_set_display_name</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>display_name</declname>
+        </param>
+        <briefdescription>
+<para>Set the display name. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">display_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The display name to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorUsernameStatusOk if everything is OK, or a specific error otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga5ee5c74e73382c9a1863495283d20b34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_account_creator_get_display_name</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_display_name</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Get the display name. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The display name of the LinphoneAccountCreator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="259" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga65775003c3ab35b2e4ac8f528cf239b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1ga5d12f05feb180340e2cf0d4f6fe0b709" kindref="member">LinphoneAccountCreatorEmailStatus</ref></type>
+        <definition>LinphoneAccountCreatorEmailStatus linphone_account_creator_set_email</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *email)</argsstring>
+        <name>linphone_account_creator_set_email</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>email</declname>
+        </param>
+        <briefdescription>
+<para>Set the email. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The email to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorEmailStatusOk if everything is OK, or a specific error otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="267" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1gabc5b83e25414a1c46aec516df1f9332f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_account_creator_get_email</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_email</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Get the email. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The email of the LinphoneAccountCreator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="274" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga0c5523505748e8f8dd22cb75e5cd9f08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1gad273f8c7533d520719fbb4ea8af41c95" kindref="member">LinphoneAccountCreatorDomainStatus</ref></type>
+        <definition>LinphoneAccountCreatorDomainStatus linphone_account_creator_set_domain</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *domain)</argsstring>
+        <name>linphone_account_creator_set_domain</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>domain</declname>
+        </param>
+        <briefdescription>
+<para>Set the domain. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">domain</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The domain to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorDomainOk if everything is OK, or a specific error otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="282" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1gad36b9626fee354ee6037536d9d4ca655" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* linphone_account_creator_get_domain</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_domain</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Get the domain. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The domain of the LinphoneAccountCreator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="289" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1gab73447af36d640c019d3f39943e6fc6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1ga183ce1cbb59d8d378432b42c37299de6" kindref="member">LinphoneAccountCreatorTransportStatus</ref></type>
+        <definition>LinphoneAccountCreatorTransportStatus linphone_account_creator_set_transport</definition>
+        <argsstring>(LinphoneAccountCreator *creator, LinphoneTransportType transport)</argsstring>
+        <name>linphone_account_creator_set_transport</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type><ref refid="group__linphone__address_1gaf06a9ea772e47d0d4af5fb2f44ad4069" kindref="member">LinphoneTransportType</ref></type>
+          <declname>transport</declname>
+        </param>
+        <briefdescription>
+<para>Set Transport. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">transport</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transport to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorTransportOk if everything is OK, or a specific error otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="297" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga972792a0534f2892ddfb8d0de9ebb4da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__linphone__address_1gaf06a9ea772e47d0d4af5fb2f44ad4069" kindref="member">LinphoneTransportType</ref></type>
+        <definition>LinphoneTransportType linphone_account_creator_get_transport</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_transport</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>get Transport </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The transport of LinphoneAccountCreator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="304" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1gac12092bacf1431032164617168e31f07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED <ref refid="group__account__creator__request_1ga48d937b2f5157737a3ca24f20e6459bc" kindref="member">LinphoneAccountCreatorStatus</ref></type>
+        <definition>LINPHONE_DEPRECATED LinphoneAccountCreatorStatus linphone_account_creator_set_route</definition>
+        <argsstring>(LinphoneAccountCreator *creator, const char *route)</argsstring>
+        <name>linphone_account_creator_set_route</name>
+        <param>
+          <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>route</declname>
+        </param>
+        <briefdescription>
+<para>Set the route. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">route</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The route to set </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>LinphoneAccountCreatorStatusRequestOk if everything is OK, or a specific error otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="312" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga98d40788ba2b49d3e293545d56b00328" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED const char *</type>
+        <definition>LINPHONE_DEPRECATED const char* linphone_account_creator_get_route</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_route</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Get the route. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The route of the LinphoneAccountCreator </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="319" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga1f91181af688258da8025a4d11de21b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+        <definition>LinphoneAccountCreatorCbs* linphone_account_creator_get_callbacks</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_callbacks</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Get the LinphoneAccountCreatorCbs object associated with a LinphoneAccountCreator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The LinphoneAccountCreatorCbs object associated with the LinphoneAccountCreator. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="326" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga7af04a739ec95b39e8eadb0ad9c25b92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1ga29e0eb995c7253e1e47d0d0ce07940e1" kindref="member">LinphoneAccountCreatorService</ref> *</type>
+        <definition>LinphoneAccountCreatorService* linphone_account_creator_get_service</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_get_service</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Get the LinphoneAccountCreatorService object associated with a LinphoneAccountCreator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The LinphoneAccountCreatorService object associated with the LinphoneAccountCreator.  <donotwrap />  </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="334" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga0a5a8f13dbbb2b75a9fea65f5bb3a184" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+        <definition>LinphoneAccountCreatorCbs* linphone_account_creator_cbs_ref</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_ref</name>
+        <param>
+          <type><ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Acquire a reference to a LinphoneAccountCreatorCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The same LinphoneAccountCreatorCbs object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="345" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1gafb2b0bf7213192780baa30aa6c0f8d9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_unref</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_unref</name>
+        <param>
+          <type><ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Release a reference to a LinphoneAccountCreatorCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="351" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga3df023d6958b80d97f7a2811a2ee212d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* linphone_account_creator_cbs_get_user_data</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_user_data</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve the user pointer associated with a LinphoneAccountCreatorCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The user pointer associated with the LinphoneAccountCreatorCbs object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="358" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga65494af8f91fe4f82955d00bac36e815" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_user_data</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, void *ud)</argsstring>
+        <name>linphone_account_creator_cbs_set_user_data</name>
+        <param>
+          <type><ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>ud</declname>
+        </param>
+        <briefdescription>
+<para>Assign a user pointer to a LinphoneAccountCreatorCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ud</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The user pointer to associate with the LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="365" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga8739d83134c5aea0c48c367e8c3d2bea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+        <definition>LinphoneAccountCreatorCbsStatusCb linphone_account_creator_cbs_get_create_account</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_create_account</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Get the create account request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current create account request. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="372" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga26dbc6d6ecd0b1dc5d94470fb25f4a26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_create_account</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, LinphoneAccountCreatorCbsStatusCb cb)</argsstring>
+        <name>linphone_account_creator_cbs_set_create_account</name>
+        <param>
+          <type><ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+<para>Assign a user pointer to a LinphoneAccountCreatorCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The create account request to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="379" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1gac3cb3ff7daf53c85337748258b456548" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+        <definition>LinphoneAccountCreatorCbsStatusCb linphone_account_creator_cbs_get_is_account_exist</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_is_account_exist</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Get the is account exist request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current is account exist request. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="386" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga8b2e2398608898f1782bb0097629377b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_is_account_exist</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, LinphoneAccountCreatorCbsStatusCb cb)</argsstring>
+        <name>linphone_account_creator_cbs_set_is_account_exist</name>
+        <param>
+          <type><ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+<para>Assign a user pointer to a LinphoneAccountCreatorCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The is account exist request to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="393" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga3518e6b092dff01f7328394c1fbfb944" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+        <definition>LinphoneAccountCreatorCbsStatusCb linphone_account_creator_cbs_get_activate_account</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_activate_account</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Get the activate account request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current activate account request. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="400" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1gaa6ec977f0563771ea6658ddb9b11978c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_activate_account</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, LinphoneAccountCreatorCbsStatusCb cb)</argsstring>
+        <name>linphone_account_creator_cbs_set_activate_account</name>
+        <param>
+          <type><ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+<para>Assign a user pointer to a LinphoneAccountCreatorCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The activate account request to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="407" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga29ca424ea11e88425fdca98628c23928" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+        <definition>LinphoneAccountCreatorCbsStatusCb linphone_account_creator_cbs_get_is_account_activated</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_is_account_activated</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Get the is account activated request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current is account activated request. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="414" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga0ea7329acf3a1ed60e3099072ebc5d76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_is_account_activated</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, LinphoneAccountCreatorCbsStatusCb cb)</argsstring>
+        <name>linphone_account_creator_cbs_set_is_account_activated</name>
+        <param>
+          <type><ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+<para>Assign a user pointer to a LinphoneAccountCreatorCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The is account activated request to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="421" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1gaecb6f274b38ba358f7366eed71fe5560" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+        <definition>LinphoneAccountCreatorCbsStatusCb linphone_account_creator_cbs_get_link_account</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_link_account</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Get the link account request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current link account request. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="428" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1gadcf202c3f79ad9237bbfd4363c325584" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_link_account</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, LinphoneAccountCreatorCbsStatusCb cb)</argsstring>
+        <name>linphone_account_creator_cbs_set_link_account</name>
+        <param>
+          <type><ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+<para>Assign a user pointer to a LinphoneAccountCreatorCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The link account request to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="435" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga38b75ab564e59b3962d46339537a3779" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+        <definition>LinphoneAccountCreatorCbsStatusCb linphone_account_creator_cbs_get_activate_alias</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_activate_alias</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Get the activate alias request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current link account request. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="442" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga363cf2bbf576f0f9fe259e2bdc3ac8df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_activate_alias</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, LinphoneAccountCreatorCbsStatusCb cb)</argsstring>
+        <name>linphone_account_creator_cbs_set_activate_alias</name>
+        <param>
+          <type><ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+<para>Assign a user pointer to a LinphoneAccountCreatorCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The activate alias request to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="449" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1gaee2f6fd501422a7bdd437c1a528e7e2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+        <definition>LinphoneAccountCreatorCbsStatusCb linphone_account_creator_cbs_get_is_alias_used</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_is_alias_used</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Get the is alias used request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current is alias used request. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="456" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1gad228f597d09dff99f2ea7e42bcc04d28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_is_alias_used</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, LinphoneAccountCreatorCbsStatusCb cb)</argsstring>
+        <name>linphone_account_creator_cbs_set_is_alias_used</name>
+        <param>
+          <type><ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+<para>Assign a user pointer to a LinphoneAccountCreatorCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The is alias used request to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="463" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga8c4a79ad32aae4dcc784b786a66fbe9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+        <definition>LinphoneAccountCreatorCbsStatusCb linphone_account_creator_cbs_get_is_account_linked</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_is_account_linked</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Get the is account linked request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current is account linked request. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="470" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga3973654ca5db14c6767284c353360245" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_is_account_linked</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, LinphoneAccountCreatorCbsStatusCb cb)</argsstring>
+        <name>linphone_account_creator_cbs_set_is_account_linked</name>
+        <param>
+          <type><ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+<para>Assign a user pointer to a LinphoneAccountCreatorCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The is account linked request to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="477" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga37f6a88d374f931ee3d4f08b976001f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+        <definition>LinphoneAccountCreatorCbsStatusCb linphone_account_creator_cbs_get_recover_account</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_recover_account</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Get the recover account request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current recover account request. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="484" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga422d27991e5ddd0078f9b3228a07f58c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_recover_account</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, LinphoneAccountCreatorCbsStatusCb cb)</argsstring>
+        <name>linphone_account_creator_cbs_set_recover_account</name>
+        <param>
+          <type><ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+<para>Assign a user pointer to a LinphoneAccountCreatorCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The recover account request to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="491" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga3b8c0d4471f29e5446b227d44b2a8fb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+        <definition>LinphoneAccountCreatorCbsStatusCb linphone_account_creator_cbs_get_update_account</definition>
+        <argsstring>(const LinphoneAccountCreatorCbs *cbs)</argsstring>
+        <name>linphone_account_creator_cbs_get_update_account</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Get the update account request. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current update account request. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="498" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1gaf559fffbaee1a08628a0899ec9e93799" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_account_creator_cbs_set_update_account</definition>
+        <argsstring>(LinphoneAccountCreatorCbs *cbs, LinphoneAccountCreatorCbsStatusCb cb)</argsstring>
+        <name>linphone_account_creator_cbs_set_update_account</name>
+        <param>
+          <type><ref refid="group__account__creator_1ga10cba453f1c0c559b8f1282e2c3ab24c" kindref="member">LinphoneAccountCreatorCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <param>
+          <type><ref refid="group__account__creator_1gac8649328bd95fa8b369292e9a2545dfb" kindref="member">LinphoneAccountCreatorCbsStatusCb</ref></type>
+          <declname>cb</declname>
+        </param>
+        <briefdescription>
+<para>Assign a user pointer to a LinphoneAccountCreatorCbs object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreatorCbs object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The update account request to be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="505" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga25a1a626eb327724d13f2c7ac7929136" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+        <definition>LinphoneProxyConfig* linphone_account_creator_create_proxy_config</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_create_proxy_config</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Create and configure a proxy config and a authentication info for an account creator. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A LinphoneProxyConfig object if successful, NULL otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="514" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga5f9929797deab58473c00ce8d1db1969" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>LINPHONE_DEPRECATED <ref refid="group__proxies_1ga1879a0d59e068457b688138da97f2d0b" kindref="member">LinphoneProxyConfig</ref> *</type>
+        <definition>LINPHONE_DEPRECATED LinphoneProxyConfig* linphone_account_creator_configure</definition>
+        <argsstring>(const LinphoneAccountCreator *creator)</argsstring>
+        <name>linphone_account_creator_configure</name>
+        <param>
+          <type>const <ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+          <declname>creator</declname>
+        </param>
+        <briefdescription>
+<para>Configure an account (create a proxy config and authentication info for it). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">creator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneAccountCreator object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A LinphoneProxyConfig object if successful, NULL otherwise </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/account_creator.h" line="521" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__account__creator_1ga229da370fe2ab6d26d11e1c8f3d71043" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__account__creator_1gafd6720b4e4e8d51f02511196498238ef" kindref="member">LinphoneAccountCreator</ref> *</type>
+        <definition>LinphoneAccountCreator* linphone_core_create_account_creator</definition>
+        <argsstring>(LinphoneCore *core, const char *xmlrpc_url)</argsstring>
+        <name>linphone_core_create_account_creator</name>
+        <param>
+          <type><ref refid="group__initializing_1gaa5cf635b82dd338e7ee2dd3599d05f0a" kindref="member">LinphoneCore</ref> *</type>
+          <declname>core</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>xmlrpc_url</declname>
+        </param>
+        <briefdescription>
+<para>Create a LinphoneAccountCreator and set Linphone Request callbacks. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">core</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The LinphoneCore used for the XML-RPC communication </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">xmlrpc_url</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The URL to the XML-RPC server. Must be NON NULL. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The new LinphoneAccountCreator object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/core.h" line="5290" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

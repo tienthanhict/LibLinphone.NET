@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_94a67402189a6431b37f33e76e273719" kind="dir">
+    <compoundname>coreapi</compoundname>
+    <innerdir refid="dir_dc76f65f75789037a1714a048dc1d12b">help</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/coreapi/"/>
+  </compounddef>
+</doxygen>

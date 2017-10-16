@@ -1,0 +1,1111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="group__call__misc" kind="group">
+    <compoundname>call_misc</compoundname>
+    <title>Call misc</title>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" prot="public" static="no">
+        <type>struct _LinphoneCallStats</type>
+        <definition>typedef struct _LinphoneCallStats LinphoneCallStats</definition>
+        <argsstring></argsstring>
+        <name>LinphoneCallStats</name>
+        <briefdescription>
+<para>The LinphoneCallStats objects carries various statistic informations regarding quality of audio or video streams. </para>        </briefdescription>
+        <detaileddescription>
+<para>To receive these informations periodically and as soon as they are computed, the application is invited to place a <ref refid="group__initializing_1gae50aa77005e69df0137977b45bc9e832" kindref="member">LinphoneCoreCallStatsUpdatedCb</ref> callback in the LinphoneCoreVTable structure it passes for instanciating the LinphoneCore object (see <ref refid="group__initializing_1ga9601ae3c81a1bbf110e84a1a484f3fee" kindref="member">linphone_core_new()</ref> ).</para><para>At any time, the application can access last computed statistics using linphone_call_get_audio_stats() or linphone_call_get_video_stats(). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="65" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__call__misc_1gaee196fd489607102f0cadf4d44823fd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__chatroom_1ga37902f3fc715b7f6451c241d0efd0299" kindref="member">LinphoneChatRoom</ref> *</type>
+        <definition>LinphoneChatRoom* linphone_call_get_chat_room</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_chat_room</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+<para>Create a new chat room for messaging from a call if not already existing, else return existing one. </para>        </briefdescription>
+        <detaileddescription>
+<para>No reference is given to the caller: the chat room will be deleted when the call is ended. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__chatroom_1ga37902f3fc715b7f6451c241d0efd0299" kindref="member">LinphoneChatRoom</ref> where messaging can take place. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="742" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga7a0ca45e0ff2bf7eaca09e795bba3486" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_get_play_volume</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_play_volume</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+<para>Get the mesured playback volume level (received from remote) in dbm0. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The call. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>float Volume level in percentage. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="749" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gac4f217936eea56196afc126974a92451" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_get_record_volume</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_record_volume</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+<para>Get the mesured record volume level (sent to remote) in dbm0. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The call. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>float Volume level in percentage. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="756" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga7331e4c738ec41d0eecde98fcd4491c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_get_speaker_volume_gain</definition>
+        <argsstring>(const LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_speaker_volume_gain</name>
+        <param>
+          <type>const <ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+<para>Get speaker volume gain. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the sound backend supports it, the returned gain is equal to the gain set with the system mixer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The call. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Percenatge of the max supported volume gain. Valid values are in [ 0.0 : 1.0 ]. In case of failure, a negative value is returned </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="766" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gaa89248d3121edc343324d298297db354" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_call_set_speaker_volume_gain</definition>
+        <argsstring>(LinphoneCall *call, float volume)</argsstring>
+        <name>linphone_call_set_speaker_volume_gain</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>volume</declname>
+        </param>
+        <briefdescription>
+<para>Set speaker volume gain. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the sound backend supports it, the new gain will synchronized with the system mixer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The call. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Percentage of the max supported gain. Valid values are in [ 0.0 : 1.0 ]. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="774" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga3256a32cca5d521ccf85204eef665f85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_get_microphone_volume_gain</definition>
+        <argsstring>(const LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_microphone_volume_gain</name>
+        <param>
+          <type>const <ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+<para>Get microphone volume gain. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the sound backend supports it, the returned gain is equal to the gain set with the system mixer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The call. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>double Percenatge of the max supported volume gain. Valid values are in [ 0.0 : 1.0 ]. In case of failure, a negative value is returned </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="784" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga7a0fa668915898492c82558c7f8c176f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_call_set_microphone_volume_gain</definition>
+        <argsstring>(LinphoneCall *call, float volume)</argsstring>
+        <name>linphone_call_set_microphone_volume_gain</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>volume</declname>
+        </param>
+        <briefdescription>
+<para>Set microphone volume gain. </para>        </briefdescription>
+        <detaileddescription>
+<para>If the sound backend supports it, the new gain will synchronized with the system mixer. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The call. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>volume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Percentage of the max supported gain. Valid values are in [ 0.0 : 1.0 ]. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="792" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga62c7d3d08531b0cc634b797e273a0a73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_get_current_quality</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_current_quality</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+<para>Obtain real-time quality rating of the call. </para>        </briefdescription>
+        <detaileddescription>
+<para>Based on local RTP statistics and RTCP feedback, a quality rating is computed and updated during all the duration of the call. This function returns its value at the time of the function call. It is expected that the rating is updated at least every 5 seconds or so. The rating is a floating point number comprised between 0 and 5.</para><para>4-5 = good quality <linebreak/>
+ 3-4 = average quality <linebreak/>
+ 2-3 = poor quality <linebreak/>
+ 1-2 = very poor quality <linebreak/>
+ 0-1 = can&apos;t be worse, mostly unusable <linebreak/>
+</para><para><simplesect kind="return"><para>The function returns -1 if no quality measurement is available, for example if no active audio stream exist. Otherwise it returns the quality rating. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="811" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gae3aaa85596484c871b57cdefafd7fd9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_get_average_quality</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_average_quality</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+<para>Returns call quality averaged over all the duration of the call. </para>        </briefdescription>
+        <detaileddescription>
+<para>See <ref refid="group__call__misc_1ga62c7d3d08531b0cc634b797e273a0a73" kindref="member">linphone_call_get_current_quality()</ref> for more details about quality measurement. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="818" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gaa92c7b4c3443ff4ae29f7b57f57cfd35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_call_start_recording</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_start_recording</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+<para>Start call recording. </para>        </briefdescription>
+        <detaileddescription>
+<para>The output file where audio is recorded must be previously specified with <ref refid="group__call__control_1ga10fff1a05dc9c63249ba59dc7240d803" kindref="member">linphone_call_params_set_record_file()</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="824" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga2ef01b6aa5dc8ee76a77e5ef399a7907" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_call_stop_recording</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_stop_recording</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+<para>Stop call recording. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="829" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gaaf1f1134bafa200eb6cb1333eacbc28d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__control_1gae1497db82144ec61a4303c7e84d1603a" kindref="member">LinphonePlayer</ref> *</type>
+        <definition>LinphonePlayer* linphone_call_get_player</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_player</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+<para>Get a player associated with the call to play a local file and stream it to the remote peer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCall object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>A LinphonePlayer object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="836" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gac64a301e64dcf00e5487dbb1739d5aaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool_t</type>
+        <definition>bool_t linphone_call_media_in_progress</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_media_in_progress</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+<para>Indicates whether an operation is in progress at the media side. </para>        </briefdescription>
+        <detaileddescription>
+<para>It can be a bad idea to initiate signaling operations (adding video, pausing the call, removing video, changing video parameters) while the media is busy in establishing the connection (typically ICE connectivity checks). It can result in failures generating loss of time in future operations in the call. Applications are invited to check this function after each call state change to decide whether certain operations are permitted or not. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the call </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>TRUE if media is busy in establishing the connection, FALSE otherwise. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="847" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga63f141edf90ea79f6461952ffd341f2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_call_ogl_render</definition>
+        <argsstring>(const LinphoneCall *call)</argsstring>
+        <name>linphone_call_ogl_render</name>
+        <param>
+          <type>const <ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+<para>Call generic OpenGL render for a given call. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The call. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="853" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gad3ea082e47656c29ffc26443ce702d49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__misc_1ga06cc4f9926a5e15e2ec4f9b1305d2936" kindref="member">LinphoneStatus</ref></type>
+        <definition>LinphoneStatus linphone_call_send_info_message</definition>
+        <argsstring>(LinphoneCall *call, const LinphoneInfoMessage *info)</argsstring>
+        <name>linphone_call_send_info_message</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__misc_1ga6a66859069e2bfc80b782ebf2714dfcf" kindref="member">LinphoneInfoMessage</ref> *</type>
+          <declname>info</declname>
+        </param>
+        <briefdescription>
+<para>Send a LinphoneInfoMessage through an established call. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the call </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>info</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the info message </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="862" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga081f925471dec4430a8515ba0c89076b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+        <definition>LinphoneCallStats* linphone_call_get_stats</definition>
+        <argsstring>(LinphoneCall *call, LinphoneStreamType type)</argsstring>
+        <name>linphone_call_get_stats</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type><ref refid="group__initializing_1ga96aa1323045dd34b0cd1d74eeeb6ec79" kindref="member">LinphoneStreamType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Return a copy of the call statistics for a particular stream type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the call </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the stream type </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="869" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga128ab82e109066e497dded60c94bff30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+        <definition>LinphoneCallStats* linphone_call_get_audio_stats</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_audio_stats</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="871" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga69c6481746e95a45f7315908d3c24c94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+        <definition>LinphoneCallStats* linphone_call_get_video_stats</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_video_stats</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="873" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gabb46e3dec18f20efe66507f9121f4c07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+        <definition>LinphoneCallStats* linphone_call_get_text_stats</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_text_stats</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="875" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gaeffe3718b5b59d9614fc2ff26ae35273" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_call_add_callbacks</definition>
+        <argsstring>(LinphoneCall *call, LinphoneCallCbs *cbs)</argsstring>
+        <name>linphone_call_add_callbacks</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__control_1gac16e901c67900cd8df5c9b78d238a8ae" kindref="member">LinphoneCallCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Add a listener in order to be notified of LinphoneCall events. </para>        </briefdescription>
+        <detaileddescription>
+<para>Once an event is received, registred LinphoneCallCbs are invoked sequencially. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCall object to monitor. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A LinphoneCallCbs object holding the callbacks you need. A reference is taken by the LinphoneCall until you invoke <ref refid="group__call__misc_1ga37d635aec35a4435c98d9e149b39aab8" kindref="member">linphone_call_remove_callbacks()</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="883" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga37d635aec35a4435c98d9e149b39aab8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_call_remove_callbacks</definition>
+        <argsstring>(LinphoneCall *call, LinphoneCallCbs *cbs)</argsstring>
+        <name>linphone_call_remove_callbacks</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type><ref refid="group__call__control_1gac16e901c67900cd8df5c9b78d238a8ae" kindref="member">LinphoneCallCbs</ref> *</type>
+          <declname>cbs</declname>
+        </param>
+        <briefdescription>
+<para>Remove a listener from a LinphoneCall. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCall object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cbs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallCbs object to remove. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="890" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga20079cb7b040f2635067a46f66c47605" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__call__control_1gac16e901c67900cd8df5c9b78d238a8ae" kindref="member">LinphoneCallCbs</ref> *</type>
+        <definition>LinphoneCallCbs* linphone_call_get_current_callbacks</definition>
+        <argsstring>(const LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_current_callbacks</name>
+        <param>
+          <type>const <ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+<para>Gets the current LinphoneCallCbs. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is meant only to be called from a callback to be able to get the user_data associated with the LinphoneCallCbs that is calling the callback. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCall object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The LinphoneCallCbs that has called the last callback </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="898" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga0e8074f1545472346c138244d576de53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void linphone_call_set_params</definition>
+        <argsstring>(LinphoneCall *call, const LinphoneCallParams *params)</argsstring>
+        <name>linphone_call_set_params</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>const <ref refid="group__call__control_1gaa91f7e76e8f038ae9acdf42d1bc80a22" kindref="member">LinphoneCallParams</ref> *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Set call parameters - advanced and not recommended feature - use with caution. </para>        </briefdescription>
+        <detaileddescription>
+<para>Local call parameters applicable to an outgoing or incoming shall usually be passed to <ref refid="group__call__control_1gaf73435cd4252df9cf33af90cae68d813" kindref="member">linphone_core_invite_address_with_params()</ref> or <ref refid="group__call__control_1ga0a39c513c2e89cdddd034195342befbd" kindref="member">linphone_call_accept_with_params()</ref>. However, in some cases it might be desirable from a software design standpoint to modify local parameters outside of the application layer, typically in the purpose of implementing a custom logic including special headers in INVITE or 200Ok requests, driven by a call_state_changed listener method. This function accepts to assign a new LinphoneCallParams only in LinphoneCallOutgoingInit and LinphoneCallIncomingReceived states. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneCall object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="909" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga344534f2019e45da3fc4935b4c662bf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="group__call__control_1gaa91f7e76e8f038ae9acdf42d1bc80a22" kindref="member">LinphoneCallParams</ref> *</type>
+        <definition>const LinphoneCallParams* linphone_call_get_params</definition>
+        <argsstring>(LinphoneCall *call)</argsstring>
+        <name>linphone_call_get_params</name>
+        <param>
+          <type><ref refid="group__call__control_1gac0a4861d7c4702c64f7106f2b893c69e" kindref="member">LinphoneCall</ref> *</type>
+          <declname>call</declname>
+        </param>
+        <briefdescription>
+<para>Returns local parameters associated with the call. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is typically the parameters passed at call initiation to <ref refid="group__call__control_1gaf73435cd4252df9cf33af90cae68d813" kindref="member">linphone_core_invite_address_with_params()</ref> or <ref refid="group__call__control_1ga0a39c513c2e89cdddd034195342befbd" kindref="member">linphone_call_accept_with_params()</ref>, or some default parameters if no LinphoneCallParams was explicitely passed during call initiation. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>call</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the LinphoneCall object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>the call&apos;s local parameters. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call.h" line="918" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga170aa3e2a5f7deb7e43e4cfe1aabb9cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1ga96aa1323045dd34b0cd1d74eeeb6ec79" kindref="member">LinphoneStreamType</ref></type>
+        <definition>LinphoneStreamType linphone_call_stats_get_type</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_type</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+<para>Get the type of the stream the stats refer to. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallStats object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The type of the stream the stats refer to </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga4f67c9815b880887550873c592174b97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_sender_loss_rate</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_sender_loss_rate</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+<para>Get the local loss rate since last report. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The sender loss rate </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga09496e326d7e82e4b15dbc427d384aa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_receiver_loss_rate</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_receiver_loss_rate</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+<para>Gets the remote reported loss rate since last report. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The receiver loss rate </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga104bc8aa663b6dd37620bc3dfffaf2db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_local_loss_rate</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_local_loss_rate</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+<para>Get the local loss rate since last report. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The local loss rate </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gaa92d37ad6efc20f9236db1e9d357014b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_local_late_rate</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_local_late_rate</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+<para>Gets the local late rate since last report. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The local late rate </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gad83339416964a8b8b4a49cf17fc6cab1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_sender_interarrival_jitter</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_sender_interarrival_jitter</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+<para>Gets the local interarrival jitter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallStats object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The interarrival jitter at last emitted sender report </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gab8971fd9762ed6d98efc6bed24c46f2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_receiver_interarrival_jitter</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_receiver_interarrival_jitter</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+<para>Gets the remote reported interarrival jitter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallStats object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The interarrival jitter at last received receiver report </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga6593fa8fd15a22a9bb549683f4b4a5d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const rtp_stats_t *</type>
+        <definition>const rtp_stats_t* linphone_call_stats_get_rtp_stats</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_rtp_stats</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga96bb81b7deab4a7225524fa8a85c2a09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint64_t</type>
+        <definition>uint64_t linphone_call_stats_get_late_packets_cumulative_number</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_late_packets_cumulative_number</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+<para>Gets the cumulative number of late packets. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallStats object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The cumulative number of late packets </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="124" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gae8435a45f96caefc4284575ead6ec636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_download_bandwidth</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_download_bandwidth</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+<para>Get the bandwidth measurement of the received stream, expressed in kbit/s, including IP/UDP/RTP headers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallStats object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The bandwidth measurement of the received stream in kbit/s. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga75d75cf70afffebed65b9bca234120db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_upload_bandwidth</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_upload_bandwidth</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+<para>Get the bandwidth measurement of the sent stream, expressed in kbit/s, including IP/UDP/RTP headers. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallStats object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The bandwidth measurement of the sent stream in kbit/s. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gab00ca0a997c7f740948d474062fc663c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1ga4b7f18485357badb5b882ef37b2128db" kindref="member">LinphoneIceState</ref></type>
+        <definition>LinphoneIceState linphone_call_stats_get_ice_state</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_ice_state</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+<para>Get the state of ICE processing. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallStats object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The state of ICE processing. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="145" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gab475f621ff3a8a2e2d6faee0ca608f79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1gabe6b50de02f96199c0a4fcbc1d5352bb" kindref="member">LinphoneUpnpState</ref></type>
+        <definition>LinphoneUpnpState linphone_call_stats_get_upnp_state</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_upnp_state</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+<para>Get the state of uPnP processing. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallStats object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The state of uPnP processing. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="152" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gaddfcf9f63906d60b775ae5d080c27ca2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__initializing_1gaf4deef1b3d9478df6d1428f9554c01b6" kindref="member">LinphoneAddressFamily</ref></type>
+        <definition>LinphoneAddressFamily linphone_call_stats_get_ip_family_of_remote</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_ip_family_of_remote</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+<para>Get the IP address family of the remote peer. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallStats object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The IP address family of the remote peer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="159" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1ga3978b332ce2cb55bdbdc50c7e203de3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_jitter_buffer_size_ms</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_jitter_buffer_size_ms</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+<para>Get the jitter buffer size in ms. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallStats object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The jitter buffer size in ms. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="166" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="group__call__misc_1gabca589928a87a1de7d8f13ee44988023" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float linphone_call_stats_get_round_trip_delay</definition>
+        <argsstring>(const LinphoneCallStats *stats)</argsstring>
+        <name>linphone_call_stats_get_round_trip_delay</name>
+        <param>
+          <type>const <ref refid="group__call__misc_1ga4d22764ac0e68a8d77670761429b2ee7" kindref="member">LinphoneCallStats</ref> *</type>
+          <declname>stats</declname>
+        </param>
+        <briefdescription>
+<para>Get the round trip delay in s. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stats</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LinphoneCallStats object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The round trip delay in s. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="173" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__call__misc_1ga3aaf768a67bef73e3798ff1352a03523" prot="public" static="no">
+        <name>LINPHONE_CALL_STATS_AUDIO</name>
+        <initializer>((int)LinphoneStreamTypeAudio)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="34" column="9" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__call__misc_1ga7e84e05e3fa3bac2517ce5921558b4db" prot="public" static="no">
+        <name>LINPHONE_CALL_STATS_VIDEO</name>
+        <initializer>((int)LinphoneStreamTypeVideo)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="35" column="9" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__call__misc_1gafff083100e9c3c915325df68a5d4eafb" prot="public" static="no">
+        <name>LINPHONE_CALL_STATS_TEXT</name>
+        <initializer>((int)LinphoneStreamTypeText)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="36" column="9" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__call__misc_1ga7bb50ca7cd1f49ebea13eec5136ef00e" prot="public" static="no">
+        <name>LINPHONE_CALL_STATS_RECEIVED_RTCP_UPDATE</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+<para>received_rtcp field of LinphoneCallStats object has been updated </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="38" column="9" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__call__misc_1ga4418b7518b1479e9329b6de4129ed8c9" prot="public" static="no">
+        <name>LINPHONE_CALL_STATS_SENT_RTCP_UPDATE</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+<para>sent_rtcp field of LinphoneCallStats object has been updated </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="39" column="9" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__call__misc_1ga0cb8916aede3c1a00a6e9aa176bf4093" prot="public" static="no">
+        <name>LINPHONE_CALL_STATS_PERIODICAL_UPDATE</name>
+        <initializer>(1 &lt;&lt; 2)</initializer>
+        <briefdescription>
+<para>Every seconds LinphoneCallStats object has been updated. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" line="40" column="9" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/call_stats.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__call__misc_1ga537911929e31ed4ca388ff40a37f97de" prot="public" static="no">
+        <name>LINPHONE_VOLUME_DB_LOWEST</name>
+        <initializer>(-120) /* WARNING: keep this in sync with mediastreamer2/msvolume.h */</initializer>
+        <briefdescription>
+<para>Lowest volume measurement that can be returned by <ref refid="group__call__misc_1ga7a0ca45e0ff2bf7eaca09e795bba3486" kindref="member">linphone_call_get_play_volume()</ref> or <ref refid="group__call__misc_1gac4f217936eea56196afc126974a92451" kindref="member">linphone_call_get_record_volume()</ref>, corresponding to pure silence. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/misc.h" line="36" column="9" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/misc.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Obtaining information about a running call: sound volumes, quality indicators. </para>    </briefdescription>
+    <detaileddescription>
+<para>When a call is running, it is possible to retrieve in real time current measured volumes and quality indicator. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

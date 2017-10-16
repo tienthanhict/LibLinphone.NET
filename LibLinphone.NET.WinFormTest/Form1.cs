@@ -95,10 +95,10 @@ namespace LibLinphone.NET.WinFormTest
                 MessageBox.Show("Your SIP address is invalid");
                 return;
             }
-            var proxyCfg = new LinphoneProxyConfig();
+            var proxyCfg = new LinphoneProxyConfig(lc);
             proxyCfg.SetIdentity(localUri);
             proxyCfg.RegisterEnabled = true;
-            proxyCfg.Expires = 3600;            
+            proxyCfg.Expires = 3600;
             proxyCfg.ServerAddr = localAddress.Domain;
 
             lc.ClearProxyConfigs();

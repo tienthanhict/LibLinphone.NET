@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structLinphoneVideoSizeDef" kind="struct" language="C++" prot="public">
+    <compoundname>LinphoneVideoSizeDef</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLinphoneVideoSizeDef_1a8b5957177edf64b176ba0fa00f1d9b22" prot="public" static="no" mutable="no">
+        <type>MSVideoSize</type>
+        <definition>MSVideoSize LinphoneVideoSizeDef::vsize</definition>
+        <argsstring></argsstring>
+        <name>vsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="1186" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="1186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLinphoneVideoSizeDef_1ac3aafa693ab2e325e8531b639ab83f26" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* LinphoneVideoSizeDef::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="1187" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="1187" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" line="1185" column="1" bodyfile="C:/Jenkins/workspace/linphone-qt-win32/submodules/linphone/include/linphone/types.h" bodystart="1185" bodyend="1188"/>
+    <listofallmembers>
+      <member refid="structLinphoneVideoSizeDef_1ac3aafa693ab2e325e8531b639ab83f26" prot="public" virt="non-virtual"><scope>LinphoneVideoSizeDef</scope><name>name</name></member>
+      <member refid="structLinphoneVideoSizeDef_1a8b5957177edf64b176ba0fa00f1d9b22" prot="public" virt="non-virtual"><scope>LinphoneVideoSizeDef</scope><name>vsize</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

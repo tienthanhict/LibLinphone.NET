@@ -22,21 +22,21 @@ using namespace System;
 String^ Linphone::Core::PayloadType::MimeType::get()
 {
 	API_LOCK;
-	return Utils::cctops(this->payload->mime_type);
+	return Utils::cctops(linphone_payload_type_get_mime_type(this->payload));
 }
 
 int Linphone::Core::PayloadType::ClockRate::get()
 {
 	API_LOCK;
-	return this->payload->clock_rate;
+	return linphone_payload_type_get_clock_rate(this->payload);
 }
 
-::PayloadType* Linphone::Core::PayloadType::GetPayloadPtr()
+::LinphonePayloadType* Linphone::Core::PayloadType::GetPayloadPtr()
 {
     return this->payload;
 }
 
-Linphone::Core::PayloadType::PayloadType(::PayloadType *payload) :
+Linphone::Core::PayloadType::PayloadType(::LinphonePayloadType *payload) :
 	payload(payload)
 {
 }
